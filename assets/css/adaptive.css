@@ -1,0 +1,1503 @@
+@media screen and (max-width: 1439px) {
+    .swiper {
+        padding: 30px 0px;
+    }
+
+    .block-castle img,
+    .block-olympiad img {
+        max-width: 550px;
+    }
+
+    .friends-block {
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width:1379px) {
+    /* --------------------------- swiper --------------------------- */
+
+    .swiper .swiper-pagination-bullet {
+        width: 60px;
+        height: 8px;
+        background: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
+        border-radius: 4px;
+    }
+
+    .swiper .swiper-pagination {
+        display: none;
+    }
+
+    /* .swiper-pagination-bullet-active-main {
+        width: 45px;
+        height: 8px;
+        background: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
+        box-shadow: 0px 0px 24px rgba(255, 192, 57, 0.24);
+        border-radius: 4px;
+    } */
+    /* --------------------------- about server --------------------------- */
+    .server-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .statistics {
+        text-align: end;
+    }
+
+    .statistic__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .statistics-info {
+        padding: 16px;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    /* --------------------------- news --------------------------- */
+    .news .subtitle_light {
+        margin: 0;
+    }
+
+    /* --------------------------- stream --------------------------- */
+    .stream {
+        padding-top: 10vh;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .friends {
+        padding-top: 5vh;
+    }
+
+    .friends-block {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width:1179px) {
+    /* --------------------------- header --------------------------- */
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__nav-list {
+        gap: 14px;
+    }
+
+    .header__nav-actions {
+        display: none;
+    }
+
+    /* --------------------------- burger --------------------------- */
+
+    .burger {
+        padding: 0;
+        position: relative;
+        width: 42px;
+        max-height: 34px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 6px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .burger-line {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s ease 0s;
+        border-radius: 10px;
+    }
+
+    .burger-line_span {
+        transform: scale(1);
+    }
+
+    .burger.active .burger-line_span {
+        transform: scale(0);
+    }
+
+    .burger.active .burger-line_top {
+        top: 10px;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .burger.active .burger-line_bottom {
+        bottom: 15px;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    /* --------------------------- hero --------------------------- */
+
+    .block-castle img,
+    .block-olympiad img {
+        max-width: 460px;
+    }
+
+    /* --------------------------- server --------------------------- */
+
+    .server-name {
+        grid-template-columns: repeat(1, 346px);
+    }
+
+    /* --------------------------- general --------------------------- */
+
+
+    .container {
+        max-width: 1110px;
+    }
+
+    .header {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    /* --------------------------- race --------------------------- */
+    .races,
+    .classes {
+        padding: 16px;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .changes-block {
+        margin: 0 0 97px;
+    }
+
+    .discord-block iframe {
+        max-width: 450px;
+    }
+
+    /* .discord-block {
+        margin-top: 20px;
+    } */
+
+    .friends .block-title {
+        font-size: 20px;
+    }
+
+    .block-text {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .container {
+        padding: 0 42px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 18px 89px;
+    }
+
+    .start-game {
+        margin-bottom: 11vh;
+    }
+
+    .h2-title,
+    .h2-title_black {
+        font-size: 36px;
+    }
+
+    .subtitle,
+    .content-text {
+        font-size: 18px;
+    }
+
+    .subtitle_light,
+    .subtitle_dark {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    /* --------------------------- race --------------------------- */
+    .content-item {
+        font-size: 14px;
+    }
+
+    .choice-text {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    /* --------------------------- header --------------------------- */
+    .header {
+        top: -100px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        transition: all .2s ease;
+        padding-top: 15px;
+
+    }
+
+    .header.fixed {
+        position: fixed;
+        background: #070B18;
+        top: -0;
+        width: 100%;
+        z-index: 99;
+        transition: all .2s ease;
+    }
+
+    .header__box .start-game {
+        display: block;
+        margin-bottom: 0;
+
+
+    }
+
+    /* --------------------------- benefits --------------------------- */
+    .benefits-card {
+        width: 223px !important;
+        margin-right: 16px !important;
+    }
+
+    .benefits-text {
+        margin: 0 20px 24px;
+    }
+
+    .benefits-title {
+        font-size: 18px;
+    }
+
+    .benefits-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* --------------------------- server --------------------------- */
+    .h1-title {
+        font-size: 46px;
+    }
+
+    .server-block {
+        padding: 24px 73px;
+    }
+
+    .server-title {
+        font-size: 18px;
+    }
+
+    .server-text::before {
+        top: 20px;
+    }
+
+    .server-text::after {
+        top: 20px;
+    }
+
+
+
+
+
+
+    /* --------------------------- race --------------------------- */
+    .race-choice {
+        max-width: 925px;
+    }
+
+    .classes {
+        max-width: 142px;
+        gap: 10px;
+        padding: 16px;
+    }
+
+
+
+    /* --------------------------- changes --------------------------- */
+    .changes::after {
+        bottom: -15vh;
+    }
+
+    .changes-text .subtitle_light {
+        max-width: 602px;
+    }
+
+    .changes-block {
+        padding-left: 20px;
+        margin: 50px 0 40px;
+    }
+
+    .changes-content img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .block-text {
+        margin-top: 8px;
+    }
+
+    .changes-img {
+        max-width: 70%;
+        top: -9vh;
+        right: -29vw;
+    }
+
+
+
+    /* --------------------------- hero --------------------------- */
+    .hero {
+        padding: 15vh 0 11vh 0;
+        /*исправить паддинг для топа*/
+    }
+
+    .block-content {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+
+
+    /* --------------------------- about server --------------------------- */
+    .online-text {
+        font-size: 14px;
+    }
+
+    .online-count {
+        font-size: 18px;
+    }
+
+    .server-item {
+        font-size: 12px;
+    }
+
+    .about-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .block-title {
+        font-size: 18px;
+    }
+
+    .block-subtitle {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .inner-wrap {
+        max-width: 392px;
+    }
+
+    .inner-block {
+        margin-bottom: 30px;
+    }
+
+    .x-count {
+        font-size: 20px;
+    }
+
+    .x-bonus {
+        font-size: 12px;
+    }
+
+    .more-server {
+        font-size: 14px;
+    }
+
+    .info-text {
+        font-size: 10px;
+    }
+
+    .statistics-info {
+        padding: 12px;
+    }
+
+    .info-block {
+        gap: 6px;
+    }
+
+    .info-block img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* --------------------------- news --------------------------- */
+    .news-icon {
+        left: 0;
+    }
+
+    .news-icon__text {
+        font-size: 10px;
+    }
+
+    .news-img {
+        max-width: 302px;
+    }
+
+    .news-block {
+        gap: 16px;
+        margin: 50px 0 40px 0;
+    }
+
+    .news-text {
+        display: none;
+    }
+
+    .news-text__laptop {
+        display: block;
+    }
+
+    .item-title {
+        font-size: 16px;
+    }
+
+    .item-subtitle.block-subtitle {
+        font-size: 14px;
+        margin: 4px 0 16px 0;
+    }
+
+    .item-block {
+        padding: 24px 20px;
+    }
+
+    .item-block .more-server {
+        font-size: 14px;
+    }
+
+    /* --------------------------- best --------------------------- */
+
+    .best {
+        padding-top: 10vh;
+    }
+
+    .best-inner {
+        padding: 28px 22px;
+        gap: 41px;
+    }
+
+    .best-block {
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .best-text {
+        font-size: 24px;
+    }
+
+    .best .block-title {
+        font-size: 16px;
+    }
+
+    .block-desc {
+        font-size: 18px;
+    }
+
+    .table-text {
+        font-size: 12px;
+    }
+
+    .gamers__column-1 {
+        margin-right: 4px;
+    }
+
+    .gamers__column-2 {
+        width: 96px;
+        margin-right: 6px;
+    }
+
+    .gamers__column-3 {
+        width: 44px;
+        margin-right: 4px;
+    }
+
+    .gamers__column-4 {
+        width: 44px;
+    }
+
+    .clans__column-2 {
+        width: 72px;
+        margin-right: 8px;
+    }
+
+    .clans__column-3 {
+        width: 49px;
+        margin-right: 8px;
+    }
+
+    .clans__column-4 {
+        width: 44px;
+    }
+
+    /* --------------------------- stream --------------------------- */
+
+
+    .stream-block {
+        gap: 16px;
+    }
+
+    .stream-block-img {
+        max-width: 302px;
+    }
+
+    .stream-item {
+        max-width: 302px;
+    }
+
+    .profile-title {
+        font-size: 16px;
+    }
+
+    .profile-subtitle {
+        font-size: 14px;
+    }
+
+    /* --------------------------- awards --------------------------- */
+    z .awards {
+        padding: 37px;
+    }
+
+    .awards-img__left {
+        display: none;
+    }
+
+    .awards-img__right {
+        display: none;
+    }
+
+    .awards-img__left-laptop {
+        display: block;
+        position: absolute;
+        top: -18px;
+        left: -43px;
+    }
+
+    .awards-img__right-laptop {
+        display: block;
+        position: absolute;
+        top: 54px;
+        right: -43px;
+    }
+
+    .awards .block-subtitle {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        font-size: 14px;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .friends-block {
+        gap: 0px;
+    }
+
+    /* --------------------------- contacts --------------------------- */
+    .contacts-block {
+        justify-content: space-between;
+    }
+
+    .vk-block {
+        width: 44vw;
+    }
+
+    .vk-post {
+        width: 40vw;
+    }
+
+    /* --------------------------- get prizes --------------------------- */
+    .get-prizes__title {
+        font-size: 32px;
+    }
+
+    .get-prizes__desc {
+        font-size: 16px;
+    }
+
+    .get-prizes__img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .get-prizes-sky {
+        max-width: 346px;
+        top: 9vh;
+    }
+
+    .get-prizes__right {
+        top: 35px;
+        right: -49px;
+    }
+
+    .get-prizes__right-img {
+        max-width: 360px;
+    }
+
+    /* --------------------------- footer --------------------------- */
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+
+    .website-title {
+        font-size: 18px;
+    }
+
+    .website-desc {
+        font-size: 16px;
+    }
+
+    .social-btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-btn {
+        padding: 12px;
+    }
+
+    .footer-info__item {
+        font-size: 14px;
+    }
+
+    .footer-copy {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1022px) {
+
+    /* --------------------------- benefits --------------------------- */
+    .swiper .swiper-pagination {
+        display: block;
+        top: 30px;
+    }
+
+    .benefits-card {
+        width: 322px !important;
+    }
+
+    /* --------------------------- server --------------------------- */
+
+    .server-title {
+        font-size: 16px;
+    }
+
+    /* --------------------------- footer --------------------------- */
+
+    /* --------------------------- hero --------------------------- */
+
+
+    /* --------------------------- footer --------------------------- */
+
+}
+
+@media screen and (max-width: 986px) {
+
+    .title {
+        font-size: 30px;
+    }
+
+    .start-game {
+        margin-bottom: 100px;
+    }
+
+    .server-name {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        margin: 0 0 100px 0;
+    }
+
+    .server-title {
+        font-size: 22px;
+    }
+
+    .online-text {
+        font-size: 20px;
+    }
+
+    .online-count {
+        font-size: 22px;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .friends-block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .changes-block {
+        margin: 5px 0 60px;
+    }
+
+    .subtitle_light,
+    .subtitle_dark {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 873px) {
+
+    /* --------------------------- server --------------------------- */
+    .h1-title {
+        font-size: 26px;
+    }
+
+    /* --------------------------- changes --------------------------- */
+    .changes-img {
+        max-width: 65%;
+    }
+
+    /* --------------------------- hero --------------------------- */
+    .subtitle_light,
+    .subtitle_dark {
+        font-size: 14px;
+    }
+
+    /* --------------------------- hero --------------------------- */
+
+    .h2-title,
+    .h2-title_black {
+        font-size: 24px;
+    }
+
+    .subtitle,
+    .content-text {
+        font-size: 16px;
+    }
+
+    /* --------------------------- about server --------------------------- */
+    .server-content {
+        flex-direction: column-reverse;
+        max-width: 304px;
+    }
+
+    .x-block {
+        flex-wrap: wrap;
+    }
+
+    /* --------------------------- general --------------------------- */
+    .btn {
+        padding: 18px 51px;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .friends .block-title {
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    /* --------------------------- header --------------------------- */
+    .header-btn {
+        display: none;
+    }
+
+    /* --------------------------- changes --------------------------- */
+    .changes-img {
+        top: 50vh;
+        right: 9vw;
+        transform: rotate(10deg);
+    }
+
+    .changes::after {
+        bottom: -40vh;
+    }
+
+    .discord-block iframe {
+        max-width: 400px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 545px) {
+
+    /* --------------------------- general --------------------------- */
+    .logo {
+        width: 112px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    /* --------------------------- changes --------------------------- */
+    .changes-img {
+        top: 55vh;
+    }
+
+    .changes-block {
+        padding-left: 0px;
+    }
+
+    /* --------------------------- awards --------------------------- */
+    .awards-img__left-laptop {
+        top: -101px;
+        left: -172px;
+        transform: rotate(23deg);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .server-wrap .swiper-slide {
+        width: 320px !important;
+    }
+
+    .benefits-card {
+        width: 258px !important;
+    }
+
+    .burger {
+        padding: 0;
+        position: relative;
+        max-height: 30px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: px;
+        cursor: pointer;
+        top: 3px;
+        left: 5px;
+    }
+
+    .burger.active {
+        top: 15px;
+
+    }
+
+    .burger-line {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger-line_span {
+        transform: scale(1);
+    }
+
+    .burger.active .burger-line_span {
+        transform: scale(0);
+    }
+
+    .burger.active .burger-line_top {
+        top: 0px;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .burger.active .burger-line_bottom {
+        bottom: 26px;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .lock {
+        overflow: hidden;
+    }
+
+    /* --------------------------- benefits --------------------------- */
+    .server-block__inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .server-name {
+        gap: 20px;
+    }
+
+    .server-title {
+        font-size: 18px;
+    }
+
+    .online-text {
+        font-size: 16px;
+    }
+
+    .online-count {
+        font-size: 18px;
+    }
+
+    /* --------------------------- changes --------------------------- */
+    .server-text-block .subtitle {
+        text-align: center;
+    }
+
+    .h2-title,
+    .h2-title_black {
+        text-align: start;
+    }
+
+    .subtitle,
+    .subtitle_light {
+        text-align: start;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .discord-block iframe {
+        max-width: 350px;
+    }
+
+}
+
+/* --------------------------- header --------------------------- */
+
+
+@media screen and (max-width: 375px) {
+
+    /* --------------------------- general --------------------------- */
+    .container {
+        padding: 0 20px;
+    }
+
+    .btn {
+        padding: 18px 29px;
+    }
+
+    .subtitle_light,
+    .subtitle_dark {
+        margin-bottom: 40px;
+    }
+
+    .h2-title {
+        text-align: start;
+    }
+
+    .subtitle,
+    .subtitle_light,
+    .subtitle_dark {
+        text-align: start;
+    }
+
+    .iframe {
+        width: 100%;
+    }
+
+    /* --------------------------- header --------------------------- */
+
+    /* --------------------------- server --------------------------- */
+    .server-block {
+        padding: 24px 62px;
+    }
+
+    .server-text-block {
+        margin-bottom: 50px;
+    }
+
+    .start-game {
+        margin-bottom: 40px;
+    }
+
+    .server-text::before,
+    .server-text::after {
+        top: 10px;
+    }
+
+    .new-icon {
+        left: 0;
+    }
+
+    /* slider */
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        transform: translateX(-70%);
+    }
+
+    /* --------------------------- changes --------------------------- */
+    .block-castle img,
+    .block-olympiad img {
+        max-width: 336px;
+    }
+
+    .changes-block {
+        padding-right: 37px;
+    }
+
+    .changes-content img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .more-info {
+        padding: 0;
+    }
+
+    .changes-img {
+        top: 87vh;
+        right: 17vw;
+        max-width: 70%;
+    }
+
+    /* --------------------------- hero --------------------------- */
+    .block-content {
+        gap: 40px;
+    }
+
+    .content-text {
+        font-size: 18px;
+    }
+
+    .hero .more-info {
+        display: block;
+        margin-top: 50px;
+
+    }
+
+    /* --------------------------- race --------------------------- */
+    .race .container-second,
+    .race-choice {
+        display: none;
+    }
+
+    .race-choice__mobile {
+        display: block;
+    }
+
+    .race-choice__btn {
+        display: flex;
+        position: relative;
+        z-index: 3;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: radial-gradient(213.27% 499.58% at 46.94% 265.42%, #357DEA 0%, #090F27 47.05%);
+        border-radius: 14px;
+        padding: 12px 12px 12px 20px;
+    }
+
+    .race-item__content {
+        position: relative;
+        top: -24px;
+    }
+
+    .race-item_header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .race-choice__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .item-content__img {
+        position: relative;
+        z-index: 2;
+
+        background: url(image.png), #BFD2F4;
+        border-radius: 0px 0px 16px 16px;
+        padding-top: 20px;
+    }
+
+    .item-content-text {
+        position: relative;
+        top: -10px;
+        z-index: 1;
+        background: radial-gradient(128% 100% at 50% 0%, #2F68B7 12.56%, #182E57 75.7%, #1F2C5A 93.15%);
+        border-radius: 0px 0px 16px 16px;
+        padding: 42px 20px 24px;
+    }
+
+    .item-content__title {
+        font-family: 'Manrope-Medium', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #fff;
+    }
+
+    .race-img {
+        position: static;
+        max-width: 100%;
+    }
+
+    .races {
+        padding: 0;
+    }
+
+    .arrow {
+        width: 22px;
+        height: 12px;
+    }
+
+    .race-item__content {
+        display: none;
+    }
+
+    .race-item__content.open {
+        display: block;
+    }
+
+    .race-choice__btn {
+        display: flex;
+    }
+
+    .arrow.active {
+        transform: rotate(180deg);
+    }
+
+    /* --------------------------- about server --------------------------- */
+
+    .about-block .subtitle_light {
+        display: block;
+    }
+
+    .server-online {
+        justify-content: flex-start;
+    }
+
+    .statistics-info {
+        padding: 8px 20px;
+    }
+
+    .statistics .server-online {
+        justify-content: flex-start;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .info-block img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .info-block {
+        text-align: start;
+    }
+
+    .server-content {
+        margin: 0 auto;
+    }
+
+    .server-content .more-server {
+        text-align: center;
+    }
+
+    .inner-benefits {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-benefits .more-server::after {
+        display: none;
+    }
+
+    .about-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .block-subtitle {
+        line-height: 130%;
+    }
+
+    .x-block {
+        gap: 16px 24px;
+    }
+
+    .x-count {
+        font-size: 24px;
+    }
+
+    .x-bonus {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #438CEC;
+    }
+
+    .x-bonus::before {
+        display: none;
+    }
+
+    /* --------------------------- news --------------------------- */
+
+    .news {
+        padding-top: 9vh;
+    }
+
+    .news-block {
+        max-width: 302px;
+        width: 100%;
+    }
+
+    .news-text__laptop {
+        display: none;
+    }
+
+    .news-text {
+        display: block;
+    }
+
+    .news-icon {
+        top: 20px;
+        left: 20px;
+    }
+
+    .news-item {
+        width: 302px !important;
+        margin-right: 0;
+    }
+
+    .news .swiper .swiper-pagination {
+        top: 0;
+    }
+
+    /* --------------------------- stream --------------------------- */
+    .stream {
+        padding: 40vh 0 5vh 0;
+    }
+
+    .stream-block {
+        max-width: 302px;
+        margin-bottom: 0;
+    }
+
+    .stream-item {
+        max-width: 302px !important;
+        margin-right: 0 !important;
+    }
+
+    /* --------------------------- best --------------------------- */
+    .best-text:not(:first-child) {
+        display: none;
+    }
+
+    .best-item:not(:first-child) {
+        display: none;
+    }
+
+    .best .more-info {
+        margin-bottom: 20px;
+    }
+
+    .best-info {
+        font-size: 14px;
+    }
+
+    /* --------------------------- awards --------------------------- */
+    .awards {
+        padding: 28px 20px;
+    }
+
+    .awards-img__left-laptop {
+        top: -91px;
+        left: -148px;
+        transform: rotate(25deg);
+    }
+
+    .awards-block .h2-title {
+        text-align: center;
+    }
+
+    .awards .block-subtitle {
+        font-size: 14px;
+    }
+
+    .awards-btn {
+        margin-top: 16px;
+    }
+
+    .awards-img__right-laptop {
+        top: 164px;
+        right: -101px;
+        transform: rotate(-15deg);
+    }
+
+
+    /* --------------------------- friends --------------------------- */
+    .friends-block {
+        flex-direction: column-reverse;
+    }
+
+    .friends .changes-block {
+        margin: 0;
+    }
+
+    /* --------------------------- contacts --------------------------- */
+    .contacts-block {
+        flex-direction: column;
+    }
+
+    .social-block {
+        width: 100%;
+    }
+
+    .social-btn {
+        padding: 16px 24px;
+    }
+
+    .social-btn img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-text {
+        font-size: 14px;
+    }
+
+    .btn-desc {
+        font-size: 12px;
+        line-height: 130%;
+        text-align: start;
+    }
+
+    .vk-block {
+        width: 100%;
+    }
+
+    /* --------------------------- get-prizes --------------------------- */
+    .get-prizes__body {
+        padding: 24px 20px;
+    }
+
+    .get-prizes__wrapper {
+        position: relative;
+        z-index: 3;
+
+    }
+
+    .get-prizes__title {
+        font-size: 24px;
+    }
+
+    .get-prizes__desc {
+        font-size: 14px;
+    }
+
+    .get-prizes__right-img {
+        position: relative;
+        top: -170px;
+        left: 60px;
+        transform: rotate(-30deg);
+        z-index: 2;
+    }
+
+
+
+    /* --------------------------- footer --------------------------- */
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .info-item {
+        border-bottom: 0.4px solid #fff;
+    }
+
+    .info-link {
+        display: none;
+    }
+
+    .info-link.open {
+        display: block;
+        padding-bottom: 14px;
+    }
+
+    .plus {
+        display: block;
+        transition: all .6s ease;
+    }
+
+    .plus.active {
+        display: block;
+        transform: rotate(180deg);
+        transition: all .6s ease;
+
+    }
+
+    .footer-title.gold {
+        color: #FFC039;
+    }
+
+    .footer-title {
+        margin-bottom: 0;
+    }
+
+    .website-title {
+        color: #FFC039;
+    }
+
+    .website-desc {
+        font-size: 14px;
+    }
+
+    .social-btn {
+        padding: 8px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-bottom__info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-link:hover {
+        color: #FFC342;
+    }
+
+    .footer-info__item:hover {
+        color: #FFC342;
+    }
+
+
+
+    /* --------------------------- contacts --------------------------- */
+}
