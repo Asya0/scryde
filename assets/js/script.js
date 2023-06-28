@@ -248,3 +248,21 @@ for (let i = 0; i < infoItems.length; i++) {
         }
     });
 }
+
+const tableButtons = document.querySelectorAll('.js-change-table');
+const tableItems = document.querySelectorAll('.table__item');
+
+for (let i = 0; i < tableButtons.length; i++) {
+    tableButtons[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        const tableIndex = this.dataset.table;
+        const currentTable = document.querySelectorAll('.table__item[data-table="' + tableIndex + '"]');
+
+        for (let i = 0; i < tableItems.length; i++) {
+            tableItems[i].classList.remove('active');
+        }
+
+        currentTable[0].classList.add('active');
+
+    });
+}

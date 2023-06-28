@@ -58,6 +58,7 @@ body {
     background-color: #070B18;
     background-size: cover;
     color: #fff;
+    overflow-x: hidden;
     /* padding-top: 15px; */
 }
 
@@ -998,14 +999,14 @@ a:hover {
     padding-top: 100px;
 }
 
-.best-block {
+.table__row {
     display: flex;
     gap: 32px;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.best-text {
+.table__item-heading {
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
     font-size: 32px;
@@ -1014,17 +1015,17 @@ a:hover {
     margin-bottom: 16px;
 }
 
-.best-inner {
+.table__item-inner {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 21.83%, #DB99D4 100%);
+    background: radial-gradient(230.47% 295.42% at 50.00% 0.00%, #040815 21.83%, #DB99D4 100%);
     border-radius: 24px;
     padding: 32px 22px;
     border: 1px solid #fff;
 }
 
-.block-desc {
+.table__item-subtitle {
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -1032,47 +1033,64 @@ a:hover {
     margin-bottom: 16px;
 }
 
-.clans__column-1,
-.gamers__column-1 {
-    width: 100%;
+.table__item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+    grid-gap: 8px;
+}
+
+.table__item-row__header {
+    border-bottom: 0.4px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.table__item-row:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.table__item-col .icon {
+    width: 28px;
+    height: 28px;
+}
+
+.table__item-col:first-child {
+    flex: 0 0 10%;
     max-width: 30px;
-    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.gamers__column-2 {
-    width: 100%;
-    max-width: 180px;
+.table__item-col:nth-child(2) {
+    flex: 1 0 40%;
 }
 
-.gamers__column-3 {
-    width: 100%;
-    max-width: 60px;
+.table__item-col:nth-child(3) {
+    flex: 0 0 25%;
 }
 
-.clans__column-4,
-.gamers__column-4 {
-    width: 100%;
-    max-width: 60px;
+.table__item-col:nth-child(4) {
+    flex: 0 0 25%;
 }
 
-.clans__column-2 {
-    width: 100%;
-    max-width: 130px;
+.table__item-clans .table__item-col:nth-child(2) {
+    flex: 1 0 35%;
 }
 
-.clans__column-3 {
-    width: 100%;
-    max-width: 110px;
-    margin-right: 23px;
+.table__item-clans .table__item-col:nth-child(3) {
+    flex: 1 0 35%;
 }
 
-.table {
+.table__item-box {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
-.table-text {
+.table__item-col {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1094,24 +1112,6 @@ a:hover {
 
 .bronze {
     color: #A96425;
-}
-
-.row {
-    padding: 4px 10px;
-}
-
-.row_light {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 4px 10px;
-}
-
-.hr-table {
-    border: 0.4px solid rgba(255, 255, 255, 0.4);
-}
-
-.column-2 {
-    margin-left: 14px;
 }
 
 .best-info {
@@ -1154,7 +1154,7 @@ a:hover {
 
 /* STREAM */
 .stream {
-    padding-top: 40vh;
+    padding-top: 180px;
     background: #fff;
 }
 
@@ -1212,6 +1212,10 @@ a:hover {
 }
 
 .awards {
+    background: #FFF;
+}
+
+.awards .container {
     background: radial-gradient(218.4% 279.95% at 70% 15.47%, #357DEA 0%, #090F27 67.19%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
@@ -1220,7 +1224,7 @@ a:hover {
     text-align: center;
     padding: 66px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .awards-block {
@@ -1445,14 +1449,19 @@ a:hover {
 
 /* GET PRIZES */
 
-.get-prizes {
-    background: url(../img/get-prizes-bg.png) no-repeat center, #fff;
-    background-size: contain;
+.banner__prizes {
+    background: #FFF;
     padding: 15vh 0 9vh 0;
-    ;
+    position: relative;
 }
 
-.get-prizes__body {
+.banner__prizes-bg {
+    position: absolute;
+    bottom: -40vh;
+    left: 0;
+}
+
+.banner__prizes__body {
     position: relative;
     top: 8vh;
     left: 0;
@@ -1463,17 +1472,17 @@ a:hover {
     padding: 62px 70px;
 }
 
-.get-prizes-sky {
+.banner__prizes-sky {
     position: absolute;
     top: -5vh;
-    left: 1.7vh;
+    right: 0;
 }
 
 
 
 
 
-.get-prizes__title {
+.banner__prizes__title {
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -1486,32 +1495,32 @@ a:hover {
     text-align: center;
 }
 
-.get-prizes__items {
+.banner__prizes__items {
     display: flex;
     flex-direction: column;
     gap: 24px;
     margin-bottom: 55px;
 }
 
-.get-prizes__item {
+.banner__prizes__item {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.get-prizes__img {
+.banner__prizes__img {
     width: 40px;
     height: 40px;
 }
 
-.get-prizes__desc {
+.banner__prizes__desc {
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
 }
 
-.get-prizes__right {
+.banner__prizes__right {
     position: absolute;
     top: -141px;
     right: -67px;
@@ -1598,15 +1607,9 @@ a:hover {
     margin-bottom: 16px;
 }
 
-.hr-footer {
-    border: 1px solid;
-    background: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%),
-        linear-gradient(0deg, #000000, #000000);
-    margin-bottom: 24px;
-
-}
-
 .footer-bottom {
+    border-top: 1px solid #FFF;
+    padding-top: 24px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
@@ -1645,4 +1648,16 @@ a:hover {
 
 .icon-smile {
     background-image: url(../img/svg/profile-smile.svg);
+}
+
+.icon-place-first {
+    background-image: url(../img/svg/best-first.svg);
+}
+
+.icon-place-second {
+    background-image: url(../img/svg/best-second.svg);
+}
+
+.icon-place-third {
+    background-image: url(../img/svg/best-third.svg);
 }
