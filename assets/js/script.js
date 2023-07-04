@@ -135,7 +135,6 @@ const tab = function () {
     let tabNav = document.querySelectorAll('.classes');
     let tabContent = document.querySelectorAll('.race-block');
     // let tabImg = document.querySelectorAll('.race-img');
-    let activeClass = 'active'; // создаем константу для имени класса активного элемента
 
     // Добавляем обработчик событий для каждого пункта навигации
     tabNav.forEach(item => {
@@ -145,22 +144,24 @@ const tab = function () {
     function selectTabNav() {
         // Убираем класс active у всех пунктов навигации
         tabNav.forEach(item => {
-            item.classList.remove(activeClass);
+            item.classList.remove('active');
         });
         // Добавляем класс active только выбранному пункту навигации
-        this.classList.add(activeClass);
+        this.classList.add('active');
         let tabBtn = this.getAttribute('data-page-path'); // получаем значение атрибута data-page-path у выбранного пункта навигации
 
+        // console.log(tabBtn)
         selectTabContent(tabBtn);
     }
 
     function selectTabContent(tabBtn) {
         // Проходимся по всем элементам контента, чтобы найти нужный для отображения и скрыть все остальные
         tabContent.forEach(item => {
-            if (item.classList.contains(tabBtn)) { // если элемент содержит класс с именем выбранного пункта навигации
-                tabBlock.classList.toggle('active');
+            // console.log(item.dataset.pageTarget)
+            if (item.dataset.pageTarget == tabBtn) { // если элемент содержит класс с именем выбранного пункта навигации
+                item.classList.toggle('active');
             } else {
-                item.classList.remove(activeClass); // скрываем все остальные элементы
+                item.classList.remove('active'); // скрываем все остальные элементы
             }
         });
     }

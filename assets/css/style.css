@@ -710,25 +710,22 @@ a:hover {
     text-align: start;
 }
 
-.content-text__item {
+.race-block {
     display: none;
 }
 
-.content-text__item.active {
-    display: block;
+.race-block.active {
+    display: flex;
 }
 
 .race-img {
-    display: none;
+    display: block;
     position: relative;
     max-width: 50%;
     top: 80px;
     right: 90px;
 }
 
-.race-img.active {
-    display: block;
-}
 
 .race-choice {
     position: relative;
