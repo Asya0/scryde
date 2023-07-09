@@ -47,7 +47,7 @@ new Swiper('.swiper', {
 
 
 
-
+/* ------------------------------------ BURGER ------------------------------------*/
 // burger menu 
 const iconMenu = document.querySelector('.burger');
 const burgerMenu = document.querySelector(".header__nav");
@@ -81,6 +81,8 @@ document.onclick = function (e) {
     }
 };
 
+/* ------------------------------------ HEADER ------------------------------------*/
+
 
 // скролл header
 let header = document.querySelector('.header');
@@ -99,42 +101,21 @@ document.onscroll = function () {
         document.body.removeAttribute('style');
     }
 }
+//активное состояние меню для .header__nav-item
+const navItems = document.querySelectorAll('.header__nav-item_sub');
 
-//переключение табов для секции race
-// const tab = function () {
-//     let tabNav = document.querySelectorAll('.classes');
-//     let tabContent = document.querySelectorAll('.content-text__item');
-//     let tabImg = document.querySelectorAll('.race-img');
-//     let tabName;
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', () => {
+        navItem.classList.toggle('active');
+    });
+});
 
-//     tabNav.forEach(item => {
-//         item.addEventListener('click', selectTabNav)
-//     });
+/* ------------------------------------ RACE ------------------------------------*/
 
-//     function selectTabNav() {
-//         tabNav.forEach(item => {
-//             item.classList.remove('active');
-//         });
-//         this.classList.add('active');
-//         tabName = this.getAttribute('data-page-target');
-//         console.log(tabName);
-//         selectTabContent(tabName);
-
-//     }
-
-//     function selectTabContent(tabName) {
-//         tabContent.forEach(item => {
-//             item.classList.contains(tabName) ? item.classList.remove('active') : item.classList.add('active');
-//             console.log(tabContent);
-//         })
-//     }
-// };
-// tab();
-
+//Переключение табов для секции race
 const tab = function () {
     let tabNav = document.querySelectorAll('.classes');
     let tabContent = document.querySelectorAll('.race-block');
-    // let tabImg = document.querySelectorAll('.race-img');
 
     // Добавляем обработчик событий для каждого пункта навигации
     tabNav.forEach(item => {
@@ -166,23 +147,8 @@ const tab = function () {
         });
     }
 };
-
 tab();
 
-
-const tabServer = document.querySelectorAll(".server-item");
-function selectServer(tab) {
-    tabServer.forEach(item => {
-        item.classList.remove('active');
-    });
-    tab.classList.add('active');
-}
-
-tabServer.forEach((tab) => {
-    tab.addEventListener("click", () => {
-        selectServer(tab);
-    });
-});
 
 // выпадающее меню для  race
 
@@ -218,10 +184,30 @@ for (let i = 0; i < pageBlock.length; i++) {
     });
 }
 
+/* ------------------------------------ SERVER ------------------------------------*/
+
+//Переключение табов для секции server
+const tabServer = document.querySelectorAll(".server-item");
+function selectServer(tab) {
+    tabServer.forEach(item => {
+        item.classList.remove('active');
+    });
+    tab.classList.add('active');
+}
+
+tabServer.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        selectServer(tab);
+    });
+});
 
 
 
 
+
+
+
+/* ------------------------------------ FOOTER ------------------------------------*/
 
 
 //табы для footer-info
