@@ -108,8 +108,13 @@ a:hover {
 
 .orange-btn {
     background-image: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
-
+    z-index: 2;
 }
+
+/* 
+..orange-btn:after {
+    content: '';
+} */
 
 .btn-bordered {
     position: relative;
@@ -129,22 +134,8 @@ a:hover {
     border-radius: 16px;
 }
 
-.btn-bordered__gold {
-    position: relative;
-    background-clip: padding-box;
-    /* border: 2px solid transparent; */
-}
-
-.btn-bordered__gold:after {
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #FFC342 2.60%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
-    content: '';
-    z-index: -1;
-    border-radius: 16px;
+.orange-btn.btn-bordered:after {
+    background: radial-gradient(106.8% 45.7% at 50% 30.71%, #FFE8BD 31.33%, rgba(84, 54, 0, 0.6) 100%);
 }
 
 .blue-btn {
@@ -322,9 +313,10 @@ a:hover {
 
 .server-block {
     position: relative;
-    /* background: url(../img/server-border.svg) no-repeat center, radial-gradient(230.47% 295.42% at 50% 0%, #090F27 22.04%, #CB8D08 100%); */
+}
+
+.server-block_wrapper {
     background: radial-gradient(230.47% 295.42% at 50% 0%, #090F27 22.04%, #CB8D08 100%);
-    /* box-sizing: border-box; */
     border-radius: 24px;
     padding: 30px 78px;
     text-align: center;
@@ -335,23 +327,20 @@ a:hover {
 }
 
 .block-bordered {
-    background-clip: padding-box;
-    border: 2px solid transparent;
+    position: relative;
+    z-index: 2;
 }
 
 .block-bordered:after {
+    content: '';
     position: absolute;
     top: -2px;
     bottom: -2px;
     left: -2px;
     right: -2px;
-    /* background: lightgray 0% 0% / 52.025723457336426px 52.025723457336426px repeat; */
-    border-radius: 22px;
-    opacity: 0.5;
-    background: rgb(243, 252, 117) 0% 0% / 52.025723457336426px 52.025723457336426px repeat;
-    content: '';
     z-index: -1;
-    border-radius: 16px;
+    background: radial-gradient(106.8% 45.7% at 50% 30.71%, #FFE8BD 31.33%, rgba(84, 54, 0, 0.6) 100%);
+    border-radius: 24px;
 }
 
 .server-text::before {
@@ -547,7 +536,7 @@ a:hover {
     background: url(../img/changes-bg.png) no-repeat center;
     background-size: cover;
     padding-top: 15vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .changes::after {
@@ -561,7 +550,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    bottom: -35vh;
+    bottom: -50vh;
     /* izmenit */
     left: 0;
     right: 0;
@@ -627,8 +616,8 @@ a:hover {
 .changes-img {
     position: absolute;
     max-width: 50%;
-    top: -3vh;
-    right: -7vw;
+    top: 0;
+    right: 0;
 }
 
 .changes-sky img {
@@ -639,7 +628,7 @@ a:hover {
 }
 
 .changes .container-second {
-    padding-bottom: 59vh;
+    padding-bottom: 40vh;
     /* izmenit */
 }
 
@@ -650,7 +639,7 @@ a:hover {
 /* HERO */
 .hero {
     background: #fff;
-    padding: 15vh 0 15vh 0;
+    padding: 25vh 0 15vh 0;
     /* izmenit */
 }
 
@@ -956,15 +945,31 @@ a:hover {
 .statistics-info {
     /* background: url(../img/svg/statistics-info.svg) no-repeat center, radial-gradient(230.47% 295.42% at 50.00% 0.00%, #040815 22.04%, #CB8D08 100%); */
     /* padding: 16px 40px; */
-
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .statistics-info__inner {
-    background: radial-gradient(230.47% 295.42% at 50.00% 0.00%, #040815 22.04%, #CB8D08 100%);
-    padding: 16px 40px;
+    background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #CB8D08 100%);
+    padding: 16px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 24px;
+    position: relative;
+}
+
+.statistics-info__inner:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -1;
+    border-radius: 24px;
+    background: radial-gradient(106.8% 45.7% at 50% 30.71%, #FFE8BD 31.33%, rgba(84, 54, 0, 0.6) 100%);
 }
 
 .info-block {
@@ -972,6 +977,10 @@ a:hover {
     text-align: center;
     align-items: center;
     gap: 12px;
+}
+
+.info-block img {
+    filter: drop-shadow(0px 0px 16px rgba(255, 192, 57, 0.24));
 }
 
 .info-text {
@@ -1275,6 +1284,7 @@ a:hover {
 
 .awards-block {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .awards-img__left {
@@ -1298,12 +1308,16 @@ a:hover {
 }
 
 .awards-btn {
-    display: inline-block;
+    display: inline;
     background: radial-gradient(128% 100% at 50% 0%, #FFFFFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%);
     border-radius: 16px;
     padding: 18px 45px;
     margin-top: 40px;
-    opacity: 1;
+    z-index: 2;
+}
+
+.awards-btn.btn-bordered:after {
+    background: radial-gradient(128% 100% at 50% 0%, #DCE4EE 0%, rgba(114, 170, 246, .6) 100%);
 }
 
 .awards-btn:hover {
@@ -1503,13 +1517,13 @@ a:hover {
 
 .banner__prizes-bg {
     position: absolute;
-    bottom: -40vh;
+    bottom: -57%;
     left: 0;
 }
 
 .banner__prizes__body {
     position: relative;
-    top: 8vh;
+    top: 12vh;
     left: 0;
     background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
@@ -1520,7 +1534,7 @@ a:hover {
 
 .banner__prizes-sky {
     position: absolute;
-    top: -5vh;
+    top: 5vh;
     right: 0;
 }
 

@@ -296,7 +296,7 @@
         font-size: 46px;
     }
 
-    .server-block {
+    .server-block_wrapper {
         padding: 24px 73px;
     }
 
@@ -1001,7 +1001,7 @@
     /* --------------------------- header --------------------------- */
 
     /* --------------------------- server --------------------------- */
-    .server-block {
+    .server-block_wrapper {
         padding: 24px 62px;
     }
 
@@ -1487,7 +1487,27 @@
         color: #FFC342;
     }
 
-
-
     /* --------------------------- contacts --------------------------- */
+}
+
+@media screen and (max-width: 1680px) {
+    .banner__prizes-sky {
+        right: -10vw;
+    }
+
+    .banner__prizes-bg {
+        left: -15vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner__prizes-sky {
+        top: 3%;
+        right: -20%;
+    }
+
+    .banner__prizes-bg {
+        bottom: -55%;
+        left: -30vw;
+    }
 }
