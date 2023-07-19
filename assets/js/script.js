@@ -19,7 +19,8 @@ new Swiper('.swiper', {
 
     breakpoints: {
         319: {
-            slidesPerView: 0.6,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
         },
         484: {
             slidesPerView: 1,
@@ -29,13 +30,14 @@ new Swiper('.swiper', {
         },
         1024: {
             slidesPerView: 4,
+            spaceBetween: 0,
         },
     },
 
     // расстояние между слайдами
-    spaceBetween: 20,
+    // spaceBetween: 20,
 
-    centeredSlides: false,
+    centeredSlides: true,
 
     // бесконечность слайдера
     loop: false,
@@ -140,7 +142,7 @@ const tab = function () {
         tabContent.forEach(item => {
             // console.log(item.dataset.pageTarget)
             if (item.dataset.pageTarget == tabBtn) { // если элемент содержит класс с именем выбранного пункта навигации
-                item.classList.toggle('active');
+                item.classList.add('active');
             } else {
                 item.classList.remove('active'); // скрываем все остальные элементы
             }

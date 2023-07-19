@@ -29,20 +29,6 @@
         display: none;
     }
 
-    /* .swiper-pagination-bullet-active-main {
-        width: 45px;
-        height: 8px;
-        background: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
-        box-shadow: 0px 0px 24px rgba(255, 192, 57, 0.24);
-        border-radius: 4px;
-    } */
-    /* --------------------------- about server --------------------------- */
-    .server-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 40px;
-    }
-
     .statistics {
         text-align: end;
     }
@@ -187,10 +173,6 @@
         max-width: 450px;
     }
 
-    /* .discord-block {
-        margin-top: 20px;
-    } */
-
     .friends .block-title {
         font-size: 20px;
     }
@@ -273,11 +255,6 @@
     }
 
     /* --------------------------- benefits --------------------------- */
-    .benefits-card {
-        width: 223px !important;
-        margin-right: 16px !important;
-    }
-
     .benefits-text {
         margin: 0 20px 24px;
     }
@@ -661,10 +638,6 @@
         top: 30px;
     }
 
-    .benefits-card {
-        width: 322px !important;
-    }
-
     /* --------------------------- server --------------------------- */
 
     .server-title {
@@ -782,6 +755,17 @@
 
 
 @media screen and (max-width: 767px) {
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .server-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
 
     /* --------------------------- header --------------------------- */
     .header-btn {
@@ -865,14 +849,6 @@
 }
 
 @media screen and (max-width: 425px) {
-    .server-wrap .swiper-slide {
-        width: 320px !important;
-    }
-
-    .benefits-card {
-        width: 258px !important;
-    }
-
     .burger {
         padding: 0;
         position: relative;
@@ -1307,6 +1283,7 @@
     /* --------------------------- awards --------------------------- */
     .awards {
         padding: 28px 20px;
+        padding-bottom: 150px;
     }
 
     .awards-img__left-laptop {
@@ -1329,7 +1306,7 @@
 
     .awards-img__right-laptop {
         top: 164px;
-        right: -101px;
+        right: 0;
         transform: rotate(-15deg);
     }
 
@@ -1398,7 +1375,6 @@
         position: relative;
         top: -170px;
         left: 60px;
-        transform: rotate(-30deg);
         z-index: 2;
     }
 
@@ -1509,5 +1485,55 @@
     .banner__prizes-bg {
         bottom: -55%;
         left: -30vw;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .banner__prizes-sky {
+        top: 0%;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .banner__prizes-sky {
+        top: -8%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-wrap {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .benefits .container {
+        padding: 0;
+    }
+
+    .benefits-card {
+        max-width: 323px;
+        width: 100%;
+    }
+
+    .stream .swiper,
+    .news .swiper {
+        margin: 0 -20px;
+    }
+
+    .server-block {
+        width: 100%;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    .desktop-hidden {
+        display: block !important;
+    }
+
+    .server-item.active .mobile-hidden {
+        display: inline-block !important;
     }
 }
