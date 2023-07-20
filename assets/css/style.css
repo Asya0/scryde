@@ -86,6 +86,12 @@ a:hover {
     text-transform: uppercase;
 }
 
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 .btn {
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
@@ -115,15 +121,9 @@ a:hover {
     z-index: 2;
 }
 
-/* 
-..orange-btn:after {
-    content: '';
-} */
-
 .btn-bordered {
     position: relative;
     background-clip: padding-box;
-    /* border: 2px solid transparent; */
 }
 
 .btn-bordered:after {
@@ -178,11 +178,6 @@ a:hover {
     margin-bottom: 60px;
 }
 
-.swiper-slide {
-    /* width: 432px !important; */
-}
-
-
 /* HEADER */
 .header {
     margin-bottom: 120px;
@@ -202,7 +197,7 @@ a:hover {
 
 .header__box .start-game {
     display: none;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .header-btn {
@@ -213,7 +208,6 @@ a:hover {
     padding: 10px 28px;
     color: #fff;
     border-radius: 16px;
-    /* box-shadow: 0px 0px 24px rgba(255, 192, 57, 0.24); */
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
     opacity: 1;
 }
@@ -296,7 +290,6 @@ a:hover {
 
 .subtitle {
     font-family: 'Manrope-SemiBold', sans-serif;
-    /* font-weight: 600; */
     font-size: 24px;
     line-height: 160%;
     text-align: center;
@@ -306,8 +299,6 @@ a:hover {
 /* server-name */
 .server-name {
     display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(3, 346px); */
     justify-content: center;
     gap: 16px;
     margin: 0 auto 60px auto;
@@ -420,7 +411,7 @@ a:hover {
 }
 
 .start-game {
-    margin-bottom: 16.5vh;
+    padding-bottom: 16.5vh;
 }
 
 
@@ -434,7 +425,6 @@ a:hover {
     background-size: cover;
     background-position: center;
     height: auto;
-    /* width: 322px !important */
 }
 
 .benefits-card_orange {
@@ -461,7 +451,6 @@ a:hover {
     position: relative;
     top: -27px;
     left: 2px;
-    /* width: 205px; */
     height: 268px;
 }
 
@@ -543,7 +532,6 @@ a:hover {
     background: url(../img/changes-bg.png) no-repeat center;
     background-size: cover;
     padding-top: 15vh;
-    /* overflow: hidden; */
 }
 
 .changes::after {
@@ -836,7 +824,7 @@ a:hover {
 /* ABOUT SERVER  */
 .about-server {
     padding: 17vh 0 0 0;
-    background: #000;
+    background: #070B18;
 }
 
 .about-server .server-online {
@@ -911,6 +899,9 @@ a:hover {
     display: inline-block;
     border-radius: inherit;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 
 .server-content {
@@ -1050,6 +1041,9 @@ a:hover {
 
 
 /*  NEWS */
+.news {
+    background: #070B18;
+}
 
 .news-block {
     display: flex;
@@ -1063,8 +1057,13 @@ a:hover {
 
 .news-item {
     position: relative;
-    background: radial-gradient(125.87% 79.07% at 50% 130.95%, #357DEA 0%, #090F27 68.66%);
     border-radius: 24px;
+    max-width: 432px;
+}
+
+.news-item-wrapper {
+    border-radius: inherit;
+    background: radial-gradient(125.87% 79.07% at 50% 130.95%, #357DEA 0%, #090F27 68.66%);
 }
 
 .news-item.block-bordered-gray:after {
@@ -1089,6 +1088,7 @@ a:hover {
 
 .news-img {
     border-radius: 24px 24px 0 0;
+    width: 100%;
 }
 
 .item-block {
@@ -1110,6 +1110,7 @@ a:hover {
 /*  BEST  */
 .best {
     padding-top: 100px;
+    background: #070B18;
 }
 
 .table__row {
@@ -1239,6 +1240,7 @@ a:hover {
 
 .bg-image {
     position: relative;
+    background: #070B18;
     /* background: url(../img/section-bg.png) no-repeat center; */
     /* height: 30vh;
     position: relative; */
@@ -1279,6 +1281,7 @@ a:hover {
 
 .stream-item {
     max-width: 437px;
+    width: calc(33.33vw - 24px)
 }
 
 .stream-block-img {

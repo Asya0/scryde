@@ -1,52 +1,52 @@
-new Swiper('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    // изменяет курсор
-    grabCursor: true,
+const breakpoint = window.matchMedia('(min-width:767px)');
+let mySwiper;
+const breakpointChecker = function () {
+    if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+    } else if (breakpoint.matches === false) {
+        return enableSwiper();
+    }
+};
+breakpoint.addListener(breakpointChecker);
 
-    // показ слайдов
-    slidesPerView: 4,
+breakpointChecker();
 
-    watchOverflow: true,
-
-    breakpoints: {
-        319: {
-            slidesPerView: 'auto',
-            spaceBetween: 20,
+function enableSwiper() {
+    mySwiper = new Swiper('.js-swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
         },
-        484: {
-            slidesPerView: 1,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
         },
-        768: {
-            slidesPerView: 2,
+        grabCursor: true,
+        // slidesPerView: 4,
+        watchOverflow: true,
+        centeredSlides: true,
+        loop: false,
+        speed: 800,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        breakpoints: {
+            319: {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            },
+            // 484: {
+            //     slidesPerView: 1,
+            // },
+            // 768: {
+            //     slidesPerView: 2,
+            // },
         },
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 0,
-        },
-    },
-
-    // расстояние между слайдами
-    // spaceBetween: 20,
-
-    centeredSlides: true,
-
-    // бесконечность слайдера
-    loop: false,
-
-    // скорость переключения слайдов
-    speed: 800,
-
-});
-
+    });
+}
 
 
 /* ------------------------------------ BURGER ------------------------------------*/

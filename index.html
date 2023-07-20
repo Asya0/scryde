@@ -16,7 +16,6 @@
     <header class="header">
         <div class="container">
             <div class="header__box">
-
                 <div class="header__box-col">
                     <a href="#" class="logo">
                         <img class="logo__image" src="./assets/img/svg/logo-text.svg" alt="Scryde">
@@ -130,38 +129,39 @@
 
     <section class="benefits">
         <div class="container">
-            <div class="swiper benefits-swiper">
+            <div class="swiper benefits-swiper js-swiper">
                 <div class="benefits-wrap swiper-wrapper">
-                    <div class="swiper-slide benefits-card  benefits-card_orange ">
+                    <div class="swiper-slide benefits-card benefits-card_orange">
                         <div class="stable-img benefits-img"></div>
                         <div class="benefits-text">
-                            <div class="benefits-title uppercase">Стабильные сервера</div>
+                            <div class="benefits-title uppercase">Стабильные<br />сервера</div>
                             <div class="benefits-subtitle">Сервера работают 8 лет без остановок и вайпов</div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide benefits-card  benefits-card_pink">
+                    <div class="swiper-slide benefits-card benefits-card_pink">
                         <div class="high-online-img benefits-img"></div>
                         <div class="benefits-text">
-                            <div class="benefits-title uppercase">Высокий онлайн</div>
+                            <div class="benefits-title uppercase">Высокий<br />онлайн</div>
                             <div class="benefits-subtitle">Насыщенный рынок, свыше 100 арен и биг-вары в 600+ игроков
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide benefits-card  benefits-card_blue">
+                    <div class="swiper-slide benefits-card benefits-card_blue">
                         <div class="support-img benefits-img"></div>
                         <div class="benefits-text">
-                            <div class="benefits-title uppercase">Заботливая поддержка</div>
+                            <div class="benefits-title uppercase">Заботливая<br />поддержка</div>
                             <div class="benefits-subtitle">Ответим на любые вопросы по игре с 10:00 до 03:00 по МСК
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide benefits-card  benefits-card_red">
+                    <div class="swiper-slide benefits-card benefits-card_red">
                         <div class="light-start-img benefits-img"></div>
                         <div class="benefits-text">
-                            <div class="benefits-title uppercase">быстрый и Легкий старт</div>
-                            <div class="benefits-subtitle">Все новые игроки получают дополнительные ресурсы и вещи</div>
+                            <div class="benefits-title uppercase">быстрый<br />и Легкий старт</div>
+                            <div class="benefits-subtitle">Все&nbsp;новые&nbsp;игроки&nbsp;получают
+                                дополнительные ресурсы&nbsp;и&nbsp;вещи</div>
                         </div>
                     </div>
 
@@ -385,9 +385,9 @@
             </div>
 
             <div class=" container">
-                <div class="race-choice__mobile"></div>
-                <div class="race-choice__block">
-
+                <div class="race-choice__mobile desktop-hidden">
+                </div>
+                <div class="race-choice__block mobile-hidden">
                     <div class="race-choice__item">
                         <div class=" race-choice__btn ">
                             <div class="race-item_header">
@@ -775,24 +775,21 @@
 
     <section class="news">
         <div class="container">
-
             <div class="news-text">
                 <h2 class="h2-title uppercase">Свежее на Scryde</h2>
-                <div class="subtitle_light">Главные новости о серверах, акции, гайды для новичков и многое
-                    другое</div>
+                <div class="subtitle_light">Главные новости о серверах, акции, гайды для новичков и многое другое</div>
             </div>
             <div class="news-text__laptop">
                 <h2 class="h2-title uppercase">Напиши свою историю</h2>
                 <div class="subtitle_light">Стань героем вместе с игроками со всего мира</div>
             </div>
-            <div class="swiper">
+            <div class="swiper news-swiper js-swiper">
                 <article class="news-block swiper-wrapper">
                     <div class="news-item swiper-slide block-bordered block-bordered-gray">
                         <div class="news-item-wrapper">
                             <div class="news-icon">
                                 <p class="news-icon__text uppercase">новости и объявления</p>
                             </div>
-                            <!-- <img class="news-icon" src="./assets/img/svg/news-icon-annoncue.svg" alt="news and annoncue"> -->
                             <img class="news-img" src="./assets/img/news-announce.jpg" alt="Новые ивенты: Фидбек">
                             <div class="item-block">
                                 <h3 class=" item-title block-title uppercase">Новые ивенты: Фидбек</h3>
@@ -806,7 +803,6 @@
                     </div>
                     <div class="news-item swiper-slide block-bordered block-bordered-gray">
                         <div class="news-item-wrapper">
-                            <!-- <img class="news-icon" src="./assets/img/svg/news-icon-beginners.svg" alt="increase fps"> -->
                             <div class="news-icon">
                                 <p class="news-icon__text uppercase">новичкам</p>
                             </div>
@@ -822,7 +818,6 @@
                     </div>
                     <div class="news-item swiper-slide block-bordered block-bordered-gray">
                         <div class="news-item-wrapper">
-                            <!-- <img class="news-icon" src="./assets/img/svg/news-icon-event.svg" alt="events"> -->
                             <div class="news-icon">
                                 <p class="news-icon__text uppercase">акции и мероприятия</p>
                             </div>
@@ -1112,7 +1107,7 @@
                 <div class="subtitle_dark">Любимые игроки, которые играют на наших серверах</div>
             </div>
 
-            <div class="swiper">
+            <div class="swiper stream-swiper js-swiper">
                 <div class="stream-block swiper-wrapper">
                     <div class="stream-item swiper-slide">
                         <a href="#" class="stream-link">
@@ -1409,6 +1404,7 @@
         </div>
     </footer>
 
+    <script src="./assets/js/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

@@ -12,7 +12,6 @@
         justify-content: space-evenly;
         gap: 10px;
     }
-
 }
 
 @media screen and (max-width:1379px) {
@@ -46,11 +45,6 @@
         padding: 16px;
         gap: 10px;
         justify-content: space-evenly;
-    }
-
-    /* --------------------------- news --------------------------- */
-    .news .subtitle_light {
-        margin: 0;
     }
 
     /* --------------------------- stream --------------------------- */
@@ -140,8 +134,6 @@
     }
 
     /* --------------------------- general --------------------------- */
-
-
     .container {
         max-width: 1110px;
     }
@@ -169,6 +161,10 @@
         margin: 0 0 97px;
     }
 
+    .changes .subtitle_light {
+        margin-left: 0;
+    }
+
     .discord-block iframe {
         max-width: 450px;
     }
@@ -182,7 +178,115 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1680px) {
+    .banner__prizes-sky {
+        right: -10vw;
+    }
+
+    .banner__prizes-bg {
+        left: -15vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner__prizes-sky {
+        top: 3%;
+        right: -20%;
+    }
+
+    .banner__prizes-bg {
+        bottom: -55%;
+        left: -30vw;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .banner__prizes-sky {
+        top: 0%;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .banner__prizes-sky {
+        top: -8%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .benefits-wrap {
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .benefits-wrap .benefits-card {
+        max-width: 322px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .benefits-wrap {
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .benefits-wrap .benefits-card {
+        max-width: calc(25vw - 32px);
+    }
+
+    .benefits-img {
+        height: 253px;
+    }
+
+    .benefits-title {
+        font-size: 18px;
+    }
+
+    .benefits-subtitle {
+        font-size: 14px;
+    }
+
+    .benefits-text {
+        margin: 0 20px;
+        margin-bottom: 24px;
+        margin-top: -50px;
+    }
+
+    .news-block {
+        gap: 18px;
+    }
+
+    .item-block {
+        padding: 24px 20px;
+    }
+
+    .h2-title {
+        font-size: 36px;
+    }
+
+    .subtitle_light {
+        font-size: 18px;
+        margin-bottom: 37px;
+    }
+
+    .block-title {
+        font-size: 16px;
+    }
+
+    .item-subtitle.block-subtitle {
+        font-size: 14px;
+    }
+
+    .item-block .more-server {
+        font-size: 14px;
+    }
+
+    .news-item {
+        width: calc(33.33vw - 18px);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
 
     .container {
         padding: 0 42px;
@@ -194,7 +298,7 @@
     }
 
     .start-game {
-        margin-bottom: 11vh;
+        padding-bottom: 11vh;
     }
 
     .h2-title,
@@ -222,11 +326,6 @@
         font-size: 12px;
     }
 
-
-
-
-
-
     /* --------------------------- header --------------------------- */
     .header {
         top: -100px;
@@ -249,9 +348,7 @@
 
     .header__box .start-game {
         display: block;
-        margin-bottom: 0;
-
-
+        padding-bottom: 0;
     }
 
     /* --------------------------- benefits --------------------------- */
@@ -266,7 +363,6 @@
     .benefits-subtitle {
         font-size: 14px;
     }
-
 
     /* --------------------------- server --------------------------- */
     .h1-title {
@@ -289,11 +385,6 @@
         top: 20px;
     }
 
-
-
-
-
-
     /* --------------------------- race --------------------------- */
     .race-choice {
         max-width: 925px;
@@ -305,8 +396,6 @@
         padding: 16px;
     }
 
-
-
     /* --------------------------- changes --------------------------- */
     .changes::after {
         bottom: -15vh;
@@ -317,7 +406,6 @@
     }
 
     .changes-block {
-        padding-left: 20px;
         margin: 50px 0 40px;
     }
 
@@ -336,8 +424,6 @@
         right: -29vw;
     }
 
-
-
     /* --------------------------- hero --------------------------- */
     .hero {
         padding: 15vh 0 11vh 0;
@@ -346,10 +432,7 @@
 
     .block-content {
         gap: 20px;
-        flex-wrap: wrap;
     }
-
-
 
     /* --------------------------- about server --------------------------- */
     .online-text {
@@ -492,7 +575,6 @@
 
     /* --------------------------- stream --------------------------- */
 
-
     .stream-block {
         gap: 16px;
     }
@@ -627,6 +709,36 @@
     .footer-copy {
         font-size: 14px;
     }
+
+    .table__row {
+        gap: 16px;
+    }
+
+    .table__item {
+        width: calc(33.33vw - 16px);
+    }
+
+    .table__item-heading {
+        font-size: 24px;
+    }
+
+    .table__item-subtitle {
+        font-size: 18px;
+    }
+
+    .table__item-col {
+        font-size: 12px;
+    }
+
+    .banner__prizes-bg {
+        bottom: -38%;
+    }
+
+    .banner__prizes-sky {
+        top: auto;
+        bottom: -20vh;
+        right: 0;
+    }
 }
 
 
@@ -660,7 +772,7 @@
     }
 
     .start-game {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .server-name {
@@ -672,14 +784,6 @@
     }
 
     .server-title {
-        font-size: 22px;
-    }
-
-    .online-text {
-        font-size: 20px;
-    }
-
-    .online-count {
         font-size: 22px;
     }
 
@@ -734,7 +838,6 @@
     /* --------------------------- about server --------------------------- */
     .server-content {
         flex-direction: column-reverse;
-        max-width: 304px;
     }
 
     .x-block {
@@ -753,72 +856,8 @@
 
 }
 
+/* @media screen and (max-width: 545px) {
 
-@media screen and (max-width: 767px) {
-    img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
-
-    .server-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 40px;
-    }
-
-    /* --------------------------- header --------------------------- */
-    .header-btn {
-        display: none;
-    }
-
-    /* --------------------------- changes --------------------------- */
-    .changes-img {
-        top: 50vh;
-        right: 9vw;
-        transform: rotate(10deg);
-    }
-
-    .changes::after {
-        bottom: -40vh;
-    }
-
-    .discord-block iframe {
-        max-width: 400px;
-    }
-
-    .table__item {
-        display: none;
-    }
-
-    .table__item.active {
-        display: block;
-    }
-
-    /* ANYA POPRAV */
-    .table__tabs {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 20px;
-    }
-
-    .table__tabs-button {
-        color: #FFF;
-        font-size: 20px;
-        width: 100%;
-        border: 1px solid;
-    }
-
-}
-
-
-
-
-
-
-@media screen and (max-width: 545px) {
-
-    /* --------------------------- general --------------------------- */
     .logo {
         width: 112px;
     }
@@ -831,7 +870,6 @@
         font-size: 16px;
     }
 
-    /* --------------------------- changes --------------------------- */
     .changes-img {
         top: 55vh;
     }
@@ -840,15 +878,14 @@
         padding-left: 0px;
     }
 
-    /* --------------------------- awards --------------------------- */
     .awards-img__left-laptop {
         top: -101px;
         left: -172px;
         transform: rotate(23deg);
     }
-}
+} */
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     .burger {
         padding: 0;
         position: relative;
@@ -897,7 +934,6 @@
         overflow: hidden;
     }
 
-    /* --------------------------- benefits --------------------------- */
     .server-block__inner {
         display: flex;
         flex-direction: column-reverse;
@@ -919,7 +955,6 @@
         font-size: 18px;
     }
 
-    /* --------------------------- changes --------------------------- */
     .server-text-block .subtitle {
         text-align: center;
     }
@@ -934,17 +969,12 @@
         text-align: start;
     }
 
-    /* --------------------------- friends --------------------------- */
     .discord-block iframe {
         max-width: 350px;
     }
+} */
 
-}
-
-/* --------------------------- header --------------------------- */
-
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
 
     /* --------------------------- general --------------------------- */
     .container {
@@ -986,7 +1016,7 @@
     }
 
     .start-game {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 
     .server-text::before,
@@ -998,6 +1028,14 @@
         left: 0;
     }
 
+    .hero .h2-title_black {
+        text-align: left;
+    }
+
+    .hero .subtitle_dark {
+        max-width: 65%;
+    }
+
     /* slider */
     .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
     .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
@@ -1007,11 +1045,7 @@
     /* --------------------------- changes --------------------------- */
     .block-castle img,
     .block-olympiad img {
-        max-width: 336px;
-    }
-
-    .changes-block {
-        padding-right: 37px;
+        max-width: 100%;
     }
 
     .changes-content img {
@@ -1032,6 +1066,7 @@
     /* --------------------------- hero --------------------------- */
     .block-content {
         gap: 40px;
+        flex-direction: column;
     }
 
     .content-text {
@@ -1145,7 +1180,15 @@
     }
 
     .server-online {
+        justify-content: center;
+    }
+
+    .about-server .server-online {
         justify-content: flex-start;
+    }
+
+    .server-box {
+        margin-bottom: 30px;
     }
 
     .statistics-info {
@@ -1174,7 +1217,7 @@
     }
 
     .server-content .more-server {
-        text-align: center;
+        text-align: left;
     }
 
     .inner-benefits {
@@ -1219,6 +1262,7 @@
 
     .news {
         padding-top: 9vh;
+        background: #070B18;
     }
 
     .news-block {
@@ -1354,13 +1398,16 @@
 
     /* --------------------------- banner__prizes --------------------------- */
     .banner__prizes__body {
-        padding: 24px 20px;
+        padding: 0;
+        background: transparent;
     }
 
     .banner__prizes__wrapper {
+        border-radius: 24px;
+        padding: 24px 20px;
         position: relative;
         z-index: 3;
-
+        background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
     }
 
     .banner__prizes__title {
@@ -1371,14 +1418,28 @@
         font-size: 14px;
     }
 
-    .banner__prizes__right-img {
-        position: relative;
-        top: -170px;
-        left: 60px;
-        z-index: 2;
+    .banner__prizes__right {
+        top: -45%;
+        right: -14%;
+        /* z-index: -1; */
     }
 
+    .banner__prizes__right-img {
+        max-width: 240px;
+        /* position: relative;
+        z-index: 2; */
+    }
 
+    .banner__prizes-bg {
+        left: 0;
+        bottom: auto;
+        top: 0;
+        width: 100%;
+    }
+
+    .banner__prizes__items {
+        gap: 16px;
+    }
 
     /* --------------------------- footer --------------------------- */
 
@@ -1463,50 +1524,85 @@
         color: #FFC342;
     }
 
-    /* --------------------------- contacts --------------------------- */
-}
-
-@media screen and (max-width: 1680px) {
-    .banner__prizes-sky {
-        right: -10vw;
+    .table__item {
+        width: 100%;
     }
 
-    .banner__prizes-bg {
-        left: -15vw;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .banner__prizes-sky {
-        top: 3%;
-        right: -20%;
-    }
-
-    .banner__prizes-bg {
-        bottom: -55%;
-        left: -30vw;
-    }
-}
-
-@media screen and (max-width: 1240px) {
-    .banner__prizes-sky {
-        top: 0%;
-    }
-}
-
-@media screen and (max-width: 1144px) {
-    .banner__prizes-sky {
-        top: -8%;
-    }
-}
-
-@media screen and (min-width: 768px) {
     .benefits-wrap {
-        gap: 20px;
+        gap: 0;
     }
-}
 
-@media screen and (max-width: 767px) {
+    .benefits-wrap .benefits-card,
+    .stream-item,
+    .news-item {
+        max-width: 322px;
+        width: 100%;
+    }
+
+    .stream-block-img,
+    .news-img {
+        max-width: 100%;
+    }
+
+    /* --------------------------- news --------------------------- */
+    .news .subtitle_light {
+        margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .server-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* --------------------------- header --------------------------- */
+    .header-btn {
+        display: none;
+    }
+
+    /* --------------------------- changes --------------------------- */
+    .changes-img {
+        top: 50vh;
+        right: 9vw;
+        transform: rotate(10deg);
+    }
+
+    .changes::after {
+        bottom: -40vh;
+    }
+
+    .discord-block iframe {
+        max-width: 400px;
+    }
+
+    .table__item {
+        display: none;
+    }
+
+    .table__item.active {
+        display: block;
+    }
+
+    /* ANYA POPRAV */
+    .table__tabs {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
+    .table__tabs-button {
+        color: #FFF;
+        font-size: 20px;
+        width: 100%;
+        border: 1px solid;
+    }
+
     .benefits .container {
         padding: 0;
     }
@@ -1523,6 +1619,7 @@
 
     .server-block {
         width: 100%;
+        max-width: 420px;
     }
 
     .mobile-hidden {
@@ -1535,5 +1632,39 @@
 
     .server-item.active .mobile-hidden {
         display: inline-block !important;
+    }
+
+    .server .subtitle {
+        text-align: center;
+    }
+
+    .online-count {
+        font-size: 22px;
+    }
+
+    .statistics-info__inner {
+        align-items: flex-start;
+    }
+
+    .news .swiper {
+        padding-top: 40px;
+    }
+
+    .news-block {
+        margin: 0;
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+        transform: none !important;
+    }
+
+    .benefits {
+        background: #070B18;
+    }
+
+    body {
+        background: url(../img/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
