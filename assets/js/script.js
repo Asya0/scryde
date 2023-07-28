@@ -1,6 +1,6 @@
-
 const breakpoint = window.matchMedia('(min-width:767px)');
 let mySwiper;
+
 const breakpointChecker = function () {
     if (breakpoint.matches === true) {
         if (mySwiper !== undefined) mySwiper.destroy(true, true);
@@ -9,6 +9,7 @@ const breakpointChecker = function () {
         return enableSwiper();
     }
 };
+
 breakpoint.addListener(breakpointChecker);
 
 breakpointChecker();
@@ -26,7 +27,6 @@ function enableSwiper() {
             dynamicBullets: true,
         },
         grabCursor: true,
-        // slidesPerView: 4,
         watchOverflow: true,
         centeredSlides: true,
         loop: false,
@@ -48,32 +48,32 @@ function enableSwiper() {
     });
 }
 
-
-/* ------------------------------------ BURGER ------------------------------------*/
 // burger menu 
 const iconMenu = document.querySelector('.burger');
 const burgerMenu = document.querySelector(".header__nav");
 const body = document.body;
 
-/* open menu */
+// open menu
 iconMenu.addEventListener("click", function (e) {
     iconMenu.classList.toggle("active");
     burgerMenu.classList.toggle("active");
     body.classList.toggle("lock");
 });
+
 const closePopup = () => {
     iconMenu.classList.remove("active");
     burgerMenu.classList.remove("active");
     body.classList.remove("lock");
 };
-/* close menu on link click */
+
+// close menu on link click
 document.querySelectorAll(".header__nav-item").forEach((link) => {
     link.addEventListener("click", () => {
         closePopup();
     });
 });
 
-/* close on click outside the menu */
+// close on click outside the menu
 document.onclick = function (e) {
     if (
         !burgerMenu.contains(e.target) &&
@@ -83,27 +83,19 @@ document.onclick = function (e) {
     }
 };
 
-/* ------------------------------------ HEADER ------------------------------------*/
-
-//
-
 // скролл header
-let header = document.querySelector('.header__box');
-let headerH = document.querySelector('.header__box').clientHeight;
+let header = document.querySelector('.header');
 
 document.onscroll = function () {
     let scroll = window.scrollY;
 
-    // headerH = 50
-
-    if (scroll > headerH) {
+    if (scroll > header.clientHeight) {
         header.classList.add('fixed');
-        document.body.style.paddingTop = headerH + 'px';
     } else {
         header.classList.remove('fixed');
-        document.body.removeAttribute('style');
     }
 }
+
 //активное состояние меню для .header__nav-item
 const navItems = document.querySelectorAll('.header__nav-item_sub');
 
@@ -112,8 +104,6 @@ navItems.forEach(navItem => {
         navItem.classList.toggle('active');
     });
 });
-
-/* ------------------------------------ RACE ------------------------------------*/
 
 //Переключение табов для секции race
 const tab = function () {
@@ -134,14 +124,12 @@ const tab = function () {
         this.classList.add('active');
         let tabBtn = this.getAttribute('data-page-path'); // получаем значение атрибута data-page-path у выбранного пункта навигации
 
-        // console.log(tabBtn)
         selectTabContent(tabBtn);
     }
 
     function selectTabContent(tabBtn) {
         // Проходимся по всем элементам контента, чтобы найти нужный для отображения и скрыть все остальные
         tabContent.forEach(item => {
-            // console.log(item.dataset.pageTarget)
             if (item.dataset.pageTarget == tabBtn) { // если элемент содержит класс с именем выбранного пункта навигации
                 item.classList.add('active');
             } else {
@@ -151,15 +139,6 @@ const tab = function () {
     }
 };
 tab();
-
-
-// выпадающее меню для  race
-
-
-//activePageContent, которая будет хранить ссылку на текущий открытый блок. 
-//При клике на другой блок мы проверяем, был ли уже открыт какой-то блок (activePageContent !== null). 
-//Если да, то закрываем его и сбрасываем классы у стрелки, которая отвечает за его открытие.
-// Затем открываем кликнутый блок и сохраняем его в activePageContent.
 
 const pageBlock = document.querySelectorAll('.race-choice__item');
 const pageBtn = document.querySelectorAll('.race-choice__btn');
@@ -187,8 +166,6 @@ for (let i = 0; i < pageBlock.length; i++) {
     });
 }
 
-/* ------------------------------------ SERVER ------------------------------------*/
-
 //Переключение табов для секции server
 const tabServer = document.querySelectorAll(".server-item");
 function selectServer(tab) {
@@ -204,14 +181,11 @@ tabServer.forEach((tab) => {
     });
 });
 
-
-
-
-
-
-
-/* ------------------------------------ FOOTER ------------------------------------*/
-
+// best players
+$(document).on('click', '.js-show-top-players', function () {
+    const tab = $(this).data('server');
+    $('.table__item[data-table="' + tab + '"]').addClass('active').siblings().removeClass('active');
+});
 
 //табы для footer-info
 const infoItems = document.querySelectorAll('.info-item');

@@ -107,11 +107,6 @@
         margin: 0 0 97px;
     }
 
-    /* 
-    .changes .subtitle_light {
-        margin-left: 0;
-    } */
-
     .discord-block iframe {
         max-width: 450px;
     }
@@ -229,6 +224,7 @@
 
     .news-item {
         width: calc(33.33vw - 18px);
+        max-width: 302px;
     }
 }
 
@@ -239,13 +235,20 @@
         padding: 0 42px;
     }
 
-    .btn {
-        font-size: 14px;
-        padding: 18px 89px;
+    .btn .btn-bordered-box {
+        padding: 13px 89px;
+    }
+
+    .btn-blue .btn-bordered-box {
+        padding: 13px 48px;
+    }
+
+    .btn-orange .btn-bordered-box {
+        font-size: 16px;
     }
 
     .start-game {
-        padding-bottom: 11vh;
+        padding-bottom: 140px;
     }
 
     .h2-title,
@@ -298,18 +301,16 @@
 
     /* --------------------------- скролл страницы --------------------------- */
 
-    /* добавляет подменю "ещё" */
     .header__nav-item:nth-child(4) {
         display: flex;
     }
 
-    /* убирает последние 3 элемента */
     .header__nav-item:nth-last-child(-n+3) {
         display: none;
     }
 
     .header-btn {
-        display: block;
+        display: inline-flex;
     }
 
     .header__box.fixed {
@@ -334,11 +335,6 @@
     .benefits-title {
         font-size: 18px;
     }
-
-    /* есть этот размер шрифта в 1350px, какой убрать? */
-    /* .benefits-subtitle {
-        font-size: 14px;
-    } */
 
     /* --------------------------- server --------------------------- */
     .h1-title {
@@ -407,7 +403,6 @@
     /* --------------------------- hero --------------------------- */
     .hero {
         padding: 15vh 0 11vh 0;
-        /*исправить паддинг для топа*/
     }
 
     .block-content {
@@ -488,7 +483,7 @@
     }
 
     .news-img {
-        max-width: 302px;
+        /* max-width: 302px; */
     }
 
     .news-block {
@@ -572,7 +567,7 @@
     }
 
     /* --------------------------- awards --------------------------- */
-    z .awards {
+    .awards {
         padding: 37px;
     }
 
@@ -686,7 +681,7 @@
         height: 30px;
     }
 
-    .social-btn {
+    .social-btn .btn-bordered-box {
         padding: 12px;
     }
 
@@ -833,7 +828,7 @@
     }
 
     /* --------------------------- general --------------------------- */
-    .btn {
+    .btn .btn-bordered-box {
         padding: 18px 51px;
     }
 
@@ -873,95 +868,6 @@
     }
 } */
 
-/* @media screen and (max-width: 425px) {
-    .burger {
-        padding: 0;
-        position: relative;
-        max-height: 30px;
-        display: flex;
-        flex-direction: column;
-        grid-gap: px;
-        cursor: pointer;
-        top: 3px;
-        left: 5px;
-    }
-
-    .burger.active {
-        top: 15px;
-
-    }
-
-    .burger-line {
-        position: relative;
-        display: inline-block;
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        transition: all 0.3s ease 0s;
-    }
-
-    .burger-line_span {
-        transform: scale(1);
-    }
-
-    .burger.active .burger-line_span {
-        transform: scale(0);
-    }
-
-    .burger.active .burger-line_top {
-        top: 0px;
-        transform: rotate(-45deg) translate(0px, -50%);
-    }
-
-    .burger.active .burger-line_bottom {
-        bottom: 26px;
-        transform: rotate(45deg) translate(0px, 50%);
-    }
-
-    .lock {
-        overflow: hidden;
-    }
-
-    .server-block__inner {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .server-name {
-        gap: 20px;
-    }
-
-    .server-title {
-        font-size: 18px;
-    }
-
-    .online-text {
-        font-size: 16px;
-    }
-
-    .online-count {
-        font-size: 18px;
-    }
-
-    .server-text-block .subtitle {
-        text-align: center;
-    }
-
-    .h2-title,
-    .h2-title_black {
-        text-align: start;
-    }
-
-    .subtitle,
-    .subtitle_light {
-        text-align: start;
-    }
-
-    .discord-block iframe {
-        max-width: 350px;
-    }
-} */
-
 @media screen and (max-width: 767px) {
 
     /* --------------------------- general --------------------------- */
@@ -969,7 +875,7 @@
         padding: 0 20px;
     }
 
-    .btn {
+    .btn .btn-bordered-box {
         padding: 18px 29px;
     }
 
@@ -1282,7 +1188,7 @@
 
     /* --------------------------- stream --------------------------- */
     .stream {
-        padding: 40vh 0 5vh 0;
+        padding: 80px 0 5vh 0;
     }
 
     .stream-block {
@@ -1361,7 +1267,7 @@
         width: 100%;
     }
 
-    .social-btn {
+    .social-btn .btn-bordered-box {
         padding: 16px 24px;
     }
 
@@ -1409,13 +1315,10 @@
     .banner__prizes__right {
         top: -45%;
         right: -14%;
-        /* z-index: -1; */
     }
 
     .banner__prizes__right-img {
         max-width: 240px;
-        /* position: relative;
-        z-index: 2; */
     }
 
     .banner__prizes-bg {
@@ -1490,7 +1393,7 @@
         font-size: 14px;
     }
 
-    .social-btn {
+    .social-btn .btn-bordered-box {
         padding: 8px;
     }
 
@@ -1574,20 +1477,6 @@
         display: block;
     }
 
-    /* ANYA POPRAV */
-    .table__tabs {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 20px;
-    }
-
-    .table__tabs-button {
-        color: #FFF;
-        font-size: 20px;
-        width: 100%;
-        border: 1px solid;
-    }
-
     .benefits .container {
         padding: 0;
     }
@@ -1651,5 +1540,127 @@
         background: url(../img/bg-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .burger {
+        padding: 0;
+        position: relative;
+        max-height: 30px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 8px;
+        cursor: pointer;
+    }
+
+    .burger-line {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger-line_span {
+        transform: scale(1);
+    }
+
+    .burger.active .burger-line_span {
+        transform: scale(0);
+    }
+
+    .burger.active .burger-line_top {
+        top: 10px;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .burger.active .burger-line_bottom {
+        bottom: 14px;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .lock {
+        overflow: hidden;
+    }
+
+    .server-block__inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .server-name {
+        gap: 20px;
+    }
+
+    .server-title {
+        font-size: 18px;
+    }
+
+    .online-text {
+        font-size: 16px;
+    }
+
+    .online-count {
+        font-size: 18px;
+    }
+
+    .server-text-block .subtitle {
+        text-align: center;
+    }
+
+    .h2-title,
+    .h2-title_black {
+        text-align: start;
+    }
+
+    .subtitle,
+    .subtitle_light {
+        text-align: start;
+    }
+
+    .discord-block iframe {
+        max-width: 350px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header-btn {
+        display: none !important;
+    }
+
+    .header__box {
+        padding-top: 0;
+    }
+
+    .start-game {
+        width: 100%;
+    }
+
+    .start-game .btn {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .awards .container {
+        padding: 28px 20.5px;
+    }
+
+    .table__item-heading {
+        display: none;
+    }
+
+    .table__item-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    .table__item-col {
+        font-size: 14px;
     }
 }
