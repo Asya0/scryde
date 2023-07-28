@@ -85,15 +85,16 @@ document.onclick = function (e) {
 
 /* ------------------------------------ HEADER ------------------------------------*/
 
+//
 
 // скролл header
-let header = document.querySelector('.header');
-let headerH = document.querySelector('.header').clientHeight;
+let header = document.querySelector('.header__box');
+let headerH = document.querySelector('.header__box').clientHeight;
 
 document.onscroll = function () {
     let scroll = window.scrollY;
 
-    //headerH = 50
+    // headerH = 50
 
     if (scroll > headerH) {
         header.classList.add('fixed');

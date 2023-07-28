@@ -64,61 +64,7 @@
 }
 
 @media screen and (max-width:1179px) {
-    /* --------------------------- header --------------------------- */
 
-    .header__nav-list {
-        display: none;
-    }
-
-    .header__nav-list {
-        gap: 14px;
-    }
-
-    .header__nav-actions {
-        display: none;
-    }
-
-    /* --------------------------- burger --------------------------- */
-
-    .burger {
-        padding: 0;
-        position: relative;
-        width: 42px;
-        max-height: 34px;
-        display: flex;
-        flex-direction: column;
-        grid-gap: 6px;
-        cursor: pointer;
-        z-index: 11;
-    }
-
-    .burger-line {
-        position: relative;
-        display: inline-block;
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        transition: all 0.3s ease 0s;
-        border-radius: 10px;
-    }
-
-    .burger-line_span {
-        transform: scale(1);
-    }
-
-    .burger.active .burger-line_span {
-        transform: scale(0);
-    }
-
-    .burger.active .burger-line_top {
-        top: 10px;
-        transform: rotate(-45deg) translate(0px, -50%);
-    }
-
-    .burger.active .burger-line_bottom {
-        bottom: 15px;
-        transform: rotate(45deg) translate(0px, 50%);
-    }
 
     /* --------------------------- hero --------------------------- */
 
@@ -161,9 +107,10 @@
         margin: 0 0 97px;
     }
 
+    /* 
     .changes .subtitle_light {
         margin-left: 0;
-    }
+    } */
 
     .discord-block iframe {
         max-width: 450px;
@@ -337,7 +284,35 @@
 
     }
 
-    .header.fixed {
+    .logo__image {
+        margin-right: 28px;
+    }
+
+    .header__nav-list {
+        gap: 22px;
+    }
+
+    .header__nav-item__link {
+        font-size: 14px;
+    }
+
+    /* --------------------------- скролл страницы --------------------------- */
+
+    /* добавляет подменю "ещё" */
+    .header__nav-item:nth-child(4) {
+        display: flex;
+    }
+
+    /* убирает последние 3 элемента */
+    .header__nav-item:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .header-btn {
+        display: block;
+    }
+
+    .header__box.fixed {
         position: fixed;
         background: #070B18;
         top: -0;
@@ -360,13 +335,18 @@
         font-size: 18px;
     }
 
-    .benefits-subtitle {
+    /* есть этот размер шрифта в 1350px, какой убрать? */
+    /* .benefits-subtitle {
         font-size: 14px;
-    }
+    } */
 
     /* --------------------------- server --------------------------- */
     .h1-title {
         font-size: 46px;
+    }
+
+    .server-inner .block-title {
+        font-size: 16px;
     }
 
     .server-block_wrapper {
@@ -516,12 +496,8 @@
         margin: 50px 0 40px 0;
     }
 
-    .news-text {
-        display: none;
-    }
-
     .news-text__laptop {
-        display: block;
+        display: none;
     }
 
     .item-title {
@@ -635,9 +611,17 @@
         gap: 0px;
     }
 
+    .friends .block-title {
+        font-size: 18px;
+    }
+
     /* --------------------------- contacts --------------------------- */
     .contacts-block {
         justify-content: space-between;
+    }
+
+    .social-text {
+        font-size: 16px;
     }
 
     .vk-block {
@@ -646,6 +630,10 @@
 
     .vk-post {
         width: 40vw;
+    }
+
+    .btn-desc {
+        font-size: 14px;
     }
 
     /* --------------------------- get prizes --------------------------- */
@@ -1562,9 +1550,6 @@
     }
 
     /* --------------------------- header --------------------------- */
-    .header-btn {
-        display: none;
-    }
 
     /* --------------------------- changes --------------------------- */
     .changes-img {

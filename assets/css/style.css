@@ -201,6 +201,7 @@ img {
 }
 
 .header-btn {
+    display: none;
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -266,6 +267,10 @@ img {
 .header__nav-actions {
     display: flex;
     gap: 24px;
+}
+
+.header__nav-item:nth-child(4) {
+    display: none;
 }
 
 .header__nav-actions .header__nav-item {
@@ -1147,6 +1152,11 @@ img {
     margin-bottom: 16px;
 }
 
+.table__item-row:first-child {
+    padding: 4px 10px 4px 0;
+
+}
+
 .table__item-row {
     display: flex;
     justify-content: space-between;
@@ -1176,7 +1186,7 @@ img {
     max-width: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .table__item-col:nth-child(2) {
@@ -1727,7 +1737,7 @@ img {
 }
 
 .footer-bottom {
-    border-top: 1px solid #FFF;
+    border-top: 1px solid #D0DBEB;
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
