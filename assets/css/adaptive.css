@@ -42,7 +42,7 @@
     }
 
     .statistics-info {
-        padding: 16px;
+        padding: 16px 0;
         gap: 10px;
         justify-content: space-evenly;
     }
@@ -65,6 +65,9 @@
 
 @media screen and (max-width:1179px) {
 
+    body {
+        padding-top: 168px;
+    }
 
     /* --------------------------- hero --------------------------- */
 
@@ -82,10 +85,6 @@
     /* --------------------------- general --------------------------- */
     .container {
         max-width: 1110px;
-    }
-
-    .header {
-        margin-bottom: 60px;
     }
 
     .title {
@@ -132,25 +131,13 @@
 
 @media screen and (max-width: 1440px) {
     .banner__prizes-sky {
-        top: 3%;
+        top: 15%;
         right: -20%;
     }
 
     .banner__prizes-bg {
-        bottom: -55%;
+        bottom: -10%;
         left: -30vw;
-    }
-}
-
-@media screen and (max-width: 1240px) {
-    .banner__prizes-sky {
-        top: 0%;
-    }
-}
-
-@media screen and (max-width: 1144px) {
-    .banner__prizes-sky {
-        top: -8%;
     }
 }
 
@@ -195,6 +182,11 @@
 
     .news-block {
         gap: 18px;
+    }
+
+    .news .swiper {
+        margin-top: -30px;
+        padding-top: 0;
     }
 
     .item-block {
@@ -277,16 +269,6 @@
     }
 
     /* --------------------------- header --------------------------- */
-    .header {
-        top: -100px;
-        left: 0;
-        width: 100%;
-        z-index: 10;
-        transition: all .2s ease;
-        padding-top: 15px;
-
-    }
-
     .logo__image {
         margin-right: 28px;
     }
@@ -311,15 +293,6 @@
 
     .header-btn {
         display: inline-flex;
-    }
-
-    .header__box.fixed {
-        position: fixed;
-        background: #070B18;
-        top: -0;
-        width: 100%;
-        z-index: 99;
-        transition: all .2s ease;
     }
 
     .header__box .start-game {
@@ -374,7 +347,7 @@
 
     /* --------------------------- changes --------------------------- */
     .changes::after {
-        bottom: -15vh;
+        bottom: -40vh;
     }
 
     .changes-text .subtitle_light {
@@ -461,7 +434,7 @@
     }
 
     .statistics-info {
-        padding: 12px;
+        padding: 12px 0;
     }
 
     .info-block {
@@ -645,11 +618,6 @@
         height: 32px;
     }
 
-    .banner__prizes-sky {
-        max-width: 346px;
-        top: 9vh;
-    }
-
     .banner__prizes__right {
         top: 35px;
         right: -49px;
@@ -713,14 +681,10 @@
         font-size: 12px;
     }
 
-    .banner__prizes-bg {
-        bottom: -38%;
-    }
-
     .banner__prizes-sky {
         top: auto;
-        bottom: -20vh;
-        right: 0;
+        bottom: -10vh;
+        right: -30%;
     }
 }
 
@@ -773,7 +737,6 @@
     /* --------------------------- friends --------------------------- */
     .friends-block {
         flex-direction: column-reverse;
-        align-items: center;
     }
 
     .changes-block {
@@ -1086,7 +1049,7 @@
     }
 
     .statistics-info {
-        padding: 8px 20px;
+        padding: 8px 0;
     }
 
     .statistics .server-online {
@@ -1184,11 +1147,13 @@
 
     .news .swiper .swiper-pagination {
         top: 0;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     /* --------------------------- stream --------------------------- */
     .stream {
-        padding: 80px 0 5vh 0;
+        padding: 40px 0 5vh 0;
     }
 
     .stream-block {
@@ -1244,16 +1209,14 @@
 
     .awards-img__right-laptop {
         top: 164px;
-        right: 0;
-        transform: rotate(-15deg);
+        right: -20px;
     }
 
+    .awards-block {
+        margin-bottom: 24px;
+    }
 
     /* --------------------------- friends --------------------------- */
-    .friends-block {
-        flex-direction: column-reverse;
-    }
-
     .friends .changes-block {
         margin: 0;
     }
@@ -1314,7 +1277,7 @@
 
     .banner__prizes__right {
         top: -45%;
-        right: -14%;
+        right: 0;
     }
 
     .banner__prizes__right-img {
@@ -1336,6 +1299,7 @@
 
     .footer-top {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .footer-info {
@@ -1461,6 +1425,10 @@
         transform: rotate(10deg);
     }
 
+    .changes-content:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
     .changes::after {
         bottom: -40vh;
     }
@@ -1538,6 +1506,7 @@
 
     body {
         background: url(../img/bg-mobile.png);
+        background-color: #070B18;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -1619,7 +1588,8 @@
     }
 
     .discord-block iframe {
-        max-width: 350px;
+        width: 100%;
+        margin-top: 40px;
     }
 
     .header__nav {
@@ -1628,10 +1598,6 @@
 
     .header-btn {
         display: none !important;
-    }
-
-    .header__box {
-        padding-top: 0;
     }
 
     .start-game {
@@ -1662,5 +1628,17 @@
 
     .table__item-col {
         font-size: 14px;
+    }
+
+    .table__item-clans .table__item-col:nth-child(2) {
+        max-width: 30%;
+    }
+
+    .table__item-inner {
+        background: none;
+    }
+
+    .stream .swiper {
+        padding-top: 0;
     }
 }

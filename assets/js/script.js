@@ -88,11 +88,12 @@ let header = document.querySelector('.header');
 
 document.onscroll = function () {
     let scroll = window.scrollY;
-
     if (scroll > header.clientHeight) {
         header.classList.add('fixed');
+        document.body.style.paddingTop = '185px';
     } else {
         header.classList.remove('fixed');
+        document.body.removeAttribute('style');
     }
 }
 
