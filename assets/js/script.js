@@ -96,6 +96,14 @@ document.onscroll = function () {
         document.body.removeAttribute('style');
     }
 }
+// 
+
+
+
+
+
+// 
+
 
 //активное состояние меню для .header__nav-item
 const navItems = document.querySelectorAll('.header__nav-item_sub');

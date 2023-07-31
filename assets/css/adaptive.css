@@ -42,7 +42,7 @@
     }
 
     .statistics-info {
-        padding: 16px 0;
+        padding: 16px 0px 16px 45px;
         gap: 10px;
         justify-content: space-evenly;
     }
@@ -153,6 +153,40 @@
 }
 
 @media screen and (max-width: 1350px) {
+
+    /* --------------------------- скролл страницы --------------------------- */
+
+    .header.fixed .header__nav-item:nth-child(4) {
+        display: flex;
+    }
+
+    .header__nav-item_submenu {
+        display: none;
+    }
+
+    .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .header__box-col-right {
+        gap: 20px;
+    }
+
+    .header__box-col-right .start-game {
+        display: none;
+    }
+
+    .header-btn {
+        display: inline-flex;
+    }
+
+    .header.fixed .header__box .start-game {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    /* ---------------------------  benefits --------------------------- */
+
     .benefits-wrap {
         gap: 16px;
         justify-content: space-between;
@@ -179,6 +213,8 @@
         margin-bottom: 24px;
         margin-top: -50px;
     }
+
+    /* --------------------------- news --------------------------- */
 
     .news-block {
         gap: 18px;
@@ -279,25 +315,6 @@
 
     .header__nav-item__link {
         font-size: 14px;
-    }
-
-    /* --------------------------- скролл страницы --------------------------- */
-
-    .header__nav-item:nth-child(4) {
-        display: flex;
-    }
-
-    .header__nav-item:nth-last-child(-n+3) {
-        display: none;
-    }
-
-    .header-btn {
-        display: inline-flex;
-    }
-
-    .header__box .start-game {
-        display: block;
-        padding-bottom: 0;
     }
 
     /* --------------------------- benefits --------------------------- */
