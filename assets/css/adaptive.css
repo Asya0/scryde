@@ -164,6 +164,11 @@
         display: none;
     }
 
+    .header__nav-item_submenu.active {
+        display: block;
+    }
+
+
     .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
         display: none;
     }
@@ -307,6 +312,7 @@
     /* --------------------------- header --------------------------- */
     .logo__image {
         margin-right: 28px;
+        max-width: 120px;
     }
 
     .header__nav-list {
@@ -314,6 +320,10 @@
     }
 
     .header__nav-item__link {
+        font-size: 14px;
+    }
+
+    .header .btn-bordered-box {
         font-size: 14px;
     }
 

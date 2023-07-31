@@ -96,8 +96,6 @@ document.onscroll = function () {
         document.body.removeAttribute('style');
     }
 }
-// 
-
 
 
 
@@ -106,13 +104,19 @@ document.onscroll = function () {
 
 
 //активное состояние меню для .header__nav-item
+
+
+/* ЗАПУТАЛАСЬ */
 const navItems = document.querySelectorAll('.header__nav-item_sub');
 
 navItems.forEach(navItem => {
     navItem.addEventListener('click', () => {
         navItem.classList.toggle('active');
+        const submenu = navItem.querySelector('.header__nav-item_submenu');
+        submenu.classList.toggle('active');
     });
 });
+/* */
 
 //Переключение табов для секции race
 const tab = function () {
