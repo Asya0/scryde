@@ -1,835 +1,896 @@
-@media screen and (max-width: 1439px) {
-    .swiper {
-        padding: 30px 0px;
-    }
-
-    .block-castle img,
-    .block-olympiad img {
-        max-width: 550px;
-    }
-
-    .friends-block {
-        justify-content: space-evenly;
-        gap: 10px;
-    }
-}
-
-@media screen and (max-width:1379px) {
-    /* --------------------------- swiper --------------------------- */
-
-    .swiper .swiper-pagination-bullet {
-        width: 60px;
-        height: 8px;
-        background: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
-        border-radius: 4px;
-    }
-
-    .swiper .swiper-pagination {
-        display: none;
-    }
-
-    .statistics {
-        text-align: end;
-    }
-
-    .statistic__img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .info-text {
-        font-size: 14px;
-    }
-
-    .statistics-info {
-        padding: 16px 0px 16px 45px;
-        gap: 10px;
-        justify-content: space-evenly;
-    }
-
-    /* --------------------------- stream --------------------------- */
-    .stream {
-        padding-top: 10vh;
-    }
-
-    /* --------------------------- friends --------------------------- */
-    .friends {
-        padding-top: 5vh;
-    }
-
-    .friends-block {
-        justify-content: space-evenly;
-    }
-
-}
-
-@media screen and (max-width:1179px) {
-
-    body {
-        padding-top: 168px;
-    }
-
-    /* --------------------------- hero --------------------------- */
-
-    .block-castle img,
-    .block-olympiad img {
-        max-width: 460px;
-    }
-
-    /* --------------------------- server --------------------------- */
-
-    .server-name {
-        grid-template-columns: repeat(1, 346px);
-    }
-
-    /* --------------------------- general --------------------------- */
-    .container {
-        max-width: 1110px;
-    }
-
-    .title {
-        font-size: 40px;
-    }
-
-    .subtitle {
-        font-size: 15px;
-    }
-
-    /* --------------------------- race --------------------------- */
-    .races,
-    .classes {
-        padding: 16px;
-    }
-
-    /* --------------------------- friends --------------------------- */
-    .changes-block {
-        margin: 0 0 97px;
-    }
-
-    .discord-block iframe {
-        max-width: 450px;
-    }
-
-    .friends .block-title {
-        font-size: 20px;
-    }
-
-    .block-text {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 1680px) {
-    .banner__prizes-sky {
-        right: -10vw;
-    }
-
-    .banner__prizes-bg {
-        left: -15vw;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .banner__prizes-sky {
-        top: 15%;
-        right: -20%;
-    }
-
-    .banner__prizes-bg {
-        bottom: -10%;
-        left: -30vw;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .benefits-wrap {
-        gap: 24px;
-        justify-content: space-between;
-    }
-
-    .benefits-wrap .benefits-card {
-        max-width: 322px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-
-    /* --------------------------- скролл страницы --------------------------- */
-
-    .header.fixed .header__nav-item:nth-child(4) {
-        display: flex;
-    }
-
-    .header__nav-item_submenu {
-        display: none;
-    }
-
-    .header__nav-item_submenu.active {
-        display: block;
-    }
-
-
-    .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
-        display: none;
-    }
-
-    .header__box-col-right {
-        gap: 20px;
-    }
-
-    .header__box-col-right .start-game {
-        display: none;
-    }
-
-    .header-btn {
-        display: inline-flex;
-    }
-
-    .header.fixed .header__box .start-game {
-        display: block;
-        padding-bottom: 0;
-    }
-
-    /* ---------------------------  benefits --------------------------- */
-
-    .benefits-wrap {
-        gap: 16px;
-        justify-content: space-between;
-    }
-
-    .benefits-wrap .benefits-card {
-        max-width: calc(25vw - 32px);
-    }
-
-    .benefits-img {
-        height: 253px;
-    }
-
-    .benefits-title {
-        font-size: 18px;
-    }
-
-    .benefits-subtitle {
-        font-size: 14px;
-    }
-
-    .benefits-text {
-        margin: 0 20px;
-        margin-bottom: 24px;
-        margin-top: -50px;
-    }
-
-    /* --------------------------- news --------------------------- */
-
-    .news-block {
-        gap: 18px;
-    }
-
-    .news .swiper {
-        margin-top: -30px;
-        padding-top: 0;
-    }
-
-    .item-block {
-        padding: 24px 20px;
-    }
-
-    .h2-title {
-        font-size: 36px;
-    }
-
-    .subtitle_light {
-        font-size: 18px;
-        margin-bottom: 37px;
-    }
-
-    .block-title {
-        font-size: 16px;
-    }
-
-    .item-subtitle.block-subtitle {
-        font-size: 14px;
-    }
-
-    .item-block .more-server {
-        font-size: 14px;
-    }
-
-    .news-item {
-        width: calc(33.33vw - 18px);
-        max-width: 302px;
-    }
-}
-
-
-@media screen and (max-width: 1024px) {
-
-    .container {
-        padding: 0 42px;
-    }
-
-    .btn .btn-bordered-box {
-        padding: 13px 89px;
-    }
-
-    .btn-blue .btn-bordered-box {
-        padding: 13px 48px;
-    }
-
-    .btn-orange .btn-bordered-box {
-        font-size: 16px;
-    }
-
-    .start-game {
-        padding-bottom: 140px;
-    }
-
-    .h2-title,
-    .h2-title_black {
-        font-size: 36px;
-    }
-
-    .subtitle,
-    .content-text {
-        font-size: 18px;
-    }
-
-    .subtitle_light,
-    .subtitle_dark {
-        font-size: 18px;
-        margin-bottom: 50px;
-    }
-
-    /* --------------------------- race --------------------------- */
-    .content-item {
-        font-size: 14px;
-    }
-
-    .choice-text {
-        font-size: 12px;
-    }
-
-    /* --------------------------- header --------------------------- */
-    .logo__image {
-        margin-right: 28px;
-        max-width: 120px;
-    }
-
-    .header__nav-list {
-        gap: 22px;
-    }
-
-    .header__nav-item__link {
-        font-size: 14px;
-    }
-
-    .header .btn-bordered-box {
-        font-size: 14px;
-    }
-
-    /* --------------------------- benefits --------------------------- */
-    .benefits-text {
-        margin: 0 20px 24px;
-    }
-
-    .benefits-title {
-        font-size: 18px;
-    }
+    @media screen and (max-width: 1439px) {
+        .swiper {
+            padding: 30px 0px;
+        }
 
-    /* --------------------------- server --------------------------- */
-    .h1-title {
-        font-size: 46px;
-    }
-
-    .server-inner .block-title {
-        font-size: 16px;
-    }
-
-    .server-block_wrapper {
-        padding: 24px 73px;
-    }
-
-    .server-title {
-        font-size: 18px;
-    }
-
-    .server-text::before {
-        top: 20px;
-    }
-
-    .server-text::after {
-        top: 20px;
-    }
-
-    /* --------------------------- race --------------------------- */
-    .race-choice {
-        max-width: 925px;
-    }
-
-    .classes {
-        max-width: 142px;
-        gap: 10px;
-        padding: 16px;
-    }
-
-    /* --------------------------- changes --------------------------- */
-    .changes::after {
-        bottom: -40vh;
-    }
-
-    .changes-text .subtitle_light {
-        max-width: 602px;
-    }
-
-    .changes-block {
-        margin: 50px 0 40px;
-    }
-
-    .changes-content img {
-        width: 48px;
-        height: 48px;
-    }
-
-    .block-text {
-        margin-top: 8px;
-    }
-
-    .changes-img {
-        max-width: 70%;
-        top: -9vh;
-        right: -29vw;
-    }
-
-    /* --------------------------- hero --------------------------- */
-    .hero {
-        padding: 15vh 0 11vh 0;
-    }
-
-    .block-content {
-        gap: 20px;
-    }
-
-    /* --------------------------- about server --------------------------- */
-    .online-text {
-        font-size: 14px;
-    }
-
-    .online-count {
-        font-size: 18px;
-    }
-
-    .server-item {
-        font-size: 12px;
-    }
-
-    .about-img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .block-title {
-        font-size: 18px;
-    }
-
-    .block-subtitle {
-        font-size: 14px;
-        padding-top: 5px;
-    }
-
-    .inner-wrap {
-        max-width: 392px;
-    }
-
-    .inner-block {
-        margin-bottom: 30px;
-    }
-
-    .x-count {
-        font-size: 20px;
-    }
-
-    .x-bonus {
-        font-size: 12px;
-    }
-
-    .more-server {
-        font-size: 14px;
-    }
-
-    .info-text {
-        font-size: 10px;
-    }
-
-    .statistics-info {
-        padding: 12px 0;
-    }
-
-    .info-block {
-        gap: 6px;
-    }
-
-    .info-block img {
-        width: 20px;
-        height: 20px;
-    }
-
-    /* --------------------------- news --------------------------- */
-    .news-icon {
-        left: 0;
-    }
-
-    .news-icon__text {
-        font-size: 10px;
-    }
-
-    .news-img {
-        /* max-width: 302px; */
-    }
-
-    .news-block {
-        gap: 16px;
-        margin: 50px 0 40px 0;
-    }
-
-    .news-text__laptop {
-        display: none;
-    }
+        .block-castle img,
+        .block-olympiad img {
+            max-width: 550px;
+        }
+
+        .friends-block {
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+    }
+
+    @media screen and (max-width:1379px) {
+        /* --------------------------- swiper --------------------------- */
+
+        .swiper .swiper-pagination-bullet {
+            width: 60px;
+            height: 8px;
+            background: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
+            border-radius: 4px;
+        }
+
+        .swiper .swiper-pagination {
+            display: none;
+        }
+
+        .statistics {
+            text-align: end;
+        }
 
-    .item-title {
-        font-size: 16px;
-    }
-
-    .item-subtitle.block-subtitle {
-        font-size: 14px;
-        margin: 4px 0 16px 0;
-    }
-
-    .item-block {
-        padding: 24px 20px;
-    }
-
-    .item-block .more-server {
-        font-size: 14px;
-    }
-
-    /* --------------------------- best --------------------------- */
-
-    .best {
-        padding-top: 10vh;
-    }
-
-    .table__item-inner {
-        padding: 28px 22px;
-        gap: 41px;
-    }
-
-    .best-block {
-        gap: 16px;
-        margin-bottom: 40px;
-    }
-
-    .best-text {
-        font-size: 24px;
-    }
-
-    .best .block-title {
-        font-size: 16px;
-    }
+        .statistic__img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
-    .block-desc {
-        font-size: 18px;
-    }
-
-    .table-text {
-        font-size: 12px;
-    }
-
-    /* --------------------------- stream --------------------------- */
+        .info-text {
+            font-size: 14px;
+        }
 
-    .stream-block {
-        gap: 16px;
-    }
+        .statistics-info {
+            padding: 16px 0px 16px 45px;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
 
-    .stream-block-img {
-        max-width: 302px;
-    }
+        /* --------------------------- stream --------------------------- */
+        .stream {
+            padding-top: 10vh;
+        }
 
-    .stream-item {
-        max-width: 302px;
-    }
+        /* --------------------------- friends --------------------------- */
+        .friends {
+            padding-top: 5vh;
+        }
 
-    .profile-title {
-        font-size: 16px;
-    }
+        .friends-block {
+            justify-content: space-evenly;
+        }
 
-    .profile-subtitle {
-        font-size: 14px;
     }
 
-    /* --------------------------- awards --------------------------- */
-    .awards {
-        padding: 37px;
-    }
+    @media screen and (max-width:1179px) {
 
-    .awards-img__left {
-        display: none;
-    }
+        body {
+            padding-top: 168px;
+        }
 
-    .awards-img__right {
-        display: none;
-    }
+        /* --------------------------- hero --------------------------- */
 
-    .awards-img__left-laptop {
-        display: block;
-        position: absolute;
-        top: -18px;
-        left: -43px;
-    }
+        .block-castle img,
+        .block-olympiad img {
+            max-width: 460px;
+        }
 
-    .awards-img__right-laptop {
-        display: block;
-        position: absolute;
-        top: 54px;
-        right: -43px;
-    }
+        /* --------------------------- server --------------------------- */
 
-    .awards .block-subtitle {
-        font-size: 18px;
-    }
+        .server-name {
+            grid-template-columns: repeat(1, 346px);
+        }
 
-    .learn-more {
-        font-size: 14px;
-    }
+        /* --------------------------- general --------------------------- */
+        .container {
+            max-width: 1110px;
+        }
 
-    /* --------------------------- friends --------------------------- */
-    .friends-block {
-        gap: 0px;
-    }
+        .title {
+            font-size: 40px;
+        }
 
-    .friends .block-title {
-        font-size: 18px;
-    }
+        .subtitle {
+            font-size: 15px;
+        }
 
-    /* --------------------------- contacts --------------------------- */
-    .contacts-block {
-        justify-content: space-between;
-    }
+        /* --------------------------- race --------------------------- */
+        .races,
+        .classes {
+            padding: 16px;
+        }
 
-    .social-text {
-        font-size: 16px;
-    }
+        /* --------------------------- friends --------------------------- */
+        .changes-block {
+            margin: 0 0 97px;
+        }
 
-    .vk-block {
-        width: 44vw;
-    }
+        .discord-block iframe {
+            max-width: 450px;
+        }
 
-    .vk-post {
-        width: 40vw;
-    }
+        .friends .block-title {
+            font-size: 20px;
+        }
 
-    .btn-desc {
-        font-size: 14px;
+        .block-text {
+            margin-top: 20px;
+        }
     }
 
-    /* --------------------------- get prizes --------------------------- */
-    .banner__prizes__title {
-        font-size: 32px;
-    }
+    @media screen and (max-width: 1680px) {
+        .banner__prizes-sky {
+            right: -10vw;
+        }
 
-    .banner__prizes__desc {
-        font-size: 16px;
+        .banner__prizes-bg {
+            left: -15vw;
+        }
     }
 
-    .banner__prizes__img {
-        width: 32px;
-        height: 32px;
-    }
+    @media screen and (max-width: 1440px) {
+        .banner__prizes-sky {
+            top: 15%;
+            right: -20%;
+        }
 
-    .banner__prizes__right {
-        top: 35px;
-        right: -49px;
+        .banner__prizes-bg {
+            bottom: -10%;
+            left: -30vw;
+        }
     }
 
-    .banner__prizes__right-img {
-        max-width: 360px;
-    }
+    @media screen and (min-width: 1025px) {
+        .benefits-wrap {
+            gap: 24px;
+            justify-content: space-between;
+        }
 
-    /* --------------------------- footer --------------------------- */
-    .footer-title {
-        font-size: 18px;
+        .benefits-wrap .benefits-card {
+            max-width: 322px;
+        }
     }
 
-    .footer-link {
-        font-size: 16px;
-    }
+    @media screen and (max-width: 1350px) {
 
-    .website-title {
-        font-size: 18px;
-    }
+        /* --------------------------- скролл страницы --------------------------- */
 
-    .website-desc {
-        font-size: 16px;
-    }
+        .header.fixed .header__nav-item:nth-child(4) {
+            display: flex;
+        }
 
-    .social-btn img {
-        width: 30px;
-        height: 30px;
-    }
+        .header__nav-item_submenu {
+            display: none;
+        }
 
-    .social-btn .btn-bordered-box {
-        padding: 12px;
-    }
+        .header__nav-item_submenu.active {
+            display: block;
+        }
 
-    .footer-info__item {
-        font-size: 14px;
-    }
 
-    .footer-copy {
-        font-size: 14px;
-    }
+        .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
+            display: none;
+        }
 
-    .table__row {
-        gap: 16px;
-    }
+        .header__box-col-right {
+            gap: 20px;
+        }
 
-    .table__item {
-        width: calc(33.33vw - 16px);
-    }
+        .header__box-col-right .start-game {
+            display: none;
+        }
 
-    .table__item-heading {
-        font-size: 24px;
-    }
+        .header-btn {
+            display: inline-flex;
+        }
 
-    .table__item-subtitle {
-        font-size: 18px;
-    }
+        .header.fixed .header__box .start-game {
+            display: block;
+            padding-bottom: 0;
+        }
 
-    .table__item-col {
-        font-size: 12px;
-    }
+        /* ---------------------------  benefits --------------------------- */
 
-    .banner__prizes-sky {
-        top: auto;
-        bottom: -10vh;
-        right: -30%;
-    }
-}
+        .benefits-wrap {
+            gap: 16px;
+            justify-content: space-between;
+        }
 
+        .benefits-wrap .benefits-card {
+            max-width: calc(25vw - 32px);
+        }
 
-@media screen and (max-width: 1022px) {
+        .benefits-img {
+            height: 253px;
+        }
 
-    /* --------------------------- benefits --------------------------- */
-    .swiper .swiper-pagination {
-        display: block;
-        top: 30px;
-    }
+        .benefits-title {
+            font-size: 18px;
+        }
 
-    /* --------------------------- server --------------------------- */
+        .benefits-subtitle {
+            font-size: 14px;
+        }
 
-    .server-title {
-        font-size: 16px;
-    }
+        .benefits-text {
+            margin: 0 20px;
+            margin-bottom: 24px;
+            margin-top: -50px;
+        }
 
-    /* --------------------------- footer --------------------------- */
+        /* --------------------------- news --------------------------- */
 
-    /* --------------------------- hero --------------------------- */
+        .news-block {
+            gap: 18px;
+        }
 
+        .news .swiper {
+            margin-top: -30px;
+            padding-top: 0;
+        }
 
-    /* --------------------------- footer --------------------------- */
+        .item-block {
+            padding: 24px 20px;
+        }
 
-}
+        .h2-title {
+            font-size: 36px;
+        }
 
-@media screen and (max-width: 986px) {
+        .subtitle_light {
+            font-size: 18px;
+            margin-bottom: 37px;
+        }
 
-    .title {
-        font-size: 30px;
-    }
+        .block-title {
+            font-size: 16px;
+        }
 
-    .start-game {
-        padding-bottom: 100px;
-    }
+        .item-subtitle.block-subtitle {
+            font-size: 14px;
+        }
 
-    .server-name {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 25px;
-        margin: 0 0 100px 0;
-    }
+        .item-block .more-server {
+            font-size: 14px;
+        }
 
-    .server-title {
-        font-size: 22px;
+        .news-item {
+            width: calc(33.33vw - 18px);
+            max-width: 302px;
+        }
     }
 
-    /* --------------------------- friends --------------------------- */
-    .friends-block {
-        flex-direction: column-reverse;
-    }
 
-    .changes-block {
-        margin: 5px 0 60px;
-    }
+    @media screen and (max-width: 1024px) {
 
-    .subtitle_light,
-    .subtitle_dark {
-        margin-bottom: 30px;
-    }
-}
+        .container {
+            padding: 0 42px;
+        }
 
+        .btn .btn-bordered-box {
+            padding: 13px 89px;
+        }
 
+        .btn-blue .btn-bordered-box {
+            padding: 13px 48px;
+        }
 
-@media screen and (max-width: 873px) {
+        .btn-orange .btn-bordered-box {
+            font-size: 16px;
+        }
 
-    /* --------------------------- server --------------------------- */
-    .h1-title {
-        font-size: 26px;
-    }
+        .start-game {
+            padding-bottom: 140px;
+        }
 
-    /* --------------------------- changes --------------------------- */
-    .changes-img {
-        max-width: 65%;
-    }
+        .h2-title,
+        .h2-title_black {
+            font-size: 36px;
+        }
 
-    /* --------------------------- hero --------------------------- */
-    .subtitle_light,
-    .subtitle_dark {
-        font-size: 14px;
-    }
+        .subtitle,
+        .content-text {
+            font-size: 18px;
+        }
 
-    /* --------------------------- hero --------------------------- */
+        .subtitle_light,
+        .subtitle_dark {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        /* --------------------------- race --------------------------- */
+        .content-item {
+            font-size: 14px;
+        }
+
+        .choice-text {
+            font-size: 12px;
+        }
+
+        /* --------------------------- header --------------------------- */
+        .logo__image {
+            margin-right: 28px;
+            max-width: 120px;
+        }
 
-    .h2-title,
-    .h2-title_black {
-        font-size: 24px;
-    }
+        .header__nav-list {
+            gap: 22px;
+        }
 
-    .subtitle,
-    .content-text {
-        font-size: 16px;
-    }
+        .header__nav-item__link {
+            font-size: 14px;
+        }
 
-    /* --------------------------- about server --------------------------- */
-    .server-content {
-        flex-direction: column-reverse;
-    }
+        .header .btn-bordered-box {
+            font-size: 14px;
+        }
+
+        /* --------------------------- benefits --------------------------- */
+        .benefits-text {
+            margin: 0 20px 24px;
+        }
+
+        .benefits-title {
+            font-size: 18px;
+        }
+
+        /* --------------------------- server --------------------------- */
+        .h1-title {
+            font-size: 46px;
+        }
+
+        .server-inner .block-title {
+            font-size: 16px;
+        }
+
+        .server-block_wrapper {
+            padding: 24px 73px;
+        }
+
+        .server-title {
+            font-size: 18px;
+        }
+
+        .server-text::before {
+            top: 20px;
+        }
+
+        .server-text::after {
+            top: 20px;
+        }
+
+        /* --------------------------- race --------------------------- */
+        .race-choice {
+            max-width: 925px;
+        }
+
+        .classes {
+            max-width: 142px;
+            gap: 10px;
+            padding: 16px;
+        }
+
+        /* --------------------------- changes --------------------------- */
+        .changes::after {
+            bottom: -40vh;
+        }
+
+        .changes-text .subtitle_light {
+            max-width: 602px;
+        }
+
+        .changes-block {
+            margin: 50px 0 40px;
+        }
+
+        .changes-content img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .block-text {
+            margin-top: 8px;
+        }
+
+        .changes-img {
+            max-width: 70%;
+            top: -9vh;
+            right: -29vw;
+        }
+
+        /* --------------------------- hero --------------------------- */
+        .hero {
+            padding: 15vh 0 11vh 0;
+        }
+
+        .block-content {
+            gap: 20px;
+        }
+
+        /* --------------------------- about server --------------------------- */
+        .online-text {
+            font-size: 14px;
+        }
+
+        .online-count {
+            font-size: 18px;
+        }
+
+        .server-item {
+            font-size: 12px;
+        }
+
+        .about-img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .block-title {
+            font-size: 18px;
+        }
+
+        .block-subtitle {
+            font-size: 14px;
+            padding-top: 5px;
+        }
+
+        .inner-wrap {
+            max-width: 392px;
+        }
+
+        .inner-block {
+            margin-bottom: 30px;
+        }
+
+        .x-count {
+            font-size: 20px;
+        }
+
+        .x-bonus {
+            font-size: 12px;
+        }
+
+        .more-server {
+            font-size: 14px;
+        }
+
+        .info-text {
+            font-size: 10px;
+        }
+
+        .statistics-info {
+            padding: 12px 0;
+        }
+
+        .info-block {
+            gap: 6px;
+        }
+
+        .info-block img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* --------------------------- news --------------------------- */
+        .news-icon {
+            left: 0;
+        }
+
+        .news-icon__text {
+            font-size: 10px;
+        }
+
+        .news-img {
+            /* max-width: 302px; */
+        }
+
+        .news-block {
+            gap: 16px;
+            margin: 50px 0 40px 0;
+        }
+
+        .news-text__laptop {
+            display: none;
+        }
+
+        .item-title {
+            font-size: 16px;
+        }
+
+        .item-subtitle.block-subtitle {
+            font-size: 14px;
+            margin: 4px 0 16px 0;
+        }
+
+        .item-block {
+            padding: 24px 20px;
+        }
+
+        .item-block .more-server {
+            font-size: 14px;
+        }
+
+        /* --------------------------- best --------------------------- */
+
+        .best {
+            padding-top: 10vh;
+        }
+
+        .table__item-inner {
+            padding: 28px 22px;
+            gap: 41px;
+        }
+
+        .best-block {
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .best-text {
+            font-size: 24px;
+        }
+
+        .best .block-title {
+            font-size: 16px;
+        }
+
+        .block-desc {
+            font-size: 18px;
+        }
+
+        .table-text {
+            font-size: 12px;
+        }
+
+        /* --------------------------- stream --------------------------- */
+
+        .stream-block {
+            gap: 16px;
+        }
+
+        .stream-block-img {
+            max-width: 302px;
+        }
+
+        .stream-item {
+            max-width: 302px;
+        }
+
+        .profile-title {
+            font-size: 16px;
+        }
+
+        .profile-subtitle {
+            font-size: 14px;
+        }
+
+        /* --------------------------- awards --------------------------- */
+        .awards {
+            padding: 37px;
+        }
+
+        .awards-img__left {
+            display: none;
+        }
+
+        .awards-img__right {
+            display: none;
+        }
+
+        .awards-img__left-laptop {
+            display: block;
+            position: absolute;
+            top: -18px;
+            left: -43px;
+        }
+
+        .awards-img__right-laptop {
+            display: block;
+            position: absolute;
+            top: 54px;
+            right: -43px;
+        }
+
+        .awards .block-subtitle {
+            font-size: 18px;
+        }
+
+        .learn-more {
+            font-size: 14px;
+        }
+
+        /* --------------------------- friends --------------------------- */
+        .friends-block {
+            gap: 0px;
+        }
+
+        .friends .block-title {
+            font-size: 18px;
+        }
+
+        /* --------------------------- contacts --------------------------- */
+        .contacts-block {
+            justify-content: space-between;
+        }
+
+        .social-text {
+            font-size: 16px;
+        }
+
+        .vk-block {
+            width: 44vw;
+        }
+
+        .vk-post {
+            width: 40vw;
+        }
+
+        .btn-desc {
+            font-size: 14px;
+        }
+
+        /* --------------------------- get prizes --------------------------- */
+        .banner__prizes__title {
+            font-size: 32px;
+        }
+
+        .banner__prizes__desc {
+            font-size: 16px;
+        }
 
-    .x-block {
-        flex-wrap: wrap;
-    }
+        .banner__prizes__img {
+            width: 32px;
+            height: 32px;
+        }
 
-    /* --------------------------- general --------------------------- */
-    .btn .btn-bordered-box {
-        padding: 18px 51px;
-    }
+        .banner__prizes__right {
+            top: 35px;
+            right: -49px;
+        }
 
-    /* --------------------------- friends --------------------------- */
-    .friends .block-title {
-        font-size: 18px;
-    }
+        .banner__prizes__right-img {
+            max-width: 360px;
+        }
 
-}
+        /* --------------------------- footer --------------------------- */
+        .footer-title {
+            font-size: 18px;
+        }
 
-/* @media screen and (max-width: 545px) {
+        .footer-link {
+            font-size: 16px;
+        }
+
+        .website-title {
+            font-size: 18px;
+        }
+
+        .website-desc {
+            font-size: 16px;
+        }
+
+        .social-btn img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-btn .btn-bordered-box {
+            padding: 12px;
+        }
+
+        .footer-info__item {
+            font-size: 14px;
+        }
+
+        .footer-copy {
+            font-size: 14px;
+        }
+
+        .table__row {
+            gap: 16px;
+        }
+
+        .table__item {
+            width: calc(33.33vw - 16px);
+        }
+
+        .table__item-heading {
+            font-size: 24px;
+        }
+
+        .table__item-subtitle {
+            font-size: 18px;
+        }
+
+        .table__item-col {
+            font-size: 12px;
+        }
+
+        .banner__prizes-sky {
+            top: auto;
+            bottom: -10vh;
+            right: -30%;
+        }
+    }
+
+
+    @media screen and (max-width: 1022px) {
+
+        /* --------------------------- benefits --------------------------- */
+        .swiper .swiper-pagination {
+            display: block;
+            top: 30px;
+        }
+
+        /* --------------------------- server --------------------------- */
+
+        .server-title {
+            font-size: 16px;
+        }
+
+        /* --------------------------- footer --------------------------- */
+
+        /* --------------------------- hero --------------------------- */
+
+
+        /* --------------------------- footer --------------------------- */
+
+    }
+
+    @media screen and (max-width: 986px) {
+
+        /* --------------------------- header --------------------------- */
+        /*скрываем меню для появления бургера*/
+        .header__nav-actions,
+        .header__nav,
+        .header .btn-bordered-box {
+            display: none;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .start-game {
+            padding-bottom: 100px;
+        }
+
+        .server-name {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+            margin: 0 0 100px 0;
+        }
+
+        .server-title {
+            font-size: 22px;
+        }
+
+        /* --------------------------- burger --------------------------- */
+
+        .burger {
+            padding: 0;
+            position: relative;
+            max-height: 30px;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 8px;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        .burger-line {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 3px;
+            background-color: #ffffff;
+            transition: all 0.3s ease 0s;
+        }
+
+        .burger-line_span {
+            transform: scale(1);
+        }
+
+        .burger.active .burger-line_span {
+            transform: scale(0);
+        }
+
+        .burger.active .burger-line_top {
+            top: 10px;
+            transform: rotate(-45deg) translate(0px, -50%);
+        }
+
+        .burger.active .burger-line_bottom {
+            bottom: 14px;
+            transform: rotate(45deg) translate(0px, 50%);
+        }
+
+        .lock {
+            overflow: hidden;
+            background: #070B18;
+            position: relative;
+            z-index: 999;
+        }
+
+
+        /* --------------------------- burger-menu --------------------------- */
+        .header__nav.active .lock {
+            background: #000;
+        }
+
+        /* --------------------------- friends --------------------------- */
+        .friends-block {
+            flex-direction: column-reverse;
+        }
+
+        .changes-block {
+            margin: 5px 0 60px;
+        }
+
+        .subtitle_light,
+        .subtitle_dark {
+            margin-bottom: 30px;
+        }
+    }
+
+
+
+    @media screen and (max-width: 873px) {
+
+        /* --------------------------- server --------------------------- */
+        .h1-title {
+            font-size: 26px;
+        }
+
+        /* --------------------------- changes --------------------------- */
+        .changes-img {
+            max-width: 65%;
+        }
+
+        /* --------------------------- hero --------------------------- */
+        .subtitle_light,
+        .subtitle_dark {
+            font-size: 14px;
+        }
+
+        /* --------------------------- hero --------------------------- */
+
+        .h2-title,
+        .h2-title_black {
+            font-size: 24px;
+        }
+
+        .subtitle,
+        .content-text {
+            font-size: 16px;
+        }
+
+        /* --------------------------- about server --------------------------- */
+        .server-content {
+            flex-direction: column-reverse;
+        }
+
+        .x-block {
+            flex-wrap: wrap;
+        }
+
+        /* --------------------------- general --------------------------- */
+        .btn .btn-bordered-box {
+            padding: 18px 51px;
+        }
+
+        /* --------------------------- friends --------------------------- */
+        .friends .block-title {
+            font-size: 18px;
+        }
+
+    }
+
+    /* @media screen and (max-width: 545px) {
 
     .logo {
         width: 112px;
@@ -858,814 +919,774 @@
     }
 } */
 
-@media screen and (max-width: 767px) {
-
-    /* --------------------------- general --------------------------- */
-    .container {
-        padding: 0 20px;
+    @media screen and (max-width: 767px) {
+
+        /* --------------------------- general --------------------------- */
+        .container {
+            padding: 0 20px;
+        }
+
+        .btn .btn-bordered-box {
+            padding: 18px 29px;
+        }
+
+        .subtitle_light,
+        .subtitle_dark {
+            margin-bottom: 40px;
+        }
+
+        .h2-title {
+            text-align: start;
+        }
+
+        .subtitle,
+        .subtitle_light,
+        .subtitle_dark {
+            text-align: start;
+        }
+
+        .iframe {
+            width: 100%;
+        }
+
+        /* --------------------------- header --------------------------- */
+
+        /* --------------------------- server --------------------------- */
+        .server-block_wrapper {
+            padding: 24px 62px;
+        }
+
+        .server-text-block {
+            margin-bottom: 50px;
+        }
+
+        .start-game {
+            padding-bottom: 40px;
+        }
+
+        .server-text::before,
+        .server-text::after {
+            top: 10px;
+        }
+
+        .new-icon {
+            left: 0;
+        }
+
+        .hero .h2-title_black {
+            text-align: left;
+        }
+
+        .hero .subtitle_dark {
+            max-width: 65%;
+        }
+
+        /* slider */
+        .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+        .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+            transform: translateX(-70%);
+        }
+
+        /* --------------------------- changes --------------------------- */
+        .block-castle img,
+        .block-olympiad img {
+            max-width: 100%;
+        }
+
+        .changes-content img {
+            width: 56px;
+            height: 56px;
+        }
+
+        .more-info {
+            padding: 0;
+        }
+
+        .changes-img {
+            top: 87vh;
+            right: 17vw;
+            max-width: 70%;
+        }
+
+        /* --------------------------- hero --------------------------- */
+        .block-content {
+            gap: 40px;
+            flex-direction: column;
+        }
+
+        .content-text {
+            font-size: 18px;
+        }
+
+        .hero .more-info {
+            display: block;
+            margin-top: 50px;
+
+        }
+
+        /* --------------------------- race --------------------------- */
+        .race .container-second,
+        .race-choice {
+            display: none;
+        }
+
+        .race-choice__mobile {
+            display: block;
+        }
+
+        .race-choice__btn {
+            display: flex;
+            position: relative;
+            z-index: 3;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background: radial-gradient(213.27% 499.58% at 46.94% 265.42%, #357DEA 0%, #090F27 47.05%);
+            border-radius: 14px;
+            padding: 12px 12px 12px 20px;
+        }
+
+        .race-item__content {
+            position: relative;
+            top: -24px;
+        }
+
+        .race-item_header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .race-choice__item:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        .item-content__img {
+            position: relative;
+            z-index: 2;
+
+            background: url(image.png), #BFD2F4;
+            border-radius: 0px 0px 16px 16px;
+            padding-top: 20px;
+        }
+
+        .item-content-text {
+            position: relative;
+            top: -10px;
+            z-index: 1;
+            background: radial-gradient(128% 100% at 50% 0%, #2F68B7 12.56%, #182E57 75.7%, #1F2C5A 93.15%);
+            border-radius: 0px 0px 16px 16px;
+            padding: 42px 20px 24px;
+        }
+
+        .item-content__title {
+            font-family: 'Manrope-Medium', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #fff;
+        }
+
+        .race-img {
+            position: static;
+            max-width: 100%;
+        }
+
+        .races {
+            padding: 0;
+        }
+
+        .arrow {
+            width: 22px;
+            height: 12px;
+        }
+
+        .race-item__content {
+            display: none;
+        }
+
+        .race-item__content.open {
+            display: block;
+        }
+
+        .race-choice__btn {
+            display: flex;
+        }
+
+        .arrow.active {
+            transform: rotate(180deg);
+        }
+
+        /* --------------------------- about server --------------------------- */
+
+        .about-block .subtitle_light {
+            display: block;
+        }
+
+        .server-online {
+            justify-content: center;
+        }
+
+        .about-server .server-online {
+            justify-content: flex-start;
+        }
+
+        .server-box {
+            margin-bottom: 30px;
+        }
+
+        .statistics-info {
+            padding: 8px 0;
+        }
+
+        .statistics .server-online {
+            justify-content: flex-start;
+        }
+
+        .info-text {
+            font-size: 14px;
+        }
+
+        .info-block img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .info-block {
+            text-align: start;
+        }
+
+        .server-content {
+            margin: 0 auto;
+        }
+
+        .server-content .more-server {
+            text-align: left;
+        }
+
+        .inner-benefits {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inner-benefits .more-server::after {
+            display: none;
+        }
+
+        .about-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .block-subtitle {
+            line-height: 130%;
+        }
+
+        .x-block {
+            gap: 16px 24px;
+        }
+
+        .x-count {
+            font-size: 24px;
+        }
+
+        .x-bonus {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #438CEC;
+        }
+
+        .x-bonus::before {
+            display: none;
+        }
+
+        /* --------------------------- news --------------------------- */
+
+        .news {
+            padding-top: 9vh;
+            background: #070B18;
+        }
+
+        .news-block {
+            max-width: 302px;
+            width: 100%;
+        }
+
+        .news-text__laptop {
+            display: none;
+        }
+
+        .news-text {
+            display: block;
+        }
+
+        .news-icon {
+            top: 20px;
+            left: 20px;
+        }
+
+        .news-item {
+            width: 302px !important;
+            margin-right: 0;
+        }
+
+        .news .swiper .swiper-pagination {
+            top: 0;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        /* --------------------------- stream --------------------------- */
+        .stream {
+            padding: 40px 0 5vh 0;
+        }
+
+        .stream-block {
+            max-width: 302px;
+            margin-bottom: 0;
+        }
+
+        .stream-item {
+            max-width: 302px !important;
+            margin-right: 0 !important;
+        }
+
+        /* --------------------------- best --------------------------- */
+        .best-text:not(:first-child) {
+            display: none;
+        }
+
+        .best-item:not(:first-child) {
+            display: none;
+        }
+
+        .best .more-info {
+            margin-bottom: 20px;
+        }
+
+        .best-info {
+            font-size: 14px;
+        }
+
+        /* --------------------------- awards --------------------------- */
+        .awards {
+            padding: 28px 20px;
+            padding-bottom: 150px;
+        }
+
+        .awards-img__left-laptop {
+            top: -91px;
+            left: -148px;
+            transform: rotate(25deg);
+        }
+
+        .awards-block .h2-title {
+            text-align: center;
+        }
+
+        .awards .block-subtitle {
+            font-size: 14px;
+        }
+
+        .awards-btn {
+            margin-top: 16px;
+        }
+
+        .awards-img__right-laptop {
+            top: 164px;
+            right: -20px;
+        }
+
+        .awards-block {
+            margin-bottom: 24px;
+        }
+
+        /* --------------------------- friends --------------------------- */
+        .friends .changes-block {
+            margin: 0;
+        }
+
+        /* --------------------------- contacts --------------------------- */
+        .contacts-block {
+            flex-direction: column;
+        }
+
+        .social-block {
+            width: 100%;
+        }
+
+        .social-btn .btn-bordered-box {
+            padding: 16px 24px;
+        }
+
+        .social-btn img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .social-text {
+            font-size: 14px;
+        }
+
+        .btn-desc {
+            font-size: 12px;
+            line-height: 130%;
+            text-align: start;
+        }
+
+        .vk-block {
+            width: 100%;
+        }
+
+        /* --------------------------- banner__prizes --------------------------- */
+        .banner__prizes__body {
+            padding: 0;
+            background: transparent;
+        }
+
+        .banner__prizes__wrapper {
+            border-radius: 24px;
+            padding: 24px 20px;
+            position: relative;
+            z-index: 3;
+            background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
+        }
+
+        .banner__prizes__title {
+            font-size: 24px;
+        }
+
+        .banner__prizes__desc {
+            font-size: 14px;
+        }
+
+        .banner__prizes__right {
+            top: -45%;
+            right: 0;
+        }
+
+        .banner__prizes__right-img {
+            max-width: 240px;
+        }
+
+        .banner__prizes-bg {
+            left: 0;
+            bottom: auto;
+            top: 0;
+            width: 100%;
+        }
+
+        .banner__prizes__items {
+            gap: 16px;
+        }
+
+        /* --------------------------- footer --------------------------- */
+
+        .footer-top {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        .footer-info {
+            flex-direction: column;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-wrap {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            border-bottom: 0.4px solid #fff;
+        }
+
+        .info-link {
+            display: none;
+        }
+
+        .info-link.open {
+            display: block;
+            padding-bottom: 14px;
+        }
+
+        .plus {
+            display: block;
+            transition: all .6s ease;
+        }
+
+        .plus.active {
+            display: block;
+            transform: rotate(180deg);
+            transition: all .6s ease;
+
+        }
+
+        .footer-title.gold {
+            color: #FFC039;
+        }
+
+        .footer-title {
+            margin-bottom: 0;
+        }
+
+        .website-title {
+            color: #FFC039;
+        }
+
+        .website-desc {
+            font-size: 14px;
+        }
+
+        .social-btn .btn-bordered-box {
+            padding: 8px;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .footer-bottom__info {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-link:hover {
+            color: #FFC342;
+        }
+
+        .footer-info__item:hover {
+            color: #FFC342;
+        }
+
+        .table__item {
+            width: 100%;
+        }
+
+        .benefits-wrap {
+            gap: 0;
+        }
+
+        .benefits-wrap .benefits-card,
+        .stream-item,
+        .news-item {
+            max-width: 322px;
+            width: 100%;
+        }
+
+        .stream-block-img,
+        .news-img {
+            max-width: 100%;
+        }
+
+        /* --------------------------- news --------------------------- */
+        .news .subtitle_light {
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .server-content {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 40px;
+        }
+
+
+        /* --------------------------- changes --------------------------- */
+        .changes-img {
+            top: 50vh;
+            right: 9vw;
+            transform: rotate(10deg);
+        }
+
+        .changes-content:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .changes::after {
+            bottom: -40vh;
+        }
+
+        .discord-block iframe {
+            max-width: 400px;
+        }
+
+        .table__item {
+            display: none;
+        }
+
+        .table__item.active {
+            display: block;
+        }
+
+        .benefits .container {
+            padding: 0;
+        }
+
+        .benefits-card {
+            max-width: 323px;
+            width: 100%;
+        }
+
+        .stream .swiper,
+        .news .swiper {
+            margin: 0 -20px;
+        }
+
+        .server-block {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .mobile-hidden {
+            display: none !important;
+        }
+
+        .desktop-hidden {
+            display: block !important;
+        }
+
+        .server-item.active .mobile-hidden {
+            display: inline-block !important;
+        }
+
+        .server .subtitle {
+            text-align: center;
+        }
+
+        .online-count {
+            font-size: 22px;
+        }
+
+        .statistics-info__inner {
+            align-items: flex-start;
+        }
+
+        .news .swiper {
+            padding-top: 40px;
+        }
+
+        .news-block {
+            margin: 0;
+        }
+
+        .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+            transform: none !important;
+        }
+
+        .benefits {
+            background: #070B18;
+        }
+
+        body {
+            background: url(../img/bg-mobile.png);
+            background-color: #070B18;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        .server-block__inner {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .server-name {
+            gap: 20px;
+        }
+
+        .server-title {
+            font-size: 18px;
+        }
+
+        .online-text {
+            font-size: 16px;
+        }
+
+        .online-count {
+            font-size: 18px;
+        }
+
+        .server-text-block .subtitle {
+            text-align: center;
+        }
+
+        .h2-title,
+        .h2-title_black {
+            text-align: start;
+        }
+
+        .subtitle,
+        .subtitle_light {
+            text-align: start;
+        }
+
+        .discord-block iframe {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header-btn {
+            display: none !important;
+        }
+
+        .start-game {
+            width: 100%;
+        }
+
+        .start-game .btn {
+            width: 100%;
+        }
+
+        .btn {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .awards .container {
+            padding: 28px 20.5px;
+        }
+
+        .table__item-heading {
+            display: none;
+        }
+
+        .table__item-inner {
+            padding: 0;
+            border: 0;
+        }
+
+        .table__item-col {
+            font-size: 14px;
+        }
+
+        .table__item-clans .table__item-col:nth-child(2) {
+            max-width: 30%;
+        }
+
+        .table__item-inner {
+            background: none;
+        }
+
+        .stream .swiper {
+            padding-top: 0;
+        }
     }
-
-    .btn .btn-bordered-box {
-        padding: 18px 29px;
-    }
-
-    .subtitle_light,
-    .subtitle_dark {
-        margin-bottom: 40px;
-    }
-
-    .h2-title {
-        text-align: start;
-    }
-
-    .subtitle,
-    .subtitle_light,
-    .subtitle_dark {
-        text-align: start;
-    }
-
-    .iframe {
-        width: 100%;
-    }
-
-    /* --------------------------- header --------------------------- */
-
-    /* --------------------------- server --------------------------- */
-    .server-block_wrapper {
-        padding: 24px 62px;
-    }
-
-    .server-text-block {
-        margin-bottom: 50px;
-    }
-
-    .start-game {
-        padding-bottom: 40px;
-    }
-
-    .server-text::before,
-    .server-text::after {
-        top: 10px;
-    }
-
-    .new-icon {
-        left: 0;
-    }
-
-    .hero .h2-title_black {
-        text-align: left;
-    }
-
-    .hero .subtitle_dark {
-        max-width: 65%;
-    }
-
-    /* slider */
-    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
-    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-        transform: translateX(-70%);
-    }
-
-    /* --------------------------- changes --------------------------- */
-    .block-castle img,
-    .block-olympiad img {
-        max-width: 100%;
-    }
-
-    .changes-content img {
-        width: 56px;
-        height: 56px;
-    }
-
-    .more-info {
-        padding: 0;
-    }
-
-    .changes-img {
-        top: 87vh;
-        right: 17vw;
-        max-width: 70%;
-    }
-
-    /* --------------------------- hero --------------------------- */
-    .block-content {
-        gap: 40px;
-        flex-direction: column;
-    }
-
-    .content-text {
-        font-size: 18px;
-    }
-
-    .hero .more-info {
-        display: block;
-        margin-top: 50px;
-
-    }
-
-    /* --------------------------- race --------------------------- */
-    .race .container-second,
-    .race-choice {
-        display: none;
-    }
-
-    .race-choice__mobile {
-        display: block;
-    }
-
-    .race-choice__btn {
-        display: flex;
-        position: relative;
-        z-index: 3;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        background: radial-gradient(213.27% 499.58% at 46.94% 265.42%, #357DEA 0%, #090F27 47.05%);
-        border-radius: 14px;
-        padding: 12px 12px 12px 20px;
-    }
-
-    .race-item__content {
-        position: relative;
-        top: -24px;
-    }
-
-    .race-item_header {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .race-choice__item:not(:last-child) {
-        margin-bottom: 16px;
-    }
-
-    .item-content__img {
-        position: relative;
-        z-index: 2;
-
-        background: url(image.png), #BFD2F4;
-        border-radius: 0px 0px 16px 16px;
-        padding-top: 20px;
-    }
-
-    .item-content-text {
-        position: relative;
-        top: -10px;
-        z-index: 1;
-        background: radial-gradient(128% 100% at 50% 0%, #2F68B7 12.56%, #182E57 75.7%, #1F2C5A 93.15%);
-        border-radius: 0px 0px 16px 16px;
-        padding: 42px 20px 24px;
-    }
-
-    .item-content__title {
-        font-family: 'Manrope-Medium', sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 130%;
-        color: #fff;
-    }
-
-    .race-img {
-        position: static;
-        max-width: 100%;
-    }
-
-    .races {
-        padding: 0;
-    }
-
-    .arrow {
-        width: 22px;
-        height: 12px;
-    }
-
-    .race-item__content {
-        display: none;
-    }
-
-    .race-item__content.open {
-        display: block;
-    }
-
-    .race-choice__btn {
-        display: flex;
-    }
-
-    .arrow.active {
-        transform: rotate(180deg);
-    }
-
-    /* --------------------------- about server --------------------------- */
-
-    .about-block .subtitle_light {
-        display: block;
-    }
-
-    .server-online {
-        justify-content: center;
-    }
-
-    .about-server .server-online {
-        justify-content: flex-start;
-    }
-
-    .server-box {
-        margin-bottom: 30px;
-    }
-
-    .statistics-info {
-        padding: 8px 0;
-    }
-
-    .statistics .server-online {
-        justify-content: flex-start;
-    }
-
-    .info-text {
-        font-size: 14px;
-    }
-
-    .info-block img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .info-block {
-        text-align: start;
-    }
-
-    .server-content {
-        margin: 0 auto;
-    }
-
-    .server-content .more-server {
-        text-align: left;
-    }
-
-    .inner-benefits {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .inner-benefits .more-server::after {
-        display: none;
-    }
-
-    .about-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .block-subtitle {
-        line-height: 130%;
-    }
-
-    .x-block {
-        gap: 16px 24px;
-    }
-
-    .x-count {
-        font-size: 24px;
-    }
-
-    .x-bonus {
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: #438CEC;
-    }
-
-    .x-bonus::before {
-        display: none;
-    }
-
-    /* --------------------------- news --------------------------- */
-
-    .news {
-        padding-top: 9vh;
-        background: #070B18;
-    }
-
-    .news-block {
-        max-width: 302px;
-        width: 100%;
-    }
-
-    .news-text__laptop {
-        display: none;
-    }
-
-    .news-text {
-        display: block;
-    }
-
-    .news-icon {
-        top: 20px;
-        left: 20px;
-    }
-
-    .news-item {
-        width: 302px !important;
-        margin-right: 0;
-    }
-
-    .news .swiper .swiper-pagination {
-        top: 0;
-        padding-top: 30px;
-        padding-bottom: 10px;
-    }
-
-    /* --------------------------- stream --------------------------- */
-    .stream {
-        padding: 40px 0 5vh 0;
-    }
-
-    .stream-block {
-        max-width: 302px;
-        margin-bottom: 0;
-    }
-
-    .stream-item {
-        max-width: 302px !important;
-        margin-right: 0 !important;
-    }
-
-    /* --------------------------- best --------------------------- */
-    .best-text:not(:first-child) {
-        display: none;
-    }
-
-    .best-item:not(:first-child) {
-        display: none;
-    }
-
-    .best .more-info {
-        margin-bottom: 20px;
-    }
-
-    .best-info {
-        font-size: 14px;
-    }
-
-    /* --------------------------- awards --------------------------- */
-    .awards {
-        padding: 28px 20px;
-        padding-bottom: 150px;
-    }
-
-    .awards-img__left-laptop {
-        top: -91px;
-        left: -148px;
-        transform: rotate(25deg);
-    }
-
-    .awards-block .h2-title {
-        text-align: center;
-    }
-
-    .awards .block-subtitle {
-        font-size: 14px;
-    }
-
-    .awards-btn {
-        margin-top: 16px;
-    }
-
-    .awards-img__right-laptop {
-        top: 164px;
-        right: -20px;
-    }
-
-    .awards-block {
-        margin-bottom: 24px;
-    }
-
-    /* --------------------------- friends --------------------------- */
-    .friends .changes-block {
-        margin: 0;
-    }
-
-    /* --------------------------- contacts --------------------------- */
-    .contacts-block {
-        flex-direction: column;
-    }
-
-    .social-block {
-        width: 100%;
-    }
-
-    .social-btn .btn-bordered-box {
-        padding: 16px 24px;
-    }
-
-    .social-btn img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .social-text {
-        font-size: 14px;
-    }
-
-    .btn-desc {
-        font-size: 12px;
-        line-height: 130%;
-        text-align: start;
-    }
-
-    .vk-block {
-        width: 100%;
-    }
-
-    /* --------------------------- banner__prizes --------------------------- */
-    .banner__prizes__body {
-        padding: 0;
-        background: transparent;
-    }
-
-    .banner__prizes__wrapper {
-        border-radius: 24px;
-        padding: 24px 20px;
-        position: relative;
-        z-index: 3;
-        background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
-    }
-
-    .banner__prizes__title {
-        font-size: 24px;
-    }
-
-    .banner__prizes__desc {
-        font-size: 14px;
-    }
-
-    .banner__prizes__right {
-        top: -45%;
-        right: 0;
-    }
-
-    .banner__prizes__right-img {
-        max-width: 240px;
-    }
-
-    .banner__prizes-bg {
-        left: 0;
-        bottom: auto;
-        top: 0;
-        width: 100%;
-    }
-
-    .banner__prizes__items {
-        gap: 16px;
-    }
-
-    /* --------------------------- footer --------------------------- */
-
-    .footer-top {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-
-    .footer-info {
-        flex-direction: column;
-        gap: 40px;
-        padding-bottom: 40px;
-    }
-
-    .footer-wrap {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-
-    .info-item {
-        border-bottom: 0.4px solid #fff;
-    }
-
-    .info-link {
-        display: none;
-    }
-
-    .info-link.open {
-        display: block;
-        padding-bottom: 14px;
-    }
-
-    .plus {
-        display: block;
-        transition: all .6s ease;
-    }
-
-    .plus.active {
-        display: block;
-        transform: rotate(180deg);
-        transition: all .6s ease;
-
-    }
-
-    .footer-title.gold {
-        color: #FFC039;
-    }
-
-    .footer-title {
-        margin-bottom: 0;
-    }
-
-    .website-title {
-        color: #FFC039;
-    }
-
-    .website-desc {
-        font-size: 14px;
-    }
-
-    .social-btn .btn-bordered-box {
-        padding: 8px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .footer-bottom__info {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-link:hover {
-        color: #FFC342;
-    }
-
-    .footer-info__item:hover {
-        color: #FFC342;
-    }
-
-    .table__item {
-        width: 100%;
-    }
-
-    .benefits-wrap {
-        gap: 0;
-    }
-
-    .benefits-wrap .benefits-card,
-    .stream-item,
-    .news-item {
-        max-width: 322px;
-        width: 100%;
-    }
-
-    .stream-block-img,
-    .news-img {
-        max-width: 100%;
-    }
-
-    /* --------------------------- news --------------------------- */
-    .news .subtitle_light {
-        margin: 0;
-    }
-
-    img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
-
-    .server-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 40px;
-    }
-
-    /* --------------------------- header --------------------------- */
-
-    /* --------------------------- changes --------------------------- */
-    .changes-img {
-        top: 50vh;
-        right: 9vw;
-        transform: rotate(10deg);
-    }
-
-    .changes-content:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .changes::after {
-        bottom: -40vh;
-    }
-
-    .discord-block iframe {
-        max-width: 400px;
-    }
-
-    .table__item {
-        display: none;
-    }
-
-    .table__item.active {
-        display: block;
-    }
-
-    .benefits .container {
-        padding: 0;
-    }
-
-    .benefits-card {
-        max-width: 323px;
-        width: 100%;
-    }
-
-    .stream .swiper,
-    .news .swiper {
-        margin: 0 -20px;
-    }
-
-    .server-block {
-        width: 100%;
-        max-width: 420px;
-    }
-
-    .mobile-hidden {
-        display: none !important;
-    }
-
-    .desktop-hidden {
-        display: block !important;
-    }
-
-    .server-item.active .mobile-hidden {
-        display: inline-block !important;
-    }
-
-    .server .subtitle {
-        text-align: center;
-    }
-
-    .online-count {
-        font-size: 22px;
-    }
-
-    .statistics-info__inner {
-        align-items: flex-start;
-    }
-
-    .news .swiper {
-        padding-top: 40px;
-    }
-
-    .news-block {
-        margin: 0;
-    }
-
-    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-        transform: none !important;
-    }
-
-    .benefits {
-        background: #070B18;
-    }
-
-    body {
-        background: url(../img/bg-mobile.png);
-        background-color: #070B18;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .burger {
-        padding: 0;
-        position: relative;
-        max-height: 30px;
-        display: flex;
-        flex-direction: column;
-        grid-gap: 8px;
-        cursor: pointer;
-    }
-
-    .burger-line {
-        position: relative;
-        display: inline-block;
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        transition: all 0.3s ease 0s;
-    }
-
-    .burger-line_span {
-        transform: scale(1);
-    }
-
-    .burger.active .burger-line_span {
-        transform: scale(0);
-    }
-
-    .burger.active .burger-line_top {
-        top: 10px;
-        transform: rotate(-45deg) translate(0px, -50%);
-    }
-
-    .burger.active .burger-line_bottom {
-        bottom: 14px;
-        transform: rotate(45deg) translate(0px, 50%);
-    }
-
-    .lock {
-        overflow: hidden;
-    }
-
-    .server-block__inner {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .server-name {
-        gap: 20px;
-    }
-
-    .server-title {
-        font-size: 18px;
-    }
-
-    .online-text {
-        font-size: 16px;
-    }
-
-    .online-count {
-        font-size: 18px;
-    }
-
-    .server-text-block .subtitle {
-        text-align: center;
-    }
-
-    .h2-title,
-    .h2-title_black {
-        text-align: start;
-    }
-
-    .subtitle,
-    .subtitle_light {
-        text-align: start;
-    }
-
-    .discord-block iframe {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .header__nav {
-        display: none;
-    }
-
-    .header-btn {
-        display: none !important;
-    }
-
-    .start-game {
-        width: 100%;
-    }
-
-    .start-game .btn {
-        width: 100%;
-    }
-
-    .btn {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .awards .container {
-        padding: 28px 20.5px;
-    }
-
-    .table__item-heading {
-        display: none;
-    }
-
-    .table__item-inner {
-        padding: 0;
-        border: 0;
-    }
-
-    .table__item-col {
-        font-size: 14px;
-    }
-
-    .table__item-clans .table__item-col:nth-child(2) {
-        max-width: 30%;
-    }
-
-    .table__item-inner {
-        background: none;
-    }
-
-    .stream .swiper {
-        padding-top: 0;
-    }
-}
