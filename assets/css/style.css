@@ -618,6 +618,10 @@ img {
     padding: 0;
 }
 
+.burger-menu {
+    display: none;
+}
+
 /* CHANGES */
 .changes {
     position: relative;
@@ -1646,7 +1650,7 @@ img {
 
 .overlay::before {
     content: '';
-    z-index: 10;
+    z-index: 4;
     width: 22%;
     height: 60%;
     display: block;
