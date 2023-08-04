@@ -258,11 +258,10 @@ img {
 
 .header__nav-list {
     display: flex;
+    gap: 30px;
+
 }
 
-.header__nav-list {
-    gap: 32px;
-}
 
 .header__nav-item {
     display: flex;
@@ -703,9 +702,9 @@ img {
 
 .changes-img {
     position: absolute;
-    max-width: 50%;
+    max-width: 65%;
     top: 0;
-    right: 0;
+    right: -13vw;
 }
 
 .changes-sky img {
@@ -1425,7 +1424,8 @@ img {
     background: #FFF;
 }
 
-.awards .container {
+/* .awards .container { */
+.awards-blocks {
     background: radial-gradient(218.4% 279.95% at 70% 15.47%, #357DEA 0%, #090F27 67.19%);
     border-radius: 24px;
     text-align: center;
