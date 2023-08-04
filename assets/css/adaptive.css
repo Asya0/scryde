@@ -73,11 +73,6 @@
     .friends {
         padding-top: 5vh;
     }
-
-    .friends-block {
-        justify-content: space-evenly;
-    }
-
 }
 
 @media screen and (max-width: 1350px) {
@@ -176,6 +171,7 @@
         margin-bottom: 37px;
     }
 
+
     .block-title {
         font-size: 16px;
     }
@@ -194,11 +190,16 @@
     }
 
     .awards-img__left {
-        top: 61px;
+        top: 59px;
     }
 
     .awards-img__right {
-        top: 56px;
+        top: 54px;
+    }
+
+    /* --------------------------- friends --------------------------- */
+    .friends .block-title {
+        font-size: 22px;
     }
 }
 
@@ -209,7 +210,7 @@
     }
 
 
-    /* --------------------------- server --------------------------- */
+    /* ---------------------------  about server --------------------------- */
 
     .server-name {
         grid-template-columns: repeat(1, 346px);
@@ -236,16 +237,22 @@
     }
 
     /* --------------------------- friends --------------------------- */
-    .changes-block {
+    /* скорее всего не понадобится */
+    /* .changes-block {
         margin: 0 0 97px;
-    }
+    } */
 
     .discord-block iframe {
         max-width: 450px;
     }
 
+
     .friends .block-title {
         font-size: 20px;
+    }
+
+    .friends .block-subtitle {
+        font-size: 16px;
     }
 
     .block-text {
@@ -570,17 +577,28 @@
     }
 
     /* --------------------------- awards --------------------------- */
-    .awards {
+    /* .awards {
         padding: 37px;
-    }
+    } */
 
-    .awards-img__left {
+    /* пока не убирать, смотрю подойдет ли картинка с 1920 на меньшие разрешения */
+    /* .awards-img__left {
         display: none;
+    } */
+
+    /* .awards-img__right {
+        display: none;
+    } */
+    /* если закомментить padding 37px, то код ниже не нужен */
+    /* .awards-img__left {
+        top: 83px;
+        left: -140px;
     }
 
     .awards-img__right {
-        display: none;
-    }
+        top: 79px;
+        right: -100px;
+    } */
 
     .awards-img__left-laptop {
         display: block;
@@ -606,11 +624,20 @@
 
     /* --------------------------- friends --------------------------- */
     .friends-block {
-        gap: 0px;
+        gap: 50px;
     }
 
     .friends .block-title {
         font-size: 18px;
+    }
+
+    .friends .block-subtitle {
+        font-size: 14px;
+        max-width: 217px;
+    }
+
+    .friends-block .changes-block {
+        gap: 20px;
     }
 
     /* --------------------------- contacts --------------------------- */
@@ -1008,6 +1035,7 @@
     /* --------------------------- friends --------------------------- */
     .friends-block {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .subtitle_light,

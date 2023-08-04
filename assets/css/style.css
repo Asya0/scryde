@@ -271,7 +271,7 @@ img {
     transition: .4s opacity;
 }
 
-.header__nav-item:hover {
+.header__nav-item a:hover {
     opacity: .7;
 }
 
@@ -321,11 +321,6 @@ img {
     transition: all .7s ease;
 }
 
-.header__nav-item_sub.active::after {
-    transform: rotate(180deg);
-    transition: all .7s ease;
-}
-
 .header__nav-item_submenu .header__nav-item_sub::after {
     transform: rotate(-90deg);
     content: url(../img/svg/dropdown-arrow.svg);
@@ -334,8 +329,11 @@ img {
 
 .header__nav-item_submenu .header__nav-item_sub.active::after {
     transform: rotate(0deg);
-    content: url(../img/svg/dropdown-arrow.svg);
     transition: all .7s ease;
+}
+
+.header__nav-item_submenu__item:hover::after {
+    transform: rotate(180deg);
 }
 
 .header__nav-item_sub:hover::after {
@@ -669,7 +667,7 @@ img {
 
 .changes-block {
     position: relative;
-    margin: 44px 0 97px;
+    margin: auto 0;
 }
 
 .changes-content:not(:last-child) {
@@ -678,11 +676,16 @@ img {
 
 .changes-content {
     display: flex;
-    gap: 10px;
+    gap: 22px;
+}
+
+.changes-content img {
+    width: 52px;
+    height: 52px;
 }
 
 .block-text {
-    margin-top: 31px;
+    margin-top: 16px;
 }
 
 .block-title {
@@ -1424,10 +1427,8 @@ img {
 
 .awards {
     background: #FFF;
-    /* overflow: hidden; */
 }
 
-/* .awards .container { */
 .awards-blocks {
     background: radial-gradient(218.4% 279.95% at 70% 15.47%, #357DEA 0%, #090F27 67.19%);
     border-radius: 24px;
@@ -1439,6 +1440,11 @@ img {
 .awards-block {
     text-align: center;
     margin-bottom: 60px;
+}
+
+.award-image {
+    max-width: 100%;
+    height: auto;
 }
 
 .awards-img__left {
@@ -1510,7 +1516,7 @@ img {
 .awards-img__left {
     position: absolute;
     top: 72px;
-    left: -170px;
+    left: -165px;
 }
 
 .awards-img__right {
@@ -1592,7 +1598,6 @@ img {
 }
 
 .tg-btn .btn-bordered-box {
-    /* background: radial-gradient(128% 100% at 50% 0%, #35AAE5 2.6%, #285B75 56.77%, #254859 100%); */
     background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #6FCFFF 2.60%, #2494CD 56.77%, #0F6B99 100%);
 }
 
@@ -1601,7 +1606,6 @@ img {
 }
 
 .vk-btn .btn-bordered-box {
-    /* background: radial-gradient(128% 100% at 50% 0%, #0177FF 2.6%, #2D5685 56.77%, #214064 100%); */
     background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #7FB6FA 2.60%, #2870C8 56.77%, #0F4E9B 100%);
 }
 
@@ -1610,7 +1614,6 @@ img {
 }
 
 .wt-btn .btn-bordered-box {
-    /* background: radial-gradient(128% 100% at 50% 0%, #65D072 2.6%, #31873C 56.77%, #184B1E 100%); */
     background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #45F084 2.60%, #18BC54 56.77%, #0A8A39 100%);
 }
 
