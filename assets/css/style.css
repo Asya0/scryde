@@ -1420,8 +1420,11 @@ img {
     color: #0D142D;
 }
 
+
+
 .awards {
     background: #FFF;
+    /* overflow: hidden; */
 }
 
 /* .awards .container { */
@@ -1488,11 +1491,39 @@ img {
     text-fill-color: transparent;
 }
 
+/*  */
+.awards {
+    background: #FFF;
+    overflow: hidden;
+    padding-bottom: 15vh;
+
+}
+
+.awards-blocks {
+    background: radial-gradient(218.4% 279.95% at 70% 15.47%, #357DEA 0%, #090F27 67.19%);
+    border-radius: 24px;
+    text-align: center;
+    padding: 66px;
+    position: relative;
+}
+
+.awards-img__left {
+    position: absolute;
+    top: 72px;
+    left: -170px;
+}
+
+.awards-img__right {
+    position: absolute;
+    top: 67px;
+    right: -73px;
+}
+
+/*  */
 
 /* FRIENDS */
 .friends {
     background: #fff;
-    padding-top: 15vh;
 }
 
 .friends-block {
