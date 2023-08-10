@@ -1,6 +1,9 @@
 @media screen and (max-width: 1680px) {
-    .banner__prizes-sky {
-        right: -10vw;
+
+    .banner__prizes__right {
+        top: -10%;
+        right: -13%;
+        max-width: 500px;
     }
 
     .banner__prizes-bg {
@@ -675,14 +678,14 @@
         height: 32px;
     }
 
-    .banner__prizes__right {
+    /* .banner__prizes__right {
         top: 35px;
         right: -49px;
-    }
+    } */
 
-    .banner__prizes__right-img {
+    /* .banner__prizes__right-img {
         max-width: 360px;
-    }
+    } */
 
     /* --------------------------- footer --------------------------- */
     .footer-title {
@@ -1571,15 +1574,6 @@
 
     .banner__prizes__desc {
         font-size: 14px;
-    }
-
-    .banner__prizes__right {
-        top: -45%;
-        right: 0;
-    }
-
-    .banner__prizes__right-img {
-        max-width: 240px;
     }
 
     .banner__prizes-bg {

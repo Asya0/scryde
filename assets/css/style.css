@@ -941,6 +941,7 @@ img {
     padding: 16px;
 }
 
+
 .server-item {
     font-family: 'TrajanSansPro', sans-serif;
     font-weight: 700;
@@ -985,9 +986,14 @@ img {
 }
 
 .server-content {
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: space-between;
     padding-bottom: 40px;
+}
+
+.server-content.active {
+    display: flex;
 }
 
 .inner-block {
@@ -1656,7 +1662,8 @@ img {
     height: 60%;
     display: block;
     position: absolute;
-    background: linear-gradient(180deg, rgb(255 255 255 / 50%) 1%, rgba(255, 255, 255, 0) 50%, rgb(255 255 255 / 50%) 99%);
+    /* background: linear-gradient(180deg, rgb(255 255 255 / 50%) 1%, rgba(255, 255, 255, 0) 50%, rgb(255 255 255 / 50%) 99%); */
+    background: linear-gradient(180deg, rgb(255 255 255 / 50%) 1%, rgba(255, 255, 255, 0) 60%, rgb(255 255 255 / 100%) 99%);
 }
 
 .vk-post {
@@ -1710,11 +1717,6 @@ img {
     padding: 62px 70px;
 }
 
-.banner__prizes-sky {
-    position: absolute;
-    top: 30%;
-    right: 0;
-}
 
 .banner__prizes__title {
     font-family: 'TrajanSansPro', sans-serif;
@@ -1756,8 +1758,8 @@ img {
 
 .banner__prizes__right {
     position: absolute;
-    top: -141px;
-    right: -67px;
+    top: -10%;
+    right: -13%;
     border-radius: 0 0 24px 0;
 }
 

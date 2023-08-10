@@ -153,6 +153,7 @@ const tab = function () {
 };
 tab();
 
+
 const pageBlock = document.querySelectorAll('.race-choice__item');
 const pageBtn = document.querySelectorAll('.race-choice__btn');
 
@@ -179,20 +180,41 @@ for (let i = 0; i < pageBlock.length; i++) {
     });
 }
 
-//Переключение табов для секции server
-const tabServer = document.querySelectorAll(".server-item");
-function selectServer(tab) {
-    tabServer.forEach(item => {
-        item.classList.remove('active');
-    });
-    tab.classList.add('active');
-}
+//Переключение табов для секции about server
 
-tabServer.forEach((tab) => {
-    tab.addEventListener("click", () => {
-        selectServer(tab);
+const tabServer = function () {
+    const tabServerItems = document.querySelectorAll(".server-item");
+    const serverContentItems = document.querySelectorAll('.server-content');
+
+    tabServerItems.forEach(item => {
+        item.addEventListener('click', selectServer);
     });
-});
+
+    function selectServer() {
+        tabServerItems.forEach(item => {
+            item.classList.remove('active');
+        });
+        this.classList.add('active');
+        const selectedServer = this.getAttribute('data-server');
+
+        selectContent(selectedServer);
+    }
+
+    function selectContent(selectedServer) {
+        serverContentItems.forEach(item => {
+            if (item.getAttribute('data-server-target') === selectedServer) {
+                item.style.display = 'flex';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+};
+
+tabServer();
+
+
+
 
 // best players
 $(document).on('click', '.js-show-top-players', function () {
