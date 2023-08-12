@@ -248,20 +248,23 @@ img {
     width: 100%;
 }
 
+/* nav */
 .header__nav {
     display: flex;
     text-align: center;
     align-items: center;
 }
 
+/* ul */
 .header__nav-list {
     display: flex;
     gap: 30px;
 
 }
 
-
+/* li */
 .header__nav-item {
+    position: relative;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -273,6 +276,7 @@ img {
     opacity: .7;
 }
 
+/*  nav ul li a */
 .header__nav-item__link {
     font-family: 'Manrope-Bold', sans-serif;
     font-weight: 700;
@@ -282,10 +286,7 @@ img {
     color: inherit;
 }
 
-.header__nav-item_sub {
-    position: relative;
-}
-
+/* div, на одном уровне с ссылкой */
 .header__nav-item_submenu {
     position: absolute;
     border-radius: 8px;
@@ -296,43 +297,54 @@ img {
     left: 0;
 }
 
+/* сам блок подменю */
 .header__nav-item_submenu.active {
     display: block;
 }
 
+/* li подменю */
 .header__nav-item_submenu__item {
     display: flex;
     gap: 12px;
     align-items: flex-start;
 }
 
-.header__nav-item_sub .header__nav-item__link {
+/* навигация и конкретно ссылка; убрала .header__nav-item_sub */
+.header__nav-item__link {
     font-size: 14px;
 }
 
-.header__nav-item_sub::after {
+/* объявленине стрелки у навигации */
+.header__nav-item.header__nav-item_sub:after {
     content: url(../img/svg/dropdown-arrow.svg);
     transition: all .7s ease;
 }
 
+/* header__nav-item_submenu -- блок подменю */
 .header__nav-item_submenu .header__nav-item_sub::after {
     transform: rotate(-90deg);
     content: url(../img/svg/dropdown-arrow.svg);
     transition: all .7s ease;
 }
 
-.header__nav-item_submenu .header__nav-item_sub.active::after {
+/* разворот стрелки для подменю при наведении */
+.header__nav-item_submenu.active .header__nav-item_sub:hover::after {
     transform: rotate(0deg);
     transition: all .7s ease;
 }
 
-.header__nav-item_submenu__item:hover::after {
-    transform: rotate(180deg);
-}
+/* это для подменю и навигации "Ещё" */
 
-.header__nav-item_sub:hover::after {
+/* .header__nav-item:not(.header__nav-item_submenu.active).header__nav-item_sub:hover::after {
     transform: rotate(180deg);
-}
+    transition: all .7s ease;
+} */
+
+/* .header__nav-item:not(:hover).header__nav-item_sub:hover::after {
+    transform: rotate(180deg);
+    transition: all .7s ease;
+} */
+
 
 .header__nav-actions {
     display: flex;
@@ -343,9 +355,34 @@ img {
     display: none;
 }
 
+.burger__menu-account {
+    transition: all .7s ease;
+}
+
+
 .header__nav-actions .header__nav-item {
     grid-gap: 6px;
+    opacity: 1;
+    transition: all .7s ease;
+    transform: rotate(0deg);
 }
+
+.header__nav-actions .header__nav-item:hover {
+    grid-gap: 6px;
+    opacity: .7;
+}
+
+.burger__menu-language {
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+.burger__menu-language:hover {
+    opacity: .7;
+    transition: all .7s ease;
+}
+
+
 
 /* SERVER */
 .server__text-block {
@@ -1234,10 +1271,9 @@ img {
     margin-bottom: 16px;
 }
 
-.table__item-row:first-child {
+/* .table__item-row:first-child {
     padding: 4px 10px 4px 0;
-
-}
+} */
 
 .table__item-row {
     display: flex;
@@ -1438,6 +1474,8 @@ img {
     position: absolute;
     top: 68px;
     left: 0px;
+    transform: scale(1);
+
 }
 
 .awards-img__left-laptop {
@@ -1448,6 +1486,7 @@ img {
     position: absolute;
     top: 85px;
     right: 0px;
+    transform: scale(1);
 }
 
 .awards-img__right-laptop {
@@ -1756,7 +1795,7 @@ img {
     line-height: 140%;
 }
 
-.banner__prizes__right {
+.banner__prizes__right-img {
     position: absolute;
     top: -10%;
     right: -13%;

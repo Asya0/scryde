@@ -1,9 +1,12 @@
 @media screen and (max-width: 1680px) {
 
-    .banner__prizes__right {
-        top: -10%;
+    .banner__prizes__right-img {
+        /* top: -10%;
         right: -13%;
-        max-width: 500px;
+        max-width: 500px; */
+        top: 1%;
+        right: -11%;
+        transform: scale(0.8);
     }
 
     .banner__prizes-bg {
@@ -75,6 +78,12 @@
     /* --------------------------- friends --------------------------- */
     .friends {
         padding-top: 5vh;
+    }
+
+    /* --------------------------- about server --------------------------- */
+    .banner__prizes__right-img {
+        transform: scale(0.8);
+        top: 8%;
     }
 }
 
@@ -275,6 +284,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+    /* --------------------------- general --------------------------- */
 
     .container {
         padding: 0 42px;
@@ -312,14 +322,7 @@
         margin-bottom: 50px;
     }
 
-    /* --------------------------- race --------------------------- */
-    .content-item {
-        font-size: 14px;
-    }
 
-    .choice-text {
-        font-size: 12px;
-    }
 
     /* --------------------------- header --------------------------- */
     .logo__image {
@@ -339,15 +342,6 @@
 
     .header .btn-bordered-box {
         font-size: 14px;
-    }
-
-    /* --------------------------- benefits --------------------------- */
-    .benefits-text {
-        margin: 0 20px 24px;
-    }
-
-    .benefits-title {
-        font-size: 18px;
     }
 
     /* --------------------------- server --------------------------- */
@@ -375,15 +369,13 @@
         top: 20px;
     }
 
-    /* --------------------------- race --------------------------- */
-    .race-choice {
-        max-width: 925px;
+    /* --------------------------- benefits --------------------------- */
+    .benefits-text {
+        margin: 0 20px 24px;
     }
 
-    .classes {
-        max-width: 142px;
-        gap: 10px;
-        padding: 16px;
+    .benefits-title {
+        font-size: 18px;
     }
 
     /* --------------------------- changes --------------------------- */
@@ -420,6 +412,25 @@
 
     .block-content {
         gap: 20px;
+    }
+
+    /* --------------------------- race --------------------------- */
+    .race-choice {
+        max-width: 925px;
+    }
+
+    .classes {
+        max-width: 142px;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .content-item {
+        font-size: 14px;
+    }
+
+    .choice-text {
+        font-size: 12px;
     }
 
     /* --------------------------- about server --------------------------- */
@@ -493,10 +504,6 @@
 
     .news-icon__text {
         font-size: 10px;
-    }
-
-    .news-img {
-        /* max-width: 302px; */
     }
 
     .news-block {
@@ -625,6 +632,17 @@
         font-size: 14px;
     }
 
+    .awards-img__left {
+        top: 72px;
+        transform: scale(0.8);
+
+    }
+
+    .awards-img__right {
+        transform: scale(0.77);
+        right: -143px;
+    }
+
     /* --------------------------- friends --------------------------- */
     .friends-block {
         gap: 50px;
@@ -677,15 +695,6 @@
         width: 32px;
         height: 32px;
     }
-
-    /* .banner__prizes__right {
-        top: 35px;
-        right: -49px;
-    } */
-
-    /* .banner__prizes__right-img {
-        max-width: 360px;
-    } */
 
     /* --------------------------- footer --------------------------- */
     .footer-title {
@@ -795,6 +804,10 @@
         padding-bottom: 100px;
     }
 
+    .header.fixed .header__box .start-game {
+        display: none;
+    }
+
     .server-name {
         flex-direction: column;
         align-items: center;
@@ -805,6 +818,20 @@
 
     .server-title {
         font-size: 22px;
+    }
+
+    .burger__menu-icon {
+        gap: 6px;
+    }
+
+    .burger__menu-icon .header__nav-item__link {
+        display: flex;
+    }
+
+    .burger__menu-icon .header__nav-item__link::after {
+        content: url(../img/svg/dropdown-arrow.svg);
+        transition: all .7s ease;
+        margin-left: 8px;
     }
 
     /* --------------------------- burger --------------------------- */
@@ -901,7 +928,6 @@
     .burger__menu-text {
         color: #FFF;
         font-family: 'Manrope-Bold', sans-serif;
-        font-size: 14px;
         font-weight: 700;
         line-height: 130%;
         letter-spacing: 0.14px;
@@ -927,7 +953,7 @@
 
     .burger__menu-account {
         display: flex;
-        padding: 18px 12px 18px 20px;
+        padding: 12px 12px 12px 20px;
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
@@ -984,26 +1010,40 @@
         margin-bottom: 30px;
     }
 
+    .burger__menu-nav .start-game {
+        display: block !important;
+    }
+
     .burger__menu-item {
+        display: flex;
+        justify-content: space-between;
         padding-bottom: 21px;
         padding-top: 21px;
     }
 
-    .burger__menu-item::after {
+    .burger__menu-item:hover {
+        opacity: .7;
+    }
+
+    .burger__menu-item:after {
         content: "";
         background: url(../img/svg/arrow-mobile.svg);
+        width: 32px;
+        height: 32px;
     }
 
     .burger__menu-item:not(:first-child) {
         border-top: 1px solid rgba(255, 255, 255, 0.40);
-
     }
 
-    .burger__menu-link {
+    .burger__menu-item .burger__menu-link {
         color: inherit;
-        /* margin-bottom: 21px; */
-
+        width: 100%;
     }
+
+    /* .burger__menu-link {
+        color: inherit;
+    } */
 
     .sss {
         display: flex;
@@ -1034,6 +1074,19 @@
         margin-bottom: 30px;
     }
 
+    .burger__menu-server-item .new-icon {
+        background: url(../img/svg/new-icon__mobile.svg);
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        left: 192px;
+        transition: all .7s ease;
+    }
+
+    .burger__menu-server-item:hover .new-icon {
+        transform: scale(1.5);
+        transition: all .7s ease;
+    }
 
 
 
@@ -1628,7 +1681,7 @@
 
     .plus.active {
         display: block;
-        transform: rotate(180deg);
+        transform: rotate(225deg);
         transition: all .6s ease;
 
     }
@@ -1892,5 +1945,28 @@
 
     .stream .swiper {
         padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .h1-title {
+        font-size: 32px;
+    }
+
+
+}
+
+/* добавила 11.08 */
+@media screen and (max-width: 335px) {
+    .server-title {
+        font-size: 16px;
+    }
+
+    .online-text {
+        font-size: 14px;
+    }
+
+    .online-count {
+        font-size: 16px;
     }
 }
