@@ -322,8 +322,6 @@
         margin-bottom: 50px;
     }
 
-
-
     /* --------------------------- header --------------------------- */
     .logo__image {
         position: relative;
@@ -355,7 +353,8 @@
 
     /* .server-block_wrapper {
             padding: 24px 73px;
-        } */
+        } 
+    */
 
     .server-title {
         font-size: 18px;
@@ -401,7 +400,6 @@
     }
 
     .changes-img {
-        /* max-width: 70%; */
         right: -20vw;
     }
 
@@ -694,6 +692,10 @@
     .banner__prizes__img {
         width: 32px;
         height: 32px;
+    }
+
+    .banner__prizes__right-img {
+        right: -18%;
     }
 
     /* --------------------------- footer --------------------------- */
@@ -1045,12 +1047,6 @@
         color: inherit;
     } */
 
-    .sss {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .burger__menu .btn-bordered-box {
         display: inline-block;
     }
@@ -1088,6 +1084,45 @@
         transition: all .7s ease;
     }
 
+    /* --------------------------- changes --------------------------- */
+    .changes-img {
+        top: 30px;
+    }
+
+    /* --------------------------- race --------------------------- */
+    .classes {
+        padding: 16px 11px;
+    }
+
+    /* --------------------------- about server --------------------------- */
+    .inner-benefits {
+        /* max-width: 50%; */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* --------------------------- best --------------------------- */
+    .table__item-subtitle {
+        font-size: 16px;
+    }
+
+    .table__item-col .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* --------------------------- awards --------------------------- */
+
+    .awards-img__left {
+        top: 88px;
+        transform: scale(0.7);
+    }
+
+    .awards-img__right {
+        transform: scale(0.6);
+        top: 69px;
+    }
 
 
     /* --------------------------- friends --------------------------- */
@@ -1100,15 +1135,46 @@
     .subtitle_dark {
         margin-bottom: 30px;
     }
+
+    .changes-block {
+        margin: 0 0 25px;
+    }
+
+    .contacts .btn .btn-bordered-box {
+        padding: 17px 31px;
+    }
+
+    .btn-desc {
+        font-size: 12px;
+    }
+
+    /* --------------------------- banner --------------------------- */
+    .banner__prizes__right-img {
+        transform: scale(0.7);
+        right: -227px;
+    }
+
+    .banner__prizes__body {
+        top: 2vh;
+    }
+
+    .banner__prizes__title {
+        font-size: 27px;
+    }
+
+    /* --------------------------- footer --------------------------- */
+    .footer-info {
+        gap: 90px;
+    }
 }
 
 
 
-@media screen and (max-width: 873px) {
+@media screen and (max-width: 874px) {
 
     /* --------------------------- server --------------------------- */
     .h1-title {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     /* --------------------------- hero --------------------------- */
@@ -1138,15 +1204,21 @@
     /* --------------------------- about server --------------------------- */
     .server-content {
         flex-direction: column-reverse;
+        gap: 30px;
     }
 
     .x-block {
         flex-wrap: wrap;
     }
 
+    /* --------------------------- best --------------------------- */
+    .table__item-row {
+        grid-gap: 5px;
+    }
+
     /* --------------------------- general --------------------------- */
     .btn .btn-bordered-box {
-        padding: 18px 51px;
+        padding: 17px 51px;
     }
 
     /* --------------------------- friends --------------------------- */
@@ -1155,35 +1227,6 @@
     }
 
 }
-
-/* @media screen and (max-width: 545px) {
-
-    .logo {
-        width: 112px;
-    }
-
-    .title {
-        font-size: 16px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-    }
-
-    .changes-img {
-        top: 55vh;
-    }
-
-    .changes-block {
-        padding-left: 0px;
-    }
-
-    .awards-img__left-laptop {
-        top: -101px;
-        left: -172px;
-        transform: rotate(23deg);
-    }
-} */
 
 @media screen and (max-width: 767px) {
 
@@ -1812,6 +1855,10 @@
         display: none !important;
     }
 
+    .bg-image .mobile-hidden {
+        display: inline-block !important;
+    }
+
     .desktop-hidden {
         display: block !important;
     }
@@ -1826,10 +1873,6 @@
 
     .online-count {
         font-size: 22px;
-    }
-
-    .statistics-info__inner {
-        align-items: flex-start;
     }
 
     .news .swiper {
