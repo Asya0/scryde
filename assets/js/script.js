@@ -265,3 +265,6 @@ for (let i = 0; i < tableButtons.length; i++) {
 
     });
 }
+
+const fun = () => { };
+console.log(fun instanceof Object);

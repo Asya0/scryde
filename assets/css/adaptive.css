@@ -1183,7 +1183,7 @@
         font-size: 14px;
     }
 
-    /* --------------------------- hero --------------------------- */
+    /* --------------------------- general --------------------------- */
 
     .h2-title,
     .h2-title_black {
@@ -1216,6 +1216,11 @@
         grid-gap: 5px;
     }
 
+    .table__item-col .icon {
+        width: 15px;
+        height: 15px;
+    }
+
     /* --------------------------- general --------------------------- */
     .btn .btn-bordered-box {
         padding: 17px 51px;
@@ -1228,7 +1233,7 @@
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     /* --------------------------- general --------------------------- */
     .container {
@@ -1241,7 +1246,8 @@
 
     .subtitle_light,
     .subtitle_dark {
-        margin-bottom: 40px;
+        margin-left: 0;
+        margin-bottom: 30px;
     }
 
     .h2-title {
@@ -1259,6 +1265,13 @@
     }
 
     /* --------------------------- header --------------------------- */
+    .h1-title {
+        font-size: 32px;
+    }
+
+    .server__text-block .subtitle {
+        padding: 0 20px;
+    }
 
     /* --------------------------- server --------------------------- */
     .server-block_wrapper {
@@ -1275,11 +1288,7 @@
 
     .server-text::before,
     .server-text::after {
-        top: 10px;
-    }
-
-    .new-icon {
-        left: 0;
+        top: 15px;
     }
 
     .hero .h2-title_black {
@@ -1287,7 +1296,7 @@
     }
 
     .hero .subtitle_dark {
-        max-width: 65%;
+        max-width: 70%;
     }
 
     /* slider */
@@ -1312,10 +1321,19 @@
     }
 
     .changes-img {
-        top: 87vh;
-        right: 17vw;
-        max-width: 70%;
+        top: 70vh;
+        right: 9vw;
+        max-width: 60%;
     }
+
+    .changes-content:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
+    .changes::after {
+        bottom: -40vh;
+    }
+
 
     /* --------------------------- hero --------------------------- */
     .block-content {
@@ -1340,7 +1358,7 @@
     }
 
     .race-choice__mobile {
-        display: block;
+        display: flex;
     }
 
     .race-choice__btn {
@@ -1580,6 +1598,11 @@
         font-size: 14px;
     }
 
+    .table__item-col .icon {
+        width: 20px;
+        height: 20px;
+    }
+
     /* --------------------------- awards --------------------------- */
     .awards {
         padding: 28px 20px;
@@ -1806,19 +1829,6 @@
 
 
     /* --------------------------- changes --------------------------- */
-    .changes-img {
-        top: 50vh;
-        right: 9vw;
-        transform: rotate(10deg);
-    }
-
-    .changes-content:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .changes::after {
-        bottom: -40vh;
-    }
 
     .discord-block iframe {
         max-width: 400px;
@@ -1855,13 +1865,14 @@
         display: none !important;
     }
 
+    .desktop-hidden {
+        display: block !important;
+    }
+
     .bg-image .mobile-hidden {
         display: inline-block !important;
     }
 
-    .desktop-hidden {
-        display: block !important;
-    }
 
     .server-item.active .mobile-hidden {
         display: inline-block !important;
@@ -1930,11 +1941,6 @@
         text-align: start;
     }
 
-    .subtitle,
-    .subtitle_light {
-        text-align: start;
-    }
-
     .discord-block iframe {
         width: 100%;
         margin-top: 40px;
@@ -1948,17 +1954,13 @@
             display: none !important;
         } */
 
-    .start-game {
-        width: 100%;
-    }
-
     .start-game .btn {
-        width: 100%;
+        width: 58%;
     }
 
     .btn {
         font-size: 14px;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .awards .container {
@@ -1991,11 +1993,27 @@
     }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 514px) {
+    .start-game .btn {
+        width: 100%;
+    }
+}
+
+/* пока не нужны */
+@media screen and (max-width: 375px) {
     .h1-title {
         font-size: 32px;
     }
 
+    .changes-text .subtitle_light {
+        /* margin-right: 90px; */
+        max-width: 245px;
+    }
+
+    .h2-title,
+    .h2-title_black {
+        font-size: 24px;
+    }
 
 }
 
