@@ -1,8 +1,9 @@
 const breakpoint = window.matchMedia('(min-width:767px)');
+const breakpoint1920 = window.matchMedia('(min-width:1920px)');
 let mySwiper;
 
 const breakpointChecker = function () {
-    if (breakpoint.matches === true) {
+    if (breakpoint.matches === true || breakpoint1920.matches === true) {
         if (mySwiper !== undefined) mySwiper.destroy(true, true);
         return;
     } else if (breakpoint.matches === false) {
@@ -20,7 +21,6 @@ function enableSwiper() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         },
-
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -44,9 +44,15 @@ function enableSwiper() {
             // 768: {
             //     slidesPerView: 2,
             // },
+            // 992: {
+            //     slidesPerView: 3,
+            // },
         },
     });
 }
+
+
+
 
 // burger menu 
 const iconMenu = document.querySelector('.burger');

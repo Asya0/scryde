@@ -156,7 +156,7 @@
 
     /* --------------------------- server --------------------------- */
     .server-block_wrapper {
-        padding: 24px 73px;
+        padding: 24px 70px;
     }
 
     /* --------------------------- news --------------------------- */
@@ -303,12 +303,12 @@
     }
 
     .start-game {
-        padding-bottom: 140px;
+        padding-bottom: 11vh;
     }
 
     .h2-title,
     .h2-title_black {
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .subtitle,
@@ -378,8 +378,12 @@
     }
 
     /* --------------------------- changes --------------------------- */
+    .changes {
+        padding-top: 10vh;
+    }
+
     .changes::after {
-        bottom: -40vh;
+        bottom: -34vh;
     }
 
     .changes-text .subtitle_light {
@@ -400,7 +404,9 @@
     }
 
     .changes-img {
-        right: -20vw;
+        right: -29vw;
+        top: -30px;
+        max-width: 75%;
     }
 
     /* --------------------------- hero --------------------------- */
@@ -417,6 +423,10 @@
         max-width: 925px;
     }
 
+    .race-block {
+        justify-content: center;
+    }
+
     .classes {
         max-width: 142px;
         gap: 10px;
@@ -425,6 +435,7 @@
 
     .content-item {
         font-size: 14px;
+        max-width: 380px;
     }
 
     .choice-text {
@@ -432,6 +443,10 @@
     }
 
     /* --------------------------- about server --------------------------- */
+    .server-box-wrapper {
+        padding: 10px;
+    }
+
     .online-text {
         font-size: 14px;
     }
@@ -484,6 +499,10 @@
 
     .statistics-info {
         padding: 12px 0;
+    }
+
+    .statistic__img {
+        margin-bottom: 0;
     }
 
     .info-block {
@@ -1331,7 +1350,7 @@
     }
 
     .changes::after {
-        bottom: -40vh;
+        bottom: -38vh;
     }
 
 
