@@ -65,6 +65,7 @@ body {
     background-size: cover;
     color: #fff;
     padding-top: 120px;
+    overflow-x: hidden;
 }
 
 a {
@@ -335,6 +336,14 @@ img {
     justify-content: flex-start;
     text-align: left;
     gap: 20px;
+}
+
+.hide-on-sm {
+    display: flex;
+}
+
+.show-on-sm {
+    display: none;
 }
 
 /* сам блок подменю ?? */
@@ -788,9 +797,9 @@ img {
 
 .changes-img {
     position: absolute;
-    max-width: 65%;
+    max-width: 45%;
     top: 0;
-    right: -13vw;
+    right: 0;
 }
 
 .changes-sky img {
@@ -1515,10 +1524,6 @@ img {
     color: #0D142D;
 }
 
-.awards {
-    background: #FFF;
-}
-
 .awards-blocks {
     background: radial-gradient(218.4% 279.95% at 70% 15.47%, #357DEA 0%, #090F27 67.19%);
     border-radius: 24px;
@@ -1538,7 +1543,7 @@ img {
 
 .awards-img__left {
     position: absolute;
-    top: 12px;
+    top: 0;
     left: -150px;
     transform: scale(1);
 
@@ -1550,8 +1555,8 @@ img {
 
 .awards-img__right {
     position: absolute;
-    top: 14px;
-    right: 0px;
+    top: 0;
+    right: 0;
     transform: scale(0.9);
 }
 
@@ -1592,7 +1597,7 @@ img {
 .awards {
     background: #FFF;
     overflow: hidden;
-    padding-bottom: 15vh;
+    padding-bottom: 170px;
 
 }
 
@@ -1607,6 +1612,10 @@ img {
 /* FRIENDS */
 .friends {
     background: #fff;
+}
+
+.friends .block-text {
+    margin-top: 0;
 }
 
 .friends-block {
@@ -1734,36 +1743,51 @@ img {
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
-    background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #FFFFFF;
+    /* background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #FFFFFF; */
+    background: linear-gradient(0deg, #EBF3FF 48.81%, rgba(195, 208, 225, 0.6) 64.52%, rgba(235, 243, 255, 0.6) 82.62%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: relative;
 }
 
 .vk-block {
-    width: 24vw;
-    height: 53vh;
-    overflow: scroll;
+    max-width: 470px;
+    width: 100%;
+    height: 500px;
+    overflow: auto;
     overflow-x: hidden;
-
 }
 
-.overlay::before {
+.vk-block::before {
     content: '';
     z-index: 3;
-    width: 22%;
-    height: 60%;
+    top: 0;
+    width: 100%;
+    height: 60px;
     display: block;
     position: absolute;
-    background: linear-gradient(180deg, rgb(255 255 255 / 50%) 1%, rgba(255, 255, 255, 0) 60%, rgb(255 255 255 / 100%) 99%);
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 
-.vk-post {
-    width: 22vw;
-    height: 53vh;
+.vk-block::after {
+    content: '';
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: absolute;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    transform: rotate(180deg);
 }
+
+.vk-post {}
 
 .vk-block::-webkit-scrollbar {
     width: 12px;
@@ -1791,15 +1815,19 @@ img {
 .banner__prizes {
     background: #FFF;
     padding: 15vh 0 15vh 0;
-    /* padding: 15vh 0 9vh 0; */
     position: relative;
-    overflow: hidden;
 }
 
 .banner__prizes-bg {
     position: absolute;
-    bottom: -15%;
+    bottom: -70px;
     left: 0;
+}
+
+.banner__prizes-bg-2 {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
 }
 
 .banner__prizes__body {
@@ -1852,11 +1880,14 @@ img {
 
 .banner__prizes__right-img {
     position: absolute;
-    top: -10%;
-    right: -13%;
+    bottom: 0;
+    right: -90px;
     border-radius: 0 0 24px 0;
 }
 
+.banner_prizes-bg-mobile {
+    display: none;
+}
 
 /* ---------------------FOOTER------------------------ */
 .footer {

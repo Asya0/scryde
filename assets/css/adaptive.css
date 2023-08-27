@@ -1,16 +1,17 @@
 @media screen and (max-width: 1680px) {
 
     .banner__prizes__right-img {
-        /* top: -10%;
-        right: -13%;
-        max-width: 500px; */
-        top: 1%;
-        right: -11%;
         transform: scale(0.8);
     }
 
     .banner__prizes-bg {
         left: -15vw;
+    }
+}
+
+@media screen and (max-width: 1510px) {
+    .banner__prizes-bg-2 {
+        right: -220px;
     }
 }
 
@@ -83,7 +84,7 @@
     /* --------------------------- about server --------------------------- */
     .banner__prizes__right-img {
         transform: scale(0.8);
-        top: 8%;
+        bottom: 0;
     }
 }
 
@@ -188,22 +189,23 @@
         font-size: 14px;
     }
 
-    /* .news-item {
-        width: calc(33.33vw - 18px);
-        max-width: 302px;
-    } */
-
-    .awards-img__left {
-        top: 59px;
+    .changes-img {
+        max-width: 45%;
+        right: -13vw;
     }
 
-    .awards-img__right {
-        top: 54px;
-    }
-
-    /* --------------------------- friends --------------------------- */
     .friends .block-title {
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .show-on-sm {
+        display: flex;
+    }
+
+    .hide-on-sm {
+        display: none;
     }
 }
 
@@ -717,10 +719,6 @@
         height: 32px;
     }
 
-    .banner__prizes__right-img {
-        right: -18%;
-    }
-
     /* --------------------------- footer --------------------------- */
     .footer-title {
         font-size: 18px;
@@ -921,6 +919,12 @@
         padding: 20px 0;
         transition: left .3s ease 0s;
         z-index: 5;
+        overflow: auto;
+        padding-bottom: 120px;
+    }
+
+    .burger__menu .social-btn .btn-bordered-box {
+        display: flex;
     }
 
     .lock .burger__menu {
@@ -928,7 +932,14 @@
     }
 
     .burger__menu .start-game .header-btn {
-        display: none;
+        /* display: none; */
+    }
+
+    .burger__menu .start-game .btn-bordered-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
     }
 
     .burger__menu .header__nav-actions {
@@ -1207,7 +1218,6 @@
     /* --------------------------- banner --------------------------- */
     .banner__prizes__right-img {
         transform: scale(0.7);
-        right: -227px;
     }
 
     .banner__prizes__body {
@@ -1378,8 +1388,8 @@
 
     .changes-img {
         top: 70vh;
-        right: 9vw;
-        max-width: 60%;
+        right: -10vw;
+        max-width: 100%;
     }
 
     .changes-content:not(:last-child) {
@@ -1387,7 +1397,7 @@
     }
 
     .changes::after {
-        bottom: -38vh;
+        bottom: -48vh;
     }
 
 
@@ -1658,6 +1668,11 @@
     .awards {
         padding: 28px 20px;
         padding-bottom: 150px;
+        padding-top: 130px;
+    }
+
+    .awards-img__left {
+        top: -140px;
     }
 
     .awards-img__left-laptop {
@@ -2016,7 +2031,14 @@
     }
 
     .awards .container {
-        padding: 28px 20.5px;
+        padding: 0;
+    }
+
+    .awards-img__right-sky {
+        position: absolute;
+        right: -40px;
+        top: auto;
+        bottom: -190px;
     }
 
     .table__item-heading {
@@ -2136,6 +2158,55 @@
     .overlay::before {
         display: none;
     }
+
+    .awards .container {
+        position: relative;
+    }
+
+    .changes .container-second {
+        padding-bottom: 70vh;
+    }
+
+    .awards-blocks {
+        padding: 28px 20px;
+        z-index: 2;
+    }
+
+    .banner__prizes {
+        padding-top: 250px;
+    }
+
+    .banner__prizes__right-img {
+        top: -220px;
+        right: -70px;
+    }
+
+    .discord-block {
+        width: 100%;
+    }
+
+    .awards-img__right {
+        top: 60%;
+    }
+
+    .banner__prizes-bg-2 {
+        display: none;
+    }
+
+    .banner__prizes-bg {
+        display: none;
+    }
+
+    .banner_prizes-bg-mobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -120px;
+        right: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
 }
 
 @media screen and (max-width: 514px) {

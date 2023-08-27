@@ -34,27 +34,28 @@
                             </li>
                             <li class="header__nav-item"><a href="#" class="header__nav-item__link">О нас</a></li>
                             <li class="header__nav-item"><a href="#" class="header__nav-item__link">Форум</a></li>
-                            <!-- <li class="header__nav-item header__nav-item_sub">
+                            <li class="header__nav-item header__nav-item_sub show-on-sm">
                                 <a href="#no_scroll" class="header__nav-item__link">Ещё</a>
                                 <div class="header__nav-item_submenu">
                                     <ul>
-                                        <li class="header__nav-item_submenu__item"><a href="#"
-                                                class="header__nav-item__link">Рейтинги</a></li>
+                                        <li class="header__nav-item_submenu__item">
+                                            <a href="#" class="header__nav-item__link">Рейтинги</a>
+                                        </li>
                                         <li class="header__nav-item_submenu__item header__nav-item_sub">
                                             <a href="#no_scroll" class="header__nav-item__link">Помощь</a>
                                         </li>
                                         <li class="header__nav-item_submenu__item header__nav-item_sub">
                                             <a href="#no_scroll" class="header__nav-item__link">Магазин</a>
                                         </li>
-
                                     </ul>
                                 </div>
-                            </li> -->
-                            <li class="header__nav-item"><a href="#" class="header__nav-item__link">Рейтинги</a></li>
-                            <li class="header__nav-item">
+                            </li>
+                            <li class="header__nav-item hide-on-sm"><a href="#"
+                                    class="header__nav-item__link">Рейтинги</a></li>
+                            <li class="header__nav-item hide-on-sm">
                                 <a href="#no_scroll" class="header__nav-item__link">Помощь</a>
                             </li>
-                            <li class="header__nav-item">
+                            <li class="header__nav-item hide-on-sm">
                                 <a href="#no_scroll" class="header__nav-item__link">Магазин</a>
                             </li>
                         </ul>
@@ -62,7 +63,6 @@
                 </div>
 
                 <div class="burger__menu">
-                    <!-- здесь будет меню для мобилки -->
                     <div class="container">
                         <div class="burger__menu-actions header__nav-actions">
                             <div class="burger__menu-language header__nav-item_sub">
@@ -1518,15 +1518,18 @@
 
     <section class="awards">
         <div class="container">
+            <img class="awards-img__left award-image desktop-hidden" src="./assets/img/awards-img__left.png"
+                alt="dark elf">
             <div class="awards-blocks">
-                <img class="awards-img__left award-image" src="./assets/img/awards-img__left.png" alt="dark elf">
-                <!-- <img class="awards-img__left-laptop" src="./assets/img/awards-img__left-laptop.png" alt="dark elf"> -->
+                <img class="awards-img__left award-image mobile-hidden" src="./assets/img/awards-img__left.png"
+                    alt="dark elf">
                 <div class="awards-block">
                     <h2 class="h2-title uppercase">Награды стримерам</h2>
                     <div class="block-subtitle">Получайте ежедневную награду за рекламу нашего проекта</div>
                 </div>
                 <img class="awards-img__right award-image" src="./assets/img/awards-img__right.png" alt="kamaels">
-                <!-- <img class="awards-img__right-laptop" src="./assets/img/awards-img__right-laptop.png" alt="kamaels"> -->
+                <img class="awards-img__right-sky desktop-hidden" src="./assets/img/awards-sky-mobile.png"
+                    alt="kamaels">
                 <a href="#" class="awards-btn btn btn-bordered uppercase">
                     <span class="btn-bordered-box learn-more">Узнать больше</span>
                 </a>
@@ -1685,6 +1688,8 @@
                 </div>
             </div>
         </div>
+        <img class="banner__prizes-bg-2" src="./assets/img/get-prizes-sky2.png" alt="sky">
+        <img class="banner_prizes-bg-mobile" src="./assets/img/mobile-sky.png" alt="sky">
     </section>
 
     <footer class="footer">
