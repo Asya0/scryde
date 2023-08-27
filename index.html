@@ -22,11 +22,19 @@
                     </a>
                     <nav class="header__nav">
                         <ul class="header__nav-list">
-                            <li class="header__nav-item header__nav-item_sub"><a href="#no_scroll"
-                                    class="header__nav-item__link">Серверы</a></li>
+                            <li class="header__nav-item header__nav-item_sub">
+                                <a href="#no_scroll" class="header__nav-item__link">Серверы</a>
+                                <div class="header__nav-item_submenu">
+                                    <div class="header__nav-item_submenu-container">
+                                        <a class="header__nav-item__link" href="#highfivex50">HIGH FIVE X50</a>
+                                        <a class="header__nav-item__link" href="#highfivex300">HIGH FIVE X300</a>
+                                        <a class="header__nav-item__link" href="#highfivex1000">HIGH FIVE X1000</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="header__nav-item"><a href="#" class="header__nav-item__link">О нас</a></li>
                             <li class="header__nav-item"><a href="#" class="header__nav-item__link">Форум</a></li>
-                            <li class="header__nav-item header__nav-item_sub">
+                            <!-- <li class="header__nav-item header__nav-item_sub">
                                 <a href="#no_scroll" class="header__nav-item__link">Ещё</a>
                                 <div class="header__nav-item_submenu">
                                     <ul>
@@ -41,7 +49,7 @@
 
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="header__nav-item"><a href="#" class="header__nav-item__link">Рейтинги</a></li>
                             <li class="header__nav-item">
                                 <a href="#no_scroll" class="header__nav-item__link">Помощь</a>
@@ -66,33 +74,36 @@
                                     <a class="header__nav-item__link uppercase">ru</a>
                                 </div>
                             </div>
-                            <div class="burger__menu-account header__nav-item">
-                                <span class="icon icon-smile"></span>
-                                <a href="#" class="header__nav-item__link uppercase">Войти в аккаунт</a>
+                            <a href="#" class="burger__menu-account header__nav-item">
+                                <div class="flex">
+                                    <span class="icon icon-smile"></span>
+                                    <div class="text">Войти в аккаунт</div>
+                                </div>
                                 <span class="arrow-mobile"></span>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="burger__menu-server">
                             <span class="burger__menu-title">Серверы</span>
                             <div class="burger__menu-server-block">
-                                <a href="#" class="burger__menu-server-item btn-bordered btn-orange ">
+                                <a href="#" class="burger__menu-server-item block-bordered block-bordered-yellow">
                                     <div class="btn-bordered-box">
                                         <span class="burger__menu-server-text uppercase">high five x50</span>
-                                        <span class="arrow-mobile"></span>
+                                        <span class="icon icon-arrow-right-darken"></span>
                                     </div>
                                 </a href="#">
-                                <a href="#" class="burger__menu-server-item btn-bordered btn-orange">
+                                <a href="#" class="burger__menu-server-item block-bordered block-bordered-yellow">
                                     <div class="btn-bordered-box">
-                                        <span class="burger__menu-server-text uppercase">high five x300</span>
-                                        <span class="arrow-mobile"></span>
-                                        <div class="new-icon"></div>
+                                        <span class="burger__menu-server-text uppercase">
+                                            high five x300 <div class="new-icon"></div>
+                                        </span>
+                                        <span class="icon icon-arrow-right-darken"></span>
                                     </div>
                                 </a href="#">
-                                <a href="#" class="burger__menu-server-item btn-bordered btn-orange">
+                                <a href="#" class="burger__menu-server-item block-bordered block-bordered-yellow">
                                     <div class="btn-bordered-box">
                                         <span class="burger__menu-server-text uppercase">high five x1000</span>
-                                        <span class="arrow-mobile"></span>
+                                        <span class="icon icon-arrow-right-darken"></span>
                                     </div>
                                 </a href="#">
 
@@ -159,12 +170,31 @@
                 <div class="header__box-col header__box-col-right">
                     <div class="header__nav-actions">
                         <div class="header__nav-item header__nav-item_sub">
-                            <span class="icon icon-language"></span>
-                            <a class="header__nav-item__link uppercase">ru</a>
+                            <a class="header__nav-item__link uppercase">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                    <path fill="#fff"
+                                        d="M20.025 18.771c.005-.007.012-.014.016-.021A10.449 10.449 0 0 0 22.5 12a10.46 10.46 0 0 0-2.456-6.75l-.017-.019c-.025-.03-.049-.058-.075-.086l-.028-.033-.096-.11-.002-.003-.108-.12-.002-.002c-.075-.08-.15-.159-.228-.236l-.002-.003-.113-.112-.007-.007a4.176 4.176 0 0 0-.105-.101c-.012-.012-.023-.023-.038-.035a1.733 1.733 0 0 0-.07-.066c-.007-.007-.016-.014-.023-.023A10.45 10.45 0 0 0 12 1.5a10.46 10.46 0 0 0-7.132 2.794c-.007.007-.016.014-.023.023-.024.021-.047.045-.07.068a.55.55 0 0 1-.038.035l-.106.101-.007.007-.112.113-.003.002c-.077.077-.152.157-.227.237l-.002.002c-.038.04-.073.08-.108.12l-.002.002a2.154 2.154 0 0 0-.097.11l-.028.033-.075.087c-.004.007-.011.011-.016.018A10.46 10.46 0 0 0 1.5 12c0 2.571.923 4.924 2.456 6.75l.017.021.072.087c.01.011.02.02.028.033l.097.11c0 .002.002.002.002.005.035.04.07.08.108.117l.002.002c.075.08.15.16.225.237l.002.002c.038.038.073.075.11.11l.008.007A10.48 10.48 0 0 0 12 22.5a10.46 10.46 0 0 0 7.366-3.019l.007-.007c.038-.037.075-.072.11-.11l.003-.002c.077-.078.152-.157.225-.237l.002-.002c.035-.04.073-.078.108-.117 0-.003.002-.003.002-.005.033-.035.066-.073.096-.11.01-.012.02-.021.029-.033.026-.028.052-.057.077-.087Zm.096-3.342a8.8 8.8 0 0 1-1.27 2.114 10.406 10.406 0 0 0-1.91-1.31c.271-1.1.44-2.306.485-3.577h3.363a8.764 8.764 0 0 1-.668 2.773Zm.668-4.085h-3.363a17.518 17.518 0 0 0-.485-3.577 10.41 10.41 0 0 0 1.91-1.31 8.763 8.763 0 0 1 1.938 4.887Zm-5.36-7.465A8.76 8.76 0 0 1 17.95 5.5a9.252 9.252 0 0 1-1.392.98c-.368-1.055-.84-1.972-1.388-2.705.087.033.174.068.258.103Zm-2.123 16.42a2.652 2.652 0 0 1-.65.385v-4.348a9.12 9.12 0 0 1 2.712.614 10.17 10.17 0 0 1-.68 1.59c-.408.758-.886 1.366-1.383 1.76Zm1.382-14.838c.258.483.485 1.015.68 1.589a9.12 9.12 0 0 1-2.712.614V3.32c.216.086.434.213.65.384.496.392.975.999 1.382 1.758Zm-2.032 9.56v-2.365h3.457a16.28 16.28 0 0 1-.382 2.996l-.007.028a10.43 10.43 0 0 0-3.068-.659Zm0-3.677V8.979a10.43 10.43 0 0 0 3.068-.659l.007.028c.216.954.345 1.957.382 2.996h-3.457Zm-1.312 1.312v2.365a10.43 10.43 0 0 0-3.068.659l-.007-.028a16.253 16.253 0 0 1-.382-2.996h3.457Zm-3.457-1.312c.037-1.036.166-2.042.382-2.996l.007-.028c.963.366 1.992.593 3.068.659v2.365H7.887Zm3.457 4.992v4.345a2.625 2.625 0 0 1-.65-.384c-.496-.392-.977-1-1.385-1.76a10.587 10.587 0 0 1-.68-1.59 9.15 9.15 0 0 1 2.715-.611Zm0-8.672a9.12 9.12 0 0 1-2.712-.614c.195-.577.42-1.109.68-1.59.408-.758.886-1.368 1.385-1.76.216-.168.431-.297.65-.384v4.348h-.003ZM8.57 3.88c.087-.035.171-.07.258-.103-.549.733-1.02 1.65-1.388 2.704A9.085 9.085 0 0 1 6.05 5.5 8.761 8.761 0 0 1 8.571 3.88ZM3.88 8.57a8.801 8.801 0 0 1 1.27-2.114c.584.504 1.224.945 1.91 1.31-.272 1.1-.44 2.306-.485 3.577H3.211c.07-.959.295-1.89.668-2.773Zm-.668 4.085h3.363c.045 1.27.213 2.478.485 3.577-.683.364-1.324.803-1.91 1.31a8.763 8.763 0 0 1-1.938-4.887Zm5.36 7.465A8.762 8.762 0 0 1 6.05 18.5c.434-.37.9-.696 1.392-.98.368 1.055.84 1.972 1.388 2.705a8.555 8.555 0 0 1-.258-.103Zm6.858 0c-.087.035-.171.07-.258.103.549-.733 1.02-1.65 1.388-2.704.492.28.958.609 1.392.98a8.762 8.762 0 0 1-2.522 1.621Z" />
+                                </svg>
+                                ru
+                            </a>
+                            <div class="header__nav-item_submenu">
+                                <div class="header__nav-item_submenu-container">
+                                    <a class="header__nav-item__link" href="#">Русский (RU)</a>
+                                    <a class="header__nav-item__link" href="#">English (ENG)</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="header__nav-item">
-                            <a href="#" class="header__nav-item__link">Войти</a>
-                            <span class="icon icon-smile"></span>
+                            <a href="#" class="header__nav-item__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M.62.986 5.157 3.58A10.807 10.807 0 0 1 12 1.151a10.826 10.826 0 0 1 6.84 2.428L23.384.987l-.535 11.033a10.845 10.845 0 0 1-10.849 10.829A10.843 10.843 0 0 1 1.15 12.018L.62.986Zm1.879 5.772A10.825 10.825 0 0 1 3.947 4.73l-1.59-.908.142 2.936Zm9.5-4.007c-2.39 0-4.568.906-6.21 2.395A9.296 9.296 0 0 0 4.068 7.24a9.202 9.202 0 0 0-1.306 5.218c2.013-.72 4.189-2.317 6.197-4.214a40.475 40.475 0 0 0 4.708-5.342A9.31 9.31 0 0 0 12 2.751Zm3.307.609c-1.215 1.733-3.094 4.011-5.248 6.046-2.135 2.017-4.628 3.88-7.075 4.666A9.243 9.243 0 0 0 12 21.249a9.245 9.245 0 0 0 9.249-9.25v-.019l.396-8.158-3.005 1.714-.43-.39a9.25 9.25 0 0 0-2.903-1.786Zm-2.872 13.76c-1.232.099-2.562-.26-3.891-1.265l.965-1.277c1.05.794 1.997 1.012 2.8.948.818-.065 1.565-.43 2.178-.93l1.01 1.24c-.8.653-1.846 1.188-3.062 1.285Z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#fff"
+                                        d="M17.127 11.448a1.24 1.24 0 1 1-2.479 0 1.24 1.24 0 0 1 2.479 0ZM9.35 11.448a1.24 1.24 0 1 1-2.479 0 1.24 1.24 0 0 1 2.479 0Z" />
+                                </svg>
+                                Войти
+                            </a>
                         </div>
                     </div>
 
@@ -253,39 +283,48 @@
 
     <section class="benefits">
         <div class="container">
-            <div class="swiper benefits-swiper js-swiper">
+            <div class="swiper benefits-swiper">
                 <div class="benefits-wrap swiper-wrapper">
                     <div class="swiper-slide benefits-card benefits-card_orange">
-                        <div class="stable-img benefits-img"></div>
-                        <div class="benefits-text">
-                            <div class="benefits-title uppercase">Стабильные<br />сервера</div>
-                            <div class="benefits-subtitle">Сервера работают 8 лет без остановок и вайпов</div>
+                        <div class="benefits-card_box">
+                            <div class="stable-img benefits-img"></div>
+                            <div class="benefits-text">
+                                <div class="benefits-title uppercase">Стабильные<br />сервера</div>
+                                <div class="benefits-subtitle">Сервера работают 8 лет без остановок и вайпов</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide benefits-card benefits-card_pink">
-                        <div class="high-online-img benefits-img"></div>
-                        <div class="benefits-text">
-                            <div class="benefits-title uppercase">Высокий<br />онлайн</div>
-                            <div class="benefits-subtitle">Насыщенный рынок, свыше 100 арен и биг-вары в 600+ игроков
+                        <div class="benefits-card_box">
+                            <div class="high-online-img benefits-img"></div>
+                            <div class="benefits-text">
+                                <div class="benefits-title uppercase">Высокий<br />онлайн</div>
+                                <div class="benefits-subtitle">Насыщенный рынок, свыше 100 арен и биг-вары в 600+
+                                    игроков
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide benefits-card benefits-card_blue">
-                        <div class="support-img benefits-img"></div>
-                        <div class="benefits-text">
-                            <div class="benefits-title uppercase">Заботливая<br />поддержка</div>
-                            <div class="benefits-subtitle">Ответим на любые вопросы по игре с 10:00 до 03:00 по МСК
+                        <div class="benefits-card_box">
+                            <div class="support-img benefits-img"></div>
+                            <div class="benefits-text">
+                                <div class="benefits-title uppercase">Заботливая<br />поддержка</div>
+                                <div class="benefits-subtitle">Ответим на любые вопросы по игре с 10:00 до 03:00 по МСК
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide benefits-card benefits-card_red">
-                        <div class="light-start-img benefits-img"></div>
-                        <div class="benefits-text">
-                            <div class="benefits-title uppercase">быстрый<br />и Легкий старт</div>
-                            <div class="benefits-subtitle">Все&nbsp;новые&nbsp;игроки&nbsp;получают
-                                дополнительные ресурсы&nbsp;и&nbsp;вещи</div>
+                        <div class="benefits-card_box">
+                            <div class="light-start-img benefits-img"></div>
+                            <div class="benefits-text">
+                                <div class="benefits-title uppercase">быстрый<br />и Легкий старт</div>
+                                <div class="benefits-subtitle">Все&nbsp;новые&nbsp;игроки&nbsp;получают
+                                    дополнительные ресурсы&nbsp;и&nbsp;вещи</div>
+                            </div>
                         </div>
                     </div>
 
@@ -311,7 +350,6 @@
             <div class="container container-second">
                 <div class="changes-block">
                     <div class="changes-content">
-                        <!-- <img src="./assets/img/svg/changes-autolog.svg" alt="Первое место в рейтингах"> -->
                         <img src="./assets/img/svg/autologs/changes-rating.svg" alt="Первое место в рейтингах">
                         <div class="block-text">
                             <h3 class="block-title uppercase">Первое место в рейтингах</h3>
@@ -320,7 +358,6 @@
                     </div>
 
                     <div class="changes-content">
-                        <!-- <img src="./assets/img/svg/changes-invite.svg" alt="очень прокаченный клиент"> -->
                         <img src="./assets/img/svg/autologs/changes-client.svg" alt="очень прокаченный клиент">
                         <div class="block-text">
                             <h3 class="block-title uppercase">очень прокаченный клиент</h3>
@@ -329,7 +366,6 @@
                     </div>
 
                     <div class="changes-content">
-                        <!-- <img src="./assets/img/svg/changes-delete.svg" alt="игровая механика"> -->
                         <img src="./assets/img/svg/autologs/changes-mechanics.svg" alt="игровая механика">
                         <div class="block-text">
                             <h3 class="block-title uppercase">игровая механика</h3>
@@ -338,7 +374,6 @@
                     </div>
 
                     <div class="changes-content">
-                        <!-- <img src="./assets/img/svg/changes-skill.svg" alt="Эпические драконы"> -->
                         <img src="./assets/img/svg/autologs/changes-skill.svg" alt="Эпические драконы">
                         <div class="block-text">
                             <h3 class="block-title uppercase">Эпические драконы</h3>
@@ -347,8 +382,9 @@
                     </div>
                 </div>
                 <div class="more-info">
-                    <a href="#" class="btn-blue btn btn-bordered"><span class="btn-bordered-box">Узнать больше об
-                            изменениях</span></a>
+                    <a href="#" class="btn-blue btn btn-bordered">
+                        <span class="btn-bordered-box">Узнать больше об изменениях</span>
+                    </a>
                 </div>
                 <img class="changes-img" src="./assets/img/changes-valakas.png" alt="valakas dragon">
             </div>
@@ -373,8 +409,9 @@
                 </div>
             </div>
             <div class="more-info">
-                <a href="#" class="btn-blue btn btn-bordered"><span class="btn-bordered-box">Узнать больше об
-                        изменениях</span></a>
+                <a href="#" class="btn-blue btn btn-bordered">
+                    <span class="btn-bordered-box">Узнать больше об изменениях</span>
+                </a>
             </div>
         </div>
     </section>
@@ -386,7 +423,193 @@
                 <div class="subtitle_dark">Выбери свою любимую расу и брось вызов другим игрокам</div>
             </div>
         </div>
-        <div class="race-wrapper">
+
+        <div class="race-wrapper desktop-hidden">
+            <div class="container container-second">
+                <div class="race-block js-toggle-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="flex">
+                                <img class="classes-img" src="./assets/img/svg/choice-people.svg" alt="люди">
+                                <p class="choice-text uppercase">люди</p>
+                            </div>
+                            <span class="icon icon-arrow-bottom-darken"></span>
+                        </div>
+                    </div>
+                    <div class="race__block-content">
+                        <img class="race-img people" src="./assets/img/race-people.png" alt="people">
+                        <ul class="race-content__text">
+                            <li class="content-text__item">
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Люди не имеют специальных возможностей, однако их
+                                        преимущество в
+                                        том, что они могут овладеть любым ремеслом</p>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Не смотря на то, что люди имеют сильные и слабые стороны,
+                                        они
+                                        хорошо сбалансированы. Их достоинства и недостатки уравновешивают друг друга</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="race-block js-toggle-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="flex">
+                                <img class="classes-img" src="./assets/img/svg/choice-elf.svg" alt="Эльфы">
+                                <p class="choice-text uppercase">Эльфы</p>
+                            </div>
+                            <span class="icon icon-arrow-bottom-darken"></span>
+                        </div>
+                    </div>
+                    <div class="race__block-content">
+                        <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
+                        <ul class="race-content__text">
+                            <li class="content-text__item active">
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Светлые Эльфы могут дольше других пребывать под водой, а
+                                        также,
+                                        способны без ущерба для здоровья прыгать с более высоких мест</p>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Чрезвычайно быстрые и проворные создания, что отражается на
+                                        их
+                                        деятельности, начиная с передвижения и заканчивая чтением заклинаний</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="race-block js-toggle-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="flex">
+                                <img class="classes-img" src="./assets/img/svg/choice-dark-elf.svg" alt="Темные эльфы">
+                                <p class="choice-text uppercase">Темные эльфы</p>
+                            </div>
+                            <span class="icon icon-arrow-bottom-darken"></span>
+                        </div>
+                    </div>
+                    <div class="race__block-content">
+                        <img class="race-img people active" src="./assets/img/race-dark-elf.png" alt="dark elf">
+                        <ul class="race-content__text">
+                            <li class="content-text__item active">
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Темные Эльфы, могут дольше находиться под водой, а также,
+                                        способны без ущерба для здоровья прыгать с более высоких мест</p>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Делают ставку на силу атаки, как воины, так и маги имеют
+                                        наилучшие показатели боевой мощи для нанесения урона по противнику</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="race-block js-toggle-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="flex">
+                                <img class="classes-img" src="./assets/img/svg/choice-orc.svg" alt="Орки">
+                                <p class="choice-text uppercase">Орки</p>
+                            </div>
+                            <span class="icon icon-arrow-bottom-darken"></span>
+                        </div>
+                    </div>
+                    <div class="race__block-content">
+                        <img class="race-img orc" src="./assets/img/race-orc.png" alt="orc">
+                        <ul class="race-content__text">
+                            <li class="content-text__item">
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Орки обладают повышенной сопротивляемостью к ядам и болезням
+                                    </p>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Наделены огромной физической силой, высокими показателями
+                                        здоровья и манны, быстрой способностью к регенерации, однако они медлительны в
+                                        передвижении и в атаке</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="race-block js-toggle-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="flex">
+                                <img class="classes-img" src="./assets/img/svg/choice-dwarv.svg" alt="Гномы">
+                                <p class="choice-text uppercase">Гномы</p>
+                            </div>
+                            <span class="icon icon-arrow-bottom-darken"></span>
+                        </div>
+                    </div>
+                    <div class="race__block-content">
+                        <img class="race-img dwarv active" src="./assets/img/race-dwarv.png" alt="dwarv">
+                        <ul class="race-content__text">
+                            <li class="content-text__item active">
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Объем рюкзака у Гномов в несколько раз больше, чем у других
+                                        рас, также они способны переносить более тяжелые вещи</p>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Признанные мастера создания разнообразных предметов, также
+                                        показатели их здоровья и защиты достаточно высоки</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="race-block js-toggle-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="flex">
+                                <img class="classes-img" src="./assets/img/svg/choice-kamael.svg" alt="Камаэли">
+                                <p class="choice-text uppercase">Камаэли</p>
+                            </div>
+                            <span class="icon icon-arrow-bottom-darken"></span>
+                        </div>
+                    </div>
+                    <div class="race__block-content">
+                        <img class="race-img kamael active" src="./assets/img/race-kamael.png" alt="kamael">
+                        <ul class="race-content__text">
+                            <li class="content-text__item active">
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">Камаэли от рождения созданы для сражений. Но их не коснулось
+                                        благословение богов, так что высшая сила — магия — камаэлям недоступна</p>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-icon"></div>
+                                    <p class="content-item">В зависимости от пола Камаэли могут приобретать различные
+                                        профессии. Способны сами преобразовывать современные клинки и луки в мечи,
+                                        рапиры и
+                                        арбалеты</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="race-wrapper mobile-hidden">
             <div class="container container-second">
                 <div class="race-block" data-page-target="people">
                     <ul class="race-content__text">
@@ -508,222 +731,8 @@
                 </div>
             </div>
 
-            <div class=" container">
-                <!-- <div class="race-choice__mobile desktop-hidden">
-                </div> -->
-                <div class="race-choice__block desktop-hidden">
-                    <div class="race-choice__item">
-                        <div class=" race-choice__btn">
-                            <div class="race-item_header">
-                                <div class=" choice-people races" data-page-path="people">
-                                    <img class="classes-img" src="./assets/img/svg/choice-people.svg" alt="Люди">
-                                    <p class="choice-text uppercase">Люди</p>
-                                </div>
-
-                                <div class="arrow">
-                                    <img src="/assets/img/svg/arrow.svg" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="race-item__content">
-                            <div class="item-content__img">
-                                <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
-                            </div>
-                            <div class="item-content-text">
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Были созданы богиней Воды, поэтому очень трепетно
-                                        относятся к водной стихии и природе в целом</p>
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Обладают стройным, подвижным телом, удлиненными
-                                        ушами, а
-                                        также
-                                        изящными чертами лица</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="race-choice__item">
-                        <div class=" race-choice__btn">
-                            <div class="race-item_header">
-                                <div class="choice-elf races">
-                                    <img class="classes-img" src="./assets/img/svg/choice-elf.svg" alt="Эльфы">
-                                    <p class="choice-text uppercase">Эльфы</p>
-                                </div>
-
-                                <div class="arrow">
-                                    <img src="/assets/img/svg/arrow.svg" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="race-item__content">
-                            <div class="item-content__img">
-                                <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
-                            </div>
-                            <div class="item-content-text">
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Были созданы богиней Воды, поэтому очень трепетно
-                                        относятся к водной стихии и природе в целом</p>
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Обладают стройным, подвижным телом, удлиненными
-                                        ушами, а
-                                        также
-                                        изящными чертами лица</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="race-choice__item">
-                        <div class=" race-choice__btn">
-                            <div class="race-item_header">
-                                <div class=" choice-dark-elf races">
-                                    <img class="classes-img" src="./assets/img/svg/choice-dark-elf.svg"
-                                        alt="Темные эльфы">
-                                    <p class="choice-text uppercase">Темные эльфы</p>
-                                </div>
-
-                                <div class="arrow">
-                                    <img src="/assets/img/svg/arrow.svg" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="race-item__content">
-                            <div class="item-content__img">
-                                <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
-                            </div>
-                            <div class="item-content-text">
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Были созданы богиней Воды, поэтому очень трепетно
-                                        относятся к водной стихии и природе в целом</p>
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Обладают стройным, подвижным телом, удлиненными
-                                        ушами, а
-                                        также
-                                        изящными чертами лица</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="race-choice__item">
-                        <div class=" race-choice__btn">
-                            <div class="race-item_header">
-                                <div class="choice-orc races">
-                                    <img class="classes-img" src="./assets/img/svg/choice-orc.svg" alt="Орки">
-                                    <p class="choice-text uppercase">Орки</p>
-                                </div>
-
-                                <div class="arrow">
-                                    <img src="/assets/img/svg/arrow.svg" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="race-item__content">
-                            <div class="item-content__img">
-                                <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
-                            </div>
-                            <div class="item-content-text">
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Были созданы богиней Воды, поэтому очень трепетно
-                                        относятся к водной стихии и природе в целом</p>
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Обладают стройным, подвижным телом, удлиненными
-                                        ушами, а
-                                        также
-                                        изящными чертами лица</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="race-choice__item">
-                        <div class=" race-choice__btn">
-                            <div class="race-item_header">
-                                <div class="choice-dwarv races">
-                                    <img class="classes-img" src="./assets/img/svg/choice-dwarv.svg" alt="Гномы">
-                                    <p class="choice-text uppercase">Гномы</p>
-                                </div>
-                                <div class="arrow">
-                                    <img src="/assets/img/svg/arrow.svg" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="race-item__content">
-                            <div class="item-content__img">
-                                <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
-                            </div>
-                            <div class="item-content-text">
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Были созданы богиней Воды, поэтому очень трепетно
-                                        относятся к водной стихии и природе в целом</p>
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Обладают стройным, подвижным телом, удлиненными
-                                        ушами, а
-                                        также
-                                        изящными чертами лица</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="race-choice__item">
-                        <div class=" race-choice__btn">
-                            <div class="race-item_header">
-                                <div class="choice-kamael races">
-                                    <img class="classes-img" src="./assets/img/svg/choice-kamael.svg" alt="Камаэли">
-                                    <p class="choice-text uppercase">Камаэли</p>
-                                </div>
-                                <div class="arrow">
-                                    <img src="/assets/img/svg/arrow.svg" alt="arrow">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="race-item__content">
-                            <div class="item-content__img">
-                                <img class="race-img people active" src="./assets/img/race-elf.png" alt="dark elf">
-                            </div>
-                            <div class="item-content-text">
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Были созданы богиней Воды, поэтому очень трепетно
-                                        относятся к водной стихии и природе в целом</p>
-                                </div>
-                                <div class="content-wrap">
-                                    <div class="content-icon"></div>
-                                    <p class="item-content__title">Обладают стройным, подвижным телом, удлиненными
-                                        ушами, а
-                                        также
-                                        изящными чертами лица</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="race-choice block-bordered block-bordered-gray mobile-hidden">
+            <div class="container">
+                <div class="race-choice block-bordered block-bordered-gray">
                     <div class="race-choice-wrapper">
                         <div class="choice-people classes" data-page-path="people">
                             <img class="classes-img" src="./assets/img/svg/choice-people.svg" alt="люди">

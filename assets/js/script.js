@@ -1,58 +1,60 @@
-const breakpoint = window.matchMedia('(min-width:767px)');
-const breakpoint1920 = window.matchMedia('(min-width:1920px)');
-let mySwiper;
+let benefitsPerPage = {
+    slidesPerView: 4,
+};
+let defaultPerPage = {
+    slidesPerView: 3,
+};
 
-const breakpointChecker = function () {
-    if (breakpoint.matches === true || breakpoint1920.matches === true) {
-        if (mySwiper !== undefined) mySwiper.destroy(true, true);
-        return;
-    } else if (breakpoint.matches === false) {
-        return enableSwiper();
+let optionsSwiper = {
+    pagination: {
+        el: '.swiper-pagination',
+        bulletClass: 'swiper-pagination-bullet-custom',
+        bulletActiveClass: 'swiper-pagination-bullet-custom--active',
+        renderBullet: function (index, className) {
+            return `<div class="${className}" data-index="${index}"><span></span></div>`
+        },
+        clickable: true
+    },
+    grabCursor: true,
+    watchOverflow: true,
+    centeredSlides: true,
+    loop: false,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    speed: 800,
+    spaceBetween: 20,
+    breakpoints: {
+        319: {
+            slidesPerView: 'auto',
+        },
+        768: {
+            navigation: false,
+            pagination: false,
+            centeredSlides: false,
+        },
+    },
+    on: {
+        init: function () {
+            const _self = this;
+            _self.el.style.setProperty('--delay', _self.params.autoplay.delay);
+
+            _self.el.addEventListener('mouseenter', function () {
+                _self.el.classList.add('swiper--pause');
+                _self.autoplay.stop();
+            });
+
+            _self.el.addEventListener('mouseleave', function () {
+                _self.el.classList.remove('swiper--pause');
+                _self.autoplay.start();
+            });
+        }
     }
 };
 
-breakpoint.addListener(breakpointChecker);
-
-breakpointChecker();
-
-function enableSwiper() {
-    mySwiper = new Swiper('.js-swiper', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true,
-        },
-        grabCursor: true,
-        watchOverflow: true,
-        centeredSlides: true,
-        loop: false,
-        speed: 800,
-        slidesPerView: 'auto',
-        spaceBetween: 20,
-        breakpoints: {
-            319: {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-            },
-            // 484: {
-            //     slidesPerView: 1,
-            // },
-            // 768: {
-            //     slidesPerView: 2,
-            // },
-            // 992: {
-            //     slidesPerView: 3,
-            // },
-        },
-    });
-}
-
-
-
+const benefitsSwiper = new Swiper('.benefits-swiper', { ...benefitsPerPage, ...optionsSwiper });
+const otherSliders = new Swiper('.js-swiper', { ...defaultPerPage, ...optionsSwiper });
 
 // burger menu 
 const iconMenu = document.querySelector('.burger');
@@ -103,124 +105,131 @@ document.onscroll = function () {
     }
 }
 
-
-
-
-// 
-
-
 //активное состояние меню для .header__nav-item
 
-
 /* ЗАПУТАЛАСЬ */
-const navItems = document.querySelectorAll('.header__nav-item_sub');
+// const navItems = document.querySelectorAll('.header__nav-item_sub');
 
-navItems.forEach(navItem => {
-    navItem.addEventListener('click', () => {
-        navItem.classList.toggle('active');
-        const submenu = navItem.querySelector('.header__nav-item_submenu');
-        submenu.classList.toggle('active');
-    });
-});
+// navItems.forEach(navItem => {
+//     navItem.addEventListener('click', () => {
+//         navItem.classList.toggle('active');
+//         const submenu = navItem.querySelector('.header__nav-item_submenu');
+//         submenu.classList.toggle('active');
+//     });
+// });
 /* */
 
 //Переключение табов для секции race
-const tab = function () {
-    let tabNav = document.querySelectorAll('.classes');
-    let tabContent = document.querySelectorAll('.race-block');
+// const tab = function () {
+//     let tabNav = document.querySelectorAll('.classes');
+//     let tabContent = document.querySelectorAll('.race-block');
 
-    // Добавляем обработчик событий для каждого пункта навигации
-    tabNav.forEach(item => {
-        item.addEventListener('click', selectTabNav)
-    });
+//     // Добавляем обработчик событий для каждого пункта навигации
+//     tabNav.forEach(item => {
+//         item.addEventListener('click', selectTabNav)
+//     });
 
-    function selectTabNav() {
-        // Убираем класс active у всех пунктов навигации
-        tabNav.forEach(item => {
-            item.classList.remove('active');
-        });
-        // Добавляем класс active только выбранному пункту навигации
-        this.classList.add('active');
-        let tabBtn = this.getAttribute('data-page-path'); // получаем значение атрибута data-page-path у выбранного пункта навигации
+//     function selectTabNav() {
+//         // Убираем класс active у всех пунктов навигации
+//         tabNav.forEach(item => {
+//             item.classList.remove('active');
+//         });
+//         // Добавляем класс active только выбранному пункту навигации
+//         this.classList.add('active');
+//         let tabBtn = this.getAttribute('data-page-path'); // получаем значение атрибута data-page-path у выбранного пункта навигации
 
-        selectTabContent(tabBtn);
-    }
+//         selectTabContent(tabBtn);
+//     }
 
-    function selectTabContent(tabBtn) {
-        // Проходимся по всем элементам контента, чтобы найти нужный для отображения и скрыть все остальные
-        tabContent.forEach(item => {
-            if (item.dataset.pageTarget == tabBtn) { // если элемент содержит класс с именем выбранного пункта навигации
-                item.classList.add('active');
-            } else {
-                item.classList.remove('active'); // скрываем все остальные элементы
-            }
-        });
-    }
-};
-tab();
+//     function selectTabContent(tabBtn) {
+//         // Проходимся по всем элементам контента, чтобы найти нужный для отображения и скрыть все остальные
+//         tabContent.forEach(item => {
+//             if (item.dataset.pageTarget == tabBtn) { // если элемент содержит класс с именем выбранного пункта навигации
+//                 item.classList.add('active');
+//             } else {
+//                 item.classList.remove('active'); // скрываем все остальные элементы
+//             }
+//         });
+//     }
+// };
+// tab();
 
+// const pageBlock = document.querySelectorAll('.race-choice__item');
+// const pageBtn = document.querySelectorAll('.race-choice__btn');
 
-const pageBlock = document.querySelectorAll('.race-choice__item');
-const pageBtn = document.querySelectorAll('.race-choice__btn');
+// let activePageContent = null;
 
-let activePageContent = null;
+// for (let i = 0; i < pageBlock.length; i++) {
+//     pageBlock[i].addEventListener('click', function () {
 
-for (let i = 0; i < pageBlock.length; i++) {
-    pageBlock[i].addEventListener('click', function () {
+//         const pageContent = this.querySelector('.race-item__content');
+//         const arrow = this.querySelector('.arrow');
 
-        const pageContent = this.querySelector('.race-item__content');
-        const arrow = this.querySelector('.arrow');
+//         if (pageContent !== null) {
+//             if (activePageContent !== null && activePageContent !== pageContent) {
+//                 activePageContent.classList.remove('open');
+//                 activePageContent.parentElement.querySelector('.arrow').classList.remove('active');
+//             }
+//             pageContent.classList.toggle('open');
+//             activePageContent = pageContent;
+//         }
 
-        if (pageContent !== null) {
-            if (activePageContent !== null && activePageContent !== pageContent) {
-                activePageContent.classList.remove('open');
-                activePageContent.parentElement.querySelector('.arrow').classList.remove('active');
-            }
-            pageContent.classList.toggle('open');
-            activePageContent = pageContent;
-        }
+//         if (arrow !== null) {
+//             arrow.classList.toggle('active');
+//         }
+//     });
+// }
 
-        if (arrow !== null) {
-            arrow.classList.toggle('active');
-        }
-    });
-}
+// //Переключение табов для секции about server
+// const tabServer = function () {
+//     const tabServerItems = document.querySelectorAll(".server-item");
+//     const serverContentItems = document.querySelectorAll('.server-content');
 
-//Переключение табов для секции about server
+//     tabServerItems.forEach(item => {
+//         item.addEventListener('click', selectServer);
+//     });
 
-const tabServer = function () {
-    const tabServerItems = document.querySelectorAll(".server-item");
-    const serverContentItems = document.querySelectorAll('.server-content');
+//     function selectServer() {
+//         tabServerItems.forEach(item => {
+//             item.classList.remove('active');
+//         });
+//         this.classList.add('active');
+//         const selectedServer = this.getAttribute('data-server');
 
-    tabServerItems.forEach(item => {
-        item.addEventListener('click', selectServer);
-    });
+//         selectContent(selectedServer);
+//     }
 
-    function selectServer() {
-        tabServerItems.forEach(item => {
-            item.classList.remove('active');
-        });
-        this.classList.add('active');
-        const selectedServer = this.getAttribute('data-server');
+//     function selectContent(selectedServer) {
+//         serverContentItems.forEach(item => {
+//             if (item.getAttribute('data-server-target') === selectedServer) {
+//                 item.style.display = 'flex';
+//             } else {
+//                 item.style.display = 'none';
+//             }
+//         });
+//     }
+// };
 
-        selectContent(selectedServer);
-    }
+// tabServer();
 
-    function selectContent(selectedServer) {
-        serverContentItems.forEach(item => {
-            if (item.getAttribute('data-server-target') === selectedServer) {
-                item.style.display = 'flex';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    }
-};
+$(document).on('click', '.classes', function (e) {
+    e.preventDefault();
+    const type = $(this).data('page-path');
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.race-block[data-page-target="' + type + '"').addClass('active').siblings().removeClass('active');
+});
 
-tabServer();
+$(document).on('click', '.js-toggle-race', function (e) {
+    $(this).toggleClass('active').siblings().removeClass('active');
+});
 
+$(document).on('click', '.server-item', function (e) {
+    e.preventDefault();
+    const type = $(this).data('server');
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.server-content[data-server-target="' + type + '"]').addClass('active').siblings().removeClass('active');
 
-
+});
 
 // best players
 $(document).on('click', '.js-show-top-players', function () {
