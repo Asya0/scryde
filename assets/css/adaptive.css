@@ -1,4 +1,8 @@
-@media screen and (min-width: 1919px) {}
+@media screen and (min-width: 1919px) {
+    .changes::before {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1680px) {
 
@@ -2136,6 +2140,10 @@
 @media screen and (max-width: 420px) {
     .awards-img__left.desktop-hidden {
         display: block !important;
+        width: 100vw;
+        right: -20px;
+        left: -20px;
+        max-width: 100vw;
     }
 }
 
