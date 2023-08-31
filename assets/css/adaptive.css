@@ -1,3 +1,5 @@
+@media screen and (min-width: 1919px) {}
+
 @media screen and (max-width: 1680px) {
 
     .banner__prizes__right-img {
@@ -23,7 +25,6 @@
 
     .banner__prizes-bg {
         bottom: -10%;
-        /* left: -30vw; */
         left: -5vw;
     }
 }
@@ -40,8 +41,6 @@
 }
 
 @media screen and (max-width:1379px) {
-    /* --------------------------- swiper --------------------------- */
-
     .swiper .swiper-pagination-bullet {
         width: 60px;
         height: 8px;
@@ -72,17 +71,14 @@
         justify-content: space-evenly;
     }
 
-    /* --------------------------- stream --------------------------- */
     .stream {
         padding-top: 10vh;
     }
 
-    /* --------------------------- friends --------------------------- */
     .friends {
         padding-top: 5vh;
     }
 
-    /* --------------------------- about server --------------------------- */
     .banner__prizes__right-img {
         transform: scale(0.8);
         bottom: 0;
@@ -90,21 +86,6 @@
 }
 
 @media screen and (max-width: 1350px) {
-
-    /* --------------------------- скролл страницы --------------------------- */
-
-    .header.fixed .header__nav-item:nth-child(4) {
-        display: flex;
-    }
-
-    /* 
-    .header__nav-item_submenu {
-        display: none;
-    } */
-    /* 
-    .header__nav-item_submenu.active {
-        display: block;
-    } */
 
     .header__box-col-right {
         gap: 20px;
@@ -122,17 +103,6 @@
         display: block;
         padding-bottom: 0;
     }
-
-    /* ---------------------------  benefits --------------------------- */
-    /* 
-    .benefits-wrap {
-        gap: 16px;
-        justify-content: space-between;
-    } */
-
-    /* .benefits-wrap .benefits-card {
-        max-width: calc(25vw - 32px);
-    } */
 
     .benefits-img {
         height: 253px;
@@ -157,15 +127,9 @@
         padding: 24px 70px;
     }
 
-    .changes::after {
-        bottom: -40vh;
-    }
-
     .race-img {
         right: 20px;
     }
-
-    /* --------------------------- news --------------------------- */
 
     .news .swiper {
         margin-top: -30px;
@@ -206,6 +170,24 @@
     .friends .block-title {
         font-size: 22px;
     }
+
+    .awards-img__right {
+        top: 4px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .header.fixed .header__nav-item:nth-child(4) {
+        display: flex;
+    }
+
+    .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .awards-img__left {
+        left: -180px;
+    }
 }
 
 
@@ -215,14 +197,9 @@
         padding-top: 168px;
     }
 
-
-    /* ---------------------------  about server --------------------------- */
-
     .server-name {
         grid-template-columns: repeat(1, 346px);
     }
-
-    /* --------------------------- general --------------------------- */
 
     .title {
         font-size: 40px;
@@ -232,21 +209,13 @@
         font-size: 15px;
     }
 
-    /* --------------------------- race --------------------------- */
-    .races,
-    .classes {
+    .classes .btn-bordered-box {
         padding: 16px;
     }
 
     .h2-title_black {
         font-size: 43px;
     }
-
-    /* --------------------------- friends --------------------------- */
-    /* скорее всего не понадобится */
-    /* .changes-block {
-        margin: 0 0 97px;
-    } */
 
     .discord-block iframe {
         max-width: 450px;
@@ -264,25 +233,13 @@
     .block-text {
         margin-top: 20px;
     }
-}
 
-@media screen and (min-width: 1025px) {
-    /* .benefits-wrap {
-        gap: 24px;
-        justify-content: space-between;
-    } */
-
-    /* .benefits-wrap .benefits-card {
-        max-width: 223px;
-    } */
+    .awards-img__left {
+        left: -240px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-
-    /* --------------------------- general --------------------------- */
-    .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
-        display: none;
-    }
 
     .container {
         padding: 0 42px;
@@ -320,7 +277,6 @@
         margin-bottom: 50px;
     }
 
-    /* --------------------------- header --------------------------- */
     .logo__image {
         position: relative;
         z-index: 6;
@@ -340,7 +296,6 @@
         font-size: 14px;
     }
 
-    /* --------------------------- server --------------------------- */
     .h1-title {
         font-size: 46px;
     }
@@ -361,7 +316,6 @@
         top: 20px;
     }
 
-    /* --------------------------- benefits --------------------------- */
     .benefits-text {
         margin: 0 20px 24px;
     }
@@ -370,13 +324,8 @@
         font-size: 18px;
     }
 
-    /* --------------------------- changes --------------------------- */
     .changes {
         padding-top: 10vh;
-    }
-
-    .changes::after {
-        bottom: -34vh;
     }
 
     .changes-text .subtitle_light {
@@ -402,7 +351,6 @@
         max-width: 75%;
     }
 
-    /* --------------------------- hero --------------------------- */
     .hero {
         padding: 15vh 0 11vh 0;
     }
@@ -411,21 +359,12 @@
         gap: 20px;
     }
 
-    /* --------------------------- race --------------------------- */
-    .race .container-second {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .race-choice {
         max-width: 925px;
     }
 
-    .classes {
-        max-width: 142px;
+    .classes .btn-bordered-box {
         gap: 10px;
-        padding: 16px;
     }
 
     .content-item {
@@ -437,7 +376,6 @@
         font-size: 12px;
     }
 
-    /* --------------------------- about server --------------------------- */
     .server-box-wrapper {
         padding: 10px;
     }
@@ -515,7 +453,13 @@
         height: 20px;
     }
 
-    /* --------------------------- news --------------------------- */
+    .news-item.block-bordered-gray:after {
+        top: -2px;
+        bottom: -2px;
+        left: 12px;
+        right: 12px;
+    }
+
     .news-icon {
         left: 0;
     }
@@ -525,7 +469,6 @@
     }
 
     .news-block {
-        /* gap: 16px; */
         margin: 50px 0 40px 0;
     }
 
@@ -550,15 +493,8 @@
         font-size: 14px;
     }
 
-    /* --------------------------- best --------------------------- */
-
     .best {
         padding-top: 10vh;
-    }
-
-    .table__item-inner {
-        padding: 28px 22px;
-        gap: 41px;
     }
 
     .best-block {
@@ -582,8 +518,6 @@
         font-size: 12px;
     }
 
-    /* --------------------------- stream --------------------------- */
-
     .stream-block {
         gap: 16px;
     }
@@ -600,7 +534,6 @@
         font-size: 14px;
     }
 
-    /* --------------------------- awards --------------------------- */
     .awards {
         padding-bottom: 90px;
     }
@@ -622,6 +555,7 @@
 
     .awards .block-subtitle {
         font-size: 18px;
+        margin: 0 auto;
     }
 
     .learn-more {
@@ -633,10 +567,9 @@
     }
 
     .awards-img__left {
-        top: -211px;
-        left: -345px;
-        transform: scale(0.35);
-
+        top: -60px;
+        left: -205px;
+        transform: scale(0.65);
     }
 
     .awards-img__right {
@@ -645,7 +578,6 @@
         top: -87px;
     }
 
-    /* --------------------------- friends --------------------------- */
     .friends-block {
         gap: 50px;
     }
@@ -663,7 +595,6 @@
         gap: 20px;
     }
 
-    /* --------------------------- contacts --------------------------- */
     .contacts {
         padding-top: 10vh;
     }
@@ -688,7 +619,6 @@
         font-size: 14px;
     }
 
-    /* --------------------------- get prizes --------------------------- */
     .banner__prizes {
         padding: 5vh 0 15vh 0;
     }
@@ -727,7 +657,6 @@
         bottom: -105px;
     }
 
-    /* --------------------------- footer --------------------------- */
     .footer-title {
         font-size: 18px;
     }
@@ -791,32 +720,19 @@
 
 @media screen and (max-width: 1022px) {
 
-    /* --------------------------- benefits --------------------------- */
     .swiper .swiper-pagination {
         display: flex;
         top: 30px;
     }
 
-    /* --------------------------- server --------------------------- */
-
     .server-title {
         font-size: 16px;
     }
-
-    /* --------------------------- footer --------------------------- */
-
-    /* --------------------------- hero --------------------------- */
-
-
-    /* --------------------------- footer --------------------------- */
-
 }
 
 /* @media screen and (max-width: 986px) { */
 @media screen and (max-width: 992px) {
 
-    /* --------------------------- header --------------------------- */
-    /*скрываем меню для появления бургера*/
     .header__nav-actions,
     .header__nav,
     .header .btn-bordered-box {
@@ -865,8 +781,6 @@
         margin-left: 8px;
     }
 
-    /* --------------------------- burger --------------------------- */
-
     .burger {
         padding: 0;
         position: relative;
@@ -910,8 +824,6 @@
         background: #070B18;
     }
 
-
-    /* --------------------------- burger__menu --------------------------- */
     .header__nav.active .lock {
         background: #000;
     }
@@ -1151,25 +1063,19 @@
         transition: all .7s ease;
     }
 
-    /* --------------------------- changes --------------------------- */
     .changes-img {
         top: 30px;
     }
 
-    /* --------------------------- race --------------------------- */
     .classes {
         padding: 16px 11px;
     }
 
-    /* --------------------------- about server --------------------------- */
     .inner-benefits {
-        /* max-width: 50%; */
-        align-items: center;
         display: flex;
         flex-direction: column;
     }
 
-    /* --------------------------- best --------------------------- */
     .table__item-subtitle {
         font-size: 16px;
     }
@@ -1180,7 +1086,6 @@
     }
 
 
-    /* --------------------------- friends --------------------------- */
     .friends-block {
         flex-direction: column-reverse;
         align-items: center;
@@ -1203,7 +1108,6 @@
         font-size: 12px;
     }
 
-    /* --------------------------- banner --------------------------- */
     .banner__prizes__right-img {
         transform: scale(0.7);
     }
@@ -1216,7 +1120,6 @@
         font-size: 27px;
     }
 
-    /* --------------------------- footer --------------------------- */
     .footer-info {
         gap: 90px;
     }
@@ -1226,22 +1129,18 @@
 
 @media screen and (max-width: 874px) {
 
-    /* --------------------------- server --------------------------- */
     .h1-title {
         font-size: 36px;
     }
 
-    /* --------------------------- hero --------------------------- */
     .subtitle_light,
     .subtitle_dark {
         font-size: 14px;
     }
 
-    /* --------------------------- general --------------------------- */
-
     .h2-title,
     .h2-title_black {
-        font-size: 29px;
+        font-size: 24px;
     }
 
     .subtitle,
@@ -1249,13 +1148,11 @@
         font-size: 16px;
     }
 
-    /* --------------------------- race --------------------------- */
     .classes-img {
         width: 20px;
         height: 20px;
     }
 
-    /* --------------------------- about server --------------------------- */
     .server-content {
         flex-direction: column-reverse;
         gap: 30px;
@@ -1265,7 +1162,10 @@
         flex-wrap: wrap;
     }
 
-    /* --------------------------- best --------------------------- */
+    .statistics-info {
+        max-width: 100%;
+    }
+
     .table__item-row {
         grid-gap: 5px;
     }
@@ -1275,12 +1175,10 @@
         height: 15px;
     }
 
-    /* --------------------------- general --------------------------- */
     .btn .btn-bordered-box {
         padding: 17px 51px;
     }
 
-    /* --------------------------- friends --------------------------- */
     .friends .block-title {
         font-size: 18px;
     }
@@ -1289,7 +1187,6 @@
 
 @media screen and (max-width: 768px) {
 
-    /* --------------------------- general --------------------------- */
     .container {
         padding: 0 20px;
     }
@@ -1318,7 +1215,6 @@
         width: 100%;
     }
 
-    /* --------------------------- header --------------------------- */
     .h1-title {
         font-size: 32px;
     }
@@ -1327,7 +1223,6 @@
         padding: 0 20px;
     }
 
-    /* --------------------------- server --------------------------- */
     .server-block_wrapper {
         padding: 24px 62px;
     }
@@ -1353,13 +1248,11 @@
         max-width: 70%;
     }
 
-    /* slider */
     .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
     .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
         transform: translateX(-70%);
     }
 
-    /* --------------------------- changes --------------------------- */
     .block-castle img,
     .block-olympiad img {
         max-width: 100%;
@@ -1374,8 +1267,13 @@
         padding: 0;
     }
 
+    .race .container-second {
+        top: 0;
+    }
+
     .changes-img {
-        top: 45vh;
+        bottom: 0;
+        top: auto;
         right: -10vw;
         max-width: 100%;
         transform: rotate(5deg);
@@ -1385,12 +1283,6 @@
         margin-bottom: 28px;
     }
 
-    .changes::after {
-        bottom: -42vh;
-    }
-
-
-    /* --------------------------- hero --------------------------- */
     .hero {
         padding: 15vh 0 5vh 0;
     }
@@ -1411,11 +1303,19 @@
 
     }
 
-    /* --------------------------- race --------------------------- */
     .race {
         background-position: bottom;
         background-size: contain;
         padding-bottom: 47vh;
+    }
+
+    .race-mobile {
+        background-image: url(../img/race-bg-mobile.png);
+        background-color: #fff;
+        background-size: auto, auto;
+        background-repeat: no-repeat;
+        padding-top: 5vh;
+        background-size: contain;
     }
 
     .race-block {
@@ -1640,11 +1540,6 @@
         background: #070B18;
     }
 
-    /* .news-block {
-        max-width: 302px;
-        width: 100%;
-    } */
-
     .news-text__laptop {
         display: none;
     }
@@ -1659,8 +1554,16 @@
     }
 
     .news-item {
-        width: 302px !important;
-        margin-right: 0;
+        max-width: 302px !important;
+    }
+
+    .news-item-wrapper {
+        margin: 0;
+    }
+
+    .more-info .btn {
+        width: 100%;
+        text-transform: uppercase;
     }
 
     .news .swiper .swiper-pagination {
@@ -1669,7 +1572,6 @@
         padding-bottom: 10px;
     }
 
-    /* --------------------------- stream --------------------------- */
     .stream {
         padding: 40px 0 5vh 0;
     }
@@ -1679,12 +1581,6 @@
         margin-bottom: 0;
     }
 
-    /* .stream-item {
-        max-width: 302px !important;
-        margin-right: 0 !important;
-    } */
-
-    /* --------------------------- best --------------------------- */
     .best-text:not(:first-child) {
         display: none;
     }
@@ -1706,17 +1602,17 @@
         height: 20px;
     }
 
-    /* --------------------------- awards --------------------------- */
     .awards {
         padding: 28px 20px;
-        padding-bottom: 150px;
+        padding-bottom: 292px;
         padding-top: 130px;
+        margin-bottom: -1px;
     }
 
     .awards-img__left {
         top: -205px;
-        left: -195px;
-        transform: scale(0.6);
+        left: -20px;
+        transform: scale(1);
     }
 
     .awards-block .h2-title {
@@ -1725,10 +1621,12 @@
 
     .awards .block-subtitle {
         font-size: 14px;
+        max-width: 295px;
     }
 
     .awards-btn {
-        margin-top: 16px;
+        margin-top: 0;
+        width: 100%;
     }
 
     .awards-img__right-laptop {
@@ -1740,12 +1638,10 @@
         margin-bottom: 24px;
     }
 
-    /* --------------------------- friends --------------------------- */
     .friends .changes-block {
         margin: 0;
     }
 
-    /* --------------------------- contacts --------------------------- */
     .contacts-block {
         flex-direction: column;
         align-items: stretch;
@@ -1778,7 +1674,6 @@
         width: 100%;
     }
 
-    /* --------------------------- banner__prizes --------------------------- */
     .banner__prizes__body {
         padding: 0;
         background: transparent;
@@ -1811,8 +1706,6 @@
         gap: 16px;
     }
 
-    /* --------------------------- footer --------------------------- */
-
     .footer-top {
         flex-direction: column;
         margin-bottom: 0;
@@ -1833,28 +1726,24 @@
     }
 
     .info-item {
-        border-bottom: 0.4px solid #fff;
+        border-bottom: 0.4px solid rgba(255, 255, 255, 0.40);
     }
 
     .info-link {
         display: none;
     }
 
-    .info-link.open {
+    .icon-plus {
         display: block;
-        padding-bottom: 14px;
+        background: url(../img/svg/footer-plus.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
     }
 
-    .plus {
-        display: block;
-        transition: all .6s ease;
-    }
-
-    .plus.active {
-        display: block;
-        transform: rotate(225deg);
-        transition: all .6s ease;
-
+    .info-item.active .icon-plus {
+        background: url(../img/svg/minus.svg);
     }
 
     .footer-title.gold {
@@ -1880,11 +1769,37 @@
     .footer-bottom {
         flex-direction: column;
         gap: 40px;
+        border-top: 0.4px solid rgba(255, 255, 255, 0.40);
     }
 
     .footer-bottom__info {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .footer {
+        position: relative;
+        z-index: 2;
+    }
+
+    .info-item.active .info-link {
+        display: flex;
+    }
+
+    .footer-link:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .info-link {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-bottom: 24px;
+    }
+
+    .footer-link {
+        max-width: calc(50% - 20px);
+        width: 100%;
+        white-space: nowrap;
     }
 
     .footer-link:hover {
@@ -1903,19 +1818,11 @@
         gap: 0;
     }
 
-    /* .benefits-wrap .benefits-card, */
-    /* .stream-item,
-    .news-item {
-        max-width: 322px;
-        width: 100%;
-    } */
-
     .stream-block-img,
     .news-img {
         max-width: 100%;
     }
 
-    /* --------------------------- news --------------------------- */
     .news .subtitle_light {
         margin: 0;
     }
@@ -1931,9 +1838,6 @@
         align-items: center;
         gap: 40px;
     }
-
-
-    /* --------------------------- changes --------------------------- */
 
     .discord-block iframe {
         max-width: 400px;
@@ -2014,8 +1918,6 @@
         background-size: cover;
     }
 
-
-
     .server__block-inner {
         display: flex;
         flex-direction: column-reverse;
@@ -2055,17 +1957,12 @@
         display: none;
     }
 
-    /* .header-btn {
-            display: none !important;
-        } */
-
     .start-game .btn {
         width: 58%;
     }
 
     .btn {
         font-size: 14px;
-        /* width: 100%; */
     }
 
     .awards .container {
@@ -2076,16 +1973,11 @@
         position: absolute;
         right: -40px;
         top: auto;
-        bottom: -190px;
+        bottom: -250px;
     }
 
     .table__item-heading {
         display: none;
-    }
-
-    .table__item-inner {
-        padding: 0;
-        border: 0;
     }
 
     .table__item-col {
@@ -2094,10 +1986,6 @@
 
     .table__item-clans .table__item-col:nth-child(2) {
         max-width: 30%;
-    }
-
-    .table__item-inner {
-        background: none;
     }
 
     .stream .swiper {
@@ -2142,8 +2030,6 @@
         max-width: 340px;
     }
 
-
-
     .about-server .container {
         align-items: flex-start;
     }
@@ -2161,7 +2047,7 @@
     }
 
     .changes .container-second {
-        padding-bottom: 70vh;
+        padding-bottom: 440px;
     }
 
     .awards-blocks {
@@ -2204,6 +2090,41 @@
         object-fit: cover;
     }
 
+    .race .container-second {
+        gap: 10px;
+    }
+
+    .race-choice:after {
+        border-radius: 14px;
+    }
+
+    .server-inner .block-title {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .start-game__footer .btn {
+        width: 100%;
+    }
+
+    .awards-img__left.desktop-hidden {
+        display: none !important;
+    }
+
+    .news-item.block-bordered-gray:after {
+        display: none;
+    }
+
+    .swiper {
+        padding-left: 20px;
+    }
+
+    .changes::after {
+        background-image: url(../img/changes-sky__1-mob.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: -70px;
+    }
 }
 
 @media screen and (max-width: 514px) {
@@ -2212,14 +2133,18 @@
     }
 }
 
-/* пока не нужны */
+@media screen and (max-width: 420px) {
+    .awards-img__left.desktop-hidden {
+        display: block !important;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .h1-title {
         font-size: 32px;
     }
 
     .changes-text .subtitle_light {
-        /* margin-right: 90px; */
         max-width: 245px;
     }
 
@@ -2230,7 +2155,6 @@
 
 }
 
-/* добавила 11.08 */
 @media screen and (max-width: 335px) {
     .server-title {
         font-size: 16px;
