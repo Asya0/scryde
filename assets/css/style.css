@@ -60,12 +60,13 @@ body {
 body {
     font-family: 'Manrope-Regular', sans-serif;
     font-weight: 400;
-    background: url(../img/bg.jpg) no-repeat center;
+    background: url(../img/bg.jpg) no-repeat;
     background-color: #070B18;
     background-size: cover;
     color: #fff;
     padding-top: 120px;
     overflow-x: hidden;
+    background-position: left;
 }
 
 a {
@@ -330,12 +331,21 @@ img {
 .header__nav-item_submenu-container {
     border-radius: 8px;
     background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #2F68B7 2.60%, #182E57 56.77%, #1F2C5A 100%), #070B18;
-    padding: 16px;
+    padding: 16px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
     gap: 20px;
+}
+
+.header__nav-item_submenu-container .header__nav-item__link.active {
+    background: url(../img/svg/change-language.svg) no-repeat left;
+
+}
+
+.header__nav-item_submenu-container .header__nav-item__link {
+    justify-content: center;
 }
 
 .hide-on-sm {
@@ -715,7 +725,7 @@ img {
 /* CHANGES */
 .changes {
     position: relative;
-    background: url(../img/changes-bg.png) no-repeat center;
+    background: url(../img/changes-bg.png) no-repeat right;
     background-size: cover;
     padding-top: 15vh;
 }
@@ -730,7 +740,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    bottom: -40.5vh;
+    bottom: -45vh;
     left: 0;
     right: 0;
 }
@@ -821,7 +831,7 @@ img {
 /* HERO */
 .hero {
     background: #fff;
-    padding: 25vh 0 15vh 0;
+    padding: 25vh 0 10vh 0;
 }
 
 .h2-title_black {
@@ -859,7 +869,14 @@ img {
 .race {
     background-color: #fff;
     background: url(../img/race-bg.png) no-repeat center, #fff;
-    /* padding-top: 4.5vh; */
+    padding-top: 5vh;
+    background-size: cover;
+}
+
+.race-mobile {
+    background-color: #fff;
+    background: url(../img/race-bg-mobile.png) no-repeat center, #fff;
+    padding-top: 5vh;
     background-size: cover;
 }
 
@@ -935,14 +952,14 @@ img {
     display: block;
     position: relative;
     max-width: 50%;
-    top: 80px;
+    top: -25px;
     right: 90px;
 }
 
 
 .race-choice {
     position: relative;
-    top: 40px;
+    top: -30px;
     left: 0;
     max-width: 1112px;
     margin: 0 auto;
@@ -1493,7 +1510,7 @@ img {
 .stream-air {
     position: absolute;
     bottom: 8px;
-    right: 8px;
+    right: 20px;
 }
 
 .stream-profile {
@@ -1543,25 +1560,17 @@ img {
 
 .awards-img__left {
     position: absolute;
-    top: 0;
+    top: 12px;
     left: -150px;
     transform: scale(1);
 
 }
 
-.awards-img__left-laptop {
-    display: none;
-}
-
 .awards-img__right {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 16px;
+    right: -85px;
     transform: scale(0.9);
-}
-
-.awards-img__right-laptop {
-    display: none;
 }
 
 .awards-btn {
@@ -1669,12 +1678,12 @@ img {
     align-items: center;
     gap: 12px;
     border-radius: 16px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
-.social-btn:hover {
+/* .social-btn:hover {
     opacity: 0.7;
-}
+} */
 
 .social-btn img {
     width: 40px;
@@ -1787,8 +1796,6 @@ img {
     transform: rotate(180deg);
 }
 
-.vk-post {}
-
 .vk-block::-webkit-scrollbar {
     width: 12px;
     padding: 0 1px;
@@ -1820,7 +1827,7 @@ img {
 
 .banner__prizes-bg {
     position: absolute;
-    bottom: -70px;
+    bottom: -90px;
     left: 0;
 }
 
@@ -1832,7 +1839,7 @@ img {
 
 .banner__prizes__body {
     position: relative;
-    top: 12vh;
+    top: 16vh;
     left: 0;
     background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
     border-radius: 24px;

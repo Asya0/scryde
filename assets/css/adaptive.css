@@ -23,7 +23,8 @@
 
     .banner__prizes-bg {
         bottom: -10%;
-        left: -30vw;
+        /* left: -30vw; */
+        left: -5vw;
     }
 }
 
@@ -156,6 +157,14 @@
         padding: 24px 70px;
     }
 
+    .changes::after {
+        bottom: -40vh;
+    }
+
+    .race-img {
+        right: 20px;
+    }
+
     /* --------------------------- news --------------------------- */
 
     .news .swiper {
@@ -199,15 +208,6 @@
     }
 }
 
-@media screen and (max-width: 1240px) {
-    .show-on-sm {
-        display: flex;
-    }
-
-    .hide-on-sm {
-        display: none;
-    }
-}
 
 @media screen and (max-width:1179px) {
 
@@ -349,11 +349,6 @@
         font-size: 16px;
     }
 
-    /* .server-block_wrapper {
-            padding: 24px 73px;
-        } 
-    */
-
     .server-title {
         font-size: 18px;
     }
@@ -403,7 +398,7 @@
 
     .changes-img {
         right: -29vw;
-        top: -30px;
+        top: -20px;
         max-width: 75%;
     }
 
@@ -425,12 +420,6 @@
 
     .race-choice {
         max-width: 925px;
-    }
-
-    .race-block {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .classes {
@@ -480,7 +469,7 @@
     }
 
     .inner-wrap {
-        max-width: 392px;
+        max-width: 480px;
     }
 
     .inner-block {
@@ -503,8 +492,14 @@
         font-size: 10px;
     }
 
+    .statistics {
+        text-align: -webkit-right;
+        text-align: -moz-right;
+    }
+
     .statistics-info {
         padding: 12px 0;
+        max-width: 380px;
     }
 
     .statistic__img {
@@ -597,10 +592,6 @@
         max-width: 302px;
     }
 
-    /* .stream-item {
-        max-width: 302px;
-    } */
-
     .profile-title {
         font-size: 16px;
     }
@@ -610,34 +601,16 @@
     }
 
     /* --------------------------- awards --------------------------- */
-    /* .awards {
-        padding: 37px;
-    } */
-
-    /* пока не убирать, смотрю подойдет ли картинка с 1920 на меньшие разрешения */
-    /* .awards-img__left {
-        display: none;
-    } */
-
-    /* .awards-img__right {
-        display: none;
-    } */
-    /* если закомментить padding 37px, то код ниже не нужен */
-    /* .awards-img__left {
-        top: 83px;
-        left: -140px;
+    .awards {
+        padding-bottom: 90px;
     }
 
-    .awards-img__right {
-        top: 79px;
-        right: -100px;
-    } */
+    .awards-blocks {
+        padding: 30px 70px;
+    }
 
-    .awards-img__left-laptop {
-        display: block;
-        position: absolute;
-        top: -18px;
-        left: -43px;
+    .awards-block .h2-title {
+        margin-bottom: 0;
     }
 
     .awards-img__right-laptop {
@@ -652,18 +625,24 @@
     }
 
     .learn-more {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .awards-btn {
+        margin-top: 24px;
     }
 
     .awards-img__left {
-        top: 72px;
-        transform: scale(0.8);
+        top: -211px;
+        left: -345px;
+        transform: scale(0.35);
 
     }
 
     .awards-img__right {
-        transform: scale(0.77);
-        right: -143px;
+        transform: scale(0.6);
+        right: -127px;
+        top: -87px;
     }
 
     /* --------------------------- friends --------------------------- */
@@ -685,6 +664,10 @@
     }
 
     /* --------------------------- contacts --------------------------- */
+    .contacts {
+        padding-top: 10vh;
+    }
+
     .contacts-block {
         justify-content: space-between;
     }
@@ -706,8 +689,17 @@
     }
 
     /* --------------------------- get prizes --------------------------- */
+    .banner__prizes {
+        padding: 5vh 0 15vh 0;
+    }
+
     .banner__prizes__title {
         font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .banner__prizes__items {
+        margin-bottom: 45px;
     }
 
     .banner__prizes__desc {
@@ -717,6 +709,22 @@
     .banner__prizes__img {
         width: 32px;
         height: 32px;
+    }
+
+    .banner__prizes__body {
+        top: 11vh;
+        padding: 40px 30px;
+    }
+
+    .banner__prizes__right-img {
+        bottom: -150px;
+        right: -120px;
+        transform: scale(0.7);
+    }
+
+    .banner__prizes-bg-2 {
+        right: -208px;
+        bottom: -105px;
     }
 
     /* --------------------------- footer --------------------------- */
@@ -778,8 +786,8 @@
         bottom: -10vh;
         right: -30%;
     }
-}
 
+}
 
 @media screen and (max-width: 1022px) {
 
@@ -929,10 +937,6 @@
 
     .lock .burger__menu {
         display: block;
-    }
-
-    .burger__menu .start-game .header-btn {
-        /* display: none; */
     }
 
     .burger__menu .start-game .btn-bordered-box {
@@ -1120,10 +1124,6 @@
         align-items: center;
     }
 
-    /* .burger__menu-link {
-        color: inherit;
-    } */
-
     .burger__menu .header-btn {
         width: 100%;
     }
@@ -1177,18 +1177,6 @@
     .table__item-col .icon {
         width: 20px;
         height: 20px;
-    }
-
-    /* --------------------------- awards --------------------------- */
-
-    .awards-img__left {
-        top: 88px;
-        transform: scale(0.7);
-    }
-
-    .awards-img__right {
-        transform: scale(0.6);
-        top: 69px;
     }
 
 
@@ -1387,9 +1375,10 @@
     }
 
     .changes-img {
-        top: 70vh;
+        top: 45vh;
         right: -10vw;
         max-width: 100%;
+        transform: rotate(5deg);
     }
 
     .changes-content:not(:last-child) {
@@ -1397,14 +1386,19 @@
     }
 
     .changes::after {
-        bottom: -48vh;
+        bottom: -42vh;
     }
 
 
     /* --------------------------- hero --------------------------- */
+    .hero {
+        padding: 15vh 0 5vh 0;
+    }
+
     .block-content {
         gap: 40px;
         flex-direction: column;
+        align-items: center;
     }
 
     .content-text {
@@ -1412,12 +1406,68 @@
     }
 
     .hero .more-info {
-        display: block;
+        display: none;
         margin-top: 50px;
 
     }
 
     /* --------------------------- race --------------------------- */
+    .race {
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 47vh;
+    }
+
+    .race-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .race-block.active {
+        max-height: unset;
+    }
+
+    .icon-arrow-bottom-darken {
+        transition: .4s transform;
+    }
+
+    .race-block.active .icon-arrow-bottom-darken {
+        transform: rotate(180deg);
+    }
+
+    .race-block.active .race__block-content {
+        display: flex;
+    }
+
+    .race-choice-wrapper {
+        justify-content: space-between;
+    }
+
+    .race-choice-wrapper .flex {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .race-img {
+        background: #BFD2F4;
+        margin-top: -10px;
+        position: static;
+        max-width: 100%;
+    }
+
+    .race-content__text {
+        padding: 40px 20px;
+        color: #FFF;
+        border-radius: 0px 0px 16px 16px;
+        background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #2F68B7 12.56%, #182E57 75.70%, #1F2C5A 93.15%);
+    }
+
+    .race-content__text .content-item {
+        color: #FFF;
+    }
+
     .race-choice__mobile {
         display: flex;
     }
@@ -1432,6 +1482,14 @@
         background: radial-gradient(213.27% 499.58% at 46.94% 265.42%, #357DEA 0%, #090F27 47.05%);
         border-radius: 14px;
         padding: 12px 12px 12px 20px;
+    }
+
+    /* .race-item__content {
+        display: none;
+    } */
+
+    .race-item__content.open {
+        display: block;
     }
 
     .race-item__content {
@@ -1476,9 +1534,9 @@
         color: #fff;
     }
 
-    .race-img {
-        position: static;
-        max-width: 100%;
+    .classes-img {
+        width: 32px;
+        height: 32px;
     }
 
     .races {
@@ -1488,18 +1546,6 @@
     .arrow {
         width: 22px;
         height: 12px;
-    }
-
-    .race-item__content {
-        display: none;
-    }
-
-    .race-item__content.open {
-        display: block;
-    }
-
-    .race-choice__btn {
-        display: flex;
     }
 
     .arrow.active {
@@ -1556,10 +1602,6 @@
     .inner-benefits {
         display: flex;
         flex-direction: column;
-    }
-
-    .inner-benefits .more-server::after {
-        display: none;
     }
 
     .about-img {
@@ -1672,13 +1714,9 @@
     }
 
     .awards-img__left {
-        top: -140px;
-    }
-
-    .awards-img__left-laptop {
-        top: -91px;
-        left: -148px;
-        transform: rotate(25deg);
+        top: -205px;
+        left: -195px;
+        transform: scale(0.6);
     }
 
     .awards-block .h2-title {
@@ -2079,6 +2117,7 @@
     .race-choice-wrapper {
         padding: 18px 20px;
         border-radius: 14px;
+        align-items: center;
     }
 
     .choice-people {
@@ -2099,53 +2138,11 @@
         flex-direction: column;
     }
 
-    .race-block.active {
-        max-height: unset;
+    .server-box {
+        max-width: 340px;
     }
 
-    .icon-arrow-bottom-darken {
-        transition: .4s transform;
-    }
 
-    .race-block.active .icon-arrow-bottom-darken {
-        transform: rotate(180deg);
-    }
-
-    .race-block.active .race__block-content {
-        display: flex;
-    }
-
-    .race-choice-wrapper {
-        justify-content: space-between;
-    }
-
-    .race-choice-wrapper .flex {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .race-img {
-        background: #BFD2F4;
-        margin-top: -10px;
-    }
-
-    .race-content__text {
-        padding: 40px 20px;
-        color: #FFF;
-        border-radius: 0px 0px 16px 16px;
-        background: radial-gradient(128.00% 100.00% at 50.00% -0.00%, #2F68B7 12.56%, #182E57 75.70%, #1F2C5A 93.15%);
-    }
-
-    .race-content__text .content-item {
-        color: #FFF;
-    }
-
-    .race {
-        background-position: bottom;
-        background-size: contain;
-        padding-bottom: 30vh;
-    }
 
     .about-server .container {
         align-items: flex-start;

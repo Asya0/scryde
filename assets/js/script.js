@@ -93,17 +93,33 @@ document.onclick = function (e) {
 
 // скролл header
 let header = document.querySelector('.header');
+let hideOnSm = document.querySelector('.hide-on-sm');
+let showOnSm = document.querySelector('.show-on-sm');
 
 document.onscroll = function () {
     let scroll = window.scrollY;
     if (scroll > header.clientHeight) {
         header.classList.add('fixed');
         document.body.style.paddingTop = '185px';
+        document.style.display = 'none';
     } else {
         header.classList.remove('fixed');
         document.body.removeAttribute('style');
+        document.style.display = 'flex';
     }
 }
+// добавление галочки к выбранному языку
+const links = document.querySelectorAll('.header__nav-item_submenu-container .header__nav-item__link');
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        links.forEach(otherLink => {
+            otherLink.classList.remove('active');
+        });
+        link.classList.toggle('active');
+    });
+});
+
 
 //активное состояние меню для .header__nav-item
 
