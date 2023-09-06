@@ -37,17 +37,12 @@
                             <li class="header__nav-item header__nav-item_sub show-on-sm">
                                 <a href="#no_scroll" class="header__nav-item__link">Ещё</a>
                                 <div class="header__nav-item_submenu">
-                                    <ul>
-                                        <li class="header__nav-item_submenu__item">
-                                            <a href="#" class="header__nav-item__link">Рейтинги</a>
-                                        </li>
-                                        <li class="header__nav-item_submenu__item header__nav-item_sub">
-                                            <a href="#no_scroll" class="header__nav-item__link">Помощь</a>
-                                        </li>
-                                        <li class="header__nav-item_submenu__item header__nav-item_sub">
-                                            <a href="#no_scroll" class="header__nav-item__link">Магазин</a>
-                                        </li>
-                                    </ul>
+                                    <div class="header__nav-item_submenu-container">
+                                        <a href="#" class="header__nav-item__link">Рейтинги</a>
+                                        <a href="#no_scroll" class="header__nav-item__link">Помощь</a>
+                                        <a href="#no_scroll" class="header__nav-item__link">Магазин</a>
+                                    </div>
+
                                 </div>
                             </li>
                             <li class="header__nav-item hide-on-sm"><a href="#"
@@ -69,9 +64,20 @@
                                 <div class="burger__menu-text">
                                     <span>Сменить язык</span>
                                 </div>
-                                <div class="burger__menu-icon">
-                                    <span class="icon icon-language"></span>
-                                    <a class="header__nav-item__link uppercase">ru</a>
+                                <div class="header__nav-item header__nav-item_sub">
+                                    <a class="header__nav-item__link uppercase">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                            <path fill="#fff"
+                                                d="M20.025 18.771c.005-.007.012-.014.016-.021A10.449 10.449 0 0 0 22.5 12a10.46 10.46 0 0 0-2.456-6.75l-.017-.019c-.025-.03-.049-.058-.075-.086l-.028-.033-.096-.11-.002-.003-.108-.12-.002-.002c-.075-.08-.15-.159-.228-.236l-.002-.003-.113-.112-.007-.007a4.176 4.176 0 0 0-.105-.101c-.012-.012-.023-.023-.038-.035a1.733 1.733 0 0 0-.07-.066c-.007-.007-.016-.014-.023-.023A10.45 10.45 0 0 0 12 1.5a10.46 10.46 0 0 0-7.132 2.794c-.007.007-.016.014-.023.023-.024.021-.047.045-.07.068a.55.55 0 0 1-.038.035l-.106.101-.007.007-.112.113-.003.002c-.077.077-.152.157-.227.237l-.002.002c-.038.04-.073.08-.108.12l-.002.002a2.154 2.154 0 0 0-.097.11l-.028.033-.075.087c-.004.007-.011.011-.016.018A10.46 10.46 0 0 0 1.5 12c0 2.571.923 4.924 2.456 6.75l.017.021.072.087c.01.011.02.02.028.033l.097.11c0 .002.002.002.002.005.035.04.07.08.108.117l.002.002c.075.08.15.16.225.237l.002.002c.038.038.073.075.11.11l.008.007A10.48 10.48 0 0 0 12 22.5a10.46 10.46 0 0 0 7.366-3.019l.007-.007c.038-.037.075-.072.11-.11l.003-.002c.077-.078.152-.157.225-.237l.002-.002c.035-.04.073-.078.108-.117 0-.003.002-.003.002-.005.033-.035.066-.073.096-.11.01-.012.02-.021.029-.033.026-.028.052-.057.077-.087Zm.096-3.342a8.8 8.8 0 0 1-1.27 2.114 10.406 10.406 0 0 0-1.91-1.31c.271-1.1.44-2.306.485-3.577h3.363a8.764 8.764 0 0 1-.668 2.773Zm.668-4.085h-3.363a17.518 17.518 0 0 0-.485-3.577 10.41 10.41 0 0 0 1.91-1.31 8.763 8.763 0 0 1 1.938 4.887Zm-5.36-7.465A8.76 8.76 0 0 1 17.95 5.5a9.252 9.252 0 0 1-1.392.98c-.368-1.055-.84-1.972-1.388-2.705.087.033.174.068.258.103Zm-2.123 16.42a2.652 2.652 0 0 1-.65.385v-4.348a9.12 9.12 0 0 1 2.712.614 10.17 10.17 0 0 1-.68 1.59c-.408.758-.886 1.366-1.383 1.76Zm1.382-14.838c.258.483.485 1.015.68 1.589a9.12 9.12 0 0 1-2.712.614V3.32c.216.086.434.213.65.384.496.392.975.999 1.382 1.758Zm-2.032 9.56v-2.365h3.457a16.28 16.28 0 0 1-.382 2.996l-.007.028a10.43 10.43 0 0 0-3.068-.659Zm0-3.677V8.979a10.43 10.43 0 0 0 3.068-.659l.007.028c.216.954.345 1.957.382 2.996h-3.457Zm-1.312 1.312v2.365a10.43 10.43 0 0 0-3.068.659l-.007-.028a16.253 16.253 0 0 1-.382-2.996h3.457Zm-3.457-1.312c.037-1.036.166-2.042.382-2.996l.007-.028c.963.366 1.992.593 3.068.659v2.365H7.887Zm3.457 4.992v4.345a2.625 2.625 0 0 1-.65-.384c-.496-.392-.977-1-1.385-1.76a10.587 10.587 0 0 1-.68-1.59 9.15 9.15 0 0 1 2.715-.611Zm0-8.672a9.12 9.12 0 0 1-2.712-.614c.195-.577.42-1.109.68-1.59.408-.758.886-1.368 1.385-1.76.216-.168.431-.297.65-.384v4.348h-.003ZM8.57 3.88c.087-.035.171-.07.258-.103-.549.733-1.02 1.65-1.388 2.704A9.085 9.085 0 0 1 6.05 5.5 8.761 8.761 0 0 1 8.571 3.88ZM3.88 8.57a8.801 8.801 0 0 1 1.27-2.114c.584.504 1.224.945 1.91 1.31-.272 1.1-.44 2.306-.485 3.577H3.211c.07-.959.295-1.89.668-2.773Zm-.668 4.085h3.363c.045 1.27.213 2.478.485 3.577-.683.364-1.324.803-1.91 1.31a8.763 8.763 0 0 1-1.938-4.887Zm5.36 7.465A8.762 8.762 0 0 1 6.05 18.5c.434-.37.9-.696 1.392-.98.368 1.055.84 1.972 1.388 2.705a8.555 8.555 0 0 1-.258-.103Zm6.858 0c-.087.035-.171.07-.258.103.549-.733 1.02-1.65 1.388-2.704.492.28.958.609 1.392.98a8.762 8.762 0 0 1-2.522 1.621Z" />
+                                        </svg>
+                                        ru
+                                    </a>
+                                    <div class="header__nav-item_submenu">
+                                        <div class="header__nav-item_submenu-container">
+                                            <a class="header__nav-item__link" href="#">Русский (RU)</a>
+                                            <a class="header__nav-item__link" href="#">English (ENG)</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <a href="#" class="burger__menu-account header__nav-item">
@@ -170,7 +176,7 @@
 
                 <div class="header__box-col header__box-col-right">
                     <div class="header__nav-actions">
-                        <div class="header__nav-item header__nav-item_sub">
+                        <div class="header__nav-item header__nav-item_sub header__nav-item_sub-lang">
                             <a class="header__nav-item__link uppercase">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                                     <path fill="#fff"
@@ -180,8 +186,8 @@
                             </a>
                             <div class="header__nav-item_submenu">
                                 <div class="header__nav-item_submenu-container">
-                                    <a class="header__nav-item__link" href="#">Русский (RU)</a>
-                                    <a class="header__nav-item__link" href="#">English (ENG)</a>
+                                    <a class="header__nav-item__link active" href="#">Русский (RU)</a>
+                                    <a class="header__nav-item__link lang" href="#">English (ENG)</a>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +228,7 @@
             <div class="server__text-block">
                 <h1 class="h1-title uppercase">Игра, сводящая олдскулы</h1>
                 <div class="subtitle">Игровой комплекс стабильных серверов Lineage 2 на хрониках <span
-                        class="uppercase">high five</span></div>
+                        class="uppercase">high&nbsp;five</span></div>
             </div>
             <div class="server__block-inner">
                 <div class="server-name">
@@ -291,7 +297,7 @@
                             <div class="stable-img benefits-img"></div>
                             <div class="benefits-text">
                                 <div class="benefits-title uppercase">Стабильные<br />сервера</div>
-                                <div class="benefits-subtitle">Сервера работают 8 лет без остановок и вайпов</div>
+                                <div class="benefits-subtitle">Сервера работают 8 лет без&nbsp;остановок и вайпов</div>
                             </div>
                         </div>
                     </div>
@@ -417,7 +423,7 @@
         </div>
     </section>
 
-    <section class="race">
+    <section class="race race-mobile">
         <div class="container">
             <div class="race-text">
                 <h2 class="h2-title_black uppercase">Нравятся mmorpg? сыграй в Scryde!</h2>
@@ -432,7 +438,7 @@
                         <div class="race-choice-wrapper">
                             <div class="flex">
                                 <img class="classes-img" src="./assets/img/svg/choice-people.svg" alt="люди">
-                                <p class="choice-text uppercase">люди</p>
+                                <div class="choice-text uppercase">люди</div>
                             </div>
                             <span class="icon icon-arrow-bottom-darken"></span>
                         </div>
@@ -463,7 +469,7 @@
                         <div class="race-choice-wrapper">
                             <div class="flex">
                                 <img class="classes-img" src="./assets/img/svg/choice-elf.svg" alt="Эльфы">
-                                <p class="choice-text uppercase">Эльфы</p>
+                                <div class="choice-text uppercase">Эльфы</div>
                             </div>
                             <span class="icon icon-arrow-bottom-darken"></span>
                         </div>
@@ -494,7 +500,7 @@
                         <div class="race-choice-wrapper">
                             <div class="flex">
                                 <img class="classes-img" src="./assets/img/svg/choice-dark-elf.svg" alt="Темные эльфы">
-                                <p class="choice-text uppercase">Темные эльфы</p>
+                                <div class="choice-text uppercase">Темные эльфы</div>
                             </div>
                             <span class="icon icon-arrow-bottom-darken"></span>
                         </div>
@@ -505,8 +511,9 @@
                             <li class="content-text__item active">
                                 <div class="content-wrap">
                                     <div class="content-icon"></div>
-                                    <p class="content-item">Темные Эльфы, могут дольше находиться под водой, а также,
-                                        способны без ущерба для здоровья прыгать с более высоких мест</p>
+                                    <p class="content-item">Темные Эльфы, могут дольше находиться под водой,
+                                        а&nbsp;также, способны без ущерба для здоровья прыгать с&nbsp;более высоких мест
+                                    </p>
                                 </div>
                                 <div class="content-wrap">
                                     <div class="content-icon"></div>
@@ -523,7 +530,7 @@
                         <div class="race-choice-wrapper">
                             <div class="flex">
                                 <img class="classes-img" src="./assets/img/svg/choice-orc.svg" alt="Орки">
-                                <p class="choice-text uppercase">Орки</p>
+                                <div class="choice-text uppercase">Орки</div>
                             </div>
                             <span class="icon icon-arrow-bottom-darken"></span>
                         </div>
@@ -553,7 +560,7 @@
                         <div class="race-choice-wrapper">
                             <div class="flex">
                                 <img class="classes-img" src="./assets/img/svg/choice-dwarv.svg" alt="Гномы">
-                                <p class="choice-text uppercase">Гномы</p>
+                                <div class="choice-text uppercase">Гномы</div>
                             </div>
                             <span class="icon icon-arrow-bottom-darken"></span>
                         </div>
@@ -582,7 +589,7 @@
                         <div class="race-choice-wrapper">
                             <div class="flex">
                                 <img class="classes-img" src="./assets/img/svg/choice-kamael.svg" alt="Камаэли">
-                                <p class="choice-text uppercase">Камаэли</p>
+                                <div class="choice-text uppercase">Камаэли</div>
                             </div>
                             <span class="icon icon-arrow-bottom-darken"></span>
                         </div>
@@ -623,8 +630,9 @@
                             </div>
                             <div class="content-wrap">
                                 <div class="content-icon"></div>
-                                <p class="content-item">Не смотря на то, что люди имеют сильные и слабые стороны, они
-                                    хорошо сбалансированы. Их достоинства и недостатки уравновешивают друг друга</p>
+                                <p class="content-item">Не&nbsp;смотря на&nbsp;то, что люди имеют сильные и&nbsp;слабые
+                                    стороны, они хорошо сбалансированы. Их&nbsp;достоинства и&nbsp;недостатки
+                                    уравновешивают друг друга</p>
                             </div>
                         </li>
                     </ul>
@@ -643,8 +651,10 @@
                             </div>
                             <div class="content-wrap">
                                 <div class="content-icon"></div>
-                                <p class="content-item">Чрезвычайно быстрые и проворные создания, что отражается на их
-                                    деятельности, начиная с передвижения и заканчивая чтением заклинаний</p>
+                                <p class="content-item">Чрезвычайно быстрые и&nbsp;проворные создания,
+                                    что&nbsp;отражается
+                                    на&nbsp;их&nbsp;деятельности, начиная с&nbsp;передвижения и&nbsp;заканчивая чтением
+                                    заклинаний</p>
                             </div>
                         </li>
                     </ul>
@@ -658,7 +668,7 @@
                             <p class="content-title uppercase">Темные эльфы</p>
                             <div class="content-wrap">
                                 <div class="content-icon"></div>
-                                <p class="content-item">Темные Эльфы, могут дольше находиться под водой, а также,
+                                <p class="content-item">Темные Эльфы, могут дольше находиться под водой, а&nbsp;также,
                                     способны без ущерба для здоровья прыгать с более высоких мест</p>
                             </div>
                             <div class="content-wrap">
@@ -683,8 +693,8 @@
                             <div class="content-wrap">
                                 <div class="content-icon"></div>
                                 <p class="content-item">Наделены огромной физической силой, высокими показателями
-                                    здоровья и манны, быстрой способностью к регенерации, однако они медлительны в
-                                    передвижении и в атаке</p>
+                                    здоровья и&nbsp;манны, быстрой способностью к&nbsp;регенерации, однако они
+                                    медлительны в&nbsp;передвижении и&nbsp;в&nbsp;атаке</p>
                             </div>
                         </li>
                     </ul>
@@ -698,8 +708,9 @@
                             <p class="content-title uppercase">Гномы</p>
                             <div class="content-wrap">
                                 <div class="content-icon"></div>
-                                <p class="content-item">Объем рюкзака у Гномов в несколько раз больше, чем у других
-                                    рас, также они способны переносить более тяжелые вещи</p>
+                                <p class="content-item">Объем рюкзака у&nbsp;Гномов в&nbsp;несколько раз больше,
+                                    чем&nbsp;у&nbsp;других&nbsp;рас, также они способны переносить более тяжелые вещи
+                                </p>
                             </div>
                             <div class="content-wrap">
                                 <div class="content-icon"></div>
@@ -730,43 +741,56 @@
                     </ul>
                     <img class="race-img kamael active" src="./assets/img/race-kamael.png" alt="kamael">
                 </div>
-            </div>
+                <div class="container container-race">
+                    <div class="race-choice block-bordered block-bordered-gray">
+                        <div class="race-choice-wrapper">
+                            <div class="choice-people classes" data-page-path="people">
+                                <div class="btn-bordered-box">
+                                    <img class="classes-img" src="./assets/img/svg/choice-people.svg" alt="люди">
+                                    <div class="choice-text uppercase">люди</div>
+                                </div>
+                            </div>
 
-            <div class="container">
-                <div class="race-choice block-bordered block-bordered-gray">
-                    <div class="race-choice-wrapper">
-                        <div class="choice-people classes" data-page-path="people">
-                            <img class="classes-img" src="./assets/img/svg/choice-people.svg" alt="люди">
-                            <p class="choice-text uppercase">люди</p>
-                        </div>
+                            <div class="choice-elf classes" data-page-path="elf">
+                                <div class="btn-bordered-box">
+                                    <img class="classes-img" src="./assets/img/svg/choice-elf.svg" alt="Эльфы">
+                                    <div class="choice-text uppercase">Эльфы</div>
+                                </div>
+                            </div>
 
-                        <div class="choice-elf classes" data-page-path="elf">
-                            <img class="classes-img" src="./assets/img/svg/choice-elf.svg" alt="Эльфы">
-                            <p class="choice-text uppercase">Эльфы</p>
-                        </div>
+                            <div class="choice-dark-elf classes active" data-page-path="dark-elf">
+                                <div class="btn-bordered-box">
+                                    <img class="classes-img" src="./assets/img/svg/choice-dark-elf.svg"
+                                        alt="темные эльфы">
+                                    <div class="choice-text uppercase">темные эльфы</div>
+                                </div>
+                            </div>
 
-                        <div class="choice-dark-elf classes active" data-page-path="dark-elf">
-                            <img class="classes-img" src="./assets/img/svg/choice-dark-elf.svg" alt="темные эльфы">
-                            <p class="choice-text uppercase">темные эльфы</p>
-                        </div>
+                            <div class="choice-orc classes" data-page-path="orc">
+                                <div class="btn-bordered-box">
+                                    <img class="classes-img" src="./assets/img/svg/choice-orc.svg" alt="Орки">
+                                    <div class="choice-text uppercase">Орки</div>
+                                </div>
+                            </div>
 
-                        <div class="choice-orc classes" data-page-path="orc">
-                            <img class="classes-img" src="./assets/img/svg/choice-orc.svg" alt="Орки">
-                            <p class="choice-text uppercase">Орки</p>
-                        </div>
+                            <div class="choice-dwarv classes" data-page-path="dwarv">
+                                <div class="btn-bordered-box">
+                                    <img class="classes-img" src="./assets/img/svg/choice-dwarv.svg" alt="Гномы">
+                                    <div class="choice-text uppercase">Гномы</div>
+                                </div>
+                            </div>
 
-                        <div class="choice-dwarv classes" data-page-path="dwarv">
-                            <img class="classes-img" src="./assets/img/svg/choice-dwarv.svg" alt="Гномы">
-                            <p class="choice-text uppercase">Гномы</p>
-                        </div>
-
-                        <div class="choice-kamael classes" data-page-path="kamael">
-                            <img class="classes-img" src="./assets/img/svg/choice-kamael.svg" alt="Камаэли">
-                            <p class="choice-text uppercase">Камаэли</p>
+                            <div class="choice-kamael classes" data-page-path="kamael">
+                                <div class="btn-bordered-box">
+                                    <img class="classes-img" src="./assets/img/svg/choice-kamael.svg" alt="Камаэли">
+                                    <div class="choice-text uppercase">Камаэли</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -1111,12 +1135,12 @@
                 <article class="news-block swiper-wrapper">
                     <div class="news-item swiper-slide block-bordered block-bordered-gray">
                         <div class="news-item-wrapper">
-                            <div class="news-icon">
-                                <p class="news-icon__text uppercase">новости и объявления</p>
+                            <div class="news-icon btn-bordered">
+                                <div class="news-icon__text btn-bordered-box uppercase">новости и объявления</div>
                             </div>
                             <img class="news-img" src="./assets/img/news-announce.jpg" alt="Новые ивенты: Фидбек">
                             <div class="item-block">
-                                <h3 class=" item-title block-title uppercase">Новые ивенты: Фидбек</h3>
+                                <h3 class="item-title block-title uppercase">Новые ивенты: Фидбек</h3>
                                 <p class="item-subtitle block-subtitle">добавили в игру два новых ивента: Korean Style
                                     и Death
                                     Match</p>
@@ -1127,12 +1151,12 @@
                     </div>
                     <div class="news-item swiper-slide block-bordered block-bordered-gray">
                         <div class="news-item-wrapper">
-                            <div class="news-icon">
-                                <p class="news-icon__text uppercase">новичкам</p>
+                            <div class="news-icon btn-bordered">
+                                <div class="news-icon__text btn-bordered-box uppercase">новичкам</div>
                             </div>
                             <img class="news-img" src="./assets/img/news-fps.jpg" alt="новичкам">
                             <div class="item-block">
-                                <h3 class=" item-title block-title uppercase">Увеличение FPS</h3>
+                                <h3 class="item-title block-title uppercase">Увеличение FPS</h3>
                                 <p class="item-subtitle block-subtitle">Настройка графики, контрольной панели удаление
                                     файлов и
                                     остальное</p>
@@ -1142,16 +1166,14 @@
                     </div>
                     <div class="news-item swiper-slide block-bordered block-bordered-gray">
                         <div class="news-item-wrapper">
-                            <div class="news-icon">
-                                <p class="news-icon__text uppercase">акции и мероприятия</p>
+                            <div class="news-icon btn-bordered">
+                                <div class="news-icon__text btn-bordered-box uppercase">акции и мероприятия</div>
                             </div>
                             <img class="news-img" src="./assets/img/news-event.jpg" alt="акции и мероприятия">
                             <div class="item-block">
-                                <h3 class=" item-title block-title uppercase">Поделись Любовью!</h3>
-                                <p class="item-subtitle block-subtitle">10-го февраля в течение дня на все серверы
-                                    пожалует
-                                    NPC
-                                    Афродита</p>
+                                <h3 class="item-title block-title uppercase">Поделись Любовью!</h3>
+                                <p class="item-subtitle block-subtitle">10-го февраля в течение дня на все
+                                    серверы пожалует NPC Афродита</p>
                                 <a href="#" class=" more-server text_yellow uppercase">читать полностью</a>
                             </div>
                         </div>
@@ -1198,230 +1220,236 @@
             </div>
 
             <div class="table__row">
-                <div class="table__item active" data-table="x50">
+                <div class="table__item table__item-pink active" data-table="x50">
                     <div class="table__item-heading uppercase">high five x50</div>
                     <div class="table__item-inner">
-                        <div class="table__item-part table__item-players">
-                            <div class="table__item-subtitle uppercase">Топ-3 pvp-игроков</div>
-                            <div class="table__item-box">
-                                <div class="table__item-row table__item-row__header">
-                                    <div class="table__item-col">ID</div>
-                                    <div class="table__item-col">Игрок</div>
-                                    <div class="table__item-col">PvP</div>
-                                    <div class="table__item-col">PK</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-first"></span>
+                        <div class="table__item-inner_box">
+                            <div class="table__item-part table__item-players">
+                                <div class="table__item-subtitle uppercase">Топ-3 pvp-игроков</div>
+                                <div class="table__item-box">
+                                    <div class="table__item-row table__item-row__header">
+                                        <div class="table__item-col">ID</div>
+                                        <div class="table__item-col">Игрок</div>
+                                        <div class="table__item-col">PvP</div>
+                                        <div class="table__item-col">PK</div>
                                     </div>
-                                    <div class="table__item-col gold">SxndyNxdes</div>
-                                    <div class="table__item-col">10 333</div>
-                                    <div class="table__item-col">15 600</div>
-                                </div>
-                                <div class="table__item-row silver">
-                                    <div class="table__item-col">
-                                        <span class=" icon icon-place-second"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-first"></span>
+                                        </div>
+                                        <div class="table__item-col gold">SxndyNxdes</div>
+                                        <div class="table__item-col">10 333</div>
+                                        <div class="table__item-col">15 600</div>
                                     </div>
-                                    <div class="table__item-col">Sector</div>
-                                    <div class="table__item-col">5 321</div>
-                                    <div class="table__item-col">2 600</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-third"></span>
+                                    <div class="table__item-row silver">
+                                        <div class="table__item-col">
+                                            <span class=" icon icon-place-second"></span>
+                                        </div>
+                                        <div class="table__item-col silver">Sector</div>
+                                        <div class="table__item-col">5 321</div>
+                                        <div class="table__item-col">2 600</div>
                                     </div>
-                                    <div class="table__item-col bronze">Нагибатор2009</div>
-                                    <div class="table__item-col">2 104</div>
-                                    <div class="table__item-col">6 158</div>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-third"></span>
+                                        </div>
+                                        <div class="table__item-col bronze">Нагибатор2009</div>
+                                        <div class="table__item-col">2 104</div>
+                                        <div class="table__item-col">6 158</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="table__item-part table__item-clans">
-                            <div class="table__item-subtitle uppercase">Топ-3 кланов</div>
-                            <div class="table__item-box">
-                                <div class="table__item-row table__item-row__header">
-                                    <div class="table__item-col">ID</div>
-                                    <div class="table__item-col">Клан</div>
-                                    <div class="table__item-col">Замок</div>
-                                    <div class="table__item-col">Игроки</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-first"></span>
+                            <div class="table__item-part table__item-clans">
+                                <div class="table__item-subtitle uppercase">Топ-3 кланов</div>
+                                <div class="table__item-box">
+                                    <div class="table__item-row table__item-row__header">
+                                        <div class="table__item-col">ID</div>
+                                        <div class="table__item-col">Клан</div>
+                                        <div class="table__item-col">Замок</div>
+                                        <div class="table__item-col">Игроки</div>
                                     </div>
-                                    <div class="table__item-col gold">SxndyNxdes</div>
-                                    <div class="table__item-col">Talking Island Castle</div>
-                                    <div class="table__item-col">447</div>
-                                </div>
-                                <div class="table__item-row silver">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-second"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-first"></span>
+                                        </div>
+                                        <div class="table__item-col gold">SxndyNxdes</div>
+                                        <div class="table__item-col">Talking Island Castle</div>
+                                        <div class="table__item-col">447</div>
                                     </div>
-                                    <div class="table__item-col">Evil Inc</div>
-                                    <div class="table__item-col">Gludio Castle</div>
-                                    <div class="table__item-col">1 269</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-third"></span>
+                                    <div class="table__item-row silver">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-second"></span>
+                                        </div>
+                                        <div class="table__item-col silver">Evil Inc</div>
+                                        <div class="table__item-col">Gludio Castle</div>
+                                        <div class="table__item-col">1 269</div>
                                     </div>
-                                    <div class="table__item-col bronze">Goodie Company</div>
-                                    <div class="table__item-col">Dion Castle</div>
-                                    <div class="table__item-col">235</div>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-third"></span>
+                                        </div>
+                                        <div class="table__item-col bronze">Goodie Company</div>
+                                        <div class="table__item-col">Dion Castle</div>
+                                        <div class="table__item-col">235</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="table__item" data-table="x300">
+                <div class="table__item table__item-gold" data-table="x300">
                     <div class="table__item-heading uppercase">high five x300</div>
                     <div class="table__item-inner">
-                        <div class="table__item-part table__item-players">
-                            <div class="table__item-subtitle uppercase">Топ-3 pvp-игроков</div>
-                            <div class="table__item-box">
-                                <div class="table__item-row table__item-row__header">
-                                    <div class="table__item-col">ID</div>
-                                    <div class="table__item-col">Игрок</div>
-                                    <div class="table__item-col">PvP</div>
-                                    <div class="table__item-col">PK</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-first"></span>
+                        <div class="table__item-inner_box">
+                            <div class="table__item-part table__item-players">
+                                <div class="table__item-subtitle uppercase">Топ-3 pvp-игроков</div>
+                                <div class="table__item-box">
+                                    <div class="table__item-row table__item-row__header">
+                                        <div class="table__item-col">ID</div>
+                                        <div class="table__item-col">Игрок</div>
+                                        <div class="table__item-col">PvP</div>
+                                        <div class="table__item-col">PK</div>
                                     </div>
-                                    <div class="table__item-col gold">SxndyNxdes</div>
-                                    <div class="table__item-col">10 333</div>
-                                    <div class="table__item-col">15 600</div>
-                                </div>
-                                <div class="table__item-row silver">
-                                    <div class="table__item-col">
-                                        <span class=" icon icon-place-second"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-first"></span>
+                                        </div>
+                                        <div class="table__item-col gold">SxndyNxdes</div>
+                                        <div class="table__item-col">10 333</div>
+                                        <div class="table__item-col">15 600</div>
                                     </div>
-                                    <div class="table__item-col">Sector</div>
-                                    <div class="table__item-col">5 321</div>
-                                    <div class="table__item-col">2 600</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-third"></span>
+                                    <div class="table__item-row silver">
+                                        <div class="table__item-col">
+                                            <span class=" icon icon-place-second"></span>
+                                        </div>
+                                        <div class="table__item-col silver">Sector</div>
+                                        <div class="table__item-col">5 321</div>
+                                        <div class="table__item-col">2 600</div>
                                     </div>
-                                    <div class="table__item-col bronze">Нагибатор2009</div>
-                                    <div class="table__item-col">2 104</div>
-                                    <div class="table__item-col">6 158</div>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-third"></span>
+                                        </div>
+                                        <div class="table__item-col bronze">Нагибатор2009</div>
+                                        <div class="table__item-col">2 104</div>
+                                        <div class="table__item-col">6 158</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="table__item-part table__item-clans">
-                            <div class="table__item-subtitle uppercase">Топ-3 кланов</div>
-                            <div class="table__item-box">
-                                <div class="table__item-row table__item-row__header">
-                                    <div class="table__item-col">ID</div>
-                                    <div class="table__item-col">Клан</div>
-                                    <div class="table__item-col">Замок</div>
-                                    <div class="table__item-col">Игроки</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-first"></span>
+                            <div class="table__item-part table__item-clans">
+                                <div class="table__item-subtitle uppercase">Топ-3 кланов</div>
+                                <div class="table__item-box">
+                                    <div class="table__item-row table__item-row__header">
+                                        <div class="table__item-col">ID</div>
+                                        <div class="table__item-col">Клан</div>
+                                        <div class="table__item-col">Замок</div>
+                                        <div class="table__item-col">Игроки</div>
                                     </div>
-                                    <div class="table__item-col gold">SxndyNxdes</div>
-                                    <div class="table__item-col">Talking Island Castle</div>
-                                    <div class="table__item-col">447</div>
-                                </div>
-                                <div class="table__item-row silver">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-second"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-first"></span>
+                                        </div>
+                                        <div class="table__item-col gold">SxndyNxdes</div>
+                                        <div class="table__item-col">Talking Island Castle</div>
+                                        <div class="table__item-col">447</div>
                                     </div>
-                                    <div class="table__item-col">Evil Inc</div>
-                                    <div class="table__item-col">Gludio Castle</div>
-                                    <div class="table__item-col">1 269</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-third"></span>
+                                    <div class="table__item-row silver">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-second"></span>
+                                        </div>
+                                        <div class="table__item-col silver">Evil Inc</div>
+                                        <div class="table__item-col">Gludio Castle</div>
+                                        <div class="table__item-col">1 269</div>
                                     </div>
-                                    <div class="table__item-col bronze">Goodie Company</div>
-                                    <div class="table__item-col">Dion Castle</div>
-                                    <div class="table__item-col">235</div>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-third"></span>
+                                        </div>
+                                        <div class="table__item-col bronze">Goodie Company</div>
+                                        <div class="table__item-col">Dion Castle</div>
+                                        <div class="table__item-col">235</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="table__item" data-table="x1000">
+                <div class="table__item table__item-red" data-table="x1000">
                     <div class="table__item-heading uppercase">high five x1000</div>
                     <div class="table__item-inner">
-                        <div class="table__item-part table__item-players">
-                            <p class="table__item-subtitle uppercase">Топ-3 pvp-игроков</p>
-                            <div class="table__item-box">
-                                <div class="table__item-row table__item-row__header">
-                                    <div class="table__item-col">ID</div>
-                                    <div class="table__item-col">Игрок</div>
-                                    <div class="table__item-col">PvP</div>
-                                    <div class="table__item-col">PK</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-first"></span>
+                        <div class="table__item-inner_box">
+                            <div class="table__item-part table__item-players">
+                                <p class="table__item-subtitle uppercase">Топ-3 pvp-игроков</p>
+                                <div class="table__item-box">
+                                    <div class="table__item-row table__item-row__header">
+                                        <div class="table__item-col">ID</div>
+                                        <div class="table__item-col">Игрок</div>
+                                        <div class="table__item-col">PvP</div>
+                                        <div class="table__item-col">PK</div>
                                     </div>
-                                    <div class="table__item-col gold">SxndyNxdes</div>
-                                    <div class="table__item-col">10 333</div>
-                                    <div class="table__item-col">15 600</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class=" icon icon-place-second"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-first"></span>
+                                        </div>
+                                        <div class="table__item-col gold">SxndyNxdes</div>
+                                        <div class="table__item-col">10 333</div>
+                                        <div class="table__item-col">15 600</div>
                                     </div>
-                                    <div class="table__item-col silver">Sector</div>
-                                    <div class="table__item-col">5 321</div>
-                                    <div class="table__item-col">2 600</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-third"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class=" icon icon-place-second"></span>
+                                        </div>
+                                        <div class="table__item-col silver">Sector</div>
+                                        <div class="table__item-col">5 321</div>
+                                        <div class="table__item-col">2 600</div>
                                     </div>
-                                    <div class="table__item-col bronze">Нагибатор2009</div>
-                                    <div class="table__item-col">2 104</div>
-                                    <div class="table__item-col">6 158</div>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-third"></span>
+                                        </div>
+                                        <div class="table__item-col bronze">Нагибатор2009</div>
+                                        <div class="table__item-col">2 104</div>
+                                        <div class="table__item-col">6 158</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="table__item-part table__item-clans">
-                            <div class="table__item-subtitle uppercase">Топ-3 кланов</div>
-                            <div class="table__item-box">
-                                <div class="table__item-row table__item-row__header">
-                                    <div class="table__item-col">ID</div>
-                                    <div class="table__item-col">Клан</div>
-                                    <div class="table__item-col">Замок</div>
-                                    <div class="table__item-col">Игроки</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-first"></span>
+                            <div class="table__item-part table__item-clans">
+                                <div class="table__item-subtitle uppercase">Топ-3 кланов</div>
+                                <div class="table__item-box">
+                                    <div class="table__item-row table__item-row__header">
+                                        <div class="table__item-col">ID</div>
+                                        <div class="table__item-col">Клан</div>
+                                        <div class="table__item-col">Замок</div>
+                                        <div class="table__item-col">Игроки</div>
                                     </div>
-                                    <div class="table__item-col gold">SxndyNxdes</div>
-                                    <div class="table__item-col">Talking Island Castle</div>
-                                    <div class="table__item-col">447</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-second"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-first"></span>
+                                        </div>
+                                        <div class="table__item-col gold">SxndyNxdes</div>
+                                        <div class="table__item-col">Talking Island Castle</div>
+                                        <div class="table__item-col">447</div>
                                     </div>
-                                    <div class="table__item-col silver">Evil Inc</div>
-                                    <div class="table__item-col">Gludio Castle</div>
-                                    <div class="table__item-col">1 269</div>
-                                </div>
-                                <div class="table__item-row">
-                                    <div class="table__item-col">
-                                        <span class="icon icon-place-third"></span>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-second"></span>
+                                        </div>
+                                        <div class="table__item-col silver">Evil Inc</div>
+                                        <div class="table__item-col">Gludio Castle</div>
+                                        <div class="table__item-col">1 269</div>
                                     </div>
-                                    <div class="table__item-col bronze">Goodie Company</div>
-                                    <div class="table__item-col">Dion Castle</div>
-                                    <div class="table__item-col">235</div>
+                                    <div class="table__item-row">
+                                        <div class="table__item-col">
+                                            <span class="icon icon-place-third"></span>
+                                        </div>
+                                        <div class="table__item-col bronze">Goodie Company</div>
+                                        <div class="table__item-col">Dion Castle</div>
+                                        <div class="table__item-col">235</div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1433,7 +1461,8 @@
                         рейтинги</span></a>
             </div>
             <div class="best-info">
-                <p><a href="#" class="best-link__profile gold">Создайте аккаунт</a>, чтобы следить за всеми рейтингами в
+                <p><a href="#" class="best-link__profile gold">Создайте аккаунт</a>, чтобы следить за всеми
+                    рейтингами в
                     личном кабинете</p>
             </div>
         </div>
@@ -1519,16 +1548,18 @@
 
     <section class="awards">
         <div class="container">
-            <img class="awards-img__left award-image desktop-hidden" src="./assets/img/awards-img__left.png"
+            <img class="awards-img__left award-image desktop-hidden" src="./assets/img/awards-img__left-mob.png"
                 alt="dark elf">
             <div class="awards-blocks">
-                <img class="awards-img__left award-image mobile-hidden" src="./assets/img/awards-img__left.png"
+                <img class="awards-img__left award-image mobile-hidden" src="./assets/img/awards-img__left.png" <img
+                    class="awards-img__left award-image desctop-hidden" src="./assets/img/awards-img__left-laptop1.png"
                     alt="dark elf">
                 <div class="awards-block">
                     <h2 class="h2-title uppercase">Награды стримерам</h2>
                     <div class="block-subtitle">Получайте ежедневную награду за рекламу нашего проекта</div>
                 </div>
-                <img class="awards-img__right award-image" src="./assets/img/awards-img__right.png" alt="kamaels">
+                <img class="awards-img__right award-image mobile-hidden" src="./assets/img/awards-img__right.png"
+                    alt="kamaels">
                 <img class="awards-img__right-sky desktop-hidden" src="./assets/img/awards-sky-mobile.png"
                     alt="kamaels">
                 <a href="#" class="awards-btn btn btn-bordered uppercase">
@@ -1700,7 +1731,7 @@
                     <div class="info-item">
                         <div class="footer-wrap">
                             <h3 class="footer-title uppercase gold">Игрокам</h3>
-                            <img class="plus" src="/assets/img/svg/footer-plus.svg" alt="Подробнее">
+                            <span class="icon icon-plus"></span>
                         </div>
                         <div class="info-link">
                             <a href="#" class="footer-link">О Scryde</a>
@@ -1714,7 +1745,7 @@
                     <div class="info-item">
                         <div class="footer-wrap">
                             <h3 class="footer-title uppercase gold">Аккаунт</h3>
-                            <img class="plus" src="/assets/img/svg/footer-plus.svg" alt="Подробнее">
+                            <span class="icon icon-plus"></span>
                         </div>
                         <div class="info-link">
                             <a href="#" class="footer-link">Скачать файлы</a>
