@@ -1,0 +1,163 @@
+body {
+    background: url(../img/server/bg.png) no-repeat center;
+    /* background-color: #070B18; */
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+
+/* HEADER */
+.header__anchor {
+    display: flex;
+    gap: 32px;
+    background: rgba(7, 11, 24, .2);
+    padding: 23px 0;
+}
+
+.header__anchor-link {
+    color: #E2F4FF;
+    font-family: 'Manrope-SemiBold', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0.16px;
+    transition: color .4s ease;
+}
+
+.header__anchor-link:hover {
+    color: #FFC039;
+    transition: color .4s ease;
+}
+
+.main__content {
+    display: flex;
+}
+
+.main__content-text {
+    position: relative;
+    width: 100%;
+}
+
+.main__content-text .btn-bordered:after {
+    z-index: -1;
+    /* background: linear-gradient(203deg, #FF4343 14.82%, #400707 85.18%, #040815 85.18%); */
+    background: linear-gradient(223deg, #FF4343 24.82%, #400707 95.18%);
+    border-radius: 30px;
+}
+
+.main__content-text .news-icon {
+    top: 86px;
+    left: 10px;
+    padding: 3px 4px;
+}
+
+.main__content-text .news-icon .btn-bordered-box {
+    padding: 4px 10px;
+}
+
+.main__content-text .news-icon__text {
+    font-size: 14px;
+}
+
+.main__content-text-items {
+    margin: 50px 0;
+}
+
+.main__content-text-title {
+    font-family: 'TrajanSansPro-Bold', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 132px;
+}
+
+.main__content-text-desc {
+    font-family: 'Manrope-SemiBold', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: center;
+}
+
+.main__content-image {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    left: 150px;
+}
+
+.main-img-fire {
+    position: absolute;
+    bottom: 70px;
+    left: 115px;
+    width: 100%;
+    /* background: url(/assets/img/server/main-fire.png) no-repeat center; */
+}
+
+.main__content-text-item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.main__content-text-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.main__content-text-item img {
+    width: 48px;
+    height: 48px;
+}
+
+.text-item {
+    font-family: 'TrajanSansPro-Semibold', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.main__content-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 165px;
+}
+
+.main__content-btn .more-info {
+    margin-top: 0;
+}
+
+.main__footer-items {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.main__footer-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    text-align: left;
+}
+
+.main__footer-img {
+    width: 84px;
+    height: 84px;
+}
+
+.main__foter-text-title {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'Manrope-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.main__foter-text-desc {
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+    font-family: 'TrajanSansPro-Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+}
