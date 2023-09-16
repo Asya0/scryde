@@ -919,6 +919,13 @@ img {
     background-size: cover;
 }
 
+.race,
+.friends,
+.banner__prizes,
+.awards {
+    margin: -1px;
+}
+
 .race-wrapper {
     position: relative;
     flex-direction: column;
@@ -1101,7 +1108,7 @@ img {
 .about-server {
     padding: 17vh 0 0 0;
     background: #070B18;
-    margin-top: -11px;
+    margin-top: -20px;
 }
 
 .about-server .container {
@@ -2004,7 +2011,7 @@ img {
     top: 16vh;
     left: 0;
     background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 62px 70px;
 }
 

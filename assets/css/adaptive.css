@@ -28,7 +28,7 @@
     }
 
     .banner__prizes-bg {
-        bottom: -10%;
+        bottom: -15%;
         left: -5vw;
     }
 }
@@ -1383,7 +1383,9 @@
     }
 
     .race-img {
+        aspect-ratio: 335/ 360;
         background: #BFD2F4;
+        padding-top: 65px;
         margin-top: -10px;
         position: static;
         max-width: 100%;
@@ -2173,6 +2175,10 @@
         left: -20px;
         max-width: 100vw;
     }
+
+    .race-content__text {
+        padding: 24px 20px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -2187,6 +2193,33 @@
     .h2-title,
     .h2-title_black {
         font-size: 24px;
+    }
+
+    .server-item-wrapper>span:hover {
+        background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #fff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all .4s color;
+    }
+
+    .server-inner .block-title {
+        font-size: 18px;
+    }
+
+    .table__item-part {
+        max-width: 330px;
+    }
+
+    .table__item-pink .table__item-inner:after {
+        background: none;
+    }
+
+    .table__item-inner_box {
+        padding: 32px 0;
+    }
+
+    .table__item-pink .table__item-inner_box {
+        background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #000000 100%);
     }
 
 }
