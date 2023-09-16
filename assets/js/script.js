@@ -1,8 +1,17 @@
 let benefitsPerPage = {
     slidesPerView: 4,
 };
+
 let defaultPerPage = {
     slidesPerView: 3,
+};
+
+let defaultSpaceBetween = {
+    spaceBetween: 20,
+};
+
+let newsSpaceBetween = {
+    spaceBetween: 2,
 };
 
 let optionsSwiper = {
@@ -23,7 +32,6 @@ let optionsSwiper = {
         disableOnInteraction: false
     },
     speed: 800,
-    spaceBetween: 20,
     breakpoints: {
         319: {
             slidesPerView: 'auto',
@@ -48,12 +56,13 @@ let optionsSwiper = {
                 _self.el.classList.remove('swiper--pause');
                 _self.autoplay.start();
             });
-        }
+        },
     }
 };
 
-const benefitsSwiper = new Swiper('.benefits-swiper', { ...benefitsPerPage, ...optionsSwiper });
-const otherSliders = new Swiper('.js-swiper', { ...defaultPerPage, ...optionsSwiper });
+const benefitsSwiper = new Swiper('.benefits-swiper', { ...benefitsPerPage, ...defaultSpaceBetween, ...optionsSwiper });
+const otherSliders = new Swiper('.js-swiper', { ...defaultPerPage, ...defaultSpaceBetween, ...optionsSwiper });
+const newsSlider = new Swiper('.js-swiper', { ...defaultPerPage, ...newsSpaceBetween, ...optionsSwiper });
 
 // burger menu 
 const iconMenu = document.querySelector('.burger');

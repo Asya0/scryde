@@ -1,5 +1,5 @@
 body {
-    background: url(../img/server/bg.png) no-repeat center;
+    background: url(../img/server/main-bg.png) no-repeat center;
     /* background-color: #070B18; */
     background-size: cover;
     color: #fff;
@@ -48,7 +48,7 @@ body {
 .main__content-text .news-icon {
     top: 86px;
     left: 10px;
-    padding: 3px 4px;
+    padding: 1px 1px;
 }
 
 .main__content-text .news-icon .btn-bordered-box {
@@ -160,4 +160,252 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 140%;
+}
+
+/* STATISTICS */
+.server-statistics {
+    background-color: #000;
+}
+
+.server-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statistics-img {
+    width: 100%;
+}
+
+.server-online-count {
+    font-size: 24px;
+}
+
+.statistics-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.statistics-card {
+    width: 100%;
+    max-width: 440px;
+}
+
+.table__item-box {
+    gap: 8px;
+}
+
+.server-statistics .table__item-row:not(:first-child) {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.table__item-col.server-id {
+    justify-content: center;
+}
+
+.server-more-btn {
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+    font-family: 'TrajanSansPro-Bold';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 16px 24px 12px 24px;
+    text-align: center;
+}
+
+.server-more-info.table__item-gold .table__item-inner_box {
+    background: radial-gradient(210.47% 265.42% at 50% -20%, #040815 22.04%, #CB8D08 70%);
+}
+
+.server-more-info.table__item-red .table__item-inner_box {
+    background: radial-gradient(280.47% 265.42% at 50% 0%, #040815 12.04%, #FF4343 60%);
+}
+
+.table__item-pink .table__item-inner_box {
+    background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #DB99D4 60%);
+}
+
+.server-more-info .table__item-inner_box {
+    padding: 1px 24px;
+}
+
+/*  PLAY */
+.server-play {
+    position: relative;
+    background: url(/assets/img/server/play-bg.png);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.server-play::after {
+    content: "";
+    background: url(/assets/img/server/sword.png);
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    bottom: -8vh;
+    left: 0;
+    right: 0;
+}
+
+.server-play-block {
+    display: flex;
+}
+
+.server-play-box {
+    margin-bottom: 32px;
+}
+
+.server-play-block {
+    text-align: center;
+}
+
+.server-play-text .block-title {
+    margin-bottom: 4px;
+}
+
+.delimiter {
+    /* position: center;
+    top: -10%; */
+}
+
+/* SET */
+.server-set {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    max-height: 858px;
+    height: 100%;
+}
+
+.server-set__basic,
+.server-set__enhanced,
+.server-set__premium {
+    display: flex;
+    position: relative;
+    left: 0;
+    background: radial-gradient(788.21% 259.35% at 11.38% 113.41%, #F6FAFF 21.43%, #92BDFF 87.5%);
+    border-radius: 24px;
+    padding: 40px 32px;
+}
+
+.server-set__epic {
+    display: flex;
+    position: relative;
+    left: 0;
+    background: radial-gradient(943.14% 345.99% at -23.85% 123.07%, #357DEA 18.13%, #090F27 72.69%);
+    border-radius: 24px;
+    padding: 40px 32px;
+}
+
+.server-set__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.server-set-title {
+    color: #0D142D;
+    font-family: 'TrajanSansPro-Semibold', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+/* тоже самое что и .server-set__header */
+.server-set-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.server-set-body {
+    display: flex;
+    gap: 14px;
+}
+
+.server-set-img {
+    width: 32px;
+    height: 32px;
+}
+
+.server-set-text {
+    color: #0D142D;
+    font-family: 'Manrope-Medium', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.server-set-limit {
+    color: #052E73;
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.server-set__new-price {
+    color: #052E73;
+    font-family: 'TrajanSansPro-Bold', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-right: 14px;
+}
+
+.server-set__old-price {
+    color: #052E73;
+    font-family: 'TrajanSansPro-Semibold', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-right: 14px;
+    text-decoration: line-through;
+}
+
+.server-set__end-promo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.server-set__footer .btn-blue {
+    width: 100%;
+    padding: 0;
+}
+
+.server-set__footer .more-info {
+    padding: 0;
+    margin-top: 0;
+}
+
+.server-set-title__white,
+.server-set-text__white,
+.server-set__new-price__white,
+.server-set__old-price__white {
+    color: #fff;
+}
+
+.server-set-limit__white {
+    color: #E2F4FF;
+}
+
+.server-set__footer .btn {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0;
 }
