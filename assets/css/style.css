@@ -343,7 +343,7 @@ img {
     fill: #ffc039;
 }
 
-.header__nav-item_sub::after {
+.header__nav-item.header__nav-item_sub::after {
     content: url(../img/svg/dropdown-arrow.svg);
     transition: all .7s ease;
     color: #ffc039;
@@ -362,6 +362,8 @@ img {
     content: url(../img/svg/dropdown-arrow__hover.svg);
     transition: all .7s ease;
     color: #ffc039;
+    width: 16px;
+    height: 16px;
 }
 
 /*  nav ul li a */
@@ -2184,7 +2186,7 @@ img {
 }
 
 .icon-smile {
-    background-image: url(../img/svg/icon-smile.svg);
+    background-image: url(../img/svg/icon-devil.svg);
 }
 
 .icon-place-first {
@@ -2201,6 +2203,8 @@ img {
 
 .icon-arrow-right-darken {
     background-image: url(../img/svg/icon-arrow-right-darken.svg);
+    width: 32px;
+    height: 32px;
 }
 
 .icon-arrow-bottom-darken {

@@ -784,6 +784,10 @@
         display: none;
     }
 
+    .header__nav-item_submenu {
+        left: -120px;
+    }
+
     .server-name {
         flex-direction: column;
         align-items: center;
@@ -901,6 +905,19 @@
         margin-bottom: 30px;
     }
 
+    .icon-smile {
+        background-image: url(../img/svg/icon-smile.svg);
+    }
+
+    /* .icon-shine {
+        background-image: url(../img/icon-shine.png);
+        background-repeat: no-repeat;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-size: contain;
+    } */
+
     .burger__menu-actions .icon {
         width: 32px;
         height: 32px;
@@ -930,6 +947,9 @@
 
     .burger__menu-language.header__nav-item_sub {
         display: flex;
+        position: relative;
+        opacity: 1;
+        z-index: 2;
     }
 
     .burger__menu-account {
@@ -941,10 +961,9 @@
         border-radius: 16px;
         background: radial-gradient(213.27% 499.58% at 46.94% 265.42%, #357DEA 0%, #090F27 47.05%);
         color: #FFF;
-        font-family: 'TrajanSansPro', sans-serif;
+        font-family: 'TrajanSansPro-Bold', sans-serif;
         font-size: 14px;
         font-style: normal;
-        font-weight: 700;
         line-height: 140%;
         text-transform: uppercase;
     }
@@ -988,6 +1007,21 @@
         margin-top: 16px;
     }
 
+    .burger__menu-server-item::before {
+        content: '';
+        background: url(../img/icon-shine.png);
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        cursor: pointer;
+    }
+
     .burger__menu-server-item {
         display: flex;
         width: 100%;
@@ -995,6 +1029,7 @@
         align-items: center;
         border-radius: 14px;
         color: inherit;
+        position: relative;
     }
 
     .burger__menu-server-item .btn-bordered-box {
@@ -1012,7 +1047,7 @@
 
     .burger__menu-server-text {
         text-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.32);
-        font-family: 'TrajanSansPro', sans-serif;
+        font-family: 'TrajanSansPro-Bold', sans-serif;
         font-size: 14px;
         font-weight: 700;
         line-height: 140%;
@@ -1080,8 +1115,8 @@
     }
 
     .burger__menu-server-item .new-icon {
-        width: 32px;
-        height: 32px;
+        width: 20px;
+        height: 20px;
         position: static;
         background-size: contain;
         background-repeat: no-repeat;
@@ -2024,10 +2059,6 @@
 
     .stream .swiper {
         padding-top: 0;
-    }
-
-    .header__nav-item_sub::after {
-        display: none;
     }
 
     .race-choice {
