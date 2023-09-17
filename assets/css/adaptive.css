@@ -15,12 +15,6 @@
     }
 }
 
-@media screen and (max-width: 1510px) {
-    .banner__prizes-bg-2 {
-        right: -220px;
-    }
-}
-
 @media screen and (max-width: 1440px) {
     .banner__prizes-sky {
         top: 15%;
@@ -405,7 +399,11 @@
     }
 
     .server-item {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .server-item-wrapper>span {
+        padding: 16px 16px 12px;
     }
 
     .about-img {
@@ -544,11 +542,11 @@
     }
 
     .stream-block {
-        gap: 16px;
+        /* gap: 16px; */
     }
 
     .stream-block-img {
-        max-width: 302px;
+        /* max-width: 302px; */
     }
 
     .profile-title {
@@ -668,6 +666,9 @@
 
     .banner__prizes__body {
         top: 11vh;
+    }
+
+    .banner__prizes__body_wrap {
         padding: 40px 30px;
     }
 
@@ -675,11 +676,6 @@
         bottom: -150px;
         right: -120px;
         transform: scale(0.7);
-    }
-
-    .banner__prizes-bg-2 {
-        right: -208px;
-        bottom: -105px;
     }
 
     .footer-title {
@@ -1132,7 +1128,7 @@
     }
 
     .classes {
-        padding: 16px 11px;
+        /* padding: 16px 11px; */
     }
 
     .inner-benefits {
@@ -1418,7 +1414,6 @@
     }
 
     .race-img {
-        aspect-ratio: 335/ 360;
         background: #BFD2F4;
         padding-top: 65px;
         margin-top: -10px;
@@ -1547,8 +1542,17 @@
         justify-content: flex-start;
     }
 
+    .statistics-info__inner {
+        align-items: flex-start;
+    }
+
     .info-text {
         font-size: 14px;
+        max-width: 175px;
+    }
+
+    .inner-benefits .more-server {
+        padding: 0;
     }
 
     .info-block img {
@@ -1743,7 +1747,7 @@
         width: 100%;
     }
 
-    .banner__prizes__body {
+    .banner__prizes__body_wrap {
         padding: 0;
         background: transparent;
     }
@@ -1849,10 +1853,15 @@
     .footer {
         position: relative;
         z-index: 2;
+        padding-top: 52px;
     }
 
     .info-item.active .info-link {
         display: flex;
+    }
+
+    .footer .footer-website {
+        margin-top: 0;
     }
 
     .footer-link:not(:last-child) {
@@ -1909,7 +1918,7 @@
     }
 
     .discord-block iframe {
-        max-width: 400px;
+        max-width: 100%;
     }
 
     .table__item {
@@ -2182,6 +2191,7 @@
 
     .swiper {
         padding-left: 20px;
+        padding-right: 20px;
     }
 
     .changes::after {
@@ -2189,6 +2199,14 @@
         background-size: contain;
         background-repeat: no-repeat;
         bottom: -70px;
+    }
+
+    .table__item-part {
+        max-width: 100%;
+    }
+
+    .changes-text .subtitle_light {
+        max-width: 245px;
     }
 }
 

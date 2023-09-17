@@ -824,7 +824,7 @@ img {
 }
 
 .changes-content:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .changes-content {
@@ -2006,17 +2006,36 @@ img {
     position: absolute;
     right: 0;
     bottom: -70px;
+    z-index: 2;
+    width: 40%;
 }
 
 .banner__prizes__body {
     position: relative;
     top: 16vh;
     left: 0;
-    background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
     border-radius: 16px;
-    padding: 62px 70px;
 }
 
+.banner__prizes__body_wrap {
+    background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
+    padding: 62px 70px;
+    position: relative;
+    z-index: 2;
+    border-radius: inherit;
+}
+
+.banner__prizes__body:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
+    content: '';
+    z-index: 0;
+    border-radius: 16px;
+}
 
 .banner__prizes__title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
@@ -2170,6 +2189,11 @@ img {
     line-height: 160%;
     color: #E2F4FF;
     opacity: 1;
+}
+
+.discord-block {
+    border: 1px solid;
+    border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, #D1D4FF 100%);
 }
 
 /* ICONS */
