@@ -122,24 +122,57 @@ img {
 
 .btn {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     color: #fff;
     border-radius: 16px;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
-    opacity: 1;
-    transition: .4s ease;
     display: inline-flex;
-}
-
-.btn:hover {
-    opacity: 0.6;
-    transition: .4s ease;
+    transition: .4s background;
 }
 
 .btn-orange .btn-bordered-box {
-    background-image: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
+    background: radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%);
+    transition: .4s background;
+}
+
+.btn-orange:hover .btn-bordered-box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)),
+        radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%),
+        radial-gradient(106.8% 45.71% at 50% 30.71%, #FFE8BD 31.33%, rgba(84, 54, 0, 0.6) 100%);
+}
+
+.btn-orange:active .btn-bordered-box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+        radial-gradient(128% 100% at 50% 0%, #FFC342 2.6%, #9F6E03 57.29%, #9F6E03 60.94%, #FF8717 100%),
+        radial-gradient(106.8% 45.71% at 50% 30.71%, #FFE8BD 31.33%, rgba(84, 54, 0, 0.6) 100%);
+}
+
+.text-bg {
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FFF2DB 28.01%, rgba(239, 201, 129, 0.6) 41.07%, rgba(255, 242, 219, 0.6) 53.46%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+}
+
+.btn-blue .text-bg {
+    background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #FFFFFF;
+    -webkit-background-clip: text;
+}
+
+.btn-blue:hover .btn-bordered-box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)),
+        radial-gradient(128% 100% at 50% 0%, #2F68B7 2.6%, #182E57 56.77%, #1F2C5A 100%),
+        radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
+}
+
+.btn-blue:active .btn-bordered-box {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+        radial-gradient(128% 100% at 50% 0%, #2F68B7 2.6%, #182E57 56.77%, #1F2C5A 100%),
+        radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
 }
 
 .btn-bordered {
@@ -250,7 +283,6 @@ img {
 .header-btn {
     display: none;
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 14px;
     line-height: 140%;
     color: #fff;
@@ -337,7 +369,6 @@ img {
 /*  nav ul li a */
 .header__nav-item__link {
     font-family: 'Manrope-Bold', sans-serif;
-    font-weight: 700;
     font-size: 16px;
     line-height: 115%;
     letter-spacing: 0.01em;
@@ -409,19 +440,6 @@ img {
     transition: all .7s ease;
 }
 
-/* это для подменю и навигации "Ещё" */
-
-/* .header__nav-item:not(.header__nav-item_submenu.active).header__nav-item_sub:hover::after {
-    transform: rotate(180deg);
-    transition: all .7s ease;
-} */
-
-/* .header__nav-item:not(:hover).header__nav-item_sub:hover::after {
-    transform: rotate(180deg);
-    transition: all .7s ease;
-} */
-
-
 .header__nav-actions {
     display: flex;
     gap: 24px;
@@ -436,11 +454,6 @@ img {
     grid-gap: 6px;
     transition: all .7s ease;
     transform: rotate(0deg);
-}
-
-.header__nav-actions .header__nav-item:hover {
-    /* grid-gap: 6px; */
-    /* opacity: .7; */
 }
 
 .burger__menu-language {
@@ -465,7 +478,6 @@ img {
 
 .h1-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 56px;
     line-height: 140%;
     text-align: center;
@@ -550,7 +562,6 @@ img {
 
 .server-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 4px;
@@ -587,7 +598,6 @@ img {
 
 .online-count {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
 }
@@ -695,7 +705,6 @@ img {
 
 .benefits-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 4px;
@@ -803,7 +812,6 @@ img {
 
 .h2-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 48px;
     line-height: 140%;
     text-align: center;
@@ -835,7 +843,6 @@ img {
 
 .block-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 140%;
 }
@@ -879,7 +886,6 @@ img {
 
 .h2-title_black {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 48px;
     line-height: 140%;
     text-align: center;
@@ -896,7 +902,6 @@ img {
 
 .content-text {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 140%;
     text-align: center;
@@ -914,6 +919,13 @@ img {
     background: url(../img/race-bg.png) no-repeat center, #fff;
     padding-top: 5vh;
     background-size: cover;
+}
+
+.race,
+.friends,
+.banner__prizes,
+.awards {
+    margin: -1px;
 }
 
 .race-wrapper {
@@ -942,7 +954,6 @@ img {
 .content-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
     font-size: 18px;
-    font-weight: 700;
     line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
@@ -1032,6 +1043,10 @@ img {
     position: relative;
 }
 
+.classes:hover svg path {
+    fill: #FFC039;
+}
+
 .classes.active:after {
     position: absolute;
     top: -2px;
@@ -1050,7 +1065,7 @@ img {
     justify-content: center;
     gap: 16px;
     border-radius: inherit;
-    padding: 24px 35px;
+    padding: 24px;
 }
 
 .classes.active .btn-bordered-box {
@@ -1059,8 +1074,14 @@ img {
 
 }
 
+/* градиент для текста "темные эльфы" */
+/* .classes.choice-dark-elf:hover .choice-text {
+    background: linear-gradient(0deg, #FFC039 68.81%, #B77D00 74.52%, rgba(255, 192, 57, 0.6) 82.62%), linear-gradient(0deg, #FFF, #FFF);
+} */
+
 .classes:hover .choice-text {
     background: linear-gradient(0deg, #FFC039 48.81%, #B77D00 64.52%, rgba(255, 192, 57, 0.6) 82.62%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(0deg, #FFC03A 38.81%, #BF8200 54.52%, #FFC03A 62.62%), linear-gradient(0deg, #FFF, #FFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1074,10 +1095,10 @@ img {
 
 .choice-text {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 14px;
     line-height: 140%;
-    background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #FFFFFF;
+    /* background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #FFFFFF; */
+    background: linear-gradient(0deg, #FFF 38.81%, rgba(159, 180, 208, 0.6) 54.52%, rgba(225, 225, 225, 0.6) 62.62%), #FFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1089,6 +1110,7 @@ img {
 .about-server {
     padding: 17vh 0 0 0;
     background: #070B18;
+    margin-top: -20px;
 }
 
 .about-server .container {
@@ -1138,7 +1160,6 @@ img {
 
 .server-item {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     border-radius: 24px;
@@ -1219,7 +1240,6 @@ img {
 
 .x-count {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 32px;
     line-height: 100%;
     margin-bottom: 2px;
@@ -1246,12 +1266,18 @@ img {
 
 .more-server {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 18px;
     line-height: 150%;
     color: #FFC039;
     display: flex;
     align-items: center;
+    transition: .4s color;
+    margin-top: auto;
+    padding: 0 32px;
+}
+
+.more-server:hover {
+    color: #C98900;
 }
 
 .more-server:after {
@@ -1310,7 +1336,6 @@ img {
 
 .info-text {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 18px;
     line-height: 140%;
     background: linear-gradient(180deg, #FFF2DB 28.01%, rgba(239, 201, 129, 0.6) 41.07%, rgba(255, 242, 219, 0.6) 53.46%), #FFFFFF;
@@ -1346,26 +1371,28 @@ img {
     position: relative;
     margin: 0 14px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
 }
 
 .news-item.block-bordered-gray:after {
     border-radius: 24px;
-    top: -2px;
-    bottom: -2px;
-    left: 10px;
-    right: 10px;
+    top: -1px;
+    bottom: -1px;
+    left: 12px;
+    right: 12px;
 }
 
 .news-icon {
     position: absolute;
     top: -10px;
-    left: -12px;
+    left: -5px;
     border-radius: 20px;
 }
 
 .news-icon__text {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 12px;
     line-height: 160%;
     padding: 5px 16px;
@@ -1384,6 +1411,7 @@ img {
 
 .item-block {
     padding: 32px;
+    padding-bottom: 0;
 }
 
 .item-block .more-server {
@@ -1395,7 +1423,6 @@ img {
     margin: 16px 0;
 }
 
-/*  BEST  */
 .best {
     padding-top: 100px;
     background: #070B18;
@@ -1410,7 +1437,6 @@ img {
 
 .table__item-heading {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 32px;
     line-height: 140%;
     text-align: center;
@@ -1471,7 +1497,6 @@ img {
 
 .table__item-subtitle {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 16px;
@@ -1511,7 +1536,7 @@ img {
 }
 
 .table__item-col:first-child {
-    flex: 0 0 10%;
+    flex: 0 0 11%;
     max-width: 30px;
     display: flex;
     align-items: center;
@@ -1531,11 +1556,11 @@ img {
 }
 
 .table__item-clans .table__item-col:nth-child(2) {
-    flex: 1 0 35%;
+    flex: 1 0 42%;
 }
 
 .table__item-clans .table__item-col:nth-child(3) {
-    flex: 1 0 35%;
+    flex: 1 0 25%;
 }
 
 .table__item-box {
@@ -1608,16 +1633,9 @@ img {
 }
 
 .stream-block {
-    /* display: flex; */
-    /* gap: 24px; */
+
     margin-bottom: 60px;
 }
-
-/* 
-.stream-item {
-    max-width: 437px;
-    width: calc(33.33vw - 24px)
-} */
 
 .stream-block-img {
     border-radius: 12px;
@@ -1702,17 +1720,28 @@ img {
     z-index: 2;
 }
 
+.awards-btn:hover .btn-bordered-box {
+    background: linear-gradient(0deg, rgba(147, 167, 205, 0.24), rgba(147, 167, 205, 0.24)), radial-gradient(128% 100% at 50% 0%, #FFFFFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%);
+}
+
+.awards-btn:active .btn-bordered-box {
+    background: linear-gradient(0deg, rgba(147, 167, 205, 0.32), rgba(147, 167, 205, 0.32)), radial-gradient(128% 100% at 50% 0%, #FFFFFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%);
+}
+
+.awards-btn .text-bg {
+    background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #166DE3 82.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 .awards-btn.btn-bordered:after {
     background: radial-gradient(128% 100% at 50% 0%, #DCE4EE 0%, rgba(114, 170, 246, .6) 100%);
 }
 
-.awards-btn:hover {
-    opacity: 0.7;
-}
-
 .learn-more {
     font-family: 'TrajanSansPro-Bold';
-    font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     text-transform: uppercase;
@@ -1750,7 +1779,7 @@ img {
 .friends-block {
     display: flex;
     justify-content: space-evenly;
-    gap: 80px;
+    /* gap: 80px; */
 }
 
 .friends .block-title {
@@ -1805,7 +1834,6 @@ img {
 }
 
 .social-btn img {
-    width: 40px;
     height: 40px;
 }
 
@@ -1893,7 +1921,6 @@ img {
 
 .social-text {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 20px;
     line-height: 1;
     /* background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #FFFFFF; */
@@ -1986,14 +2013,13 @@ img {
     top: 16vh;
     left: 0;
     background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 62px 70px;
 }
 
 
 .banner__prizes__title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 40px;
     line-height: 140%;
     text-align: center;
@@ -2024,7 +2050,6 @@ img {
 
 .banner__prizes__desc {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 140%;
 }
@@ -2043,7 +2068,7 @@ img {
 /* ---------------------FOOTER------------------------ */
 .footer {
     background: #070B18;
-    padding-top: 10vh;
+    padding-top: 15vh;
 }
 
 .icon-plus {
@@ -2072,7 +2097,6 @@ img {
 
 .footer-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 24px;
@@ -2107,7 +2131,6 @@ img {
 
 .website-title {
     font-family: 'TrajanSansPro-Bold', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 140%;
 }
