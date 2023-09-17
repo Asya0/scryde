@@ -1130,7 +1130,7 @@
     }
 
     .contacts .btn .btn-bordered-box {
-        padding: 17px 31px;
+        padding: 18px 31px;
     }
 
     .btn-desc {
@@ -2221,6 +2221,24 @@
     .table__item-pink .table__item-inner_box {
         background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #000000 100%);
     }
+
+    .contacts-block {
+        gap: 20px;
+    }
+
+    .info-link {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Делит контейнер на две равные колонки */
+        gap: 10px;
+        /* Отступ между ссылками */
+    }
+
+    .footer-link {
+        display: block;
+    }
+
+
 
 }
 
