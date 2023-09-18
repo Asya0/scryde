@@ -864,7 +864,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        max-height: 1000px;
         background: #070B18;
         padding: 20px 0;
         transition: left .3s ease 0s;
@@ -994,14 +993,14 @@
     }
 
     .burger__menu-server {
-        margin-bottom: 17px;
+        margin-bottom: 30px;
     }
 
     .burger__menu-server-block {
         display: flex;
         flex-direction: column;
-        gap: 13px;
-        margin-top: 9px;
+        gap: 10px;
+        margin-top: 16px;
     }
 
     .burger__menu-server-item::before {
@@ -1030,7 +1029,7 @@
     }
 
     .burger__menu-server-item .btn-bordered-box {
-        padding: 9px 20px;
+        padding: 16px;
         border-radius: inherit;
         display: flex;
         justify-content: space-between;
@@ -1071,8 +1070,8 @@
     .burger__menu-item {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 14px;
-        padding-top: 18px;
+        padding-bottom: 21px;
+        padding-top: 21px;
     }
 
     .burger__menu-item:hover {
@@ -1803,7 +1802,7 @@
         border-bottom: 0.4px solid rgba(255, 255, 255, 0.40);
     }
 
-    .info-link {
+    .info-item .info-link {
         display: none;
     }
 
@@ -1859,6 +1858,9 @@
 
     .info-item.active .info-link {
         display: flex;
+        flex-direction: column;
+        max-height: 120px;
+        gap: 10px 33px;
     }
 
     .footer .footer-website {
@@ -1871,9 +1873,6 @@
 
     .info-link {
         flex-wrap: wrap;
-        flex-direction: column;
-        gap: 20px 33px;
-        max-height: 160px;
         padding-bottom: 24px;
     }
 
@@ -1881,7 +1880,6 @@
         max-width: calc(50% - 20px);
         width: 100%;
         white-space: nowrap;
-        font-size: 14px;
     }
 
     .footer-link:hover {
@@ -2263,9 +2261,7 @@
         max-width: 330px;
     }
 
-    .table__item-pink .table__item-inner:after,
-    .table__item-gold .table__item-inner:after,
-    .table__item-red .table__item-inner:after {
+    .table__item-pink .table__item-inner:after {
         background: none;
     }
 
@@ -2273,34 +2269,18 @@
         padding: 32px 0;
     }
 
-    .table__item-pink .table__item-inner_box,
-    .table__item-gold .table__item-inner_box,
-    .table__item-red .table__item-inner_box {
-        background: #070B18;
-    }
-
-    .block-icons {
-        margin-bottom: 0;
-        gap: 16px;
+    .table__item-pink .table__item-inner_box {
+        background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #000000 100%);
     }
 
     .contacts-block {
         gap: 20px;
     }
 
-    .info-link {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Делит контейнер на две равные колонки */
-        gap: 10px;
-        /* Отступ между ссылками */
-    }
-
     .footer-link {
         display: block;
+        font-size: 14px;
     }
-
-
 
 }
 
