@@ -62,7 +62,7 @@ let optionsSwiper = {
 
 const benefitsSwiper = new Swiper('.benefits-swiper', { ...benefitsPerPage, ...defaultSpaceBetween, ...optionsSwiper });
 const otherSliders = new Swiper('.js-swiper', { ...defaultPerPage, ...defaultSpaceBetween, ...optionsSwiper });
-const newsSlider = new Swiper('.js-swiper', { ...defaultPerPage, ...newsSpaceBetween, ...optionsSwiper });
+const newsSlider = new Swiper('.news-swiper', { ...defaultPerPage, ...newsSpaceBetween, ...optionsSwiper });
 
 // burger menu 
 const iconMenu = document.querySelector('.burger');
