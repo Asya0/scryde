@@ -1733,7 +1733,8 @@ img {
 }
 
 .awards-btn .text-bg {
-    background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #166DE3 82.62%);
+    /* background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #166DE3 82.62%); */
+    background: linear-gradient(0deg, #3288ff 49.76%, #1576ff 64.52%, #1872eb 82.62%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
