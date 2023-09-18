@@ -864,6 +864,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        max-height: 1000px;
         background: #070B18;
         padding: 20px 0;
         transition: left .3s ease 0s;
@@ -993,14 +994,14 @@
     }
 
     .burger__menu-server {
-        margin-bottom: 30px;
+        margin-bottom: 17px;
     }
 
     .burger__menu-server-block {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-top: 16px;
+        gap: 13px;
+        margin-top: 9px;
     }
 
     .burger__menu-server-item::before {
@@ -1029,7 +1030,7 @@
     }
 
     .burger__menu-server-item .btn-bordered-box {
-        padding: 16px;
+        padding: 9px 20px;
         border-radius: inherit;
         display: flex;
         justify-content: space-between;
@@ -1070,8 +1071,8 @@
     .burger__menu-item {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 21px;
-        padding-top: 21px;
+        padding-bottom: 14px;
+        padding-top: 18px;
     }
 
     .burger__menu-item:hover {
@@ -1873,6 +1874,12 @@
 
     .info-link {
         flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+        flex-direction: column;
+        gap: 20px 33px;
+        max-height: 160px;
+>>>>>>> 70404a1ddbae123e09f7ab099b680e75f2ed7d8e
         padding-bottom: 24px;
     }
 
@@ -1880,6 +1887,7 @@
         max-width: calc(50% - 20px);
         width: 100%;
         white-space: nowrap;
+        font-size: 14px;
     }
 
     .footer-link:hover {
@@ -2261,7 +2269,9 @@
         max-width: 330px;
     }
 
-    .table__item-pink .table__item-inner:after {
+    .table__item-pink .table__item-inner:after,
+    .table__item-gold .table__item-inner:after,
+    .table__item-red .table__item-inner:after {
         background: none;
     }
 
@@ -2269,8 +2279,15 @@
         padding: 32px 0;
     }
 
-    .table__item-pink .table__item-inner_box {
-        background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #000000 100%);
+    .table__item-pink .table__item-inner_box,
+    .table__item-gold .table__item-inner_box,
+    .table__item-red .table__item-inner_box {
+        background: #070B18;
+    }
+
+    .block-icons {
+        margin-bottom: 0;
+        gap: 16px;
     }
 
     .contacts-block {

@@ -1045,6 +1045,10 @@ img {
 
 .classes:hover svg path {
     fill: #FFC039;
+    fill: none;
+    fill: url(#myGradient);
+    /* fill: linear-gradient(0deg, #FFC03A 38.81%, #BF8200 54.52%, #FFC03A 62.62%), linear-gradient(0deg, #FFF, #FFF); */
+    /* background: linear-gradient(0deg, #FFC03A 38.81%, #BF8200 54.52%, #FFC03A 62.62%), linear-gradient(0deg, #FFF, #FFF); */
 }
 
 .classes.active:after {
@@ -2149,7 +2153,7 @@ img {
 }
 
 .website-title {
-    font-family: 'TrajanSansPro-Bold', sans-serif;
+    font-family: 'TrajanSansPro-Semibold', sans-serif;
     font-size: 24px;
     line-height: 140%;
 }
