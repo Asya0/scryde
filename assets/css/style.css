@@ -1839,6 +1839,7 @@ img {
 
 .social-btn img {
     height: 40px;
+    filter: drop-shadow(0px 1.5px 2.25px rgba(0, 0, 0, 0.32));
 }
 
 .social-btn .btn-bordered-box {
