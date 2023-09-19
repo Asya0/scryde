@@ -1784,7 +1784,6 @@ img {
 .friends-block {
     display: flex;
     justify-content: space-evenly;
-    /* gap: 80px; */
 }
 
 .friends .block-title {
@@ -2196,10 +2195,30 @@ img {
     opacity: 1;
 }
 
-.discord-block {
+.discord-block-wrap {
+    position: relative;
     border: 1px solid;
     border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, #D1D4FF 100%);
+    z-index: 2;
 }
+
+.discord-block::after {
+    position: absolute;
+    top: -1px;
+    bottom: 3px;
+    left: 1px;
+    right: 1px;
+    /* background: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, rgba(13, 30, 53, 0.6) 100%); */
+    background: radial-gradient(116.8% 55.71% at 90% 50.71%, #5A64EA 51.33%, rgb(106 136 177 / 40%) 100%);
+    content: '';
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.discord-block {
+    position: relative;
+}
+
 
 /* ICONS */
 .icon {

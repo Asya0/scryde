@@ -177,6 +177,10 @@
     .awards-img__right {
         top: 4px;
     }
+
+    .discord-block::after {
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -695,7 +699,6 @@
     }
 
     .social-btn img {
-        width: 30px;
         height: 30px;
     }
 
@@ -1182,6 +1185,11 @@
 
     .footer-info {
         gap: 90px;
+    }
+
+    .burger__menu .social-block,
+    .burger__menu .block-icons {
+        margin: 0;
     }
 }
 
@@ -1729,7 +1737,6 @@
     }
 
     .social-btn img {
-        width: 32px;
         height: 32px;
     }
 
@@ -1836,7 +1843,7 @@
     }
 
     .social-btn .btn-bordered-box {
-        padding: 8px;
+        padding: 8px 11px;
     }
 
     .footer-bottom {
@@ -1920,10 +1927,6 @@
         flex-direction: column-reverse;
         align-items: center;
         gap: 40px;
-    }
-
-    .discord-block iframe {
-        max-width: 100%;
     }
 
     .table__item {
@@ -2212,6 +2215,10 @@
 
     .changes-text .subtitle_light {
         max-width: 245px;
+    }
+
+    .discord-block::after {
+        top: 39px;
     }
 }
 
