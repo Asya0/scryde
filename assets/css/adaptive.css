@@ -1863,10 +1863,13 @@
         padding-top: 52px;
     }
 
+
     .info-item.active .info-link {
         display: flex;
         flex-direction: column;
-        max-height: 120px;
+        flex-wrap: wrap;
+        padding-bottom: 24px;
+        max-height: 130px;
         gap: 10px 33px;
     }
 
@@ -1876,14 +1879,6 @@
 
     .footer-link:not(:last-child) {
         margin-bottom: 0;
-    }
-
-    .info-link {
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 20px 33px;
-        max-height: 160px;
-        padding-bottom: 24px;
     }
 
     .footer-link {
