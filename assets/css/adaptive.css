@@ -1736,10 +1736,6 @@
         padding: 16px 24px;
     }
 
-    .social-btn img {
-        height: 32px;
-    }
-
     .social-text {
         font-size: 14px;
     }
@@ -1843,7 +1839,7 @@
     }
 
     .social-btn .btn-bordered-box {
-        padding: 8px 11px;
+        padding: 9px 11px;
     }
 
     .footer-bottom {
