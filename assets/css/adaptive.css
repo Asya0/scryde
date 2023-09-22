@@ -229,7 +229,12 @@
     }
 
     .discord-block iframe {
-        max-width: 435px;
+        max-width: 415px;
+    }
+
+    .social-block {
+        width: 100%;
+        max-width: 335px;
     }
 
 
@@ -632,7 +637,11 @@
     }
 
     .changes-content {
-        gap: 10px;
+        gap: 20px;
+    }
+
+    .changes-content:not(:last-child) {
+        margin-bottom: 20px;
     }
 
     .contacts {
@@ -754,6 +763,14 @@
         right: -30%;
     }
 
+    .changes-content img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .friends .block-subtitle {
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 1022px) {
@@ -1441,7 +1458,6 @@
 
     .race-img {
         background: #BFD2F4;
-        padding-top: 65px;
         margin-top: -10px;
         position: static;
         max-width: 100%;
@@ -2228,6 +2244,11 @@
 
     .discord-block::after {
         top: 39px;
+    }
+
+    .changes {
+        background: #070B18;
+        background-image: none;
     }
 }
 
