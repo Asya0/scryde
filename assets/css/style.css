@@ -150,7 +150,6 @@ img {
 
 .text-bg {
     text-transform: uppercase;
-    background: linear-gradient(180deg, #FFF 28.01%, rgba(239, 201, 129, 0.6) 41.07%, #FFF 53.46%), #FFFFFF;
     background: linear-gradient(180deg, #FFF 38.01%, rgba(239, 201, 129, 0.6) 51.07%, #FFF 73.46%), #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -336,6 +335,10 @@ img {
 
 .header__nav-item:hover>.header__nav-item__link,
 .header__nav-item__link:hover {
+    color: #ffc039;
+}
+
+.header__nav-item__link:hover .icon-smile {
     color: #ffc039;
 }
 
@@ -798,6 +801,10 @@ img {
     right: 0;
 }
 
+.changes .block-title {
+    color: #FFF;
+}
+
 .changes-text {
     text-align: center;
 }
@@ -1057,8 +1064,6 @@ img {
     fill: #FFC039;
     fill: none;
     fill: url(#myGradient);
-    /* fill: linear-gradient(0deg, #FFC03A 38.81%, #BF8200 54.52%, #FFC03A 62.62%), linear-gradient(0deg, #FFF, #FFF); */
-    /* background: linear-gradient(0deg, #FFC03A 38.81%, #BF8200 54.52%, #FFC03A 62.62%), linear-gradient(0deg, #FFF, #FFF); */
 }
 
 .classes.active:after {
@@ -1089,8 +1094,8 @@ img {
 }
 
 .classes:hover .choice-text {
-    background: linear-gradient(0deg, #FFC039 48.81%, #B77D00 64.52%, rgba(255, 192, 57, 0.6) 82.62%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
-    background: linear-gradient(0deg, #FFC03A 38.81%, #BF8200 54.52%, #FFC03A 62.62%), linear-gradient(0deg, #FFF, #FFF);
+    background: linear-gradient(0deg, #FFC03A 58.81%, #BF8200 70.52%, #ffffff 82.62%), linear-gradient(0deg, #FFF, #FFF);
+    /* background: linear-gradient(0deg, #ffc444 48.81%, #B77D00 64.52%, rgb(246, 202, 105) 82.62%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1437,6 +1442,10 @@ img {
     background: #070B18;
 }
 
+.best .text-bg {
+    display: inline-block;
+}
+
 .table__row {
     display: flex;
     gap: 32px;
@@ -1743,23 +1752,9 @@ img {
 }
 
 .awards-btn .text-bg {
-<<<<<<< HEAD
-    /* background: linear-gradient(0deg, #3288ff 49.76%, #1576ff 64.52%, #1872eb 82.62%); */
-    background: linear-gradient(0deg, #217eff 39.76%, #0051c1 64.52%, #3a8dff 82.62%);
-=======
-<<<<<<< HEAD
-    /* background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #1D70E3 82.62%); */
-    background: linear-gradient(0deg, #1D70E3 29.76%, #1255B3 54.52%, #1D70E3 72.62%);
-=======
-    /* background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #166DE3 82.62%); */
-    background: linear-gradient(0deg, #3288ff 49.76%, #1576ff 64.52%, #1872eb 82.62%);
->>>>>>> 117e2123f7f87755ac018c31cab3128aa9c9ccc1
->>>>>>> 8c64aa757d36b5b7741d8fd07411125270cad855
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    background: linear-gradient(180deg, #1D70E3 18.01%, #1255b2 31.07%, #166de3 53.46%), #FFF;
     text-shadow: none;
+    -webkit-background-clip: text;
 }
 
 .awards-btn.btn-bordered:after {
@@ -1950,8 +1945,7 @@ img {
     font-family: 'TrajanSansPro-Bold', sans-serif;
     font-size: 20px;
     line-height: 1;
-    /* background: linear-gradient(0deg, #EBF3FF 48.81%, rgba(195, 208, 225, 0.6) 64.52%, rgba(235, 243, 255, 0.6) 82.62%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
-    background: linear-gradient(0deg, #FFF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, #FFF 82.62%), #FFFFFF;
+    background: linear-gradient(0deg, #FFF 38.81%, rgba(207, 228, 255, 0.6) 64.52%, #FFF 92.62%), #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2254,10 +2248,6 @@ img {
 
 .icon-language {
     background-image: url(../img/svg/language.svg);
-}
-
-.icon-smile {
-    background-image: url(../img/svg/icon-devil.svg);
 }
 
 .icon-place-first {

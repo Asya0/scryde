@@ -208,6 +208,10 @@
         grid-template-columns: repeat(1, 346px);
     }
 
+    .server .subtitle {
+        font-size: 18px;
+    }
+
     .title {
         font-size: 40px;
     }
