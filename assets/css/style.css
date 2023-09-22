@@ -818,9 +818,10 @@ img {
     margin-bottom: 13px;
 }
 
-.changes-block {
+.friends-block .changes-block {
     position: relative;
-    margin: auto 0;
+    /* margin: auto 0; */
+    padding-top: 59px;
 }
 
 .changes-content:not(:last-child) {
@@ -837,14 +838,22 @@ img {
     height: 52px;
 }
 
+.friends .changes-content img {
+    position: relative;
+    top: 0px;
+    right: 6px;
+}
+
 .block-text {
     margin-top: 16px;
 }
 
 .block-title {
+    color: #070B18;
     font-family: 'TrajanSansPro-Bold', sans-serif;
     font-size: 24px;
     line-height: 140%;
+    margin-bottom: 7px;
 }
 
 .block-subtitle {
@@ -1724,8 +1733,13 @@ img {
     z-index: 2;
 }
 
+.awards-btn .btn-bordered-box {
+    background: radial-gradient(128% 100% at 50% 0%, #FFFFFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%);
+}
+
 .awards-btn:hover .btn-bordered-box {
-    background: linear-gradient(0deg, rgba(147, 167, 205, 0.24), rgba(147, 167, 205, 0.24)), radial-gradient(128% 100% at 50% 0%, #FFFFFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%);
+    /* background: linear-gradient(0deg, rgba(147, 167, 205, 0.24), rgba(147, 167, 205, 0.24)), radial-gradient(128% 100% at 50% 0%, #FFFFFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%); */
+    background: linear-gradient(0deg, rgba(147, 167, 205, 0.24) 0%, rgba(147, 167, 205, 0.24) 100%), radial-gradient(128% 100% at 50% 0%, #FFF 2.6%, #DFE6F1 56.77%, #A3ABBA 100%);
 }
 
 .awards-btn:active .btn-bordered-box {
@@ -1733,16 +1747,18 @@ img {
 }
 
 .awards-btn .text-bg {
-    /* background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #166DE3 82.62%); */
-    background: linear-gradient(0deg, #3288ff 49.76%, #1576ff 64.52%, #1872eb 82.62%);
+    /* background: linear-gradient(0deg, #3288ff 49.76%, #1576ff 64.52%, #1872eb 82.62%); */
+    background: linear-gradient(0deg, #217eff 39.76%, #0051c1 64.52%, #3a8dff 82.62%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    text-shadow: none;
 }
 
 .awards-btn.btn-bordered:after {
-    background: radial-gradient(128% 100% at 50% 0%, #DCE4EE 0%, rgba(114, 170, 246, .6) 100%);
+    /* background: radial-gradient(128% 100% at 50% 0%, #DCE4EE 0%, rgba(114, 170, 246, .6) 100%); */
+    background: radial-gradient(128% 100% at 50% 30%, rgba(114, 170, 246, .6) 0%, #DCE4EE 150%);
 }
 
 .learn-more {
@@ -2205,15 +2221,15 @@ img {
 
 .discord-block::after {
     position: absolute;
-    top: -1px;
-    bottom: 3px;
-    left: 1px;
-    right: 1px;
-    /* background: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, rgba(13, 30, 53, 0.6) 100%); */
-    background: radial-gradient(116.8% 55.71% at 90% 50.71%, #5A64EA 51.33%, rgb(106 136 177 / 40%) 100%);
+    top: 0px;
+    bottom: 2px;
+    left: -1px;
+    right: 0px;
+    background: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, rgba(13, 30, 53, 0.6) 100%);
+    /* background: radial-gradient(116.8% 55.71% at 90% 50.71%, #5A64EA 51.33%, rgb(106 136 177 / 40%) 100%); */
     content: '';
     z-index: 1;
-    border-radius: 16px;
+    border-radius: 4px;
 }
 
 .discord-block {

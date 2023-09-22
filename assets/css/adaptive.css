@@ -244,6 +244,10 @@
     .awards-img__left {
         left: -240px;
     }
+
+    .table__item {
+        width: calc(33.33vw - 30px);
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -257,6 +261,10 @@
 
     .container {
         padding: 0 42px;
+    }
+
+    .container container-race {
+        padding: 0;
     }
 
     .btn .btn-bordered-box {
@@ -348,11 +356,6 @@
 
     .changes-block {
         margin: 50px 0 40px;
-    }
-
-    .changes-content img {
-        width: 40px;
-        height: 40px;
     }
 
     .block-text {
@@ -606,7 +609,7 @@
     }
 
     .friends-block {
-        gap: 42px;
+        gap: 45px;
     }
 
     .friends .block-title {
@@ -620,6 +623,12 @@
 
     .friends-block .changes-block {
         gap: 20px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .changes-content {
+        gap: 10px;
     }
 
     .contacts {
@@ -1284,6 +1293,10 @@
 
     .iframe {
         width: 100%;
+    }
+
+    .discord-block iframe {
+        height: 380px;
     }
 
     .h1-title {
