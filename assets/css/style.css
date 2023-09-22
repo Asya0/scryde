@@ -95,14 +95,6 @@ body {
     background-position: left;
 }
 
-/* a {
-    transition: .4s opacity;
-}
-
-a:hover {
-    opacity: 0.7;
-} */
-
 .container {
     width: 100%;
     max-width: 1420px;
@@ -347,9 +339,16 @@ img {
     fill: #ffc039;
 }
 
+.header__nav-item__link {
+    transition: .4s color;
+}
+
+.header__nav-item__link path {
+    transition: .4s fill;
+}
+
 .header__nav-item.header__nav-item_sub::after {
     content: url(../img/svg/dropdown-arrow.svg);
-    transition: all .7s ease;
     color: #ffc039;
     width: 16px;
     height: 16px;
@@ -364,7 +363,6 @@ img {
 
 .header__nav-item:hover.header__nav-item_sub::after {
     content: url(../img/svg/dropdown-arrow__hover.svg);
-    transition: all .7s ease;
     color: #ffc039;
     width: 16px;
     height: 16px;
@@ -435,13 +433,11 @@ img {
 .header__nav-item_submenu .header__nav-item_sub::after {
     transform: rotate(-90deg);
     content: url(../img/svg/dropdown-arrow.svg);
-    transition: all .7s ease;
 }
 
 /* разворот стрелки для подменю при наведении */
 .header__nav-item_submenu.active .header__nav-item_sub:hover::after {
     transform: rotate(0deg);
-    transition: all .7s ease;
 }
 
 .header__nav-actions {
@@ -449,25 +445,21 @@ img {
     gap: 24px;
 }
 
-.burger__menu-account {
-    transition: all .7s ease;
-}
+.burger__menu-account {}
 
 
 .header__nav-actions .header__nav-item {
     grid-gap: 6px;
-    transition: all .7s ease;
     transform: rotate(0deg);
 }
 
 .burger__menu-language {
-    transition: all .7s ease;
+    transition: opacity .7s ease;
     cursor: pointer;
 }
 
 .burger__menu-language:hover {
     opacity: .7;
-    transition: all .7s ease;
 }
 
 
@@ -1055,8 +1047,6 @@ img {
 }
 
 .classes:hover svg path {
-    fill: #FFC039;
-    fill: none;
     fill: url(#myGradient);
 }
 
@@ -1093,6 +1083,7 @@ img {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    transition: .4s color;
 }
 
 .classes-img {
@@ -2158,9 +2149,7 @@ img {
     margin-bottom: 14px;
 }
 
-/* нужно ли? если да, то убрать с 767px */
 .footer-link:hover {
-    /* color: #FFC342; */
     color: #FFC039;
 }
 

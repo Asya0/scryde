@@ -1060,6 +1060,7 @@
         border-radius: 14px;
         color: inherit;
         position: relative;
+        outline: none;
     }
 
     .burger__menu-server-item .btn-bordered-box {
@@ -1076,7 +1077,6 @@
     }
 
     .burger__menu-server-text {
-        text-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.32);
         font-family: 'TrajanSansPro-Bold', sans-serif;
         font-size: 14px;
         font-weight: 700;
@@ -1084,12 +1084,11 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        background: linear-gradient(0deg, #FFF 50%, #c6d1e0 65%, #FFF 90%), #fff;
+        background: linear-gradient(0deg, #D7E8FF 50%, #6C809C99 65%, #D7E8FF99 90%), #fff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
-        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
         white-space: nowrap;
     }
 
