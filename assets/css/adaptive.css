@@ -2250,6 +2250,10 @@
         background: #070B18;
         background-image: none;
     }
+
+    .banner__prizes__body:after {
+        border-radius: 24px;
+    }
 }
 
 @media screen and (max-width: 514px) {
