@@ -939,6 +939,10 @@
         background-image: url(../img/svg/icon-smile.svg);
     }
 
+    .header__box-col-right>.start-game {
+        display: none !important;
+    }
+
     /* .icon-shine {
         background-image: url(../img/icon-shine.png);
         background-repeat: no-repeat;
@@ -956,7 +960,6 @@
     .burger__menu-text {
         color: #FFF;
         font-family: 'Manrope-Bold', sans-serif;
-        font-weight: 700;
         line-height: 130%;
         letter-spacing: 0.14px;
     }
@@ -964,7 +967,6 @@
     .burger__menu-title {
         font-family: 'Manrope-Bold', sans-serif;
         font-size: 16px;
-        font-weight: 700;
         line-height: 130%;
     }
 
@@ -1079,7 +1081,6 @@
     .burger__menu-server-text {
         font-family: 'TrajanSansPro-Bold', sans-serif;
         font-size: 14px;
-        font-weight: 700;
         line-height: 140%;
         display: flex;
         align-items: center;
