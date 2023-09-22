@@ -1094,8 +1094,7 @@ img {
 }
 
 .classes:hover .choice-text {
-    background: linear-gradient(0deg, #FFC03A 58.81%, #BF8200 70.52%, #ffffff 82.62%), linear-gradient(0deg, #FFF, #FFF);
-    /* background: linear-gradient(0deg, #ffc444 48.81%, #B77D00 64.52%, rgb(246, 202, 105) 82.62%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
+    background: linear-gradient(0deg, #FFC039 50%, #B77D00 70%, #FFC039 90%), linear-gradient(0deg, #FFF, #FFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1822,6 +1821,15 @@ img {
     justify-content: center;
     align-items: center;
     gap: 80px;
+}
+
+.contacts-text {
+    background: linear-gradient(0deg, #FFF 38.81%, rgba(207, 228, 255, 0.6) 64.52%, #FFF 92.62%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .social-block {

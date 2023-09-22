@@ -729,6 +729,7 @@
 
     .table__row {
         gap: 16px;
+        margin-bottom: 40px;
     }
 
     .table__item {
@@ -790,10 +791,6 @@
 
     .start-game {
         padding-bottom: 100px;
-    }
-
-    .header.fixed .header__box .start-game {
-        display: none;
     }
 
     .header__nav-item_submenu {
@@ -876,16 +873,20 @@
     .burger__menu {
         display: none;
         position: fixed;
-        top: 60px;
+        top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         background: #070B18;
-        padding: 20px 0;
         transition: left .3s ease 0s;
         z-index: 5;
+        padding-top: 90px;
+        bottom: 0;
+    }
+
+    .burger__menu .container {
+        height: 100%;
         overflow: auto;
-        padding-bottom: 120px;
+        padding-bottom: 40px;
     }
 
     .burger__menu .social-btn .btn-bordered-box {
@@ -1066,7 +1067,7 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #fff;
+        background: linear-gradient(0deg, #FFF 50%, #c6d1e0 65%, #FFF 90%), #fff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
