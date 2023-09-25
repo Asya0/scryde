@@ -547,7 +547,9 @@ img {
 }
 
 .new-icon {
-    background: url(../img/svg/new-icon.svg);
+    /* background: url(../img/svg/new-icon.svg); */
+    background: url(../img/new-icon.png);
+    background-size: contain;
     position: absolute;
     top: -10px;
     left: -10px;
@@ -2048,7 +2050,7 @@ img {
 
 .banner__prizes-bg {
     position: absolute;
-    bottom: -90px;
+    bottom: -130px;
     left: 0;
 }
 
@@ -2242,7 +2244,8 @@ img {
 .discord-block-wrap {
     position: relative;
     border: 1px solid;
-    border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, #D1D4FF 100%);
+    /* border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, #D1D4FF 100%); */
+    border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #fff 31.33%, #fff 100%);
     z-index: 2;
 }
 

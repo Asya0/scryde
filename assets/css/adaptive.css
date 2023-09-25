@@ -664,7 +664,7 @@
     
     .contacts-block {
         justify-content: space-between;
-        gap: 70px;
+        gap: 50px;
     }
 
     .social-text {
@@ -815,6 +815,9 @@
     }
     .friends {
         padding-top: 0;
+    }
+    .discord-block iframe {
+        max-height: 380px;
     }
 }
 
@@ -1349,10 +1352,6 @@
 
     .iframe {
         width: 100%;
-    }
-
-    .discord-block iframe {
-        height: 380px;
     }
 
     .h1-title {
