@@ -616,7 +616,9 @@ img {
 {
     padding-top: 300px;
 }
-
+.about-server .block-title {
+    color: inherit;
+}
 .btn-orange {
     box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
 }
@@ -1291,7 +1293,6 @@ img {
 }
 
 .more-server:hover
-/* .more-server:hover .more-server:after  */
 {
     color: #C98900;
 }
@@ -1304,6 +1305,12 @@ img {
     height: 13px;
     text-align: center;
     margin-left: 8px;
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+.more-server:hover.more-server:after {
+    opacity: 0.7;
+    transition: opacity .4s ease;
 }
 
 .statistics .server-online {

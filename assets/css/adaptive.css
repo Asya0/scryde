@@ -133,7 +133,9 @@
         margin-top: -30px;
         padding-top: 0;
     }
-
+    .news .subtitle_light {
+        margin-bottom: 30px;
+    }
     .item-block {
         padding: 24px 20px;
         padding-bottom: 0;
@@ -234,7 +236,7 @@
 
     .social-block {
         width: 100%;
-        max-width: 335px;
+        /* max-width: 335px; */
     }
 
 
@@ -366,6 +368,10 @@
     /* .changes {
         padding-top: 10vh;
     } */
+    .changes .subtitle_light,
+    .race .subtitle_dark {
+        margin-bottom: 0;
+    }
 
     .changes-text .subtitle_light {
         max-width: 602px;
@@ -376,7 +382,7 @@
     }
 
     .block-text {
-        margin-top: 8px;
+        margin-top: 0;
     }
 
     .changes-img {
@@ -507,7 +513,7 @@
     }
 
     .news-block {
-        margin: 50px 0 40px 0;
+        margin: 50px 0 10px 0;
     }
 
     .news-text__laptop {
@@ -653,12 +659,13 @@
         margin-bottom: 20px;
     }
 
-    .contacts {
+    /* .contacts {
         padding-top: 10vh;
-    }
+    } */
     
     .contacts-block {
         justify-content: space-between;
+        gap: 70px;
     }
 
     .social-text {
@@ -747,7 +754,7 @@
 
     .table__row {
         gap: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .table__item {
@@ -784,6 +791,7 @@
     .about-server .start-game,
     .benefits,
     .hero,
+    .bg-image,
     .news,
     .awards,
     .friends 
@@ -796,6 +804,18 @@
     .news .more-info {
         padding: 0;
         margin: 0;
+    }
+    .best .more-info {
+        margin: 0;
+    }
+    .stream {
+        padding-top: 0;
+    }
+    .stream .subtitle_dark {
+        margin-bottom: 20px;
+    }
+    .friends {
+        padding-top: 0;
     }
 }
 
@@ -964,15 +984,6 @@
     .header__box-col-right>.start-game {
         display: none !important;
     }
-
-    /* .icon-shine {
-        background-image: url(../img/icon-shine.png);
-        background-repeat: no-repeat;
-        position: relative;
-        top: 0;
-        left: 0;
-        background-size: contain;
-    } */
 
     .burger__menu-actions .icon {
         width: 32px;
@@ -1593,9 +1604,7 @@
     .about-server .server-online {
         justify-content: flex-start;
     }
-.about-server .block-title {
-    color: inherit;
-}
+
     .server-box {
         margin-bottom: 30px;
     }
@@ -1784,10 +1793,10 @@
         flex-direction: column;
         align-items: stretch;
     }
-
-    .social-block {
+/* уже есть почему написано еще раз? */
+    /* .social-block {
         width: 100%;
-    }
+    } */
 
     .social-btn .btn-bordered-box {
         padding: 16px 24px;
