@@ -133,9 +133,11 @@
         margin-top: -30px;
         padding-top: 0;
     }
+
     .news .subtitle_light {
         margin-bottom: 30px;
     }
+
     .item-block {
         padding: 24px 20px;
         padding-bottom: 0;
@@ -197,6 +199,7 @@
     .awards-img__left {
         left: -180px;
     }
+
     .changes .changes-block {
         margin-bottom: 0;
     }
@@ -233,7 +236,7 @@
         font-size: 43px;
     }
 
-    .discord-block iframe{
+    .discord-block iframe {
         max-width: 415px;
     }
 
@@ -262,9 +265,11 @@
     .table__item {
         width: calc(33.33vw - 30px);
     }
+
     .mailto {
         padding: 18px 40px;
     }
+
     .btn-desc {
         font-size: 15px;
     }
@@ -286,9 +291,11 @@
     .container container-race {
         padding: 0;
     }
+
     .contacts .btn .btn-bordered-box {
         padding: 13px 65px;
     }
+
     .btn .btn-bordered-box {
         padding: 13px 89px;
     }
@@ -660,7 +667,7 @@
     /* .contacts {
         padding-top: 10vh;
     } */
-    
+
     .contacts-block {
         justify-content: space-between;
         gap: 50px;
@@ -785,6 +792,7 @@
     .friends .block-subtitle {
         padding-top: 0;
     }
+
     .server .start-game,
     .about-server .start-game,
     .benefits,
@@ -792,29 +800,35 @@
     .bg-image,
     .news,
     .awards,
-    .friends 
-    {
+    .friends {
         padding-bottom: 140px;
     }
+
     .about-server {
         padding-top: 225px;
     }
+
     .news .more-info {
         padding: 0;
         margin: 0;
     }
+
     .best .more-info {
         margin: 0;
     }
+
     .stream {
         padding-top: 0;
     }
+
     .stream .subtitle_dark {
         margin-bottom: 20px;
     }
+
     .friends {
         padding-top: 0;
     }
+
     .discord-block iframe {
         max-height: 380px;
     }
@@ -1784,6 +1798,7 @@
     .friends .changes-block {
         margin: 0;
     }
+
     .friends-block {
         align-items: flex-start;
     }
@@ -1792,10 +1807,14 @@
         flex-direction: column;
         align-items: stretch;
     }
-/* уже есть почему написано еще раз? */
-    /* .social-block {
-        width: 100%;
-    } */
+
+    .changes .changes-block {
+        margin-bottom: 40px;
+    }
+
+    .table__row {
+        margin-bottom: 40px;
+    }
 
     .social-btn .btn-bordered-box {
         padding: 16px 24px;
@@ -2187,9 +2206,11 @@
     .changes .container-second {
         padding-bottom: 550px;
     }
+
     .changes .subtitle_light {
         margin-bottom: 20px;
     }
+
     .awards-blocks {
         padding: 28px 20px;
         z-index: 2;
@@ -2272,9 +2293,10 @@
         max-width: 100%;
     }
 
-    .discord-block{
+    .discord-block {
         max-width: 415px;
     }
+
     .discord-block::after {
         top: 39px;
     }
@@ -2293,9 +2315,11 @@
     .start-game .btn {
         width: 100%;
     }
+
     .changes-text .subtitle_light {
         max-width: 245px;
     }
+
     .changes .container-second {
         padding-bottom: 440px;
     }
@@ -2313,9 +2337,11 @@
     .race-content__text {
         padding: 24px 20px;
     }
+
     .changes .container-second {
         padding-bottom: 380px;
     }
+
     .changes-img {
         max-width: 90%;
         right: 0;
@@ -2356,16 +2382,17 @@
     .table__item-red .table__item-inner:after {
         background: none;
     }
-    
-    .table__item-pink .table__item-inner_box, 
-    .table__item-gold .table__item-inner_box, 
+
+    .table__item-pink .table__item-inner_box,
+    .table__item-gold .table__item-inner_box,
     .table__item-red .table__item-inner_box {
         background: radial-gradient(230.47% 295.42% at 50% 0%, #070B18 22.04%, #000000 100%);
     }
-    
+
     .table__item-inner_box {
         padding: 32px 0;
     }
+
     .contacts-block {
         gap: 20px;
     }
@@ -2374,60 +2401,84 @@
         display: block;
         font-size: 14px;
     }
-    .server .start-game, .about-server .start-game, .benefits, .hero, .news, .friends {
+
+    .server .start-game,
+    .about-server .start-game,
+    .benefits,
+    .hero,
+    .news,
+    .friends {
         padding-bottom: 100px;
     }
+
     .bg-image {
         padding-bottom: 40px;
     }
+
     .awards {
         padding-bottom: 185px;
     }
+
     .changes .subtitle_light {
         margin-bottom: 30px;
     }
+
     .more-info {
         padding-top: 20px;
     }
+
     .race-mobile {
         padding-top: 0;
     }
+
     .about-server {
         padding-top: 100px;
     }
+
     .about-server .server-online {
         margin-bottom: 40px;
     }
+
     .news {
         padding-top: 0;
     }
+
     .about-server .server-box {
         margin-bottom: 30px;
     }
+
     .best .more-info {
         padding-top: 0;
     }
+
     .table__row {
         margin-bottom: 0;
     }
+
     .stream {
         padding: 60px 0 50px 0;
     }
+
     .friends {
         padding-top: 100px;
     }
+
     .awards-img__left {
         top: -250px;
     }
+
     .friends-block {
         gap: 10px;
     }
+
     .banner__prizes__items {
         margin-bottom: 20px;
     }
+
     .banner__prizes__title {
         margin-bottom: 20px;
     }
+
     .changes-img {
         max-width: 100%;
         right: -13vw;
