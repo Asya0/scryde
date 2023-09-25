@@ -142,7 +142,7 @@
     }
 
     .more-server {
-        padding: 0 20px;
+        padding-left: 20px;
     }
 
     .h2-title {
@@ -196,6 +196,9 @@
 
     .awards-img__left {
         left: -180px;
+    }
+    .changes .changes-block {
+        margin-bottom: 0;
     }
 }
 
@@ -531,10 +534,6 @@
     .item-block {
         padding: 24px 20px;
         padding-bottom: 0;
-    }
-
-    .more-server {
-        padding: 0 20px;
     }
 
     .item-block .more-server {
@@ -2402,8 +2401,8 @@
     .news {
         padding-top: 0;
     }
-    .server-box {
-        margin-bottom: 0;
+    .about-server .server-box {
+        margin-bottom: 30px;
     }
     .best .more-info {
         padding-top: 0;
