@@ -608,13 +608,15 @@ img {
 .benefits {
     padding-bottom: 170px;
 }
-.about-server 
-{
+
+.about-server {
     padding-top: 300px;
 }
+
 .about-server .block-title {
     color: inherit;
 }
+
 .btn-orange {
     box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
 }
@@ -884,6 +886,7 @@ img {
 .changes .container-second {
     padding-bottom: 40vh;
 }
+
 .changes .changes-block {
     margin-bottom: 40px;
 }
@@ -956,6 +959,7 @@ img {
     position: relative;
     top: 70px;
 }
+
 .race .subtitle_dark {
     margin-bottom: 0;
 }
@@ -1100,11 +1104,13 @@ img {
     text-fill-color: transparent;
     transition: .4s color;
 }
+
 .classes-img {
     width: 40px;
     height: 40px;
 }
-.classes.active  svg path {
+
+.classes.active svg path {
     fill: url(#paint0_linear_2028_1654);
 }
 
@@ -1127,6 +1133,7 @@ img {
     background: #070B18;
     margin-top: -20px;
 }
+
 .about-server .more-server {
     padding: 0;
 }
@@ -1174,6 +1181,7 @@ img {
     -webkit-text-fill-color: transparent;
     transition: all .4s color;
 }
+
 .server-item.active .server-item-wrapper>span,
 .server-item-wrapper>span {
     /* background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #fff; */
@@ -1298,9 +1306,11 @@ img {
     transition: color .4s ease;
 
 }
+
 .more-server-block {
     display: flex;
 }
+
 .more-server-block svg path {
     transition: fill .4s ease;
 }
@@ -1310,6 +1320,7 @@ img {
     transition: color .4s ease;
 
 }
+
 .more-server-block:hover svg path {
     fill: #C98900;
     transition: fill .4s ease;
@@ -1375,13 +1386,17 @@ img {
 .news {
     background: #070B18;
 }
+
 .news .block-title {
     color: inherit;
 }
+
 .news .more-info {
     padding-bottom: 0;
     margin: 0;
+    padding-top: 50px;
 }
+
 .news-block {
     margin: 60px 0 0 0;
 }
@@ -1458,6 +1473,7 @@ img {
     /* padding-top: 100px; */
     background: #070B18;
 }
+
 .best .block-text {
     margin-top: 0;
 }
@@ -1637,9 +1653,11 @@ img {
     line-height: 150%;
     text-align: center;
 }
+
 .best-link__profile {
     transition: color .4s ease;
 }
+
 .best-link__profile:hover {
     color: #C98900;
     transition: color .4s ease;
@@ -2262,7 +2280,7 @@ img {
     left: -1px;
     right: 0px;
     /* background: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, rgba(13, 30, 53, 0.6) 100%); */
-    background: linear-gradient(0deg, rgba(209,212,255,1) 0%, rgba(90,100,234,1) 100%);
+    background: linear-gradient(0deg, rgba(209, 212, 255, 1) 0%, rgba(90, 100, 234, 1) 100%);
     content: '';
     z-index: 1;
     border-radius: 4px;
@@ -2307,14 +2325,14 @@ img {
 .icon-arrow-bottom-darken {
     background-image: url(../img/svg/icon-arrow-bottom-darken.svg);
 }
+
 .server .start-game,
 .about-server .start-game,
 .news,
 .hero,
 .awards,
 .friends,
-.bg-image
-{
+.bg-image {
     padding-bottom: 200px;
 }
 
