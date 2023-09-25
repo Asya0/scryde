@@ -257,6 +257,12 @@
     .table__item {
         width: calc(33.33vw - 30px);
     }
+    .mailto {
+        padding: 18px 40px;
+    }
+    .btn-desc {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -275,7 +281,9 @@
     .container container-race {
         padding: 0;
     }
-
+    .contacts .btn .btn-bordered-box {
+        padding: 13px 65px;
+    }
     .btn .btn-bordered-box {
         padding: 13px 89px;
     }
@@ -355,9 +363,9 @@
         font-size: 18px;
     }
 
-    .changes {
+    /* .changes {
         padding-top: 10vh;
-    }
+    } */
 
     .changes-text .subtitle_light {
         max-width: 602px;
@@ -378,7 +386,7 @@
     }
 
     .hero {
-        padding: 15vh 0 11vh 0;
+        padding: 15vh 0 0 0;
     }
 
     .block-content {
@@ -529,7 +537,8 @@
     }
 
     .best {
-        padding-top: 10vh;
+        /* padding-top: 10vh; */
+        padding-bottom: 40px;
     }
 
     .best-block {
@@ -647,7 +656,7 @@
     .contacts {
         padding-top: 10vh;
     }
-
+    
     .contacts-block {
         justify-content: space-between;
     }
@@ -770,6 +779,23 @@
 
     .friends .block-subtitle {
         padding-top: 0;
+    }
+    .server .start-game,
+    .about-server .start-game,
+    .benefits,
+    .hero,
+    .news,
+    .awards,
+    .friends 
+    {
+        padding-bottom: 140px;
+    }
+    .about-server {
+        padding-top: 225px;
+    }
+    .news .more-info {
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -1589,10 +1615,6 @@
     .info-text {
         font-size: 14px;
         max-width: 175px;
-    }
-
-    .inner-benefits .more-server {
-        padding: 0;
     }
 
     .info-block img {

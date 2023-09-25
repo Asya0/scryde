@@ -599,8 +599,22 @@ img {
 }
 
 .start-game {
-    padding-bottom: 16.5vh;
+    /* padding-bottom: 16.5vh; */
     transition: .4s opacity;
+}
+.server .start-game,
+.about-server .start-game,
+.benefits,
+.news,
+.awards,
+.friends,
+.bg-image
+{
+    padding-bottom: 200px;
+}
+.about-server 
+{
+    padding-top: 300px;
 }
 
 .btn-orange {
@@ -760,7 +774,7 @@ img {
     position: relative;
     background: url(../img/changes-bg.png) no-repeat right;
     background-size: cover;
-    padding-top: 15vh;
+    /* padding-top: 15vh; */
 }
 
 .changes::before {
@@ -820,7 +834,6 @@ img {
 
 .friends-block .changes-block {
     position: relative;
-    /* margin: auto 0; */
     padding-top: 59px;
 }
 
@@ -920,7 +933,7 @@ img {
 .race {
     background-color: #fff;
     background: url(../img/race-bg.png) no-repeat center, #fff;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
     background-size: cover;
 }
 
@@ -1105,9 +1118,12 @@ img {
 
 /* ABOUT SERVER  */
 .about-server {
-    padding: 17vh 0 0 0;
+    /* padding: 17vh 0 0 0; */
     background: #070B18;
     margin-top: -20px;
+}
+.about-server .more-server {
+    padding: 0;
 }
 
 .about-server .container {
@@ -1426,7 +1442,7 @@ img {
 }
 
 .best {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     background: #070B18;
 }
 
@@ -1641,7 +1657,7 @@ img {
 
 /* STREAM */
 .stream {
-    padding-top: 180px;
+    /* padding-top: 180px; */
     background: #fff;
 }
 
@@ -1772,7 +1788,7 @@ img {
 .awards {
     background: #FFF;
     overflow: hidden;
-    padding-bottom: 170px;
+    /* padding-bottom: 170px; */
 
 }
 
@@ -1809,7 +1825,8 @@ img {
 /* CONTACTS */
 .contacts {
     background: #fff;
-    padding-top: 15vh;
+    /* padding-top: 15vh; */
+    padding-top: 1px;
 }
 
 .contacts-block {
