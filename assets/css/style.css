@@ -1307,6 +1307,7 @@ img {
     margin-left: 8px;
     opacity: 1;
     transition: opacity .4s ease;
+    margin-top: -3px;
 }
 .more-server:hover.more-server:after {
     opacity: 0.7;

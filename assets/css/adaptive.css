@@ -368,8 +368,7 @@
     /* .changes {
         padding-top: 10vh;
     } */
-    .changes .subtitle_light,
-    .race .subtitle_dark {
+    .changes .subtitle_light {
         margin-bottom: 0;
     }
 
@@ -2348,7 +2347,7 @@
     .table__item-pink .table__item-inner_box, 
     .table__item-gold .table__item-inner_box, 
     .table__item-red .table__item-inner_box {
-        background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #000000 100%);
+        background: radial-gradient(230.47% 295.42% at 50% 0%, #070B18 22.04%, #000000 100%);
     }
     
     .table__item-inner_box {
@@ -2361,6 +2360,60 @@
     .footer-link {
         display: block;
         font-size: 14px;
+    }
+    .server .start-game, .about-server .start-game, .benefits, .hero, .news, .friends {
+        padding-bottom: 100px;
+    }
+    .bg-image {
+        padding-bottom: 40px;
+    }
+    .awards {
+        padding-bottom: 185px;
+    }
+    .changes .subtitle_light {
+        margin-bottom: 30px;
+    }
+    .more-info {
+        padding-top: 20px;
+    }
+    .race-mobile {
+        padding-top: 0;
+    }
+    .about-server {
+        padding-top: 100px;
+    }
+    .about-server .server-online {
+        margin-bottom: 40px;
+    }
+    .news {
+        padding-top: 0;
+    }
+    .server-box {
+        margin-bottom: 0;
+    }
+    .best .more-info {
+        padding-top: 0;
+    }
+    .table__row {
+        margin-bottom: 0;
+    }
+    .stream {
+        padding: 60px 0 50px 0;
+    }
+    .friends {
+        padding-top: 100px;
+    }
+    .awards-img__left {
+        top: -250px;
+    }
+    .friends-block {
+        gap: 10px;
+    }
+    .banner__prizes__items {
+        margin-bottom: 20px;
+    }
+    .banner__prizes__title {
+        margin-bottom: 20px;
     }
 
 }
