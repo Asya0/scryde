@@ -236,6 +236,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #000;
     width: 100%;
     margin-bottom: 200px;
 }
@@ -404,4 +405,153 @@ body {
     text-align: center;
     width: 100%;
     padding-bottom: 0;
+}
+
+.server-questions {
+    background: url(../img/server/question-bg.png);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 100vh;
+}
+
+.server-questions .block-title {
+    color: #FFF;
+}
+
+.server-questions .h2-title_black {
+    margin-bottom: 60px;
+}
+
+.questions-content {
+    display: flex;
+    gap: 20px;
+}
+
+.question-block {
+    padding: 42px 32px;
+    background: #0D142D;
+    color: #FFF;
+    border-radius: 32px;
+}
+
+.content-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 578px;
+    width: 100%;
+}
+
+.content-answers {
+    max-width: 762px;
+    width: 100%;
+}
+
+.question-text {
+    color: #FFF;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+    font-family: 'TrajanSansPro-Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 160%;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    transition: color .4s ease;
+}
+
+.question-text.active,
+.question-text:hover {
+    color: #FFC039;
+    cursor: pointer;
+    transition: color .4s ease;
+}
+
+.question-text.active::before {
+    content: url(../img/server/svg/rhombus__active.svg);
+    /* background-image: url(../img/server/svg/rhombus__active.svg); */
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+}
+
+.question-desc {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'Manrope-Medium', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.question-desc:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.main,
+server-benefits,
+.server-statistics,
+.server-play,
+/* .server-set, */
+.server-questions,
+.server-settings,
+.server-features {
+    padding-bottom: 200px;
+}
+
+.server-set {
+    margin-bottom: 200px;
+}
+
+
+.server-questions {
+    padding-top: 150px;
+}
+
+.server-settings {
+    background-color: #000;
+}
+
+.server-settings .server-box {
+    max-width: 508px;
+}
+
+.server-settings .server-block_wrapper {
+    background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #CB8D08 100%);
+}
+
+.settings-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 32px;
+}
+
+.settings-tab-content {
+    display: flex;
+    padding: 20px 16px;
+    gap: 16px;
+}
+
+.settings-tab-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.setting-title {
+    color: #FFF;
+    font-family: 'TrajanSansPro-Semibold', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.setting-desc {
+    color: #E2F4FF;
+    font-family: 'Manrope-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
 }
