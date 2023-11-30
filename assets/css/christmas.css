@@ -32,6 +32,8 @@ body {
     display: flex;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
 }
 
 .timer-text {
@@ -50,11 +52,11 @@ body {
 
 /* ПЕРЕИМЕНОВАТЬ! */
 .timer-block {
-    max-width: 62px;
-    max-height: 62px;
+    width: 62px;
+    height: 62px;
     display: flex;
     flex-direction: column;
-    padding: 13px;
+    justify-content: center;
     text-align: center;
     border-radius: 12px;
     background: rgba(5, 9, 22, 0.40);
@@ -77,4 +79,60 @@ body {
     font-size: 12px;
     font-weight: 500;
     line-height: 100%;
+}
+
+/* 2 section */
+
+.type-game {
+    background: url(../img/christmas/type-game.png) no-repeat center;
+    background-size: cover;
+
+}
+
+
+/* 3 section */
+.create-acc {
+    background-color: #070B18;
+}
+
+.bg-image {
+    background: linear-gradient(180deg, black 30%, transparent 70%);
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.account-btn {
+    width: 100%;
+    max-width: 350px;
+}
+
+.account-btn .btn-bordered-box {
+    padding: 16px 35px;
+    justify-content: center;
+}
+
+.account-btn span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+.white-text {
+    color: #FFF;
+    font-family: 'TrajanSansPro-Bold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.start-game__footer .btn-bordered-box {
+    max-width: 280px;
 }
