@@ -215,13 +215,16 @@
     </header>
     <main class="main">
         <div class="container">
+            <div class="scrolls">
+                <img src="./assets/img/christmas/scrolls.png" alt="свитки" class="scrolls-img">
+            </div>
             <div class="main__header main__content">
                 <h1 class="h1-title uppercase">Скрайд Х1: Революция&nbsp;ностальгии</h1>
                 <div class="subtitle">Твоя любимая Lineage 2&nbsp;&mdash; отправляйся в&nbsp;путешествие назад
                     во&nbsp;времени</div>
             </div>
-            <!-- переименовать ли название start-game на что-то другое? -->
-            <div class="start-game ">
+            <!-- бывшая кнопка start-game -->
+            <div class="btn-wrapper">
                 <a href="#" class="btn btn-bordered btn-orange">
                     <span class="btn-bordered-box uppercase">
                         <span class="text-bg">окунуться в ностальгию</span>
@@ -231,11 +234,11 @@
             <div class="timer">
                 <p class="timer-text uppercase">До&nbsp;старта нового<br> сервера осталось:</p>
                 <div class="timer-countdown">
-                    <div class="timer-block"><span class="title-count uppercase"> 20</span> <span
-                            class="sub-count">часов</span>
-                    </div>
                     <div class="timer-block"><span class="title-count uppercase"> 04</span> <span
                             class="sub-count">дня</span>
+                    </div>
+                    <div class="timer-block"><span class="title-count uppercase"> 20</span> <span
+                            class="sub-count">часов</span>
                     </div>
                     <div class="timer-block"><span class="title-count uppercase"> 33</span> <span
                             class="sub-count">минуты</span>
@@ -252,7 +255,7 @@
             <div class="changes-text">
                 <h2 class="h2-title uppercase">Окунись в&nbsp;ностальгию</h2>
                 <div class="subtitle_light">Scryde&nbsp;&mdash; старая, добрая Linage&nbsp;2, но&nbsp;с&nbsp;обновленной
-                    графикой, улучшенным функционалом и&nbsp;дополнительными вещами</div>
+                    графикой, улучшенным&nbsp;функционалом и&nbsp;дополнительными вещами</div>
             </div>
         </div>
     </section>
@@ -288,12 +291,12 @@
 
                 <div class="account-block">
                     <div class="account-wrapper">
-                        <h3 class="block-title">Уже играл раньше?</h3>
+                        <h3 class="block-title uppercase">Уже играл раньше?</h3>
                         <p class="block-subtitle">Поможем вспомнить пароль и&nbsp;найти аккаунты</p>
                     </div>
                     <div class="btn-group">
                         <div class="account-btn">
-                            <a href="https://ru.scryde.net/page/recovery/"
+                            <a href="https://ru.scryde.net/page/remember/"
                                 class="find-acc btn-blue btn btn-bordered uppercase">
                                 <span class="btn-bordered-box">
                                     <img src="./assets/img/svg/christmas/find-icon.svg" alt="найти аккаунт">
@@ -311,7 +314,7 @@
                             </a>
                         </div>
                     </div>
-
+                    <img src="./assets/img/christmas/video-acc.png" alt="тот самый Х100" class="video-acc">
                 </div>
             </div>
         </div>
@@ -325,7 +328,8 @@
                     <div class="banner__prizes__wrapper">
                         <div class="banner__prizes__left">
                             <div class="banner__prizes__title uppercase">Кот Орион дарит подарки</div>
-
+                            <p class="subtitle_light">Переходи в&nbsp;Telegram, забирай промокод и&nbsp;начинай игру
+                                сейчас</p>
                             <div class="start-game__footer">
                                 <a href="#" class="btn btn-bordered btn-orange">
                                     <span class="btn-bordered-box uppercase">
@@ -335,10 +339,102 @@
                             </div>
                         </div>
                     </div>
+                    <div class="banner__prizes-left">
+                        <img src="./assets/img/christmas/ready.png" alt="Кот Орион" class="banner__prizes-left-img">
+                    </div>
                 </div>
             </div>
         </div>
+        <img class="banner__prizes-bg-2" src="./assets/img/get-prizes-sky2.png" alt="sky">
+        <img class="banner_prizes-bg-mobile" src="./assets/img/mobile-sky.png" alt="sky">
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="info-item">
+                        <div class="footer-wrap">
+                            <h3 class="footer-title uppercase gold">Игрокам</h3>
+                            <span class="icon icon-plus desktop-hidden"></span>
+                        </div>
+                        <div class="info-link">
+                            <a href="#" class="footer-link">О Scryde</a>
+                            <a href="#" class="footer-link">Наши серверы</a>
+                            <a href="#" class="footer-link">Форум</a>
+                            <a href="#" class="footer-link">Рейтинги</a>
+                            <a href="#" class="footer-link">Поддержка</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="footer-wrap">
+                            <h3 class="footer-title uppercase gold">Аккаунт</h3>
+                            <span class="icon icon-plus desktop-hidden"></span>
+                        </div>
+                        <div class="info-link">
+                            <a href="#" class="footer-link">Скачать файлы</a>
+                            <a href="#" class="footer-link">Личный кабинет</a>
+                            <a href="#" class="footer-link">Зарегистрироваться</a>
+                            <a href="#" class="footer-link">Восстановить логин</a>
+                            <a href="#" class="footer-link">Восстановить пароль</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <div class="social-block">
+                        <p class="block-title uppercase">Сводим олдскулы в&nbsp;соцсетях</p>
+
+                        <div class="block-icons">
+                            <a href="#" class="social-btn btn-bordered tg-btn">
+                                <span class="btn-bordered-box">
+                                    <img src="./assets/img/svg/social/telegram.svg" alt="telegram">
+                                </span>
+                            </a>
+                            <a href="#" class="social-btn btn-bordered vk-btn">
+                                <span class="btn-bordered-box">
+                                    <img src="./assets/img/svg/social/vk.svg" alt="vk">
+                                </span>
+                            </a>
+                            <a href="#" class="social-btn btn-bordered wt-btn">
+                                <span class="btn-bordered-box">
+                                    <img src="./assets/img/svg/social/whatsapp.svg" alt="whatsapp">
+                                </span>
+                            </a>
+                            <a href="#" class="social-btn btn-bordered inst-btn">
+                                <span class="btn-bordered-box">
+                                    <img src="./assets/img/svg/social/inst.svg" alt="Instagram">
+                                </span>
+                            </a>
+                            <a href="#" class="social-btn btn-bordered vk-btn">
+                                <span class="btn-bordered-box">
+                                    <img src="./assets/img/svg/christmas/fb.svg" alt="Facebook">
+                                </span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="footer-website">
+                        <h3 class="website-title uppercase">Support@scryde.ru</h3>
+                        <p class="website-desc">Ежедневно с 10:00 до 03:00 по МСК</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__info">
+                    <a href="#" class="footer-info__item footer-link">Правила</a>
+                    <a href="#" class="footer-info__item footer-link">Пользовательское соглашение</a>
+                    <a href="#" class="footer-info__item footer-link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer-bottom__copy">
+                    <p class="footer-copy">&copy; Scryde, 2015–2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
