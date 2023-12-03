@@ -198,9 +198,9 @@ $(document).on('click', '.js-toggle-password', function () {
     }
 });
 
-let modeOptions = {
+let modePagination1 = {
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-1',
         bulletClass: 'swiper-pagination-bullet-custom',
         bulletActiveClass: 'swiper-pagination-bullet-custom--active',
         renderBullet: function (index, className) {
@@ -208,11 +208,24 @@ let modeOptions = {
         },
         clickable: true
     },
+}
+let modePagination2 = {
+    pagination: {
+        el: '.swiper-pagination-2',
+        bulletClass: 'swiper-pagination-bullet-custom',
+        bulletActiveClass: 'swiper-pagination-bullet-custom--active',
+        renderBullet: function (index, className) {
+            return `<div class="${className}" data-index="${index}"><span></span></div>`
+        },
+        clickable: true
+    },
+}
+let modeOptions = {
     grabCursor: false,
     allowTouchMove: true,
     loop: true,
     centeredSlides: true,
-    slidesPerView: 1.2,
+    slidesPerView: 1.4,
     arrows: true,
     initialSlide: 2,
     effect: "coverflow",
@@ -235,7 +248,8 @@ let modeOptions = {
     },
 };
 
-let modeSlider = new Swiper('.mode__slider', { ...modeOptions });
+let modeSlider1 = new Swiper('.mode__slider-1', { ...modeOptions, ...modePagination1 });
+let modeSlider2 = new Swiper('.mode__slider-2', { ...modeOptions, ...modePagination2 });
 
 $(document).on('click', '.js-popup', function () {
     const popup = $(this).data('popup');

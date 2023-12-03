@@ -865,9 +865,9 @@ body {
 .swiper-navigation {
     position: absolute;
     top: 45%;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: -20px;
+    right: -20px;
+    width: calc(100% + 40px);
     display: flex;
     justify-content: space-between;
 }
@@ -899,6 +899,22 @@ body {
 .mode__slide:has(+ .swiper-slide-prev) {
     opacity: 0;
     visibility: hidden;
+}
+
+.swiper-slide-prev {
+    transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(0deg) scale(1)
+}
+
+.swiper-slide-prev .swiper-slide-shadow-left {
+    opacity: 1 !important;
+}
+
+.swiper-slide-next .swiper-slide-shadow-right {
+    opacity: 1 !important;
+}
+
+.swiper-slide-next {
+    transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(0deg) scale(1);
 }
 
 @media screen and (min-width: 768px) {
