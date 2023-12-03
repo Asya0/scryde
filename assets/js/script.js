@@ -188,3 +188,84 @@ for (let i = 0; i < tableButtons.length; i++) {
 }
 
 const fun = () => { };
+
+$(document).on('click', '.js-toggle-password', function () {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $(this).siblings().attr('type', 'text');
+    } else {
+        $(this).siblings().attr('type', 'password');
+    }
+});
+
+let modeOptions = {
+    pagination: {
+        el: '.swiper-pagination',
+        bulletClass: 'swiper-pagination-bullet-custom',
+        bulletActiveClass: 'swiper-pagination-bullet-custom--active',
+        renderBullet: function (index, className) {
+            return `<div class="${className}" data-index="${index}"><span></span></div>`
+        },
+        clickable: true
+    },
+    grabCursor: false,
+    allowTouchMove: true,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1.2,
+    arrows: true,
+    initialSlide: 2,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 400,
+        modifier: 1,
+        slideShadows: true,
+    },
+    navigation: false,
+    breakpoints: {
+        367: {
+            navigation: false,
+        },
+        768: {
+            navigation: {
+                nextEl: ".mode-arrow-next",
+                prevEl: ".mode-arrow-prev",
+            },
+            allowTouchMove: false,
+            slidesPerView: 3,
+        },
+    },
+    // on: {
+    //     init: function () {
+    //         const _self = this;
+    //         _self.el.style.setProperty('--delay', _self.params.autoplay.delay);
+
+    //         _self.el.addEventListener('mouseenter', function () {
+    //             _self.el.classList.add('swiper--pause');
+    //             _self.autoplay.stop();
+    //         });
+
+    //         _self.el.addEventListener('mouseleave', function () {
+    //             _self.el.classList.remove('swiper--pause');
+    //             _self.autoplay.start();
+    //         });
+    //     },
+    // }
+};
+
+const modeSlider = new Swiper('.mode__slider', { ...modeOptions });
+
+
+$(document).on('click', '.js-popup', function () {
+    const popup = $(this).data('popup');
+    $('.popup[data-popup="' + popup + '"]').addClass('active');
+    $('body').addClass('overflow-hidden');
+    modeSlider.init();
+});
+
+$(document).on('click', '.js-popup-close', function () {
+    $('.popup').removeClass('active');
+    $('body').removeClass('overflow-hidden');
+});

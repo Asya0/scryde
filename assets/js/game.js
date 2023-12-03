@@ -1,3 +1,6 @@
+const miniGameWrapper = document.querySelectorAll('.mini__game')[0];
+
+
 const Roulette = (function () {
 
     const rotationStopEventName = "rotationStop";
@@ -254,7 +257,16 @@ let options = {
     stopCallback: function ({ detail: { prize } }) {
         console.log("stop");
         console.log(`Selected prize index is: ${prize.index}`);
-        prize.element.classList.add('active')
+        console.log(prize);
+
+        prize.element.classList.add('active');
+        miniGameWrapper.classList.add('active');
+        let prizeEl = $(prize.element);
+        let prizeImage = prizeEl.find('img').attr('src');
+        $('.mini__game-prize').addClass('active');
+        $('.js-prize-title').text(prizeEl.data('title'));
+        $('.js-prize-image').css('background-image', 'url(' + prizeImage + ')');
+        $('#prize_value').val(prizeEl.data('item'));
     },
     startCallback: function ({ detail: { prize } }) {
         console.log("start");
@@ -268,6 +280,7 @@ let options = {
         elementsArr.forEach((el) => {
             el.classList.remove('active')
         });
+        $('.mini__game-prize').removeClass('active');
     }
 };
 
@@ -277,16 +290,8 @@ const maxItems = rouletteItems.length;
 
 document.getElementById("start").addEventListener("click", function (event) {
     event.preventDefault();
+    miniGameWrapper.classList.remove('active');
+
     let randomIndex = Math.floor(Math.random() * (maxItems - 0 + 1) + 0);
-    console.log(randomIndex)
     roulette.rotateTo(randomIndex, { tracks: 5, random: false });
-    startRoulette();
 });
-
-const rouletteBlock = document.getElementsByClassName('.game__list')[0];
-
-const startRoulette = () => {
-
-
-
-}
