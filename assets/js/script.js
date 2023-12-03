@@ -223,46 +223,24 @@ let modeOptions = {
         modifier: 1,
         slideShadows: true,
     },
-    navigation: false,
     breakpoints: {
-        367: {
-            navigation: false,
-        },
         768: {
             navigation: {
                 nextEl: ".mode-arrow-next",
                 prevEl: ".mode-arrow-prev",
             },
             allowTouchMove: false,
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
     },
-    // on: {
-    //     init: function () {
-    //         const _self = this;
-    //         _self.el.style.setProperty('--delay', _self.params.autoplay.delay);
-
-    //         _self.el.addEventListener('mouseenter', function () {
-    //             _self.el.classList.add('swiper--pause');
-    //             _self.autoplay.stop();
-    //         });
-
-    //         _self.el.addEventListener('mouseleave', function () {
-    //             _self.el.classList.remove('swiper--pause');
-    //             _self.autoplay.start();
-    //         });
-    //     },
-    // }
 };
 
-const modeSlider = new Swiper('.mode__slider', { ...modeOptions });
-
+let modeSlider = new Swiper('.mode__slider', { ...modeOptions });
 
 $(document).on('click', '.js-popup', function () {
     const popup = $(this).data('popup');
     $('.popup[data-popup="' + popup + '"]').addClass('active');
     $('body').addClass('overflow-hidden');
-    modeSlider.init();
 });
 
 $(document).on('click', '.js-popup-close', function () {
@@ -270,23 +248,53 @@ $(document).on('click', '.js-popup-close', function () {
     $('body').removeClass('overflow-hidden');
 });
 
-// christmas
-var countDownDate = new Date("Dec 7, 2023 13:00:00").getTime();
+// // Функция для добавления ведущих нулей к числам меньше 10
+// function addLeadingZero(num) {
+//     return (num < 10) ? "0" + num : num;
+// }
 
-var x = setInterval(function () {
-    var now = new Date().getTime();
+// // Функция для склонения слов в зависимости от числа
+// function pluralizeWord(number, one, two, five) {
+//     number = Math.abs(number) % 100;
+//     var num1 = number % 10;
+//     if (number > 10 && number < 20) return five;
+//     if (num1 > 1 && num1 < 5) return two;
+//     if (num1 == 1) return one;
+//     return five;
+// }
 
-    var distance = countDownDate - now;
+// // Функция для обновления таймера
+// function updateTimer() {
+//     var now = new Date();
+//     var targetDate = new Date("2023-12-09");
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     var timeDifference = targetDate.getTime() - now.getTime();
 
-    document.getElementById("demo").innerHTML = days + "дней " + hours + "часов " + minutes + "минут " + seconds + "секунд ";
+//     // Вычисление дней, часов, минут и секунд
+//     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+//     var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+//     var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
+//     // Получение склонений для дней, часов, минут и секунд
+//     var daysWord = pluralizeWord(days, 'день', 'дня', 'дней');
+//     var hoursWord = pluralizeWord(hours, 'час', 'часа', 'часов');
+//     var minutesWord = pluralizeWord(minutes, 'минута', 'минуты', 'минут');
+//     var secondsWord = pluralizeWord(seconds, 'секунда', 'секунды', 'секунд');
+
+//     // Обновление содержимого элементов с нужными стилями и склонениями
+//     document.getElementById("days").innerHTML = addLeadingZero(days);
+//     document.getElementById("days-word").innerHTML = daysWord;
+//     document.getElementById("hours").innerHTML = addLeadingZero(hours);
+//     document.getElementById("hours-word").innerHTML = hoursWord;
+//     document.getElementById("minutes").innerHTML = addLeadingZero(minutes);
+//     document.getElementById("minutes-word").innerHTML = minutesWord;
+//     document.getElementById("seconds").innerHTML = addLeadingZero(seconds);
+//     document.getElementById("seconds-word").innerHTML = secondsWord;
+
+//     // Обновление таймера каждую секунду
+//     setTimeout(updateTimer, 1000);
+// }
+
+// // Запуск обновления таймера при загрузке страницы
+// updateTimer();
