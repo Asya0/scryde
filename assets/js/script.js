@@ -248,53 +248,53 @@ $(document).on('click', '.js-popup-close', function () {
     $('body').removeClass('overflow-hidden');
 });
 
-// // Функция для добавления ведущих нулей к числам меньше 10
-// function addLeadingZero(num) {
-//     return (num < 10) ? "0" + num : num;
-// }
+// Функция для добавления ведущих нулей к числам меньше 10
+function addLeadingZero(num) {
+    return (num < 10) ? "0" + num : num;
+}
 
-// // Функция для склонения слов в зависимости от числа
-// function pluralizeWord(number, one, two, five) {
-//     number = Math.abs(number) % 100;
-//     var num1 = number % 10;
-//     if (number > 10 && number < 20) return five;
-//     if (num1 > 1 && num1 < 5) return two;
-//     if (num1 == 1) return one;
-//     return five;
-// }
+// Функция для склонения слов в зависимости от числа
+function pluralizeWord(number, one, two, five) {
+    number = Math.abs(number) % 100;
+    var num1 = number % 10;
+    if (number > 10 && number < 20) return five;
+    if (num1 > 1 && num1 < 5) return two;
+    if (num1 == 1) return one;
+    return five;
+}
 
-// // Функция для обновления таймера
-// function updateTimer() {
-//     var now = new Date();
-//     var targetDate = new Date("2023-12-09");
+// Функция для обновления таймера
+function updateTimer() {
+    var now = new Date();
+    var targetDate = new Date("2023-12-09");
 
-//     var timeDifference = targetDate.getTime() - now.getTime();
+    var timeDifference = targetDate.getTime() - now.getTime();
 
-//     // Вычисление дней, часов, минут и секунд
-//     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-//     var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//     var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-//     var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    // Вычисление дней, часов, минут и секунд
+    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-//     // Получение склонений для дней, часов, минут и секунд
-//     var daysWord = pluralizeWord(days, 'день', 'дня', 'дней');
-//     var hoursWord = pluralizeWord(hours, 'час', 'часа', 'часов');
-//     var minutesWord = pluralizeWord(minutes, 'минута', 'минуты', 'минут');
-//     var secondsWord = pluralizeWord(seconds, 'секунда', 'секунды', 'секунд');
+    // Получение склонений для дней, часов, минут и секунд
+    var daysWord = pluralizeWord(days, 'день', 'дня', 'дней');
+    var hoursWord = pluralizeWord(hours, 'час', 'часа', 'часов');
+    var minutesWord = pluralizeWord(minutes, 'минута', 'минуты', 'минут');
+    var secondsWord = pluralizeWord(seconds, 'секунда', 'секунды', 'секунд');
 
-//     // Обновление содержимого элементов с нужными стилями и склонениями
-//     document.getElementById("days").innerHTML = addLeadingZero(days);
-//     document.getElementById("days-word").innerHTML = daysWord;
-//     document.getElementById("hours").innerHTML = addLeadingZero(hours);
-//     document.getElementById("hours-word").innerHTML = hoursWord;
-//     document.getElementById("minutes").innerHTML = addLeadingZero(minutes);
-//     document.getElementById("minutes-word").innerHTML = minutesWord;
-//     document.getElementById("seconds").innerHTML = addLeadingZero(seconds);
-//     document.getElementById("seconds-word").innerHTML = secondsWord;
+    // Обновление содержимого элементов с нужными стилями и склонениями
+    document.getElementById("days").innerHTML = addLeadingZero(days);
+    document.getElementById("days-word").innerHTML = daysWord;
+    document.getElementById("hours").innerHTML = addLeadingZero(hours);
+    document.getElementById("hours-word").innerHTML = hoursWord;
+    document.getElementById("minutes").innerHTML = addLeadingZero(minutes);
+    document.getElementById("minutes-word").innerHTML = minutesWord;
+    document.getElementById("seconds").innerHTML = addLeadingZero(seconds);
+    document.getElementById("seconds-word").innerHTML = secondsWord;
 
-//     // Обновление таймера каждую секунду
-//     setTimeout(updateTimer, 1000);
-// }
+    // Обновление таймера каждую секунду
+    setTimeout(updateTimer, 1000);
+}
 
-// // Запуск обновления таймера при загрузке страницы
-// updateTimer();
+// Запуск обновления таймера при загрузке страницы
+updateTimer();
