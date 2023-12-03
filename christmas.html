@@ -259,6 +259,86 @@
                 <div class="subtitle_light">Scryde&nbsp;&mdash; старая, добрая Linage&nbsp;2, но&nbsp;с&nbsp;обновленной
                     графикой, улучшенным&nbsp;функционалом и&nbsp;дополнительными вещами</div>
             </div>
+
+            <div class="mode__list">
+                <div class="mode__list-item js-popup" data-popup="comfort">
+                    <img src="./assets/img/christmas/comfort.png" alt="Комфорт">
+                </div>
+                <div class="mode__list-item js-popup" data-popup="hardcore">
+                    <img src="./assets/img/christmas/hardcore.png" alt="Хардкор">
+                </div>
+            </div>
+
+            <div class="popup popup-mode" data-popup="comfort">
+                <div class="popup__container">
+                    <div class="popup__header">
+                        <div class="popup__back js-popup-close">
+                            <span class="icon icon-arrow-back"></span>Вернуться назад
+                        </div>
+                        <div class="popup__title">Комфорт</div>
+                        <div class="popup__close js-popup-close"><span class="icon icon-close"></span></div>
+                    </div>
+                    <div class="popup__content">
+                        <div class="mode__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/comfort/1.png" alt="Инновационный Баффер">
+                                </div>
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/comfort/2.png" alt="Ребаланс Классов">
+                                </div>
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/comfort/3.png" alt="Квесты">
+                                </div>
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/comfort/4.png" alt="Витаминные питомцы">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="mode-arrow mode-arrow-prev"><span class="icon icon-arrow-left"></span></div>
+                            <div class="mode-arrow mode-arrow-next"><span class="icon icon-arrow-right"></span></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup popup-mode" data-popup="hardcore">
+                <div class="popup__container">
+                    <div class="popup__header">
+                        <div class="popup__back js-popup-close">
+                            <span class="icon icon-arrow-back"></span>Вернуться назад
+                        </div>
+                        <div class="popup__title">Хардкор</div>
+                        <div class="popup__close js-popup-close"><span class="icon icon-close"></span></div>
+                    </div>
+                    <div class="popup__content">
+                        <div class="mode__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/hardcore/1.png" alt="Рейты">
+                                </div>
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/hardcore/2.png" alt="Экипировка">
+                                </div>
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/hardcore/3.png" alt="Инстансы">
+                                </div>
+                                <div class="mode__slide swiper-slide">
+                                    <img src="./assets/img/christmas/hardcore/4.png" alt="Монстры">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="mode-arrow mode-arrow-prev"><span class="icon icon-arrow-left"></span></div>
+                            <div class="mode-arrow mode-arrow-next"><span class="icon icon-arrow-right"></span></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -321,6 +401,108 @@
                             <span class="text-bg">выиграть подарок</span>
                         </span>
                     </a>
+                </div>
+            </div>
+            <div class="registration__account">
+                <form action="#" class="form__registration">
+                    <div class="form__row">
+                        <div class="form__field form__field-prefix">
+                            <input type="text" class="form__field-input" value="oh">
+                            <span class="icon icon-question"></span>
+                        </div>
+                        <div class="form__field">
+                            <input type="text" class="form__field-input" placeholder="Придумай логин">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__field">
+                            <input type="password" class="form__field-input" placeholder="Придумай сложный пароль">
+                            <span class="icon icon-show-password js-toggle-password"></span>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__field">
+                            <input type="email" class="form__field-input" placeholder="Введи электронную почту">
+                        </div>
+                    </div>
+                    <div class="mini__game-prize">
+                        <input type="hidden" id="prize_value" name="prize_value">
+                        <div class="mini__game-prize-overlay">
+                            <div class="prize__preview js-prize-image"></div>
+                            <div class="prize__content">
+                                <div class="prize__subtitle">Твой подарок:</div>
+                                <div class="prize__title js-prize-title"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recaptcha"></div>
+                    <div class="form__row">
+                        <div class="form__field">
+                            <button type="submit" class="btn btn-bordered btn-orange form__field-submit">
+                                <span class="btn-bordered-box uppercase">
+                                    <span class="text-bg">Создать аккаунт</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="mini__game">
+                    <div class="game__box">
+                        <div class="game__box-header">
+                            <span class="icon icon-chevron-down"></span>
+                        </div>
+                        <div class="game__wrap">
+                            <div class="game__list roulette">
+                                <div class="game__list-item" data-item="1" data-title="Теневое Dynasty Оружие +1">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-1.jpg" alt="Теневое Dynasty Оружие +1">
+                                    </div>
+                                </div>
+                                <div class="game__list-item" data-item="2" data-title="Теневое Dynasty Оружие +2">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-2.jpg" alt="Теневое Dynasty Оружие +2">
+                                    </div>
+                                </div>
+                                <div class="game__list-item" data-item="3" data-title="Теневое Dynasty Оружие +3">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-3.jpg" alt="Теневое Dynasty Оружие +3">
+                                    </div>
+                                </div>
+                                <div class="game__list-item" data-item="4" data-title="Теневое Dynasty Оружие +4">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-4.jpg" alt="Теневое Dynasty Оружие +4">
+                                    </div>
+                                </div>
+                                <div class="game__list-item" data-item="5" data-title="Теневое Dynasty Оружие +1">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-1.jpg" alt="Теневое Dynasty Оружие +1">
+                                    </div>
+                                </div>
+                                <div class="game__list-item" data-item="6" data-title="Теневое Dynasty Оружие +2">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-2.jpg" alt="Теневое Dynasty Оружие +2">
+                                    </div>
+                                </div>
+                                <div class="game__list-item" data-item="7" data-title="Теневое Dynasty Оружие +3">
+                                    <div class="game__list-item_overlay">
+                                        <img src="./assets/img/christmas/item-3.jpg" alt="Теневое Dynasty Оружие +3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game__box-footer"></div>
+                        <div class="game__box-needreg">
+                            <span class="icon icon-gift"></span>Создай аккаунт чтобы забрать подарок
+                        </div>
+                        <div class="game__box-btn">
+                            <a href="#" id="start" class="btn-play btn-blue btn btn-bordered uppercase">
+                                <span class="btn-bordered-box">
+                                    <span class="text-bg">выиграть подарок</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
