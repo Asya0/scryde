@@ -1130,10 +1130,6 @@
         top: 30px;
     }
 
-    .classes {
-        /* padding: 16px 11px; */
-    }
-
     .inner-benefits {
         display: flex;
         flex-direction: column;
@@ -1191,6 +1187,8 @@
     .burger__menu .block-icons {
         margin: 0;
     }
+
+
 }
 
 
