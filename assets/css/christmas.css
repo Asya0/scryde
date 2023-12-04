@@ -1132,7 +1132,7 @@ body {
 
     .christmas-page .main {
         padding-top: 112px;
-        margin-bottom: 100px;
+        margin-bottom: 180px;
         height: calc(100vh - 100px);
         align-items: flex-start;
         background-image: url(../img/christmas/main-bg_mobile.png);
