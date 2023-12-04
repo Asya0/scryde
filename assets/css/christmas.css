@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: none;
     background-color: #070B18;
@@ -37,10 +41,36 @@ body {
     font-size: 20px;
 }
 
-.main {
+.christmas-page .main {
     background: url(../img/christmas/main-1.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: top;
     margin-bottom: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.christmas-page .main__header {
+    background-image: url(../img/christmas/main-bg.png);
+    background-size: 100% 100%;
+    margin-bottom: 62px;
+}
+
+.christmas-page .main .container {
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.main__header .btn-wrapper {
+    margin: 0;
+    margin-top: 42px;
+}
+
+@media screen and (min-height: 1100px) {
+    .christmas-page .main__header {
+        margin-bottom: 250px;
+    }
 }
 
 /* .main__header {
@@ -52,7 +82,7 @@ body {
 } */
 
 .main__content {
-    max-width: 900px;
+    /* max-width: 900px; */
     position: relative;
     margin: 0 auto;
     margin-bottom: 42px;
@@ -77,7 +107,11 @@ body {
     text-align: center;
     transition: .4s opacity;
     margin-bottom: 60px;
+}
 
+.christmas-page .h1-title,
+.christmas-page .h2-title {
+    font-family: 'TrajanSansPro-SemiBold';
 }
 
 .timer {
@@ -90,7 +124,7 @@ body {
 
 .timer-text {
     color: #FFF;
-    font-family: 'TrajanSansPro-Bold';
+    font-family: 'TrajanSansPro-SemiBold';
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
@@ -113,12 +147,13 @@ body {
     border-radius: 12px;
     background: rgba(5, 9, 22, 0.40);
     backdrop-filter: blur(11px);
+    gap: 1px;
 }
 
 .title-count {
-    color: #FFF;
+    color: #FFF2DB;
     text-align: center;
-    font-family: 'TrajanSansPro-Bold';
+    font-family: 'TrajanSansPro-SemiBold';
     font-size: 24px;
     font-weight: 700;
     line-height: 100%;
@@ -140,6 +175,23 @@ body {
     background-size: cover;
     /* убрать как добавлю элементы */
     height: 100vh;
+    position: relative;
+}
+
+.type-game:before {
+    content: '';
+    background: linear-gradient(360deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.60) 42.08%, #070B18 100%);
+    position: absolute;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.type-game .container {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -162,6 +214,11 @@ body {
     width: 100%;
     /* убрать */
     width: 350px;
+    transition: .4s opacity;
+}
+
+.account-btn:hover {
+    opacity: .7;
 }
 
 .account-btn .btn-bordered-box {
@@ -250,6 +307,7 @@ body {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 0;
+    font-family: 'TrajanSansPro-SemiBold', sans-serif;
 }
 
 .banner__prizes-left {
@@ -1076,9 +1134,27 @@ body {
         padding-top: 112px;
         margin-bottom: 100px;
         height: calc(100vh - 100px);
+        align-items: flex-start;
+        background-image: url(../img/christmas/main-bg_mobile.png);
+        position: relative;
     }
 
-    .christmas-page .main__footer .btn-wrapper {
+    .christmas-page .main:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.61) 42.08%, #070B18 100%);
+        height: 20px;
+    }
+
+    .christmas-page .main .container {
+        margin-top: 0;
+    }
+
+    .christmas-page .main .btn-wrapper {
         position: absolute;
         bottom: 30px;
         right: 0;
@@ -1087,6 +1163,7 @@ body {
 
     .christmas-page .main__footer .btn-wrapper .btn {
         font-size: 14px;
+        width: calc(100% - 40px);
     }
 
     .christmas-page .main__footer .btn-bordered-box {
@@ -1095,6 +1172,7 @@ body {
 
     .christmas-page .main__content {
         margin-bottom: 32px;
+        position: static;
     }
 
     .timer {
@@ -1105,11 +1183,12 @@ body {
     .timer-text {}
 
     .timer-countdown .timer-block {
-        width: auto;
+        width: 27px;
         height: auto;
         background: transparent;
         backdrop-filter: none;
         flex-direction: row;
+        position: relative;
     }
 
     .timer-countdown {
@@ -1121,13 +1200,7 @@ body {
     }
 
     .title-count {
-        color: #FFF;
-        text-align: center;
-        font-family: 'TrajanSansPro-Bold';
         font-size: 16px;
-        font-weight: 700;
-        line-height: 100%;
-        text-transform: uppercase;
     }
 
     .sub-count {
@@ -1137,7 +1210,9 @@ body {
     .timer-block:not(:last-child):after {
         content: ':';
         display: block;
-        margin: 0 3px;
+        position: absolute;
+        right: -2px;
+        top: 0;
     }
 
     .christmas-page .h1-title {
@@ -1150,7 +1225,8 @@ body {
 
     .create-acc .subtitle_light {
         text-align: left;
-        max-width: unset;
+        color: #E2F4FF;
+        max-width: 335px;
     }
 
     .game__box-btn .btn {
@@ -1188,6 +1264,15 @@ body {
 
     .christmas-page .account-btn .white-text {
         font-size: 14px;
+        font-family: 'TrajanSansPro-SemiBold';
+    }
+
+    .christmas-page .friends-block {
+        gap: 40px;
+    }
+
+    .christmas-page .account-block .btn-group {
+        margin-bottom: 24px;
     }
 
     .christmas-page .banner__prizes .subtitle_light {
@@ -1203,6 +1288,92 @@ body {
 
     .form__registration {
         gap: 16px;
+    }
+
+    .christmas-page .banner__prizes-left-img {
+        left: 0;
+        top: auto;
+        bottom: 240px;
+        z-index: 3;
+    }
+
+    .christmas-page .banner__prizes__wrapper {
+        margin: 0 auto;
+        padding-top: 190px;
+    }
+
+    .christmas-page .start-game__footer .btn {
+        font-size: 14px;
+    }
+
+    .account-block .btn-group {
+        gap: 12px;
+    }
+
+    .prize__preview {
+        width: 46px;
+        height: 46px;
+    }
+
+    .prize__subtitle {
+        font-size: 14px;
+    }
+
+    .prize__title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .christmas-page .banner__prizes {
+        padding-bottom: 100px;
+    }
+
+
+    .christmas-page .banner__prizes .container {
+        position: relative;
+        z-index: 4;
+    }
+
+    .christmas-page .banner_prizes-bg-mobile {
+        top: 50px;
+        z-index: 3;
+    }
+
+    .christmas-page .footer {
+        padding-top: 120px;
+    }
+
+    .christmas-page .banner__prizes__body_wrap {
+        background: radial-gradient(148.25% 807.19% at 32.2% 110.25%, #357DEA 0%, #090F27 47.52%);
+    }
+
+    .christmas-page .banner__prizes-bg-2 {
+        display: block;
+        z-index: 5;
+        bottom: 0;
+        top: 290px;
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .christmas-page .bg-image .mobile-hidden {
+        display: none !important;
+    }
+
+    .christmas-page .create-acc .h2-title {
+        max-width: 240px;
+    }
+
+    .type-game .h2-title {
+        max-width: 240px;
+    }
+
+    .type-game .subtitle_light {
+        color: #E2F4FF;
+    }
+
+    .main__header .subtitle {
+        font-family: 'Manrope-Medium', sans-serif;
     }
 }
 
@@ -1383,5 +1554,9 @@ body {
 @media screen and (max-width: 375px) {
     .changes-text .subtitle_light {
         max-width: 295px;
+    }
+
+    .christmas-page .banner_prizes-bg-mobile {
+        top: 100px;
     }
 }
