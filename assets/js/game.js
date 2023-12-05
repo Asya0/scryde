@@ -264,6 +264,8 @@ let options = {
         let prizeEl = $(prize.element);
         let prizeImage = prizeEl.find('img').attr('src');
         $('.mini__game-prize').addClass('active');
+        $('.game__box-needreg').addClass('show');
+        $('.game__box-btn').addClass('hide');
         $('.js-prize-title').text(prizeEl.data('title'));
         $('.js-prize-image').css('background-image', 'url(' + prizeImage + ')');
         $('#prize_value').val(prizeEl.data('item'));
@@ -281,6 +283,8 @@ let options = {
             el.classList.remove('active')
         });
         $('.mini__game-prize').removeClass('active');
+        $('.game__box-needreg').removeClass('show');
+        $('.game__box-btn').addClass('hide');
     }
 };
 

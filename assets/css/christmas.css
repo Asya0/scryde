@@ -366,6 +366,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     padding: 42px 0;
+    height: 100%;
 }
 
 .game__wrap {
@@ -434,10 +435,14 @@ body {
     margin: 0 auto;
 }
 
+.game__box-btn.hide {
+    display: none;
+}
+
 .game__list {
     display: flex;
     flex-wrap: nowrap;
-    gap: 16px;
+    /* gap: 16px; */
     align-items: center;
     justify-content: center;
 }
@@ -485,7 +490,7 @@ body {
 }
 
 .game__box-needreg {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 18px;
     color: #6B758E;
@@ -493,6 +498,18 @@ body {
     font-weight: 500;
     line-height: 150%;
     padding-left: 40px;
+}
+
+.game__box-needreg.hide {
+    display: none;
+}
+
+.game__box-needreg.show {
+    display: flex;
+}
+
+.btn-bordered-box {
+    text-align: center;
 }
 
 .mini__game-prize {
@@ -743,8 +760,8 @@ body {
     width: 100%;
     background: linear-gradient(0deg, #0D142D, #0D142D),
         radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
-    border: 1px solid;
-    border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
+    /* border: 1px solid;
+    border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%); */
     border-radius: inherit;
     height: 64px;
     padding-left: 18px;
@@ -1020,6 +1037,200 @@ body {
     .popup__header {
         padding-top: 20px;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .h1-title {
+        font-size: 41px;
+    }
+
+    .scrolls {
+        margin-bottom: 70px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .registration__account {
+        gap: 30px;
+    }
+
+    .mini__game {
+        max-width: 670px;
+    }
+
+    .main__content {
+        max-width: 700px;
+        margin-bottom: 25px;
+    }
+
+    .create-acc {
+        margin-top: 200px;
+    }
+
+    .h1-title {
+        font-size: 32px;
+    }
+
+    .btn-bordered-box {
+        padding: 18px 28px;
+    }
+
+    .timer-text {
+        font-size: 12px;
+    }
+
+    .title-count {
+        font-size: 20px;
+    }
+
+    .friends-block {
+        gap: 30px;
+    }
+
+    .account-block {
+        max-width: 700px;
+    }
+
+    .btn-group {
+        gap: 30px;
+    }
+
+    .account-btn {
+        width: 100%;
+    }
+
+    .white-text {
+        font-size: 15px;
+    }
+
+    .form__field-button .btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .header.fixed .header__box .start-game {
+        display: none;
+    }
+
+    .scrolls {
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .subtitle_light {
+        max-width: 730px;
+    }
+
+    .btn-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .title-count {
+        font-size: 16px;
+    }
+
+    .sub-count {
+        font-size: 10px;
+    }
+
+    .timer-block {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .white-text {
+        font-size: 11px;
+    }
+
+    .account-btn .btn-bordered-box {
+        padding: 16px 19px;
+    }
+
+    .account-btn img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main__content {
+        max-width: 550px;
+        margin-bottom: 20px;
+    }
+
+    .mini__game {
+        max-width: 565px;
+    }
+
+    .h1-title {
+        font-size: 25px;
+    }
+
+    .btn-wrapper {
+        margin-bottom: 20px;
+    }
+
+    account-block {
+        max-width: 500px;
+    }
+
+    .white-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        /* убрать */
+        padding-top: 32px;
+        background-size: cover;
+    }
+
+    .main__content {
+        /* убрать */
+        margin-top: 150px;
+        margin: 0 0 20px 0;
+    }
+
+    .scrolls {
+        margin-bottom: 0;
+    }
+
+    .scrolls-img {
+        display: none;
+    }
+
+    .h1-title {
+        text-align: left;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .account-btn {
+        width: 100%;
+    }
+
+    .find-acc {
+        width: 100%;
     }
 }
 
@@ -1385,191 +1596,27 @@ body {
     .main__header .subtitle {
         font-family: 'Manrope-Medium', sans-serif;
     }
-}
-
-@media screen and (max-width: 1680px) {
-    .h1-title {
-        font-size: 41px;
-    }
-
-    .scrolls {
-        margin-bottom: 70px;
-    }
-
-    .btn {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .main__content {
-        max-width: 700px;
-        margin-bottom: 25px;
-    }
 
     .create-acc {
-        margin-top: 200px;
+        margin-top: 0;
     }
 
-    .h1-title {
-        font-size: 32px;
+    .form__field-input {
+        outline: none;
+        -webkit-appearance: none;
+        border: none;
+    }
+
+    .form__field-button {
+        position: static;
+    }
+
+    .form__field-button:after {
+        display: none;
     }
 
     .btn-bordered-box {
-        padding: 18px 28px;
-    }
-
-    .timer-text {
-        font-size: 12px;
-    }
-
-    .title-count {
-        font-size: 20px;
-    }
-
-    .friends-block {
-        gap: 30px;
-    }
-
-    .account-block {
-        max-width: 700px;
-    }
-
-    .btn-group {
-        gap: 30px;
-    }
-
-    .account-btn {
-        width: 100%;
-    }
-
-    .white-text {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .header.fixed .header__box .start-game {
-        display: none;
-    }
-
-    .scrolls {
-        margin-bottom: 10px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-    }
-
-    .subtitle_light {
-        max-width: 730px;
-    }
-
-    .btn-wrapper {
-        margin-bottom: 30px;
-    }
-
-    .title-count {
-        font-size: 16px;
-    }
-
-    .sub-count {
-        font-size: 10px;
-    }
-
-    .timer-block {
-        width: 50px;
-        height: 50px;
-    }
-
-    .btn {
-        font-size: 10px;
-    }
-
-    .white-text {
-        font-size: 11px;
-    }
-
-    .account-btn .btn-bordered-box {
-        padding: 16px 19px;
-    }
-
-    .account-btn img {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .main__content {
-        max-width: 550px;
-        margin-bottom: 20px;
-    }
-
-    .mini__game {
-        max-width: 565px;
-    }
-
-    .game__box {
-        height: 100%;
-    }
-
-    .h1-title {
-        font-size: 25px;
-    }
-
-    .btn-wrapper {
-        margin-bottom: 20px;
-    }
-
-    account-block {
-        max-width: 500px;
-    }
-
-    .white-text {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .main {
-        /* убрать */
-        padding-top: 32px;
-        background-size: cover;
-    }
-
-    .main__content {
-        /* убрать */
-        margin-top: 150px;
-        margin: 0 0 20px 0;
-    }
-
-    .scrolls {
-        margin-bottom: 0;
-    }
-
-    .scrolls-img {
-        display: none;
-    }
-
-    .h1-title {
-        text-align: left;
-    }
-
-    .subtitle {
-        text-align: left;
-    }
-
-    .btn-group {
-        flex-direction: column;
-    }
-
-    .account-btn {
-        width: 100%;
-    }
-
-    .find-acc {
-        width: 100%;
+        text-align: center;
     }
 }
 
