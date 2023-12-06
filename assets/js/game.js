@@ -255,10 +255,6 @@ let options = {
     fps: 40,
     selector: ":scope > *",
     stopCallback: function ({ detail: { prize } }) {
-        console.log("stop");
-        console.log(`Selected prize index is: ${prize.index}`);
-        console.log(prize);
-
         prize.element.classList.add('active');
         miniGameWrapper.classList.add('active');
         let prizeEl = $(prize.element);
@@ -271,9 +267,6 @@ let options = {
         $('#prize_value').val(prizeEl.data('item'));
     },
     startCallback: function ({ detail: { prize } }) {
-        console.log("start");
-        console.log(prize);
-
         let elements = document.getElementsByClassName('game__list-item');
         let elementsArr = [];
         if (elements.length) {

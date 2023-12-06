@@ -207,7 +207,6 @@ let modePagination1 = {
         renderBullet: function (index, className) {
             return `<div class="${className}" data-index="${index}"><span></span></div>`
         },
-        // clickable: true
     },
     breakpoints: {
         768: {
@@ -229,7 +228,6 @@ let modePagination2 = {
         renderBullet: function (index, className) {
             return `<div class="${className}" data-index="${index}"><span></span></div>`
         },
-        // clickable: true
     },
     breakpoints: {
         768: {
@@ -251,9 +249,11 @@ let modeOptions = {
     loopAdditionalSlides: 2,
     centeredSlides: true,
     slidesPerView: 1.4,
+    slideToClickedSlide: true,
     init: false,
     arrows: true,
     effect: "coverflow",
+    speed: 800,
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -341,3 +341,149 @@ function updateTimer() {
 
 // Запуск обновления таймера при загрузке страницы
 updateTimer();
+
+
+$(document).on("click", ".icon-question", function () {
+    $(this).siblings(".tooltip").addClass("active");
+    $("body").addClass("body__overlay");
+});
+
+$(document).on("click", ".icon-close", function () {
+    $(".tooltip").removeClass("active");
+    $("body").removeClass("body__overlay");
+});
+
+function recaptchaCallback() {
+    let el = $('.recaptcha');
+    el.removeClass('error');
+    el.find('.error__message').remove();
+};
+
+const validateFields = () => {
+    let errorCounter = 0;
+    $('.form__registration input[required]').each(function () {
+        let result = validateField($(this).val(), $(this).attr('id'), $(this).parent());
+        if (!result) errorCounter++;
+    });
+
+    if (errorCounter > 0) return false;
+    return true;
+}
+
+const validateField = (value, type, parentEl) => {
+    let error_message = '';
+    let empty_message = '';
+    let errorCounter = 0;
+
+    let loginValid = /^[a-zA-Z]{4,11}$/;
+    let emailValid = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+    switch (type) {
+        case 'input__login':
+            empty_message = 'Придумай логин';
+            error_message = 'Только английские буквы. От 4 до 11 символов';
+            break;
+        case 'input__password':
+            empty_message = 'Придумай сложный пароль';
+            error_message = 'Длина пароля должна быть от 8 символов';
+            break;
+        case 'input__email':
+            empty_message = 'Введи адрес электронной почты';
+            error_message = 'Введи верный адрес электронной почты';
+            break;
+
+    }
+
+    if (value == '') {
+        parentEl.addClass('error');
+        if (parentEl.find(".error__message").length == 0) {
+            parentEl.append("<div class='error__message'>" + empty_message + "</div>")
+        }
+    }
+
+    if (type == 'input__login' && !loginValid.test(value)) {
+        errorCounter++;
+    }
+
+    if (type == 'input__password' && value.length < 8) {
+        errorCounter++;
+    }
+
+    if (type == 'input__email' && !emailValid.test(value)) {
+        errorCounter++;
+    }
+
+    if (errorCounter > 0) {
+        parentEl.addClass('error');
+        if (parentEl.find(".error__message").length == 0) {
+            parentEl.append("<div class='error__message'>" + error_message + "</div>")
+        }
+    } else {
+        return true;
+    }
+
+    return false;
+};
+
+$(document).on("change", ".form__field-input", function () {
+    let inputValue = $(this).val();
+    let parentEl = $(this).parent();
+    let type = $(this).attr('id');
+
+    validateField(inputValue, type, parentEl);
+});
+
+$(document).on("input", ".form__field-input", function () {
+    let parentEl = $(this).parent();
+    parentEl.removeClass("error");
+    parentEl.find(".error__message").remove();
+});
+
+$(document).on("blur", ".form__field-input", function () {
+    let inputValue = $(this).val();
+    let parentEl = $(this).parent();
+    if (inputValue == '') {
+        parentEl.addClass('error');
+        if (parentEl.find(".error__message").length == 0) {
+            parentEl.append("<div class='error__message'>Придумай логин</div>")
+        }
+    }
+});
+
+$(document).on('submit', '.form__registration', function () {
+    let response = grecaptcha.getResponse();
+    let parentEl = $('.recaptcha');
+
+    if (response.length === 0) {
+        parentEl.addClass('error');
+        if (parentEl.find(".error__message").length == 0) {
+            parentEl.append("<div class='error__message'>Проверка ReCaptcha не пройдена.</div>")
+        }
+    } else {
+        parentEl.removeClass('error');
+        parentEl.find('.error__message').remove();
+    }
+
+    if (validateFields()) {
+        $('.registration__account').hide();
+        $('.js-login-prefix').html($('#input__login_prefix').val() + '.');
+        $('.js-login').html($('#input__login').val());
+        $('.js-password').html($('#input__login').val());
+        if ($('#prize_value').val()) {
+            let prizeEl = $('.game__list-item[data-item="' + $('#prize_value').val() + '"]');
+            let prizeImage = prizeEl.find('img').attr('src');
+            $('.registration__success').find('.mini__game-prize').addClass('active');
+            $('.js-prize-title').text(prizeEl.data('title'));
+            $('.js-prize-image').css('background-image', 'url(' + prizeImage + ')');
+        }
+
+        $('.registration__success').addClass('active')
+    }
+
+    return false;
+});
+
+$(document).on('click', 'a.form__field-submit', function (e) {
+    e.preventDefault();
+    $(this).parents('form').trigger('submit');
+});
