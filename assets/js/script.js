@@ -198,6 +198,7 @@ $(document).on('click', '.js-toggle-password', function () {
     }
 });
 
+
 let modePagination1 = {
     pagination: {
         el: '.swiper-pagination-1',
@@ -208,7 +209,18 @@ let modePagination1 = {
         },
         // clickable: true
     },
+    breakpoints: {
+        768: {
+            navigation: {
+                nextEl: ".swiper-navigation-1 .mode-arrow-next",
+                prevEl: ".swiper-navigation-1 .mode-arrow-prev",
+            },
+            allowTouchMove: true,
+            slidesPerView: 2,
+        },
+    },
 }
+
 let modePagination2 = {
     pagination: {
         el: '.swiper-pagination-2',
@@ -219,32 +231,35 @@ let modePagination2 = {
         },
         // clickable: true
     },
+    breakpoints: {
+        768: {
+            navigation: {
+                nextEl: ".swiper-navigation-2 .mode-arrow-next",
+                prevEl: ".swiper-navigation-2 .mode-arrow-prev",
+            },
+            allowTouchMove: true,
+            slidesPerView: 2,
+        },
+    },
 }
+
 let modeOptions = {
     grabCursor: false,
     allowTouchMove: true,
     loop: true,
+    loopAddBlankSlides: true,
+    loopAdditionalSlides: 2,
     centeredSlides: true,
     slidesPerView: 1.4,
+    init: false,
     arrows: true,
-    initialSlide: 1,
     effect: "coverflow",
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
         depth: 400,
         modifier: 1,
-        slideShadows: true,
-    },
-    breakpoints: {
-        768: {
-            navigation: {
-                nextEl: ".mode-arrow-next",
-                prevEl: ".mode-arrow-prev",
-            },
-            allowTouchMove: false,
-            slidesPerView: 2,
-        },
+        slideShadows: false,
     },
 };
 
@@ -255,6 +270,20 @@ $(document).on('click', '.js-popup', function () {
     const popup = $(this).data('popup');
     $('.popup[data-popup="' + popup + '"]').addClass('active');
     $('body').addClass('overflow-hidden');
+
+    if (popup == 'comfort') {
+        if (!$('.mode__slider-1').hasClass('swiper-initialized')) {
+            setTimeout(() => {
+                modeSlider1.init();
+            }, 10);
+        }
+    } else {
+        if (!$('.mode__slider-2').hasClass('swiper-initialized')) {
+            setTimeout(() => {
+                modeSlider2.init();
+            }, 10);
+        }
+    }
 });
 
 $(document).on('click', '.js-popup-close', function () {
