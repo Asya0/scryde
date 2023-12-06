@@ -43,13 +43,35 @@ body {
 
 .christmas-page .main {
     /* background: url(../img/christmas/main-1.png) no-repeat; */
-    background: url(/assets/animated_fire.gif) no-repeat;
+    /* background: url(/assets/animated_fire.gif) no-repeat; */
     background-size: cover;
     background-position: top;
-    margin-bottom: 200px;
     height: 100vh;
     display: flex;
     align-items: flex-end;
+}
+
+.christmas-page .main:after {
+    content: '';
+    background: linear-gradient(180deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.61) 42.08%, #070B18 100%);
+    height: 32px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.christmas-page .main video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .christmas-page .main__header {
@@ -130,6 +152,7 @@ body {
     font-weight: 700;
     line-height: 140%;
     margin-right: 16px;
+    z-index: 0;
 }
 
 .timer-countdown {
@@ -177,6 +200,8 @@ body {
     /* убрать как добавлю элементы */
     /* height: 100vh; */
     position: relative;
+    padding-bottom: 180px;
+    padding-top: 200px;
 }
 
 .type-game:before {
@@ -199,6 +224,7 @@ body {
 /* 3 section */
 .create-acc {
     background-color: #070B18;
+    padding-top: 70px;
 }
 
 .bg-image {
@@ -323,6 +349,7 @@ body {
     position: absolute;
     left: -70px;
     bottom: -60px;
+    max-width: 50%;
 }
 
 .social-block {
@@ -846,6 +873,32 @@ body {
     text-align: center;
 }
 
+.mode__slide img {
+    max-height: 70vh;
+}
+
+.mode__slide:not(.swiper-slide-active) img {
+    filter: brightness(0.6);
+    position: relative;
+}
+
+.mode__slide.swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+    opacity: 0;
+}
+
+.mode__slide.swiper-slide-prev img {
+    left: 130px;
+}
+
+.mode__slide.swiper-slide-next img {
+    left: -130px;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none !important;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -1007,6 +1060,7 @@ body {
         width: 35px;
         height: 35px;
         background: none;
+        cursor: default;
     }
 
     .popup-mode .swiper-pagination-bullet-custom span {
@@ -1029,7 +1083,7 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        bottom: -30px;
+        bottom: -60px;
     }
 }
 
@@ -1060,16 +1114,12 @@ body {
     }
 
     .mini__game {
-        max-width: 670px;
+        max-width: 50vw;
     }
 
     .main__content {
         max-width: 700px;
         margin-bottom: 25px;
-    }
-
-    .create-acc {
-        margin-top: 200px;
     }
 
     .h1-title {
@@ -1166,13 +1216,17 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .mode__slider {
+        max-width: 90%;
+    }
+
+    .mode__slide img {
+        max-height: 60vh;
+    }
+
     .main__content {
         max-width: 550px;
         margin-bottom: 20px;
-    }
-
-    .mini__game {
-        max-width: 565px;
     }
 
     .h1-title {
@@ -1189,6 +1243,33 @@ body {
 
     .white-text {
         font-size: 10px;
+    }
+
+    .roulette__prize:nth-child(4) .game__list-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .roulette__prize:nth-child(3) .game__list-item,
+    .roulette__prize:nth-child(5) .game__list-item {
+        width: 84px;
+        height: 84px;
+    }
+
+    .roulette__prize:nth-child(2) .game__list-item,
+    .roulette__prize:nth-child(6) .game__list-item {
+        width: 68px;
+        height: 68px;
+    }
+
+    .roulette__prize:nth-child(1) .game__list-item,
+    .roulette__prize:nth-child(7) .game__list-item {
+        width: 52px;
+        height: 52px;
+    }
+
+    .game__list-item_overlay {
+        padding: 16px;
     }
 }
 
@@ -1242,7 +1323,8 @@ body {
 
     .mini__game {
         margin: 0 -20px;
-        width: 100vw;
+        width: calc(100vw + 40px);
+        max-width: calc(100% + 40px);
     }
 
     .game__box .btn {
@@ -1339,6 +1421,7 @@ body {
 
     .type-game {
         height: auto;
+        padding-bottom: 80px;
     }
 
     .mode__list-item {
@@ -1353,11 +1436,14 @@ body {
 
     .christmas-page .main {
         padding-top: 112px;
-        margin-bottom: 180px;
         height: calc(100vh - 100px);
         align-items: flex-start;
-        background-image: url(../img/christmas/main-bg_mobile.png);
+        /* background-image: url(../img/christmas/main-bg_mobile.png); */
         position: relative;
+    }
+
+    .christmas-page .main video {
+        object-position: left;
     }
 
     .christmas-page .main:after {
@@ -1394,6 +1480,10 @@ body {
     .christmas-page .main__content {
         margin-bottom: 32px;
         position: static;
+    }
+
+    .type-game:before {
+        height: 100vh;
     }
 
     .timer {
@@ -1516,6 +1606,7 @@ body {
         top: auto;
         bottom: 240px;
         z-index: 3;
+        max-width: 100%;
     }
 
     .christmas-page .banner__prizes__wrapper {
@@ -1599,6 +1690,7 @@ body {
 
     .create-acc {
         margin-top: 0;
+        padding-top: 20px;
     }
 
     .form__field-input {

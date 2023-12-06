@@ -206,7 +206,7 @@ let modePagination1 = {
         renderBullet: function (index, className) {
             return `<div class="${className}" data-index="${index}"><span></span></div>`
         },
-        clickable: true
+        // clickable: true
     },
 }
 let modePagination2 = {
@@ -217,7 +217,7 @@ let modePagination2 = {
         renderBullet: function (index, className) {
             return `<div class="${className}" data-index="${index}"><span></span></div>`
         },
-        clickable: true
+        // clickable: true
     },
 }
 let modeOptions = {
@@ -227,7 +227,7 @@ let modeOptions = {
     centeredSlides: true,
     slidesPerView: 1.4,
     arrows: true,
-    initialSlide: 2,
+    initialSlide: 1,
     effect: "coverflow",
     coverflowEffect: {
         rotate: 0,
