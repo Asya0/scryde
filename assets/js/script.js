@@ -187,8 +187,6 @@ for (let i = 0; i < tableButtons.length; i++) {
     });
 }
 
-const fun = () => { };
-
 $(document).on('click', '.js-toggle-password', function () {
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {
