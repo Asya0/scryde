@@ -904,16 +904,36 @@ body {
 
 .mode__slide {
     text-align: center;
+    /* transition: all 200ms linear; */
+    /* transform: scale(0.7) !important; */
 }
 
 .mode__slide img {
     max-height: 70vh;
 }
 
+.mode__slide.swiper-slide-active {
+    /* transform: scale(1) !important; */
+}
+
 .mode__slide:not(.swiper-slide-active) img {
     filter: brightness(0.6);
     position: relative;
 }
+
+/* .swiper-slide-active {
+    z-index: 2;
+}
+
+.swiper-slide-prev {
+    left: 10vw;
+    z-index: 0;
+}
+
+.swiper-slide-next {
+    z-index: 0;
+    right: 10vw;
+} */
 
 .mode__slide img,
 .mode__slide.swiper-slide-next:first-child img {
