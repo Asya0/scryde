@@ -502,3 +502,8 @@ $(document).on('click', 'a.form__field-submit', function (e) {
     e.preventDefault();
     $(this).parents('form').trigger('submit');
 });
+
+
+// $(document).on('click', '.header__nav-item_sub-lang', function () {
+//     $(this).toggleClass('active');
+// });

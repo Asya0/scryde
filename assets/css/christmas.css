@@ -860,7 +860,7 @@ body {
     position: absolute;
     right: 20px;
     z-index: 1;
-    top: 18px;
+    top: 20px;
     cursor: pointer;
     transition: .4s opacity;
 }
@@ -1680,7 +1680,8 @@ body {
     }
 
     .christmas-page .main video {
-        object-position: left;
+        /* object-position: left; */
+        object-position: 78%;
     }
 
     .christmas-page .main:after {
@@ -2036,6 +2037,10 @@ body {
     .registration__success-col .btn {
         width: 100%;
         font-size: 14px;
+    }
+
+    .form__field .icon {
+        top: 14px;
     }
 }
 
