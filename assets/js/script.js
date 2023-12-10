@@ -191,8 +191,6 @@ for (let i = 0; i < tableButtons.length; i++) {
     });
 }
 
-const fun = () => { };
-
 $(document).on('click', '.js-toggle-password', function () {
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {
@@ -218,8 +216,8 @@ let modePagination1 = {
                 nextEl: ".swiper-navigation-1 .mode-arrow-next",
                 prevEl: ".swiper-navigation-1 .mode-arrow-prev",
             },
-            allowTouchMove: true,
-            slidesPerView: 2,
+            // allowTouchMove: true,
+            // slidesPerView: 2,
         },
     },
 }
@@ -239,25 +237,26 @@ let modePagination2 = {
                 nextEl: ".swiper-navigation-2 .mode-arrow-next",
                 prevEl: ".swiper-navigation-2 .mode-arrow-prev",
             },
-            allowTouchMove: true,
-            slidesPerView: 2,
+            // slidesPerView: 2,
         },
     },
 }
 
 let modeOptions = {
-    grabCursor: false,
-    allowTouchMove: true,
-    loop: true,
-    loopAddBlankSlides: true,
-    loopAdditionalSlides: 2,
+    slidesPerView: 2,
     centeredSlides: true,
-    slidesPerView: 1.4,
-    slideToClickedSlide: true,
-    init: false,
-    arrows: true,
-    effect: "coverflow",
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 30,
     speed: 800,
+    // grabCursor: false,
+    // allowTouchMove: true,
+    // loopAdditionalSlides: 2,
+    // centeredSlides: true,
+    // slidesPerView: 1.4,'
+    // slideToClickedSlide: true,
+    // init: false,
+    effect: "coverflow",
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -270,26 +269,40 @@ let modeOptions = {
 let modeSlider1 = new Swiper('.mode__slider-1', { ...modeOptions, ...modePagination1 });
 let modeSlider2 = new Swiper('.mode__slider-2', { ...modeOptions, ...modePagination2 });
 
+$(document).on('click', '.mode__slider-1 .swiper-slide-prev', function () {
+    modeSlider1.slidePrev();
+});
 
+$(document).on('click', '.mode__slider-2 .swiper-slide-prev', function () {
+    modeSlider2.slidePrev();
+});
+
+$(document).on('click', '.mode__slider-1 .swiper-slide-next', function () {
+    modeSlider1.slideNext();
+});
+
+$(document).on('click', '.mode__slider-2 .swiper-slide-next', function () {
+    modeSlider2.slideNext();
+});
 
 $(document).on('click', '.js-popup', function () {
     const popup = $(this).data('popup');
     $('.popup[data-popup="' + popup + '"]').addClass('active');
     $('body').addClass('overflow-hidden');
 
-    if (popup == 'comfort') {
-        if (!$('.mode__slider-1').hasClass('swiper-initialized')) {
-            setTimeout(() => {
-                modeSlider1.init();
-            }, 10);
-        }
-    } else {
-        if (!$('.mode__slider-2').hasClass('swiper-initialized')) {
-            setTimeout(() => {
-                modeSlider2.init();
-            }, 10);
-        }
-    }
+    // if (popup == 'comfort') {
+    //     if (!$('.mode__slider-1').hasClass('swiper-initialized')) {
+    //         setTimeout(() => {
+    //             modeSlider1.init();
+    //         }, 10);
+    //     }
+    // } else {
+    //     if (!$('.mode__slider-2').hasClass('swiper-initialized')) {
+    //         setTimeout(() => {
+    //             modeSlider2.init();
+    //         }, 10);
+    //     }
+    // }
 });
 
 $(document).on('click', '.js-popup-close', function () {
@@ -492,3 +505,8 @@ $(document).on('click', 'a.form__field-submit', function (e) {
     e.preventDefault();
     $(this).parents('form').trigger('submit');
 });
+
+
+// $(document).on('click', '.header__nav-item_sub-lang', function () {
+//     $(this).toggleClass('active');
+// });

@@ -862,7 +862,7 @@ body {
     position: absolute;
     right: 20px;
     z-index: 1;
-    top: 18px;
+    top: 20px;
     cursor: pointer;
     transition: .4s opacity;
 }
@@ -906,10 +906,16 @@ body {
 
 .mode__slide {
     text-align: center;
+    /* transition: all 200ms linear; */
+    /* transform: scale(0.7) !important; */
 }
 
 .mode__slide img {
     max-height: 70vh;
+}
+
+.mode__slide.swiper-slide-active {
+    /* transform: scale(1) !important; */
 }
 
 .mode__slide:not(.swiper-slide-active) img {
@@ -917,16 +923,29 @@ body {
     position: relative;
 }
 
-.mode__slide.swiper-slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+/* .swiper-slide-active {
+    z-index: 2;
+}
+
+.swiper-slide-prev {
+    left: 10vw;
+    z-index: 0;
+}
+
+.swiper-slide-next {
+    z-index: 0;
+    right: 10vw;
+} */
+
+.mode__slide img,
+.mode__slide.swiper-slide-next:first-child img {
     opacity: 0;
 }
 
-.mode__slide.swiper-slide-prev img {
-    left: 130px;
-}
-
-.mode__slide.swiper-slide-next img {
-    left: -130px;
+.mode__slide.swiper-slide-next img,
+.mode__slide.swiper-slide-prev img,
+.mode__slide.swiper-slide-active img {
+    opacity: 1;
 }
 
 .swiper-slide-shadow-left,
@@ -1020,7 +1039,7 @@ body {
 }
 
 .popup__container {
-    max-width: 1240px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1035,12 +1054,12 @@ body {
     margin-bottom: 42px;
 }
 
-.swiper-navigation {
+.popup-mode .swiper-navigation {
     position: absolute;
     top: 45%;
     left: -20px;
     right: -20px;
-    width: calc(100% + 40px);
+    width: calc(100% + 20px);
     display: flex;
     justify-content: space-between;
 }
@@ -1049,6 +1068,8 @@ body {
     width: 80px;
     height: 80px;
     cursor: pointer;
+    position: relative;
+    z-index: 44;
     transition: .4s opacity;
 }
 
@@ -1065,8 +1086,9 @@ body {
 }
 
 .mode__slider {
-    max-width: 1130px;
+    max-width: 60vw;
     width: 100%;
+    overflow: visible;
 }
 
 .mode__slide:has(+ .swiper-slide-prev) {
@@ -1677,7 +1699,8 @@ body {
     }
 
     .christmas-page .main video {
-        object-position: left;
+        /* object-position: left; */
+        object-position: 78%;
     }
 
     .christmas-page .main:after {
@@ -2037,6 +2060,10 @@ body {
     .registration__success-col .btn {
         width: 100%;
         font-size: 14px;
+    }
+
+    .form__field .icon {
+        top: 14px;
     }
 }
 
