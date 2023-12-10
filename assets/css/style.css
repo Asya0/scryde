@@ -344,12 +344,21 @@ img {
     fill: #ffc039;
 }
 
+/* поменяла */
 .header__nav-item.header__nav-item_sub::after {
     content: url(../img/svg/dropdown-arrow.svg);
     transition: all .7s ease;
-    color: #ffc039;
     width: 16px;
     height: 16px;
+}
+
+.header__nav-item:hover.header__nav-item_sub::after {
+    content: url(../img/svg/dropdown-arrow__hover.svg);
+    transform: rotate(180deg);
+    transition: transform .7s ease;
+    width: 16px;
+    height: 16px;
+
 }
 
 .header__nav-item_sub:hover .header__nav-item_submenu {
@@ -359,13 +368,9 @@ img {
     width: 196px;
 }
 
-.header__nav-item:hover.header__nav-item_sub::after {
-    content: url(../img/svg/dropdown-arrow__hover.svg);
-    transition: all .7s ease;
-    color: #ffc039;
-    width: 16px;
-    height: 16px;
-}
+
+
+
 
 /*  nav ul li a */
 .header__nav-item__link {
@@ -2158,6 +2163,7 @@ img {
     font-family: 'TrajanSansPro-Semibold', sans-serif;
     font-size: 24px;
     line-height: 140%;
+    color: #FFC039;
 }
 
 .website-desc {
@@ -2237,6 +2243,11 @@ img {
 
 .icon-smile {
     background-image: url(../img/svg/icon-devil.svg);
+}
+
+/* поменяла */
+.header__nav-item:hover>.header__nav-item__link .icon-smile {
+    background-image: url(../img/svg/icon-devil__hover.svg);
 }
 
 .icon-place-first {

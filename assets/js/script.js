@@ -76,26 +76,6 @@ iconMenu.addEventListener("click", function (e) {
     body.classList.toggle("lock");
 });
 
-// const closePopup = () => {
-//     iconMenu.classList.remove("active");
-//     burgerMenu.classList.remove("active");
-//     body.classList.remove("lock");
-// };
-// // close menu on link click
-// document.querySelectorAll(".header__nav-item").forEach((link) => {
-//     link.addEventListener("click", () => {
-//         closePopup();
-//     });
-// });
-// // close on click outside the menu
-// document.onclick = function (e) {
-//     if (
-//         !burgerMenu.contains(e.target) &&
-//         !e.target.parentNode.contains(iconMenu)
-//     ) {
-//         closePopup();
-//     }
-// };
 const closePopup = (e) => {
     if (!e.target.classList.contains("header__nav-item__link")) {
         iconMenu.classList.remove("active");
@@ -121,6 +101,30 @@ document.onclick = function (e) {
 };
 
 
+
+// 
+// 
+const languageToggle = document.querySelector(".header__nav-item_sub-lang");
+const languageMenu = document.querySelector(".header__nav-item_submenu");
+
+languageToggle.addEventListener("click", function () {
+    languageMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", function (e) {
+    if (
+        !languageToggle.contains(e.target) &&
+        !languageMenu.contains(e.target)
+    ) {
+        languageMenu.classList.remove("active");
+    }
+});
+
+
+
+
+// 
+// 
 
 
 // скролл header
@@ -266,6 +270,8 @@ let modeOptions = {
 let modeSlider1 = new Swiper('.mode__slider-1', { ...modeOptions, ...modePagination1 });
 let modeSlider2 = new Swiper('.mode__slider-2', { ...modeOptions, ...modePagination2 });
 
+
+
 $(document).on('click', '.js-popup', function () {
     const popup = $(this).data('popup');
     $('.popup[data-popup="' + popup + '"]').addClass('active');
@@ -291,12 +297,14 @@ $(document).on('click', '.js-popup-close', function () {
     $('body').removeClass('overflow-hidden');
 });
 
-// Функция для добавления ведущих нулей к числам меньше 10
+
+
+
+
 function addLeadingZero(num) {
     return (num < 10) ? "0" + num : num;
 }
 
-// Функция для склонения слов в зависимости от числа
 function pluralizeWord(number, one, two, five) {
     number = Math.abs(number) % 100;
     var num1 = number % 10;
@@ -309,11 +317,10 @@ function pluralizeWord(number, one, two, five) {
 // Функция для обновления таймера
 function updateTimer() {
     var now = new Date();
-    var targetDate = new Date("2023-12-09");
+    var targetDate = new Date("2023-12-15");
 
     var timeDifference = targetDate.getTime() - now.getTime();
 
-    // Вычисление дней, часов, минут и секунд
     var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
@@ -335,11 +342,9 @@ function updateTimer() {
     document.getElementById("seconds").innerHTML = addLeadingZero(seconds);
     document.getElementById("seconds-word").innerHTML = secondsWord;
 
-    // Обновление таймера каждую секунду
     setTimeout(updateTimer, 1000);
 }
 
-// Запуск обновления таймера при загрузке страницы
 updateTimer();
 
 

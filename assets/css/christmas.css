@@ -577,9 +577,7 @@ body {
     background-image: url(../img/christmas/icon-gift.svg);
 }
 
-.roulette__list {
-    align-items: center;
-}
+
 
 .game__list-item.active .game__list-item_overlay {
     background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 21.48%, #CB8D08 100%),
@@ -596,6 +594,7 @@ body {
 }
 
 .roulette__list {
+    align-items: center;
     display: flex;
     list-style: none;
     padding: 0px;
@@ -706,6 +705,9 @@ body {
     left: auto;
 }
 
+.header__nav-item_submenu-container {
+    background: radial-gradient(230.47% 295.42% at 50% 0%, #040815 22.04%, #0E93DE 100%);
+}
 
 @media screen and (max-width: 767px) {
     .game__list-item {
@@ -1494,6 +1496,23 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+
+    /* поменяла */
+    .burger__menu {
+        overflow: hidden;
+    }
+
+    /* поменяла */
+    .burger__menu-footer,
+    .social-block {
+        display: none;
+    }
+
+    /* поменяла */
+    .icon-smile {
+        background-image: url(../img/svg/icon-devil__silver.svg);
+    }
+
     .main {
         /* убрать */
         padding-top: 32px;
@@ -1678,7 +1697,8 @@ body {
 
     .christmas-page .main .btn-wrapper {
         position: absolute;
-        bottom: -70px;
+        /* поменяла */
+        bottom: 30px;
         right: 0;
         left: 0;
     }
@@ -1806,7 +1826,10 @@ body {
         margin-bottom: 20px;
     }
 
-    .christmas-page .subtitle_light {}
+    /* поменяла */
+    .roulette__list {
+        /* max-width: 415px; */
+    }
 
     .type-game .subtitle_light {
         margin-bottom: 32px;
