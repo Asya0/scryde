@@ -63,7 +63,7 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 80px;
     bottom: 0;
     z-index: -1;
 }
@@ -924,7 +924,7 @@ body {
 }
 
 .mode__slide:not(.swiper-slide-active) img {
-    filter: brightness(0.6);
+    filter: brightness(0.7);
     position: relative;
 }
 
@@ -1059,21 +1059,14 @@ body {
     margin-bottom: 42px;
 }
 
-.popup-mode .swiper-navigation {
-    position: absolute;
-    top: 45%;
-    left: -20px;
-    right: -20px;
-    width: calc(100% + 20px);
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .mode-arrow {
+    top: 45%;
     width: 80px;
     height: 80px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     z-index: 44;
     transition: .4s opacity;
 }
@@ -1082,9 +1075,13 @@ body {
     opacity: .7;
 }
 
-.mode-arrow-next {}
+.mode-arrow-next {
+    right: -4vw;
+}
 
-.mode-arrow-prev {}
+.mode-arrow-prev {
+    left: -4vw;
+}
 
 .popup__content {
     position: relative;
@@ -1298,7 +1295,6 @@ body {
     background-image: url(../img/christmas/scroll-2-hover.png);
 }
 
-
 @media screen and (min-width: 768px) {
     .popup-mode .swiper-pagination-bullet-custom {
         width: 35px;
@@ -1349,6 +1345,14 @@ body {
 
     .btn {
         font-size: 16px;
+    }
+
+    .mode-arrow-prev {
+        left: 4vw;
+    }
+
+    .mode-arrow-next {
+        right: 4vw;
     }
 }
 
@@ -1518,7 +1522,7 @@ body {
 
     /* поменяла */
     .burger__menu {
-        overflow: hidden;
+        padding-bottom: 30px;
     }
 
     /* поменяла */
@@ -1684,12 +1688,14 @@ body {
 
     .type-game {
         height: auto;
+        padding-top: 80px;
         padding-bottom: 80px;
     }
 
     .mode__list-item {
         display: flex;
         justify-content: center;
+        filter: brightness(1);
     }
 
     .mode__list-item img {
@@ -1858,7 +1864,6 @@ body {
     /* поменяла */
     .roulette__list {
         /* max-width: 415px; */
-        /* width: 100%; */
     }
 
     .type-game .subtitle_light {

@@ -265,6 +265,9 @@ let options = {
         $('.js-prize-title').text(prizeEl.data('title'));
         $('.js-prize-image').css('background-image', 'url(' + prizeImage + ')');
         $('#prize_value').val(prizeEl.data('item'));
+
+        $('.roulette__prize:first-child').css('margin-left', '0'); //hotfix
+
     },
     startCallback: function ({ detail: { prize } }) {
         let elements = document.getElementsByClassName('game__list-item');

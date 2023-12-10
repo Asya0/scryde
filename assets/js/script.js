@@ -215,8 +215,8 @@ let modeOptions = {
     slidesPerView: 2,
     centeredSlides: true,
     roundLengths: true,
-    loop: true,
-    loopAdditionalSlides: 30,
+    // loop: true,
+    // loopAdditionalSlides: 30,
     speed: 800,
     effect: "coverflow",
     coverflowEffect: {
@@ -226,6 +226,26 @@ let modeOptions = {
         modifier: 1,
         slideShadows: false,
     },
+    on: {
+        slideChange: function (swiper) {
+            let sliderBox = $(swiper.wrapperEl).parents('.popup__content');
+            if (swiper.slides.length - 1 == swiper.activeIndex) {
+                sliderBox.find('.mode-arrow-next').hide();
+            } else {
+                sliderBox.find('.mode-arrow-next').show();
+            }
+
+            if (swiper.activeIndex == 0) {
+                sliderBox.find('.mode-arrow-prev').hide();
+            } else {
+                sliderBox.find('.mode-arrow-prev').show();
+            }
+        },
+        init: function (swiper) {
+            let sliderBox = $(swiper.wrapperEl).parents('.popup__content');
+            sliderBox.find('.mode-arrow-prev').hide();
+        }
+    }
 };
 
 let modeSlider1 = new Swiper('.mode__slider-1', { ...modeOptions, ...modePagination1 });
