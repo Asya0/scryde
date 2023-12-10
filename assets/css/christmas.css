@@ -897,11 +897,16 @@ body {
 
 .mode__list-item {
     cursor: pointer;
+    filter: brightness(.7);
     transition: .4s filter;
 }
 
 .mode__list-item:hover {
-    filter: brightness(.7);
+    filter: brightness(1);
+}
+
+.mode__list-item img {
+    max-height: 50vh;
 }
 
 .mode__slide {
@@ -1436,14 +1441,6 @@ body {
         height: 50px;
     }
 
-    .btn {
-        font-size: 10px;
-    }
-
-    .white-text {
-        font-size: 11px;
-    }
-
     .account-btn .btn-bordered-box {
         padding: 16px 19px;
     }
@@ -1569,6 +1566,15 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+
+    .white-text {
+        font-size: 11px;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
     .main__scrolls {
         display: none;
     }
@@ -1852,6 +1858,7 @@ body {
     /* поменяла */
     .roulette__list {
         /* max-width: 415px; */
+        /* width: 100%; */
     }
 
     .type-game .subtitle_light {

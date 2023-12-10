@@ -334,17 +334,6 @@ img {
     transition: .4s ease;
 }
 
-.header__nav-item:hover>.header__nav-item__link,
-.header__nav-item__link:hover {
-    color: #ffc039;
-}
-
-.header__nav-item:hover>.header__nav-item__link path,
-.header__nav-item__link:hover path {
-    fill: #ffc039;
-}
-
-/* поменяла */
 .header__nav-item.header__nav-item_sub::after {
     content: url(../img/svg/dropdown-arrow.svg);
     transition: all .7s ease;
@@ -352,14 +341,6 @@ img {
     height: 16px;
 }
 
-.header__nav-item:hover.header__nav-item_sub::after {
-    content: url(../img/svg/dropdown-arrow__hover.svg);
-    transform: rotate(180deg);
-    transition: transform .7s ease;
-    width: 16px;
-    height: 16px;
-
-}
 
 .header__nav-item_sub:hover .header__nav-item_submenu {
     display: flex;
@@ -367,10 +348,6 @@ img {
     gap: 20px;
     width: 196px;
 }
-
-
-
-
 
 /*  nav ul li a */
 .header__nav-item__link {
@@ -461,18 +438,6 @@ img {
     transition: all .7s ease;
     transform: rotate(0deg);
 }
-
-.burger__menu-language {
-    transition: all .7s ease;
-    cursor: pointer;
-}
-
-.burger__menu-language:hover {
-    opacity: .7;
-    transition: all .7s ease;
-}
-
-
 
 /* SERVER */
 .server__text-block {
@@ -1734,13 +1699,8 @@ img {
 }
 
 .awards-btn .text-bg {
-    <<<<<<< HEAD
-    /* background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #1D70E3 82.62%); */
-    background: linear-gradient(0deg, #1D70E3 29.76%, #1255B3 54.52%, #1D70E3 72.62%);
-    =======
-    /* background: linear-gradient(0deg, #1D70E3 49.76%, #1255B3 64.52%, #166DE3 82.62%); */
+    /* background: linear-gradient(0deg, #1D70E3 29.76%, #1255B3 54.52%, #1D70E3 72.62%); */
     background: linear-gradient(0deg, #3288ff 49.76%, #1576ff 64.52%, #1872eb 82.62%);
-    >>>>>>>117e2123f7f87755ac018c31cab3128aa9c9ccc1 -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
