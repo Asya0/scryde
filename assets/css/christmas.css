@@ -1964,6 +1964,7 @@ body {
     .create-acc {
         margin-top: 0;
         padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .form__field-input {
