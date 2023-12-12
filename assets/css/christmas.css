@@ -59,9 +59,9 @@ body {
 
 .christmas-page .main video {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 80px);
     object-fit: cover;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 80px;
@@ -182,9 +182,9 @@ body {
     background: linear-gradient(360deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.60) 42.08%, #070B18 100%);
     position: absolute;
     height: 300px;
-    top: 0;
+    top: -1px;
     left: 0;
-    right: 0;
+    right: -1px;
     z-index: 0;
 }
 
@@ -570,6 +570,16 @@ body {
     font-size: 18px;
     font-weight: 600;
     line-height: 130%;
+}
+
+.prize__title__gold {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    color: #E2F4FF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
 }
 
 .icon-gift {
