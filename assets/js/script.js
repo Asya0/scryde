@@ -188,6 +188,7 @@ let modePagination1 = {
                 nextEl: ".swiper-navigation-1 .mode-arrow-next",
                 prevEl: ".swiper-navigation-1 .mode-arrow-prev",
             },
+            slidesPerView: 2,
         },
     },
 }
@@ -207,12 +208,13 @@ let modePagination2 = {
                 nextEl: ".swiper-navigation-2 .mode-arrow-next",
                 prevEl: ".swiper-navigation-2 .mode-arrow-prev",
             },
+            slidesPerView: 2,
         },
     },
 }
 
 let modeOptions = {
-    slidesPerView: 2,
+    slidesPerView: 1.3,
     centeredSlides: true,
     roundLengths: true,
     // loop: true,
