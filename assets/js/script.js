@@ -271,8 +271,15 @@ $(document).on('click', '.mode__slider-2 .swiper-slide-next', function () {
 
 $(document).on('click', '.js-popup', function () {
     const popup = $(this).data('popup');
-    $('.popup[data-popup="' + popup + '"]').addClass('active');
-    $('body').addClass('overflow-hidden');
+    if ($(this).hasClass('main__scroll')) {
+        setTimeout(() => {
+            $('.popup[data-popup="' + popup + '"]').addClass('active');
+            $('body').addClass('overflow-hidden');
+        }, 700)
+    } else {
+        $('.popup[data-popup="' + popup + '"]').addClass('active');
+        $('body').addClass('overflow-hidden');
+    }
 });
 
 $(document).on('click', '.js-popup-close', function () {
