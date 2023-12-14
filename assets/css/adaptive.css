@@ -1002,7 +1002,7 @@
         margin-top: 16px;
     }
 
-    .burger__menu-server-item::before {
+    /* .burger__menu-server-item::before {
         content: '';
         background: url(../img/icon-shine.png);
         position: absolute;
@@ -1015,7 +1015,7 @@
         left: 0;
         z-index: 4;
         cursor: pointer;
-    }
+    } */
 
     .burger__menu-server-item {
         display: flex;
@@ -1033,11 +1033,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: radial-gradient(230.47% 295.42% at 50.00% 0.00%, #090F27 22.04%, #CB8D08 100%);
+        background: radial-gradient(230.47% 295.42% at 50% 0%, #090F27 22.04%, #D7E8FF 100%),
+            radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
     }
 
     .burger__menu-server-item:after {
-        border-radius: 14px;
+        border-radius: 14px !important;
     }
 
     .burger__menu-server-text {

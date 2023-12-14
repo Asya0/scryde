@@ -506,6 +506,15 @@ img {
     border-radius: 24px;
 }
 
+.burger__menu-server .block-bordered-yellow:after {
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
+    border-radius: 24px;
+}
+
 .server-text::before {
     content: url(../img/svg/branch-icon.svg);
     position: absolute;

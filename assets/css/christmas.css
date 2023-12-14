@@ -1333,6 +1333,18 @@ body {
     background-position: bottom;
 }
 
+@media screen and (max-height: 830px) {
+    .mode__slide img {
+        max-height: 60vh;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    .mode__slide img {
+        max-height: 50vh;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .popup-mode .swiper-pagination-bullet-custom {
         width: 35px;
