@@ -1881,6 +1881,10 @@ body {
         height: 30px;
     }
 
+    .type-game:before {
+        height: 300px;
+    }
+
     .timer {
         justify-content: flex-start;
         gap: 10px;
