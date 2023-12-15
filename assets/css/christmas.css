@@ -2094,7 +2094,7 @@ body {
     }
 
     .tooltip {
-        bottom: 1px;
+        bottom: 0;
         position: fixed;
         border-radius: 20px 20px 0px 0px;
         background: #1F232F;
