@@ -174,7 +174,7 @@ body {
     background-size: cover;
     position: relative;
     padding-bottom: 180px;
-    padding-top: 200px;
+    margin-top: 200px;
 }
 
 .type-game:before {
@@ -183,6 +183,18 @@ body {
     position: absolute;
     height: 300px;
     top: -1px;
+    left: 0;
+    right: -1px;
+    z-index: 0;
+}
+
+.type-game:after {
+    content: '';
+    background: linear-gradient(180deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.60) 42.08%, #070B18 100%);
+    position: absolute;
+    height: 300px;
+    bottom: -1px;
+    top: auto;
     left: 0;
     right: -1px;
     z-index: 0;
@@ -792,7 +804,7 @@ body {
     }
 
     .game__box-btn .btn-bordered-box {
-        padding: 17px 28px;
+        padding: 10px 28px;
     }
 }
 
@@ -920,7 +932,7 @@ body {
     top: 0;
     right: 20px;
     width: 60px;
-    height: 50px;
+    height: 64px;
     margin-right: -20px;
 }
 
@@ -1713,8 +1725,7 @@ body {
     }
 
     .mode__list {
-        flex-direction: column;
-        gap: 32px;
+        gap: 7px;
     }
 
     .account-block .btn-group {
@@ -1740,7 +1751,7 @@ body {
 
     .type-game {
         height: auto;
-        padding-top: 80px;
+        margin-top: 80px;
         padding-bottom: 80px;
     }
 
@@ -1760,6 +1771,10 @@ body {
         height: calc(100vh - 100px);
         align-items: flex-start;
         position: relative;
+        background-image: url(../img/christmas/main_bg_mobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .christmas-page .main video {
@@ -1904,6 +1919,11 @@ body {
 
     .christmas-page .account-block .btn-group {
         margin-bottom: 24px;
+    }
+
+    .christmas-page .account-block .white-text {
+        font-size: 14px;
+        margin-top: 6px;
     }
 
     .christmas-page .banner__prizes .subtitle_light {
@@ -2123,6 +2143,11 @@ body {
     .form__field .icon {
         top: 14px;
     }
+
+    .social-block {
+        display: flex;
+    }
+
 }
 
 @media screen and (max-width: 375px) {

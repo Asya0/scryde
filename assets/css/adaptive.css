@@ -2249,6 +2249,9 @@
         height: 16px;
     }
 
+    .block-icons .social-btn .btn-bordered-box {
+        padding: 9px 12px !important;
+    }
 }
 
 @media screen and (max-width: 514px) {

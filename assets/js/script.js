@@ -166,9 +166,9 @@ for (let i = 0; i < tableButtons.length; i++) {
 $(document).on('click', '.js-toggle-password', function () {
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {
-        $(this).siblings().attr('type', 'text');
+        $('#input__password').attr('type', 'text');
     } else {
-        $(this).siblings().attr('type', 'password');
+        $('#input__password').attr('type', 'password');
     }
 });
 
@@ -303,7 +303,7 @@ function pluralizeWord(number, one, two, five) {
 // Функция для обновления таймера
 function updateTimer() {
     var now = new Date();
-    var targetDate = new Date("2023-12-15");
+    var targetDate = new Date("2023-12-31");
 
     var timeDifference = targetDate.getTime() - now.getTime();
 
