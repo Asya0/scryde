@@ -1356,6 +1356,7 @@ body {
 .banner__prizes {
     background: url(/assets/img/christmas/banner__prizes-bg.png);
     background-position: bottom;
+    background-color: #FFF;
 }
 
 @media screen and (max-height: 830px) {
