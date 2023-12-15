@@ -2213,6 +2213,10 @@ body {
         display: flex;
     }
 
+    .pass-wrap {
+        height: 52px;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
