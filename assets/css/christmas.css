@@ -7,8 +7,6 @@ body {
     background-color: #070B18;
     background-size: cover;
     color: #fff;
-    /* убрать как добавлю элементы */
-    height: 100vh;
     padding-top: 0;
 }
 
@@ -2215,6 +2213,10 @@ body {
 
     .pass-wrap {
         height: 52px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
 }
