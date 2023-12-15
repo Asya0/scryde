@@ -907,6 +907,15 @@ body {
     transition: background .7s ease;
 }
 
+.pass-wrap {
+    cursor: pointer;
+    transition: .4s opacity;
+}
+
+.pass-wrap:hover {
+    opacity: .7;
+}
+
 .form__field .icon {
     position: absolute;
     right: 20px;
@@ -930,21 +939,25 @@ body {
 .pass-wrap {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0;
     width: 60px;
     height: 64px;
-    margin-right: -20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pass-wrap .icon {
+    position: static;
+    transition: none;
 }
 
 .icon-show-password {
     background-image: url(../img/christmas/icon-eye.svg);
 }
 
-.icon-show-password:hover {
-    opacity: .7;
-}
-
-.icon-show-password.active {
+.pass-wrap.active .icon-show-password {
     background-image: url(../img/christmas/icon-eye-close.svg);
 }
 
