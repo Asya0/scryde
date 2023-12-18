@@ -1862,8 +1862,7 @@ img {
     background: radial-gradient(106.8% 45.71% at 50% 30.71%, #CEFEE0 31.33%, #10883C 100%);
 }
 
-.tt-btn_chr .btn-bordered-box {
-    /* background: radial-gradient(128% 100% at 50% 0%, #545555 2.6%, #2D2F30 56.77%, #000000 100%); */
+.tt-btn .btn-bordered-box {
     background: radial-gradient(128% 100% at 50% 0%, #FF004F 2.6%, #BD0044 68.15%);
 }
 
