@@ -172,7 +172,7 @@ body {
     background-size: cover;
     position: relative;
     padding-bottom: 180px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .type-game:before {
@@ -1824,9 +1824,13 @@ body {
         margin: 0 auto;
     }
 
+    .christmas-page .main__header {
+        background: none;
+    }
+
     .christmas-page .main {
-        padding-top: 112px;
-        height: calc(100vh - 100px);
+        padding-top: 80px;
+        height: 100vh;
         align-items: flex-start;
         position: relative;
         background-image: url(../img/christmas/main-bg-mobile.jpg);
