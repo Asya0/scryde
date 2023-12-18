@@ -454,6 +454,12 @@ body {
     margin: 0 auto;
 }
 
+.game__box-btn .text-bg {
+    margin-top: 3px !important;
+    display: flex;
+    justify-content: center;
+}
+
 .game__box-btn.hide {
     display: none;
 }
