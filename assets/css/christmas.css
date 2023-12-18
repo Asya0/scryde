@@ -1640,7 +1640,7 @@ body {
 @media screen and (max-width: 992px) {
 
     .burger__menu {
-        padding-bottom: 30px;
+        padding-bottom: 90px;
     }
 
     .burger__menu-footer,
