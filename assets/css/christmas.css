@@ -2377,7 +2377,7 @@ body {
 
 @media screen and (max-height: 680px) {
     .christmas-page .main {
-        height: calc(100vh + env(safe-area-inset-bottom));
+        height: calc(90vh + env(safe-area-inset-bottom));
     }
 }
 
