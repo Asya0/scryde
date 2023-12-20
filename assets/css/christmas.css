@@ -1829,15 +1829,14 @@ body {
 
     .christmas-page .main {
         padding-top: 80px;
-        /* min-height: 70vh; */
+        min-height: 70vh;
         align-items: flex-start;
         position: relative;
-        height: 100vh;
-        /* height: auto; */
+        height: auto;
     }
 
     .christmas-page .main .video {
-        height: 53dvh;
+        height: 53vh;
         top: 60px;
     }
 
@@ -1879,7 +1878,7 @@ body {
         border-radius: 446px;
         background: rgba(7, 11, 24, 0.40);
         filter: blur(75px);
-        height: 60dvh;
+        height: 60vh;
         z-index: 0;
     }
 
@@ -2371,7 +2370,7 @@ body {
 
 @media screen and (max-width: 380px) {
     .christmas-page .main .video {
-        height: 68dvh;
+        height: 68vh;
     }
 }
 
