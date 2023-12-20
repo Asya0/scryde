@@ -1829,7 +1829,8 @@ body {
 
     .christmas-page .main {
         padding-top: 80px;
-        min-height: 70vh;
+        /* min-height: 70vh; */
+        min-height: calc(70vh + env(safe-area-inset-bottom));
         align-items: flex-start;
         position: relative;
         height: auto;
@@ -2376,7 +2377,7 @@ body {
 
 @media screen and (max-height: 680px) {
     .christmas-page .main {
-        height: 100vh;
+        height: calc(100vh + env(safe-area-inset-bottom));
     }
 }
 
