@@ -1846,7 +1846,7 @@ body {
         height: 100%;
     }
 
-/*     .christmas-page .main .video:after {
+    .christmas-page .main .video:after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -1855,7 +1855,7 @@ body {
         width: 100%;
         left: 0;
         right: 0;
-    } */
+    }
 
     .christmas-page .main:after {
         content: '';
