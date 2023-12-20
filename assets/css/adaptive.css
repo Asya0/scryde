@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 1740px) {
     .banner__prizes-bg {
-        bottom: -180px;
+        bottom: -180px !important;
     }
 }
 
