@@ -1889,7 +1889,7 @@ body {
 
     .christmas-page .main .btn-wrapper {
         position: absolute;
-        bottom: 30px;
+        bottom: calc(30px + env(safe-area-inset-bottom));
         right: 0;
         left: 0;
     }
