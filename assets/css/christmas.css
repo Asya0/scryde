@@ -1829,9 +1829,10 @@ body {
 
     .christmas-page .main {
         padding-top: 80px;
-        height: 100dvh;
+        min-height: 70dvh;
         align-items: flex-start;
         position: relative;
+        height: auto;
     }
 
     .christmas-page .main .video {
@@ -2295,6 +2296,7 @@ body {
     }
 } */
 
+
 @media screen and (min-width: 1920px) {
     .main__scrolls {
         left: 120px;
@@ -2369,6 +2371,12 @@ body {
 @media screen and (max-width: 380px) {
     .christmas-page .main .video {
         height: 68dvh;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .christmas-page .main {
+        height: 100vh;
     }
 }
 

@@ -4,6 +4,13 @@
     }
 }
 
+
+@media screen and (min-width: 1740px) {
+    .banner__prizes-bg {
+        bottom: -180px;
+    }
+}
+
 @media screen and (max-width: 1680px) {
 
     .banner__prizes__right-img {
