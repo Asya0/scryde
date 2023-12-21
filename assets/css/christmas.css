@@ -110,7 +110,7 @@ body {
 
 @media screen and (min-height: 1100px) {
     .christmas-page .main__header {
-        margin-bottom: 250px;
+        margin-bottom: 10vh;
     }
 }
 
@@ -1853,8 +1853,8 @@ body {
 
     .christmas-page .main {
         padding-top: 80px;
-        /* min-height: 70vh; */
         min-height: calc(70vh + env(safe-area-inset-bottom));
+        background-image: url(../img/christmas/bg-mobile.png);
         align-items: flex-start;
         position: relative;
         height: auto;
