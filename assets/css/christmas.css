@@ -76,6 +76,26 @@ body {
     background-image: url(../img/christmas/main-bg.png);
     background-size: 100% 100%;
     margin-bottom: 62px;
+    max-width: max-content;
+}
+
+.christmas-page .main__header:after {
+    content: '';
+    border-radius: 803px;
+    background: rgba(7, 11, 24, 0.60);
+    filter: blur(75px);
+    width: 120%;
+    height: 140%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.christmas-page .main__header>* {
+    z-index: 1;
+    position: relative;
 }
 
 .christmas-page .main .container {
@@ -752,6 +772,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .christmas-page .main__header:after {
+        display: none;
+    }
+
     .game__list-item {
         border-radius: 12px;
     }

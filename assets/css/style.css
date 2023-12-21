@@ -1863,11 +1863,11 @@ img {
 }
 
 .tt-btn .btn-bordered-box {
-    background: radial-gradient(128% 100% at 50% 0%, #FF004F 2.6%, #BD0044 68.15%);
+    background: radial-gradient(128% 100% at 50% 0%, #e99eb5 2.6%, #BD0044 68.15%);
 }
 
 .tt-btn .btn-bordered-box:hover {
-    background: radial-gradient(128% 100% at 50% 0%, #e9004a 2.6%, #8f0135 68.15%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), radial-gradient(128% 100% at 50% 0%, #e99eb5 2.6%, rgb(197, 21, 132) 56.77%, #BD0044 100%);
 }
 
 .tt-btn:after {
