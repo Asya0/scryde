@@ -2128,6 +2128,14 @@ body {
         width: 100%;
     }
 
+    .bg-image {
+        background: url(../img/christmas/section-bg.png);
+        height: 300px;
+        background-size: 160%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
     .christmas-page .bg-image .mobile-hidden {
         display: none !important;
     }
