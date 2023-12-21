@@ -2282,6 +2282,7 @@ body {
         height: 52px;
     }
 
+    html,
     body {
         overflow-x: hidden;
     }
