@@ -2370,7 +2370,7 @@ body {
 } */
 
 
-@media screen and (max-height: 680px) {
+@media screen and (max-width: 768px) and (max-height: 680px) {
     .christmas-page .main {
         height: calc(75vh + env(safe-area-inset-bottom));
     }
@@ -2387,6 +2387,18 @@ body {
 
     .christmas-page .main .btn-wrapper {
         bottom: calc(-5px + env(safe-area-inset-bottom));
+    }
+}
+
+@media screen and (max-width: 1536px) and (max-height: 730px) {
+    .main__scrolls {
+        top: 18vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main__scrolls {
+        display: none;
     }
 }
 

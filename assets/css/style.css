@@ -1866,16 +1866,12 @@ img {
     background: radial-gradient(128% 100% at 50% 0%, #FF004F 2.6%, #BD0044 68.15%);
 }
 
-.tt-btn .btn-bordered-box {
-    background: radial-gradient(128% 100% at 50% 0%, #545555 2.6%, #2D2F30 56.77%, #000000 100%);
-}
-
 .tt-btn .btn-bordered-box:hover {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), radial-gradient(128% 100% at 50% 0%, #6A6A6A 2.6%, #151515 56.77%, #000 100%);
+    background: radial-gradient(128% 100% at 50% 0%, #e9004a 2.6%, #8f0135 68.15%);
 }
 
 .tt-btn:after {
-    background: radial-gradient(106.8% 45.71% at 50% 30.71%, #F0F0F0 31.33%, #3D3D3D 100%);
+    background: radial-gradient(87.83% 37.59% at 50% 27.41%, #FFB0CA 31.33%, #A5003C 100%);
 }
 
 .inst-btn .btn-bordered-box {
