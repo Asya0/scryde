@@ -2369,15 +2369,24 @@ body {
     }
 } */
 
-@media screen and (max-width: 380px) {
-    .christmas-page .main .video {
-        height: 68vh;
-    }
-}
 
 @media screen and (max-height: 680px) {
     .christmas-page .main {
-        height: calc(90vh + env(safe-area-inset-bottom));
+        height: calc(75vh + env(safe-area-inset-bottom));
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .christmas-page .main {
+        height: calc(75vh + env(safe-area-inset-bottom));
+    }
+
+    .christmas-page .main .video {
+        height: 68vh;
+    }
+
+    .christmas-page .main .btn-wrapper {
+        bottom: calc(-5px + env(safe-area-inset-bottom));
     }
 }
 
