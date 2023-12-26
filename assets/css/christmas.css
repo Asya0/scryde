@@ -18,7 +18,7 @@ body {
     right: 0;
     width: 100%;
     background: #070B18;
-    z-index: 4;
+    z-index: 40;
     margin-bottom: 0;
     height: 80px;
 }
@@ -1136,6 +1136,8 @@ body {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .popup__header {
@@ -1174,6 +1176,7 @@ body {
 
 .popup__content {
     position: relative;
+    margin: auto 0;
 }
 
 .mode__slider {
@@ -1706,6 +1709,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .popup__container {
+        margin: 0;
+    }
 
     .header {
         height: 56px;
