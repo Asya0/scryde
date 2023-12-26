@@ -139,10 +139,10 @@ $(document).on('click', '.js-show-top-players', function () {
 });
 
 $(document).on('click', '.info-item', function (e) {
-    e.preventDefault();
-
-    $(this).toggleClass('active').siblings().removeClass('active');
-
+    if ($(window).width() < 767) {
+        e.preventDefault();
+        $(this).toggleClass('active').siblings().removeClass('active');
+    }
 });
 
 const tableButtons = document.querySelectorAll('.js-change-table');
