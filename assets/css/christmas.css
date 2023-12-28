@@ -904,7 +904,14 @@ body {
     font-weight: 500;
     line-height: 160%;
     color: #FFF;
+
 }
+
+input[disabled] {
+    -webkit-opacity: 1;
+}
+
+
 
 .form__field-submit {
     width: 100%;
@@ -1398,13 +1405,7 @@ body {
 
 @media screen and (max-height: 830px) {
     .mode__slide img {
-        max-height: 60vh;
-    }
-}
-
-@media screen and (max-height: 740px) {
-    .mode__slide img {
-        max-height: 50vh;
+        max-height: 65vh;
     }
 }
 
@@ -1596,7 +1597,7 @@ body {
     }
 
     .mode__slide img {
-        max-height: 60vh;
+        max-height: 70vh;
     }
 
     .main__content {
