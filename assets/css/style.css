@@ -1762,9 +1762,8 @@ img {
 
 .awards-img__left {
     position: absolute;
-    bottom: 0;
+    bottom: -6px;
     left: -150px;
-    /* transform: scale(1); */
 }
 
 .awards-img__right {
