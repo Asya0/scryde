@@ -1309,6 +1309,10 @@ img {
 
 .more-server-block {
     display: flex;
+    /* align-items: center;
+    bottom: 0;
+    position: absolute;
+    padding: 0px 0 20px 0px */
 }
 
 .more-server-block svg path {
@@ -2274,7 +2278,7 @@ img {
 
 .discord-block::after {
     position: absolute;
-    top: 0px;
+    top: 1px;
     bottom: 2px;
     left: -1px;
     right: 0px;

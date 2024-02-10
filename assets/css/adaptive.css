@@ -180,6 +180,7 @@
 
     .awards-img__right {
         top: 4px;
+        right: -120px;
     }
 
     .discord-block::after {
@@ -272,7 +273,9 @@
     }
 
     .awards-img__left {
-        left: -240px;
+        transform: scale(0.8);
+        left: -170px;
+        bottom: -39px;
     }
 
     .table__item {
@@ -640,7 +643,7 @@
 
     .awards-img__left {
         top: -60px;
-        left: -205px;
+        left: -195px;
         transform: scale(0.65);
     }
 
