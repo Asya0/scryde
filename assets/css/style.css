@@ -77,12 +77,6 @@
     src: url(../fonts/Inter/Inter-SemiBold.ttf);
 }
 
-/* 
-html,
-body {
-    overflow-x: hidden;
-} */
-
 body {
     font-family: 'Manrope-Regular', sans-serif;
     font-weight: 400;
@@ -547,7 +541,6 @@ img {
 }
 
 .new-icon {
-    /* background: url(../img/svg/new-icon.svg); */
     background: url(../img/new-icon.png);
     background-size: contain;
     position: absolute;
@@ -601,7 +594,6 @@ img {
 }
 
 .start-game {
-    /* padding-bottom: 16.5vh; */
     transition: .4s opacity;
 }
 
@@ -772,7 +764,6 @@ img {
     position: relative;
     background: url(../img/changes-bg.png) no-repeat right;
     background-size: cover;
-    /* padding-top: 15vh; */
 }
 
 .changes::before {
@@ -935,7 +926,6 @@ img {
 .race {
     background-color: #fff;
     background: url(../img/race-bg.png) no-repeat center, #fff;
-    /* padding-top: 5vh; */
     background-size: cover;
 }
 
@@ -1129,7 +1119,6 @@ img {
 
 /* ABOUT SERVER  */
 .about-server {
-    /* padding: 17vh 0 0 0; */
     background: #070B18;
     margin-top: -20px;
 }
@@ -1184,7 +1173,6 @@ img {
 
 .server-item.active .server-item-wrapper>span,
 .server-item-wrapper>span {
-    /* background: linear-gradient(0deg, #D7E8FF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, rgba(215, 232, 255, 0.6) 82.62%), #fff; */
     background: linear-gradient(0deg, #FFF 48.81%, rgba(108, 128, 156, 0.6) 64.52%, #FFF 82.62%), #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1309,10 +1297,6 @@ img {
 
 .more-server-block {
     display: flex;
-    /* align-items: center;
-    bottom: 0;
-    position: absolute;
-    padding: 0px 0 20px 0px */
 }
 
 .more-server-block svg path {
@@ -1474,7 +1458,6 @@ img {
 }
 
 .best {
-    /* padding-top: 100px; */
     background: #070B18;
 }
 
@@ -1559,10 +1542,6 @@ img {
     line-height: 140%;
     margin-bottom: 16px;
 }
-
-/* .table__item-row:first-child {
-    padding: 4px 10px 4px 0;
-} */
 
 .table__item-row {
     display: flex;
@@ -1671,8 +1650,6 @@ img {
 
 .bg-image {
     position: relative;
-    /* если есть, то фон сверху черный, если убрать -- то норм */
-    /* background: linear-gradient(180deg, black 30%, transparent 70%); */
 }
 
 .bg-image:after {
@@ -1683,7 +1660,6 @@ img {
     position: absolute;
     display: inline-block;
     left: 0;
-    /* поменяла bottom, чтобы убрать белую полоску */
     bottom: -30px;
     right: 0;
     z-index: -1;
@@ -1695,7 +1671,6 @@ img {
 
 /* STREAM */
 .stream {
-    /* padding-top: 180px; */
     background: #fff;
 }
 
@@ -2271,7 +2246,6 @@ img {
 .discord-block-wrap {
     position: relative;
     border: 1px solid;
-    /* border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, #D1D4FF 100%); */
     border-image-source: radial-gradient(106.8% 45.71% at 50% 30.71%, #fff 31.33%, #fff 100%);
     z-index: 2;
 }
@@ -2282,7 +2256,6 @@ img {
     bottom: 2px;
     left: -1px;
     right: 0px;
-    /* background: radial-gradient(106.8% 45.71% at 50% 30.71%, #5A64EA 31.33%, rgba(13, 30, 53, 0.6) 100%); */
     background: linear-gradient(0deg, rgba(209, 212, 255, 1) 0%, rgba(90, 100, 234, 1) 100%);
     content: '';
     z-index: 1;

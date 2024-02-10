@@ -256,7 +256,6 @@
 
     .social-block {
         width: 100%;
-        /* max-width: 335px; */
     }
 
 
@@ -391,9 +390,6 @@
         font-size: 18px;
     }
 
-    /* .changes {
-        padding-top: 10vh;
-    } */
     .changes .subtitle_light {
         margin-bottom: 0;
     }
@@ -564,7 +560,6 @@
     }
 
     .best {
-        /* padding-top: 10vh; */
         padding-bottom: 40px;
     }
 
@@ -591,14 +586,6 @@
 
     .table-text {
         font-size: 12px;
-    }
-
-    .stream-block {
-        /* gap: 16px; */
-    }
-
-    .stream-block-img {
-        /* max-width: 302px; */
     }
 
     .profile-title {
@@ -679,10 +666,6 @@
     .changes-content:not(:last-child) {
         margin-bottom: 20px;
     }
-
-    /* .contacts {
-        padding-top: 10vh;
-    } */
 
     .contacts-block {
         justify-content: space-between;
@@ -1549,10 +1532,6 @@
         padding: 12px 12px 12px 20px;
     }
 
-    /* .race-item__content {
-        display: none;
-    } */
-
     .race-item__content.open {
         display: block;
     }
@@ -2295,7 +2274,6 @@
     }
 
     .changes::after {
-        /* background-image: url(../img/changes-sky__1-mob.png); */
         background-image: url(../img/changes-sky__1-tab.png);
         background-size: contain;
         background-repeat: no-repeat;
