@@ -169,3 +169,12 @@ for (let i = 0; i < tableButtons.length; i++) {
 }
 
 const fun = () => { };
+
+//отложенная загрузка
+document.addEventListener("DOMContentLoaded", function () {
+    var lazyImages = document.querySelectorAll('img[data-src]');
+    lazyImages.forEach(function (img) {
+        img.src = img.getAttribute('data-src');
+        img.removeAttribute('data-src');
+    });
+});
