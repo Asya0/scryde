@@ -2371,10 +2371,24 @@ img {
 body.revolution {
     background: url(../img/revolution/revolution-bg.png) no-repeat;
     background-color: #070B18;
-    background-size: cover;
+    background-size: contain;
     padding-top: 120px;
     overflow-x: hidden;
 
+}
+.revolution .main {
+    margin-bottom: 200px;
+}
+
+.revolution .main:after {
+    content: '';
+    background: linear-gradient(180deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.61) 42.08%, #070B18 100%);
+    height: 88px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 412px;
 }
 .revolution .btn-wrapper {
     display: flex;
@@ -2391,4 +2405,17 @@ body.revolution {
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
+}
+
+.revolution .server-online {
+    max-width: 190px;
+    padding: 17px 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(5, 9, 22, 0.40);
+    backdrop-filter: blur(11px);
+    gap: 1px;
+    margin: 0 auto 42px auto;
 }
