@@ -514,21 +514,21 @@ img {
     background: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
     border-radius: 24px;
 }
-
-.server-text::before {
+/* неактуально для revolution.html */
+/* .server-text::before {
     content: url(../img/svg/branch-icon.svg);
     position: absolute;
     top: 30px;
     left: 8px;
-}
+} */
 
-.server-text::after {
+/* .server-text::after {
     content: url(../img/svg/branch-icon.svg);
     transform: scale(-1, 1);
     position: absolute;
     top: 30px;
     right: 8px;
-}
+} */
 
 .new-icon {
     background: url(../img/svg/new-icon.svg);
@@ -2298,4 +2298,228 @@ img {
 
 .swiper--pause .swiper-pagination-bullet-custom--active span {
     animation: none;
+}
+
+
+body.revolution {
+    background: url(../img/revolution/revolution-bg.jpg) no-repeat;
+    background-color: #070B18;
+    background-size: contain;
+    padding-top: 120px;
+    overflow-x: hidden;
+
+}
+.revolution .main {
+    margin: 200px 0;
+}
+
+.revolution .main:after {
+    content: '';
+    background: linear-gradient(180deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.61) 42.08%, #070B18 100%);
+    height: 88px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 412px;
+}
+.revolution .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+.revolution .main__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.revolution .timer-text {
+    font-family: 'TrajanSansPro-Bold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.revolution .server-online {
+    max-width: 190px;
+    padding: 17px 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(5, 9, 22, 0.40);
+    backdrop-filter: blur(11px);
+    gap: 1px;
+    margin: 0 auto 42px auto;
+}
+.revolution .server-block {
+    margin-left: 60px;
+}
+.revolution .server-block_wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    padding: 40px;
+    gap: 110px;
+}
+
+.revolution .server-title {
+    text-align: left;
+    margin-bottom: 28px;
+}
+.revolution .block-subtitle {
+    text-align: left;
+}
+.revolution .about-img {
+    margin-right: 20px;
+}
+.revolution .inner-wrap:not(:last-child) {
+    align-items: center;
+    margin-bottom: 24px;
+}
+.revolution .block-subtitle {
+    line-height: 140%;
+}
+.revolution .more-server {
+    padding: 0; 
+}
+.rating {
+    background: #fff;
+    padding-top: 200px;
+}
+.revolution .block-text {
+    margin: 0;
+}
+
+.blue {
+    color: rgb(134, 179, 238);
+}
+.revolution .table__item-inner_box {
+    background: radial-gradient(230.00% 295.00% at 50% 0%,rgb(4, 8, 21) 22.038%,rgb(14, 147, 222) 100%);
+}
+.revolution .icon-place-second {
+    background-image: url(../img/revolution/best-second__blue.svg);
+}
+.revolution .table__item {
+    width: 100%;
+}
+.revolution .table__item-pink .table__item-inner:after {
+    background: radial-gradient(230.00% 295.00% at 50% 0%,rgb(64 88 167) 22.038%,rgb(53 116 151) 100%)
+}
+.table__item-row__header .table__item-col:first-child {
+    flex: 0 0 calc(10% + 10px);
+}
+.revolution .table__item-subtitle {
+    font-family: 'TrajanSansPro-Semibold';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+}
+.revolution .table__item-col {
+    font-size: 18px;
+}
+.revolution .table__item-col:first-child {
+    flex: none;
+    max-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.revolution .table__item-inner_box {
+    height: 100%;
+}
+.revolution .table__item-col:nth-child(2),
+.revolution .table__item-col:nth-child(3),
+.revolution .table__item-col:nth-child(4),
+.revolution .table__item-clans .table__item-col:nth-child(2),
+.revolution .table__item-clans .table__item-col:nth-child(3) {
+    flex: none;
+}
+
+.revolution .table__item-inner_box {
+    padding: 50px 45px;
+}
+.rating-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.rating__body {
+    position: relative;
+    left: 0;
+    border-radius: 16px;
+}
+.rating__body-wrap {
+    /* временно */
+    width: 440px;
+    padding: 50px 60px;
+    background: radial-gradient(229.14% 280.71% at 70% 15%,rgb(53, 125, 234),rgb(9, 15, 39) 67.188%);
+    position: relative;
+    z-index: 2;
+    border-radius: inherit;
+}
+.rating__body:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: radial-gradient(106.8% 45.71% at 50% 30.71%, #D0DBEB 31.33%, rgba(13, 30, 53, 0.6) 100%);
+    content: '';
+    z-index: 0;
+    border-radius: 16px;
+}
+.rating-top__block:not(:last-child) {
+    margin-bottom: 32px;
+}
+.rating-count {
+    color: rgb(255, 255, 255);
+    font-family: 'TrajanSansPro-Bold';
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+.rating-sub {
+    color: rgb(255, 255, 255);
+    font-family: 'TrajanSansPro-Bold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+}
+.rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+.rating-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.blue-text {
+    color: rgb(29, 101, 222);
+}
+.revolution .best-info {
+    color: rgb(13, 20, 45);
+}
+.revolution .website-title {
+    color: rgb(255, 255, 255);
+}
+
+.revolution .banner__prizes {
+    padding: 10vh 0 15vh 0;
+}
+
+@media screen and (max-width: 1920px) {
+    .revolution .main {
+        margin: 9vh 0;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .revolution .main {
+        margin: 4vh 0;
+    }
 }

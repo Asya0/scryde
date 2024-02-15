@@ -301,37 +301,45 @@ function pluralizeWord(number, one, two, five) {
 }
 
 // Функция для обновления таймера
-function updateTimer() {
-    var now = new Date();
-    var targetDate = new Date("2023-12-31");
-
-    var timeDifference = targetDate.getTime() - now.getTime();
-
-    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-    // Получение склонений для дней, часов, минут и секунд
-    var daysWord = pluralizeWord(days, 'день', 'дня', 'дней');
-    var hoursWord = pluralizeWord(hours, 'час', 'часа', 'часов');
-    var minutesWord = pluralizeWord(minutes, 'минута', 'минуты', 'минут');
-    var secondsWord = pluralizeWord(seconds, 'секунда', 'секунды', 'секунд');
-
-    // Обновление содержимого элементов с нужными стилями и склонениями
-    document.getElementById("days").innerHTML = addLeadingZero(days);
-    document.getElementById("days-word").innerHTML = daysWord;
-    document.getElementById("hours").innerHTML = addLeadingZero(hours);
-    document.getElementById("hours-word").innerHTML = hoursWord;
-    document.getElementById("minutes").innerHTML = addLeadingZero(minutes);
-    document.getElementById("minutes-word").innerHTML = minutesWord;
-    document.getElementById("seconds").innerHTML = addLeadingZero(seconds);
-    document.getElementById("seconds-word").innerHTML = secondsWord;
-
-    setTimeout(updateTimer, 1000);
+function addLeadingZero(num) {
+	return (num < 10) ? '0' + num : num;
 }
 
-updateTimer();
+function pluralizeWord(number, one, two, five) {
+	number = Math.abs(number) % 100;
+	var num1 = number % 10;
+	if (number > 10 && number < 20) return five;
+	if (num1 > 1 && num1 < 5) return two;
+	if (num1 == 1) return one;
+	return five;
+}
+
+const startDate = new Date('2024-02-01T00:00:00').getTime();
+
+const timer = setInterval(function() {
+	const now = new Date().getTime();
+    
+	const difference = now - startDate;
+    
+	const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+	const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+	const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+	var daysWord = pluralizeWord(days, 'день', 'дня', 'дней');
+	var hoursWord = pluralizeWord(hours, 'час', 'часа', 'часов');
+	var minutesWord = pluralizeWord(minutes, 'минута', 'минуты', 'минут');
+	var secondsWord = pluralizeWord(seconds, 'секунда', 'секунды', 'секунд');
+
+	document.getElementById('days').textContent = addLeadingZero(days);
+	document.getElementById('days-word').textContent = daysWord;
+	document.getElementById('hours').textContent = addLeadingZero(hours);
+	document.getElementById('hours-word').textContent = hoursWord;
+	document.getElementById('minutes').textContent = addLeadingZero(minutes);
+	document.getElementById('minutes-word').textContent = minutesWord;
+	document.getElementById('seconds').textContent = addLeadingZero(seconds);
+	document.getElementById('seconds-word').textContent = secondsWord;
+}, 1000);
 
 
 $(document).on("click", ".icon-question", function () {
