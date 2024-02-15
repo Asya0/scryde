@@ -54,6 +54,7 @@
 /* 500 */
 @font-face {
     font-family: 'Roboto-Medium';
+    font-weight: normal;
     src: url(../fonts/Roboto/Roboto-Medium.ttf);
 }
 
@@ -2365,4 +2366,29 @@ img {
 
 .swiper--pause .swiper-pagination-bullet-custom--active span {
     animation: none;
+}
+
+body.revolution {
+    background: url(../img/revolution/revolution-bg.png) no-repeat;
+    background-color: #070B18;
+    background-size: cover;
+    padding-top: 120px;
+    overflow-x: hidden;
+
+}
+.revolution .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+.revolution .main__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.revolution .timer-text {
+    font-family: 'TrajanSansPro-Bold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
 }
