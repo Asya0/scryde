@@ -1479,10 +1479,6 @@
         padding: 12px 12px 12px 20px;
     }
 
-    /* .race-item__content {
-        display: none;
-    } */
-
     .race-item__content.open {
         display: block;
     }
