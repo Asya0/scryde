@@ -2313,8 +2313,12 @@ body.revolution {
     background-position: top;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
+}
+.revolution .main .container {
+    margin-top: auto;
+    margin-bottom: 50px;
 }
 .revolution .inner-block {
   margin-bottom: 0;
@@ -2342,6 +2346,9 @@ body.revolution {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+}
+.revolution .h1-title {
+    font-size: 56px;
 }
 .revolution .timer-text {
     font-family: 'TrajanSansPro-Bold';
@@ -2450,12 +2457,42 @@ body.revolution {
   height: 28px;
   justify-content: center !important;
 }
-.revolution .table__item-row {
-  grid-gap: 2px;
+.revolution .table__item-row__header {
+  grid-gap: 10px;
+  padding-left: 15px;
+  align-items: center;
+}
+.table__item-row .table__item-col:first-child {
+    margin-right: 50px;
+}
+.revolution .table__item-col {
+    overflow: inherit;
+}
+.revolution .table__item-col{
+    font-size: 16px;
+}
+.revolution .table__item-col:nth-child(2) {
+    flex: 1 0 20%;  
+}
+.revolution .table__item-col:nth-child(3) {
+    flex: 0 0 15%;  
+}
+.revolution .table__item-col:nth-child(4) {
+    flex: 0 0 15%;  
+}
+.revolution .table__item-col:nth-child(5) {
+    flex: 1 0 20%;  
 }
 
 .revolution .table__item-inner_box {
-    padding: 50px 45px;
+    padding: 40px 50px;
+    justify-content: center;
+}
+.revolution .table__item-subtitle {
+    margin-bottom: 24px;
+}
+.revolution .table__item-row:not(:last-child) {
+    margin-bottom: 8px;
 }
 .rating-info {
     display: flex;
@@ -2509,7 +2546,7 @@ body.revolution {
 .rating-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 54px;
 
 }
 .rating-footer {
