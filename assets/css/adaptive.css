@@ -25,16 +25,23 @@
         bottom: -15%;
         left: -5vw;
     }
-}
-
-@media screen and (max-width: 1439px) {
     .swiper {
         padding: 30px 0px;
     }
-
+    
     .friends-block {
         justify-content: space-evenly;
         gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1425px) {
+    .awards-img__left {
+        bottom: -289px;
+        left: -579px;
+    }
+    .awards-img__right {
+        top: -438px;
     }
 }
 
@@ -80,6 +87,14 @@
     .banner__prizes__right-img {
         transform: scale(0.8);
         bottom: 0;
+    }
+    .awards-img__left {
+        bottom: -282px;
+        left: -561px;
+    }
+    .awards-img__right {
+        top: -398px;
+        right: -473px;
     }
 }
 
@@ -186,6 +201,54 @@
     .discord-block::after {
         left: 0;
     }
+    .awards-img__right {
+        top: -409px;
+        right: -453px;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .awards-img__left {
+        bottom: -275px;
+        left: -511px;
+    }
+    .awards-img__right {
+        top: -392px;
+        right: -453px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .awards-img__left {
+        bottom: -271px;
+        left: -522px;
+    }
+    .awards-img__right {
+        top: -378px;
+        right: -449px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .header.fixed .header__nav-item:nth-child(4) {
+        display: flex;
+    }
+
+    .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .awards-img__left {
+        left: -180px;
+    }
+    .changes .changes-block {
+        margin-bottom: 0;
+    }
+    .awards-img__left {
+        bottom: -248px;
+        left: -507px;
+    }
+    .awards-img__right {
+        top: -358px;
+        right: -449px;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1190px) {
@@ -202,23 +265,6 @@
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .header.fixed .header__nav-item:nth-child(4) {
-        display: flex;
-    }
-
-    .header.fixed .header__nav-list .header__nav-item:nth-last-child(-n+3) {
-        display: none;
-    }
-
-    .awards-img__left {
-        left: -180px;
-    }
-
-    .changes .changes-block {
-        margin-bottom: 0;
-    }
-}
 
 @media screen and (max-width:1179px) {
 
@@ -272,9 +318,9 @@
     }
 
     .awards-img__left {
-        transform: scale(0.8);
-        left: -170px;
-        bottom: -39px;
+        transform: scale(0.4);
+        left: -422px;
+        bottom: -206px;
     }
 
     .table__item {
@@ -629,15 +675,15 @@
     }
 
     .awards-img__left {
-        top: -60px;
-        left: -195px;
-        transform: scale(0.65);
+        top: -214px;
+        left: -417px;
+        transform: scale(0.35);
     }
 
     .awards-img__right {
-        transform: scale(0.6);
-        right: -127px;
-        top: -87px;
+        transform: scale(0.3);
+        right: -376px;
+        top: -310px;
     }
 
     .friends-block {
