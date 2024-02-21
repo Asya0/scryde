@@ -3234,10 +3234,16 @@ body.revolution {
     margin-top: 0;
   }
   .revolution .bg-image {
-    height: 525px;
+    background: none;
+    background-color: #070b18;
+    height: 440px;
+    z-index: -1;
+  }
+  .revolution .create-acc {
+    margin-bottom: 100px;
   }
   .revolution .friends {
-    padding-top: 100px;
+    padding-top: 0px;
   }
   .rating {
     padding-top: 100px;
