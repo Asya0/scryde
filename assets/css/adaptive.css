@@ -611,6 +611,7 @@
 
   .awards-blocks {
     padding: 30px 70px;
+    height: 250px;
   }
 
   .awards-block .h2-title {
@@ -638,15 +639,15 @@
   }
 
   .awards-img__left {
-    transform: scale(0.7);
-    top: 53px;
-    left: -175px;
+    transform: scale(0.8);
+    top: 28px;
+    left: -127px;
   }
 
   .awards-img__right {
-    transform: scale(1);
-    right: -62px;
-    top: 105px;
+    transform: scale(1.2);
+    right: -33px;
+    top: 70px;
   }
 
   .friends-block {
@@ -1230,10 +1231,6 @@
     max-width: 65%;
   }
 
-  .classes {
-    /* padding: 16px 11px; */
-  }
-
   .inner-benefits {
     display: flex;
     flex-direction: column;
@@ -1280,6 +1277,15 @@
 
   .banner__prizes__title {
     font-size: 27px;
+  }
+  .awards-img__left {
+    transform: scale(0.7);
+    top: 40px;
+  }
+  .awards-img__right {
+    transform: scale(1);
+    right: -73px;
+    top: 80px;
   }
 
   .footer-info {
@@ -2336,6 +2342,25 @@
   .banner__prizes__body:after {
     border-radius: 24px;
   }
+  .awards-block__right {
+    display: block;
+    position: relative;
+  }
+  .awards-block__sky {
+    position: absolute;
+    right: 351px;
+    top: auto;
+    bottom: -129px;
+    transform: scale(1);
+  }
+  .awards-img__right-mob-sky {
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: auto;
+    bottom: -340px;
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 514px) {
@@ -2372,6 +2397,14 @@
   .changes-img {
     max-width: 90%;
     right: 0;
+  }
+  .awards-blocks {
+    height: 240px;
+  }
+  .awards-img__right-sky {
+    right: -33px;
+    bottom: -266px;
+    transform: scale(0.9);
   }
 }
 
@@ -2503,10 +2536,6 @@
   .awards-img__left {
     top: -250px;
   }
-
-  .awards-blocks {
-    height: 285px;
-  }
   .friends-block {
     gap: 10px;
   }
@@ -2522,6 +2551,11 @@
   .changes-img {
     max-width: 100%;
     right: -13vw;
+  }
+  .awards-img__right-sky {
+    right: -112px;
+    bottom: -251px;
+    transform: scale(0.6);
   }
 }
 
