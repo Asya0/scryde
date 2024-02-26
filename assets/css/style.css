@@ -2723,6 +2723,10 @@ body.revolution {
   margin-top: auto;
   margin-bottom: 50px;
 }
+/* не та кнопка */
+.revolution .start-game {
+  display: block !important;
+}
 .revolution .inner-block {
   margin-bottom: 0;
 }
@@ -2968,6 +2972,11 @@ body.revolution {
   line-height: 140%;
   text-align: left;
 }
+.rating-sub__plus {
+  top: -5px;
+  position: relative;
+  font-size: 42px;
+}
 .rating-wrapper {
   display: flex;
   flex-direction: column;
@@ -2977,6 +2986,10 @@ body.revolution {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.revolution .more-info .text-bg {
+  overflow: hidden;
+  white-space: nowrap;
 }
 .blue-text {
   color: rgb(29, 101, 222);
@@ -3221,6 +3234,9 @@ body.revolution {
 }
 
 @media screen and (max-width: 767px) {
+  .revolution .server-online {
+    border-radius: 6px;
+  }
   .revolution .main .container {
     margin-top: 0;
   }
@@ -3233,17 +3249,38 @@ body.revolution {
   .revolution .type-game {
     margin-top: 0;
   }
+  .revolution .bg-image .mobile-hidden {
+    transform: scale(1.7);
+  }
   .revolution .bg-image {
     background: none;
     background-color: #070b18;
-    height: 440px;
+    height: 250px;
     z-index: -1;
   }
+  .revolution .bg-image:after {
+    height: 70%;
+  }
   .revolution .create-acc {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .revolution .friends {
-    padding-top: 0px;
+    padding-top: 50px;
+  }
+  .revolution .friends .h2-title_black {
+    text-align: center;
+  }
+  .revolution .friends .subtitle_dark {
+    text-align: center;
+  }
+  .revolution .discord-block iframe {
+    margin: 0;
+  }
+  .revolution .changes-text .subtitle_light {
+    max-width: 325px;
+  }
+  .revolution .friends-block {
+    flex-direction: column;
   }
   .rating {
     padding-top: 100px;
@@ -3257,6 +3294,7 @@ body.revolution {
   .rating__body-wrap {
     padding: 40px;
   }
+  
 }
 
 @media screen and (max-width: 520px) {

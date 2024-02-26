@@ -243,7 +243,7 @@ body {
     opacity: .9;
 }
 
-.btn-orange:hover .btn-bordered-box {
+.christmas-page .btn-orange:hover .btn-bordered-box {
     background: radial-gradient(128% 100% at 50% 0%, #FFAE00 2.6%, #A96600 57.29%, #FF7A00 100%);
 }
 
