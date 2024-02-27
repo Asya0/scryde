@@ -3267,6 +3267,12 @@ body.revolution {
   .revolution .friends {
     padding-top: 50px;
   }
+  .revolution .btn-group {
+    margin-bottom: 24px;
+  }
+  .revolution .friends .btn .btn-bordered-box {
+    padding: 20px 24px 12px 24px;
+  }
   .revolution .friends .h2-title_black {
     text-align: center;
   }
@@ -3276,8 +3282,14 @@ body.revolution {
   .revolution .discord-block iframe {
     margin: 0;
   }
+  .revolution .friends .block-subtitle {
+    max-width: 325px;
+  }
   .revolution .changes-text .subtitle_light {
     max-width: 325px;
+  }
+  .revolution .white-text {
+    font-size: 14px;
   }
   .revolution .friends-block {
     flex-direction: column;
@@ -3319,4 +3331,77 @@ body.revolution {
   .revolution .online-text {
     font-size: 14px;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .revolution .friends .block-title {
+    font-size: 16px;
+  }
+  .revolution .discord-block {
+    height: 296px !important;
+  }
+
+  .revolution .discord-block iframe {
+    height: 290px !important;
+  }
+  .revolution .discord-block::after {
+    top: -1px;
+  }
+  .revolution .friends-block {
+    gap: 40px;
+  }
+  .revolution .table__item-subtitle {
+    font-size: 20px;
+  }
+  .revolution .table__item-col {
+    font-size: 18px;
+  }
+  .revolution .table__item-col .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .revolution .rating .h2-title_black {
+    text-align: center;
+  }
+  .revolution .subtitle .subtitle_dark {
+    text-align: center;
+  }
+  .rating-info {
+    gap: 30px;
+  }
+  .rating-count {
+    font-size: 28px;
+  }
+  .rating-sub {
+    font-size: 16px;
+  }
+  .rating-sub__plus {
+    top: 0;
+    font-size: 24px;
+  }
+  .rating-top__block:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .rating-wrapper {
+    gap: 22px;
+  }
+  .rating-footer {
+    gap: 12px;
+  }
+  .rating__body-wrap {
+    padding: 32px 30px;
+  }
+  .rating-info {
+    margin-bottom: 40px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .revolution .btn .btn-bordered-box {
+    padding: 16px 48px;
+  }
+  .revolution .best-info {
+    margin-top: 24px;
+  }
+
 }
