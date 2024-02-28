@@ -2539,7 +2539,9 @@ img {
   gap: 10px;
   margin-bottom: 16px;
 }
-
+.revolution .footer-social .block-title {
+  text-transform: uppercase;
+}
 .footer-bottom {
   border-top: 1px solid #d0dbeb;
   padding-top: 24px;
@@ -3430,7 +3432,9 @@ body.revolution {
     font-size: 14px;
   }
   .revolution .btn .btn-bordered-box {
-    padding: 16px 48px;
+    /* проблема обрезания "Й" */
+    height: 52px;
+    padding: 15px 48px;
   }
   .revolution .best-info {
     margin-top: 24px;
@@ -3452,7 +3456,7 @@ body.revolution {
     /* задала ширину скролла */
     width: 375px;
   }
-  .revolution .table__item-scroll::-webkit-scrollbar {
+  /* .revolution .table__item-scroll::-webkit-scrollbar {
     width: 300px;
     height: 8px;
   }
@@ -3476,10 +3480,104 @@ body.revolution {
     );
     box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
     border-radius: 10px;
+  } */
+  /* код для Google, Firefox, Internet Explorer и Edge. */
+  .revolution .table__item-scroll {
+    scrollbar-width: thin; /* для Firefox */
+  }
+
+  .revolution .table__item-scroll {
+    -ms-overflow-style: none; /* для Internet Explorer и Edge */
+    scrollbar-width: thin; /* для Firefox */
+
+    /* Стили для браузеров, поддерживающих WebKit */
+    scrollbar-width: thin; /* для Firefox */
+    scrollbar-color: rgb(255, 195, 66) rgb(164, 164, 164); /* для Firefox */
+  }
+
+  .revolution .table__item-scroll::-webkit-scrollbar {
+    width: 300px;
+    height: 8px;
+  }
+
+  .revolution .table__item-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(118, 118, 118) 2.604%,
+      rgb(164, 164, 164) 57.292%,
+      rgb(89, 89, 89) 60.938%,
+      rgb(57, 57, 57) 100%
+    );
+  }
+
+  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(255, 195, 66) 2.604%,
+      rgb(159, 110, 3) 57.292%,
+      rgb(159, 110, 3) 60.938%,
+      rgb(255, 135, 23) 100%
+    );
+    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
+    border-radius: 10px;
   }
 
   .table__item.active {
     /* благодаря этой ширине видно содержимое блока */
     width: 500px;
+  }
+  .revolution .banner__prizes__title {
+    font-size: 24px;
+  }
+  .revolution .banner__prizes__body .subtitle_light {
+    font-size: 16px;
+    text-align: center;
+  }
+  .revolution .banner__prizes__body .banner__prizes__title {
+    margin-bottom: 8px;
+  }
+  .revolution .banner_prizes-bg-mobile {
+    top: 40px;
+    z-index: 1;
+  }
+  .revolution .banner__prizes__wrapper {
+    z-index: 3;
+  }
+  .revolution .footer {
+    z-index: 0;
+  }
+  .revolution .banner__prizes__body:after {
+    border-radius: 25px;
+  }
+  .revolution .banner__prizes__body .start-game__footer .btn {
+    width: auto;
+  }
+  .revolution .banner__prizes-left-img {
+    max-width: 100%;
+    left: -5px;
+    bottom: 250px;
+  }
+  .revolution .banner__prizes__wrapper {
+    height: 400px;
+    display: flex;
+    align-items: end;
+    z-index: 0;
+  }
+  .revolution .banner__prizes {
+    /* padding: 20vh 0; */
+    padding: 200px 0 140px 0;
+  }
+  .revolution .banner__prizes-bg-2 {
+    display: block;
+    transform: scale(1.5);
+    bottom: 400px;
+    right: 39px;
+  }
+  .revolution .footer-social .block-title {
+    text-transform: none;
+  }
+  .revolution .website-title {
+    font-size: 18px;
   }
 }
