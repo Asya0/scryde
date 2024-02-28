@@ -2903,7 +2903,6 @@ body.revolution {
 .revolution .table__item-col:nth-child(5) {
   flex: 1 0 20%;
 }
-
 .revolution .table__item-inner_box {
   padding: 40px 50px;
   justify-content: center;
@@ -3306,7 +3305,6 @@ body.revolution {
   .rating__body-wrap {
     padding: 40px;
   }
-  
 }
 
 @media screen and (max-width: 520px) {
@@ -3369,6 +3367,21 @@ body.revolution {
   .revolution .table__item-col:nth-child(5) {
     font-size: 14px;
   }
+  .revolution .table__item-id {
+    margin-right: 25px;
+  }
+  .revolution .table__item-row__header .table__item-col:nth-child(2) {
+    flex: 1 0 25%;
+  }
+  .revolution .table__item-row__header .table__item-col:nth-child(3) {
+    flex: 0 0 10%;
+  }
+  .revolution .table__item-row__header .table__item-col:nth-child(4) {
+    flex: 0 0 10%;
+  }
+  .revolution .table__item-row__header .table__item-col:nth-child(5) {
+    flex: 1 0 30%;
+  }
   .revolution .table__item-col {
     font-size: 18px;
   }
@@ -3409,7 +3422,7 @@ body.revolution {
   }
   .revolution .subtitle_dark {
     text-align: center;
-}
+  }
   .rating-info {
     margin-bottom: 40px;
   }
@@ -3434,19 +3447,33 @@ body.revolution {
   .revolution .table__item-scroll {
     overflow: scroll;
     overflow-y: hidden;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 20px 20px 20px;
+    margin: 0 20px 0 -20px;
     /* задала ширину скролла */
-    width: 335px;
+    width: 375px;
   }
   .revolution .table__item-scroll::-webkit-scrollbar {
-    width: 8px;
+    width: 300px;
+    height: 8px;
   }
   .revolution .table__item-scroll::-webkit-scrollbar-track {
     border-radius: 10px;
-    background: radial-gradient(128.00% 100.00% at 50% 0%,rgb(118, 118, 118) 2.604%,rgb(164, 164, 164) 57.292%,rgb(89, 89, 89) 60.938%,rgb(57, 57, 57) 100%);
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(118, 118, 118) 2.604%,
+      rgb(164, 164, 164) 57.292%,
+      rgb(89, 89, 89) 60.938%,
+      rgb(57, 57, 57) 100%
+    );
   }
   .revolution .table__item-scroll::-webkit-scrollbar-thumb {
-    background: radial-gradient(128.00% 100.00% at 50% 0%,rgb(255, 195, 66) 2.604%,rgb(159, 110, 3) 57.292%,rgb(159, 110, 3) 60.938%,rgb(255, 135, 23) 100%);
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(255, 195, 66) 2.604%,
+      rgb(159, 110, 3) 57.292%,
+      rgb(159, 110, 3) 60.938%,
+      rgb(255, 135, 23) 100%
+    );
     box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
     border-radius: 10px;
   }
@@ -3455,6 +3482,4 @@ body.revolution {
     /* благодаря этой ширине видно содержимое блока */
     width: 500px;
   }
-
-
 }
