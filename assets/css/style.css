@@ -3352,6 +3352,22 @@ body.revolution {
   }
   .revolution .table__item-subtitle {
     font-size: 20px;
+    line-height: 24px;
+    padding-left: 15px;
+  }
+  .revolution .table__item-inner_box {
+    padding: 32px 20px;
+  }
+
+  .revolution .table__item-row__header .table__item-col {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+  .revolution .table__item-col:nth-child(2),
+  .revolution .table__item-col:nth-child(3),
+  .revolution .table__item-col:nth-child(4),
+  .revolution .table__item-col:nth-child(5) {
+    font-size: 14px;
   }
   .revolution .table__item-col {
     font-size: 18px;
@@ -3386,15 +3402,15 @@ body.revolution {
     gap: 22px;
   }
   .rating-footer {
-    gap: 12px;
+    gap: 8px;
   }
   .rating__body-wrap {
-    padding: 32px 30px;
+    padding: 23px 30px;
   }
   .rating-info {
     margin-bottom: 40px;
   }
-  .btn {
+  .revolution .btn {
     font-size: 14px;
   }
   .revolution .btn .btn-bordered-box {
@@ -3403,5 +3419,21 @@ body.revolution {
   .revolution .best-info {
     margin-top: 24px;
   }
+  .revolution .swiper {
+    padding-left: 0;
+  }
+  .revolution .swiper .swiper-pagination {
+    margin-top: 16px;
+  }
+  .revolution .swiper-pagination-bullet-custom {
+    width: 100%;
+  }
+  .revolution .table__item {
+    overflow-x: auto;
+    width: 625px;
+    white-space: nowrap;
+  }
+
+
 
 }
