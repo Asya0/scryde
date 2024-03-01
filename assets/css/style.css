@@ -3082,6 +3082,9 @@ body.revolution {
   .revolution .block-subtitle {
     font-size: 16px;
   }
+  .revolution .header__box-col-right .start-game {
+    display: none !important;
+  }
 }
 /* ПРОВЕРИТЬ НУЖНО ЛИ */
 @media screen and (max-width: 1280px) {
@@ -3114,6 +3117,12 @@ body.revolution {
   }
   .rating-wrapper {
     gap: 120px;
+  }
+  .revolution
+    .header.fixed
+    .header__nav-list
+    .header__nav-item:nth-last-child(-n + 3) {
+    display: block;
   }
 }
 @media screen and (max-width: 1024px) {
