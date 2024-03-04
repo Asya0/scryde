@@ -3503,6 +3503,39 @@ body.revolution {
   .revolution .main .video {
     top: 40px;
   }
+  .revolution .table__item-scroll {
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 0px 20px 20px 20px;
+    margin: 0 20px 0 -20px;
+    /* задала ширину скролла */
+    width: 415px;
+  }
+   .revolution .table__item-scroll::-webkit-scrollbar {
+    width: 300px;
+    height: 8px;
+  }
+  .revolution .table__item-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(118, 118, 118) 2.604%,
+      rgb(164, 164, 164) 57.292%,
+      rgb(89, 89, 89) 60.938%,
+      rgb(57, 57, 57) 100%
+    );
+  }
+  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(255, 195, 66) 2.604%,
+      rgb(159, 110, 3) 57.292%,
+      rgb(159, 110, 3) 60.938%,
+      rgb(255, 135, 23) 100%
+    );
+    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
+    border-radius: 10px;
+  } 
 }
 
 @media screen and (max-width: 425px) {
