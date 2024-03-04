@@ -2708,11 +2708,29 @@ img {
 }
 
 body.revolution {
-  background: url(../img/revolution/revolution-bg.jpg) no-repeat;
-  background-color: #070b18;
+  /* background: url(../img/revolution/revolution-bg.jpg) no-repeat; */
+  /* background-color: #070b18; */
   background-size: cover;
   overflow-x: hidden;
 }
+
+.revolution .main .video {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.revolution .main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .revolution .main {
   background-size: cover;
   background-position: top;
@@ -2732,6 +2750,19 @@ body.revolution {
 .revolution .inner-block {
   margin-bottom: 0;
 }
+.revolution .main:before {
+  content: "";
+  background: linear-gradient(180deg, #070b18 10%, rgba(7, 11, 24, 0.61) 57.92%, rgba(7, 11, 24, 0) 100%);
+  height: 64px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 50px;
+}
+
+
 .revolution .main:after {
   content: "";
   background: linear-gradient(
@@ -2990,10 +3021,10 @@ body.revolution {
   flex-direction: column;
   gap: 24px;
 }
-.revolution .more-info .text-bg {
+/* .revolution .more-info .text-bg {
   overflow: hidden;
   white-space: nowrap;
-}
+} */
 .blue-text {
   color: rgb(29, 101, 222);
 }
@@ -3027,12 +3058,12 @@ body.revolution {
 }
 
 @media screen and (max-width: 1440px) {
-  .revolution .main {
+  /* .revolution .main {
     margin: 15px 0;
-  }
-  .revolution .main:after {
+  } */
+  /* .revolution .main:after {
     bottom: 10px;
-  }
+  } */
   .revolution .h1-title {
     font-size: 44px;
   }
@@ -3053,17 +3084,16 @@ body.revolution {
     gap: 10px;
     padding: 40px;
   }
-
-  .revolution .main {
+  /* .revolution .main {
     margin: 30px 0;
-  }
+  } */
   .revolution .server-online {
     max-width: 170px;
     padding: 7px 14px;
   }
-  .revolution .main:after {
+  /* .revolution .main:after {
     bottom: 30px;
-  }
+  } */
   .revolution .main__footer {
     margin-top: 40px;
   }
@@ -3297,9 +3327,30 @@ body.revolution {
   .revolution .main {
     margin: 0;
   }
-  .revolution .main:after {
+  /* .revolution .main:after {
     bottom: 0;
-  }
+  } */
+  .revolution .main .video {
+    height: 53vh;
+    top: 60px;
+}
+
+.revolution .main video {
+    object-position: 72%;
+    /* height: 100%; */
+    height: 100vh;
+}
+
+/* .revolution .main .video:after {
+    content: '';
+    position: absolute;
+    bottom: -252px;
+    height: 30px;
+    background: linear-gradient(180deg, rgba(7, 11, 24, 0.00) 0%, rgba(7, 11, 24, 0.61) 42.08%, #070B18 100%);
+    width: 100%;
+    left: 0;
+    right: 0;
+} */
   .revolution .type-game {
     margin-top: 0;
   }
@@ -3450,6 +3501,12 @@ body.revolution {
     width: 60%;
     margin: 0 20vw;
   }
+  .revolution .main {
+  padding-top: 0;
+  }
+  .revolution .main .video {
+    top: 40px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -3573,7 +3630,6 @@ body.revolution {
   }
   .revolution .btn .btn-bordered-box {
     /* проблема обрезания "Й" */
-    height: 52px;
     padding: 15px 48px;
   }
   .revolution .best-info {
