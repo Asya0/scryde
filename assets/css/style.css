@@ -3317,6 +3317,8 @@ body.revolution {
     border-radius: 6px;
   }
   .revolution .main .container {
+    position: absolute;
+    top: 80px;
     margin-top: 0;
   }
   .revolution .main {
@@ -3328,13 +3330,16 @@ body.revolution {
   .revolution .main .video {
     height: 53vh;
     top: 60px;
-}
-
-.revolution .main video {
-    object-position: 72%;
-    /* height: 100%; */
-    height: 100vh;
-}
+  }
+  .revolution .best-info p{
+    font-family: "Manrope-Medium";
+    font-weight: 500;
+  }
+  .revolution .main video {
+      object-position: 72%;
+      /* height: 100%; */
+      height: 100vh;
+  }
 
   .revolution .type-game {
     margin-top: 0;
@@ -3480,6 +3485,10 @@ body.revolution {
 }
 
 @media screen and (max-width: 520px) {
+  .revolution .more-info .btn .btn-bordered-box {
+    height: 52px;
+    padding: 15px 40px;
+  }
   .revolution .bg-image {
     max-height: 352px;
   }
@@ -3563,13 +3572,13 @@ body.revolution {
   .revolution .friends .block-title {
     font-size: 16px;
   }
-  .revolution .discord-block {
+  /* .revolution .discord-block {
     height: 296px !important;
   }
 
   .revolution .discord-block iframe {
     height: 290px !important;
-  }
+  } */
   .revolution .discord-block::after {
     top: -1px;
   }
@@ -3681,117 +3690,6 @@ body.revolution {
     /* задала ширину скролла */
     width: 375px;
   }
-  /* .revolution .table__item-scroll::-webkit-scrollbar {
-    width: 300px;
-    height: 8px;
-  }
-  .revolution .table__item-scroll::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(118, 118, 118) 2.604%,
-      rgb(164, 164, 164) 57.292%,
-      rgb(89, 89, 89) 60.938%,
-      rgb(57, 57, 57) 100%
-    );
-  }
-  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(255, 195, 66) 2.604%,
-      rgb(159, 110, 3) 57.292%,
-      rgb(159, 110, 3) 60.938%,
-      rgb(255, 135, 23) 100%
-    );
-    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
-    border-radius: 10px;
-  } */
-
-  /* код для Google, Firefox, Internet Explorer и Edge. */
-  /* .revolution .table__item-scroll {
-    scrollbar-width: thin; /* для Firefox */
-  }
-
-  .revolution .table__item-scroll {
-    -ms-overflow-style: none; /* для Internet Explorer и Edge */
-    scrollbar-width: thin; /* для Firefox */
-
-    /* Стили для браузеров, поддерживающих WebKit */
-    scrollbar-width: thin; /* для Firefox */
-    scrollbar-color: rgb(255, 195, 66) rgb(164, 164, 164); /* для Firefox */
-  }
-
-  .revolution .table__item-scroll::-webkit-scrollbar {
-    width: 300px;
-    height: 8px;
-  }
-
-  .revolution .table__item-scroll::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(118, 118, 118) 2.604%,
-      rgb(164, 164, 164) 57.292%,
-      rgb(89, 89, 89) 60.938%,
-      rgb(57, 57, 57) 100%
-    );
-  }
-
-  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(255, 195, 66) 2.604%,
-      rgb(159, 110, 3) 57.292%,
-      rgb(159, 110, 3) 60.938%,
-      rgb(255, 135, 23) 100%
-    );
-    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
-    border-radius: 10px;
-  } */
-/*  */
-.revolution .table__item-scroll {
-  /* WebKit (Chrome, Safari, Яндекс.Браузер) */
-  ::-webkit-scrollbar {
-      width: 300px;
-      height: 8px;
-  }
-  ::-webkit-scrollbar-track {
-      border-radius: 10px;
-      background: radial-gradient(
-          128% 100% at 50% 0%,
-          rgb(118, 118, 118) 2.604%,
-          rgb(164, 164, 164) 57.292%,
-          rgb(89, 89, 89) 60.938%,
-          rgb(57, 57, 57) 100%
-      );
-  }
-  ::-webkit-scrollbar-thumb {
-      background: radial-gradient(
-          128% 100% at 50% 0%,
-          rgb(255, 195, 66) 2.604%,
-          rgb(159, 110, 3) 57.292%,
-          rgb(159, 110, 3) 60.938%,
-          rgb(255, 135, 23) 100%
-      );
-      box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
-      border-radius: 10px;
-  }
-}
-
-.revolution .table__item-scroll {
-  /* Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: radial-gradient(
-          128% 100% at 50% 0%,
-          rgb(255, 195, 66) 2.604%,
-          rgb(159, 110, 3) 57.292%,
-          rgb(159, 110, 3) 60.938%,
-          rgb(255, 135, 23) 100%
-      )
-      rgb(118, 118, 118);
-}
-/*  */
-
 
   .table__item.active {
     /* благодаря этой ширине видно содержимое блока */
@@ -3851,4 +3749,41 @@ body.revolution {
   .revolution .website-title {
     font-size: 18px;
   }
+  /* код для Google, Firefox, Internet Explorer и Edge. */
+
+  .revolution .table__item-scroll {
+    -ms-overflow-style: none; /* для Internet Explorer и Edge */
+    scrollbar-width: thin; /* для Firefox */
+    scrollbar-width: thin; /* для Firefox */
+    scrollbar-color: rgb(255, 195, 66) rgb(164, 164, 164); /* для Firefox */
+  }
+
+  .revolution .table__item-scroll::-webkit-scrollbar {
+    width: 300px;
+    height: 8px;
+  }
+
+  .revolution .table__item-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(118, 118, 118) 2.604%,
+      rgb(164, 164, 164) 57.292%,
+      rgb(89, 89, 89) 60.938%,
+      rgb(57, 57, 57) 100%
+    );
+  }
+
+  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(255, 195, 66) 2.604%,
+      rgb(159, 110, 3) 57.292%,
+      rgb(159, 110, 3) 60.938%,
+      rgb(255, 135, 23) 100%
+    );
+    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
+    border-radius: 10px;
+  }
+
 }
