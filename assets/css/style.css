@@ -3486,8 +3486,14 @@ body.revolution {
 
 @media screen and (max-width: 520px) {
   .revolution .more-info .btn .btn-bordered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 52px;
     padding: 15px 40px;
+  }
+  .best-link__profile {
+    font-family: "Manrope-SemiBold", sans-serif;
   }
   .revolution .bg-image {
     max-height: 352px;
