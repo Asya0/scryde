@@ -3603,6 +3603,18 @@ body.revolution {
     width: 60%;
     margin: 0 20vw;
   }
+  .revolution .banner__prizes-left-img {
+    transform: scale(1);
+  }
+  .revolution .banner__prizes-bg-2 {
+    bottom: 390px;
+  }
+  .revolution .banner__prizes {
+    padding: 140px 0;
+  }
+  .revolution .banner_prizes-bg-mobile {
+    max-height: 620px;
+  }
   .revolution .main {
   padding-top: 0;
   }
@@ -3676,6 +3688,20 @@ body.revolution {
     width: 100%;
     max-width: 413px;
   }
+  .revolution .banner__prizes {
+    padding: 130px 0;
+  }
+  .revolution .banner__prizes-left-img {
+    transform: scale(1);
+  }
+  .revolution .banner_prizes-bg-mobile {
+    top: 10px;
+    max-height: 630px;
+  }
+  .revolution .banner__prizes-bg-2 {
+    bottom: 380px;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -3760,7 +3786,6 @@ body.revolution {
   .rating__body-wrap {
     padding: 23px 30px;
   }
-
   .rating-info {
     margin-bottom: 40px;
   }
@@ -3773,6 +3798,10 @@ body.revolution {
   }
   .revolution .best-info {
     margin-top: 24px;
+  }
+  .revolution .banner_prizes-bg-mobile {
+    top: 70px;
+    max-height: 710px;
   }
   .revolution .swiper {
     padding-left: 0;
@@ -3835,7 +3864,7 @@ body.revolution {
     z-index: 0;
   }
   .revolution .banner__prizes {
-    padding: 200px 0 140px 0;
+    padding: 160px 0 140px 0;
   }
   .revolution .banner__prizes-bg-2 {
     display: block;
@@ -3886,5 +3915,31 @@ body.revolution {
     box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
     border-radius: 10px;
   }
+  
+}
 
+@media screen and (max-width: 350px) {
+  .revolution .banner__prizes-left-img {
+    transform: scale(0.8);
+    left: -35px;
+  }
+  .revolution .banner_prizes-bg-mobile {
+    top: 20px;
+  }
+  .revolution .banner__prizes {
+    padding: 110px 0 100px 0;
+}
+  .revolution .banner__prizes-bg-2 {
+    right: 33px;
+    bottom: 380px;
+  }
+  .start-game__footer .btn-bordered-box {
+    width: 220px !important;
+  }
+  .revolution .friends .btn .btn-bordered-box {
+    padding: 20px 14px 12px 14px;
+  }
+  .revolution .more-info .btn .btn-bordered-box {
+    padding: 15px 30px;
+  }
 }
