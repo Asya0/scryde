@@ -3231,6 +3231,7 @@ body.revolution {
   .revolution .banner__prizes-left-img {
     left: -22px;
     bottom: 88px;
+    max-width: 45%;
   }
   .revolution .game__box-btn .btn .btn-bordered-box {
     padding: 16px 0;
