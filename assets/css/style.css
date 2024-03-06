@@ -3321,6 +3321,17 @@ body.revolution {
     bottom: 145px;
     transform: scale(0.8);
   }
+  .revolution .table__item-col .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 874px) {
+  .revolution .table__item-col .icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3420,10 +3431,10 @@ body.revolution {
   .rating {
     padding-top: 100px;
   }
-  /* .rating-info > .container:first-child {
-    padding: 0 0 0 40px;
-  } */
-
+  .revolution .table__item-col .icon {
+    width: 30px;
+    height: 30px;
+  }
   .revolution .discord-block iframe {
     max-width: 750px;
   }
@@ -3450,7 +3461,6 @@ body.revolution {
     max-height: 800px;
     object-fit: fill;
   }
-
   .revolution .banner__prizes__wrapper {
     z-index: 3;
   }
