@@ -3319,7 +3319,7 @@ body.revolution {
   }
   .revolution .banner__prizes-left-img {
     left: -35px;
-    bottom: 145px;
+    bottom: 100px;
     transform: scale(0.8);
   }
   .revolution .table__item-col .icon {
