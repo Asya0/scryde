@@ -2865,6 +2865,7 @@ body.revolution {
 .revolution .table__item {
   /* width: 100%; */
   width: 900px;
+  height: 100%;
 }
 .revolution .table__item-pink .table__item-inner:after {
   background: radial-gradient(
@@ -3028,6 +3029,11 @@ body.revolution {
   padding: 10vh 0 15vh 0;
 }
 
+.table__item-inner-overlay {
+  border-radius: inherit;
+  height: 100%;
+}
+
 @media screen and (max-width: 1919px) {
   /* .revolution .server-block_wrapper {
         gap: 34px;
@@ -3161,6 +3167,20 @@ body.revolution {
   }
 }
 @media screen and (max-width: 1024px) {
+  .revolution .rating-info {
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .revolution .rating__body-wrap {
+    padding: 20px;
+  }
+  .revolution .rating__body-wrap, .revolution .rating__body, .revolution .rating-statistics {
+    height: 100%;
+  }
+  .revolution .rating-info .container {
+    padding: 0;
+  }
   .revolution .h1-title {
     font-size: 34px;
   }
@@ -3207,9 +3227,9 @@ body.revolution {
   .revolution .inner-wrap:not(:last-child) {
     margin-bottom: 10px;
   }
-  .revolution .rating-info {
+  /* .revolution .rating-info {
     flex-direction: column;
-  }
+  } */
   .revolution .table__item-part {
     max-width: 1000px;
   }
@@ -3336,6 +3356,37 @@ body.revolution {
 }
 
 @media screen and (max-width: 767px) {
+  .rating-info {
+    gap: 38px;
+  }
+  /* .revolution .rating-info .container {
+    padding: 0 20px;
+  } */
+  .revolution .rating__body-wrap {
+    padding: 32px 30px;
+  }
+  .revolution .rating-info {
+    flex-direction: column;
+  }
+  .table__item-inner-overlay {
+    padding-right: 0;
+  }
+  #ascrail2000-hr {
+    overflow: hidden !important;
+    left: 0 !important;
+    right: 20px !important;
+    bottom: -20px !important;
+    width: calc(100vw - 40px) !important;
+  }
+  .revolution .rating-info .table__item {
+    overflow: unset !important;
+  }
+  .revolution .table__item-subtitle {
+    margin-bottom: 16px;
+  }
+  .revolution .table__item-inner_box {
+    padding: 32px 20px;
+  }
   .revolution .popup__header {
     padding-top: 95px;
     padding-bottom: 10px;
@@ -3500,6 +3551,37 @@ body.revolution {
     max-width: 335px;
     margin: 0 auto 20px auto;
   }
+
+  #ascrail2000 {
+    display: none !important;
+  }
+  .nicescroll-rails {
+    border-radius: 10px !important;
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(118, 118, 118) 2.604%,
+      rgb(164, 164, 164) 57.292%,
+      rgb(89, 89, 89) 60.938%,
+      rgb(57, 57, 57) 100%
+    ) !important;
+  }
+  .nicescroll-cursors {
+    height: 100% !important;
+    border: none !important;
+    background: radial-gradient(
+      128% 100% at 50% 0%,
+      rgb(255, 195, 66) 2.604%,
+      rgb(159, 110, 3) 57.292%,
+      rgb(159, 110, 3) 60.938%,
+      rgb(255, 135, 23) 100%
+    ) !important;
+    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24) !important;
+    border-radius: 10px !important;
+  }
+
+  .rating .container .container {
+    padding: 0;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .revolution .popup__content {
@@ -3628,45 +3710,13 @@ body.revolution {
   .revolution .subtitle_dark {
     text-align: center;
   }
-  .rating > .container {
-    padding: 0;
-  }
   .revolution .table__item-inner {
     width: 600px;
   }
   .revolution .table__item-scroll {
-    overflow: scroll;
-    overflow-y: hidden;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 0 20px 20px;
     margin: 0 20px 0 0px;
-    /* задала ширину скролла */
-    width: 451px;
   }
-   .revolution .table__item-scroll::-webkit-scrollbar {
-    width: 300px;
-    height: 8px;
-  }
-  .revolution .table__item-scroll::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(118, 118, 118) 2.604%,
-      rgb(164, 164, 164) 57.292%,
-      rgb(89, 89, 89) 60.938%,
-      rgb(57, 57, 57) 100%
-    );
-  }
-  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(255, 195, 66) 2.604%,
-      rgb(159, 110, 3) 57.292%,
-      rgb(159, 110, 3) 60.938%,
-      rgb(255, 135, 23) 100%
-    );
-    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
-    border-radius: 10px;
-  } 
 }
 
 @media screen and (max-width: 425px) {
@@ -3702,7 +3752,6 @@ body.revolution {
   .revolution .banner__prizes-bg-2 {
     bottom: 380px;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -3762,9 +3811,6 @@ body.revolution {
   .revolution .subtitle .subtitle_dark {
     text-align: center;
   }
-  .rating-info {
-    gap: 30px;
-  }
   .rating-count {
     font-size: 28px;
   }
@@ -3814,10 +3860,10 @@ body.revolution {
     width: 100%;
   }
   .revolution .table__item-scroll {
-    overflow: scroll;
-    overflow-y: hidden;
+    /* overflow: scroll; */
+    /* overflow-y: hidden; */
     padding: 0px 0px 20px 40px;
-    margin: 0px 0px 0 -20px;
+    /* margin: 0px 0px 0 -20px; */
     /* задала ширину скролла */
     width: 400px
   }
@@ -3883,13 +3929,13 @@ body.revolution {
   /* код для Google, Firefox, Internet Explorer и Edge. */
 
   .revolution .table__item-scroll {
-    -ms-overflow-style: none; /* для Internet Explorer и Edge */
-    scrollbar-width: thin; /* для Firefox */
-    scrollbar-width: thin; /* для Firefox */
-    scrollbar-color: rgb(255, 195, 66) rgb(164, 164, 164); /* для Firefox */
+    /* -ms-overflow-style: none;
+    scrollbar-width: thin;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 195, 66) rgb(164, 164, 164); */
   }
 
-  .revolution .table__item-scroll::-webkit-scrollbar {
+  /* .revolution .table__item-scroll::-webkit-scrollbar {
     width: 300px;
     height: 8px;
   }
@@ -3915,8 +3961,7 @@ body.revolution {
     );
     box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
     border-radius: 10px;
-  }
-  
+  } */
 }
 
 @media screen and (max-width: 350px) {

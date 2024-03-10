@@ -550,3 +550,17 @@ $(document).mouseup(function (e) {
     langBlock.removeClass("active");
   }
 });
+
+
+$(function () {
+  $('.table__item').niceScroll('.table__item-inner', {
+    cursorwidth: "4px",
+    cursorcolor: "#ff9900",
+    cursorborder: "3px solid #FF9900",
+    horizrailenabled: true,
+    touchbehavior: true,
+    enablemousewheel: false,
+    zindex: 999,
+    autohidemode: false
+  });
+});
