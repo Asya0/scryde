@@ -3585,6 +3585,7 @@ body.revolution {
 
   .revolution .btn-blue .text-bg {
     font-size: 14px;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
