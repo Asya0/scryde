@@ -3582,6 +3582,10 @@ body.revolution {
   .rating .container .container {
     padding: 0;
   }
+
+  .revolution .btn-blue .text-bg {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .revolution .popup__content {
@@ -3872,7 +3876,9 @@ body.revolution {
     /* благодаря этой ширине видно содержимое блока */
     width: 500px;
   }
-
+  .revolution .table__item.active {
+    width: auto;
+  }
   .revolution .banner__prizes__title {
     font-size: 24px;
   }
