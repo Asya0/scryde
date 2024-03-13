@@ -3331,6 +3331,8 @@ body.revolution {
     margin: 0 0 25px 0;
   }
   .revolution .online-count {
+    position: relative;
+    top: 1px;
     font-size: 16px;
   }
   .revolution .online-text {
