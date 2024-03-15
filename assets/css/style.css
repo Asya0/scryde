@@ -35,13 +35,15 @@
 /* 600 */
 @font-face {
   font-family: "TrajanSansPro-Semibold";
-  src: url(../fonts/TrajanSansPro/TrajanSansPro-Semibold.otf);
+  /* src: url(../fonts/TrajanSansPro/TrajanSansPro-Semibold.otf); */
+  src: url(../fonts/TrajanSansPro/trajansanspro-semibold-webfont.ttf);
 }
 
 /* 700 */
 @font-face {
   font-family: "TrajanSansPro-Bold";
-  src: url(../fonts/TrajanSansPro/TrajanSansPro-Bold.otf);
+  /* src: url(../fonts/TrajanSansPro/TrajanSansPro-Bold.otf); */
+  src: url(../fonts/TrajanSansPro/trajansanspro-bold-webfont.ttf);
 }
 
 /* Roboto */
@@ -3332,7 +3334,7 @@ body.revolution {
   }
   .revolution .online-count {
     position: relative;
-    top: 2px;
+    /* top: 2px; */
     font-size: 16px;
   }
   .revolution .online-text {
