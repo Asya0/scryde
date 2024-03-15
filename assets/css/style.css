@@ -3332,7 +3332,7 @@ body.revolution {
   }
   .revolution .online-count {
     position: relative;
-    top: 1px;
+    top: 2px;
     font-size: 16px;
   }
   .revolution .online-text {
