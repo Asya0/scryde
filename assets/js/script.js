@@ -519,3 +519,16 @@ $(function () {
     autohidemode: false,
   });
 });
+//отложенная загрузки шрифтов
+function loadFont(fontUrl) {
+  var css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = fontUrl;
+  document.head.appendChild(css);
+}
+document.addEventListener('DOMContentLoaded', function() {
+  loadFont('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+});
+setTimeout(function() {
+  loadFont('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}, 2000);
