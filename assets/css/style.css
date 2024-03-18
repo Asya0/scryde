@@ -3617,9 +3617,7 @@ body.revolution {
   }
   .revolution .server-online {
     margin: 0 0 35px 0;
-  }
-  .revolution .server-online {
-    max-width: 130px;
+    max-width: 135px;
   }
   .revolution .online-text {
     font-size: 11px;
