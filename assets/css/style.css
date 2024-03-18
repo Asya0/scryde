@@ -3407,6 +3407,7 @@ body.revolution {
   }
   .revolution .server-online {
     border-radius: 6px;
+    max-width: 135px;
   }
   .revolution .main .container {
     position: absolute;
@@ -3617,7 +3618,6 @@ body.revolution {
   }
   .revolution .server-online {
     margin: 0 0 35px 0;
-    max-width: 135px;
   }
   .revolution .online-text {
     font-size: 11px;
