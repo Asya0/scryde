@@ -15,7 +15,8 @@
 /* 600 */
 @font-face {
   font-family: "Manrope-SemiBold";
-  src: url(../fonts/Manrope/Manrope-SemiBold.ttf);
+  /* src: url(../fonts/Manrope/Manrope-SemiBold.ttf); */
+  src: url(../fonts/Manrope/manrope-semibold-webfont.ttf);
 }
 
 /* 700 */
@@ -35,14 +36,12 @@
 /* 600 */
 @font-face {
   font-family: "TrajanSansPro-Semibold";
-  /* src: url(../fonts/TrajanSansPro/TrajanSansPro-Semibold.otf); */
   src: url(../fonts/TrajanSansPro/trajansanspro-semibold-webfont.ttf);
 }
 
 /* 700 */
 @font-face {
   font-family: "TrajanSansPro-Bold";
-  /* src: url(../fonts/TrajanSansPro/TrajanSansPro-Bold.otf); */
   src: url(../fonts/TrajanSansPro/trajansanspro-bold-webfont.ttf);
 }
 
@@ -2594,30 +2593,24 @@ img {
 .icon-smile {
   background-image: url(../img/svg/icon-devil.svg);
 }
-
-/* поменяла */
 .header__nav-item:hover > .header__nav-item__link .icon-smile {
   background-image: url(../img/svg/icon-devil__hover.svg);
 }
-
 .icon-place-first {
   background-image: url(../img/svg/best-first.svg);
 }
-
 .icon-place-second {
-  background-image: url(../img/svg/best-second.svg);
+  /* background-image: url(../img/svg/best-second.svg); */
+  background-image: url(../img/svg/best-place-second.svg);
 }
-
 .icon-place-third {
   background-image: url(../img/svg/best-third.svg);
 }
-
 .icon-arrow-right-darken {
   background-image: url(../img/svg/icon-arrow-right-darken.svg);
   width: 32px;
   height: 32px;
 }
-
 .icon-arrow-bottom-darken {
   background-image: url(../img/svg/icon-arrow-bottom-darken.svg);
 }
@@ -2690,8 +2683,6 @@ img {
 }
 
 body.revolution {
-  /* background: url(../img/revolution/revolution-bg.jpg) no-repeat; */
-  /* background-color: #070b18; */
   background-size: cover;
   overflow-x: hidden;
 }
@@ -2875,7 +2866,6 @@ body.revolution {
   background-image: url(../img/revolution/best-second__blue.svg);
 }
 .revolution .table__item {
-  /* width: 100%; */
   width: 900px;
   height: 100%;
 }
@@ -2955,14 +2945,20 @@ body.revolution {
   gap: 24px;
   margin-bottom: 30px;
 }
+.rating-info__mobile {
+  display: none;
+}
+.rating-info__desktop {
+  display: block !important;
+}
 .rating__body {
   position: relative;
   left: 0;
   border-radius: 16px;
+  height: 100%;
 }
 .rating__body-wrap {
-  /* временно */
-  /* width: 440px; */
+  height: 100%;
   padding: 50px 60px;
   background: radial-gradient(
     229.14% 280.71% at 70% 15%,
@@ -3022,10 +3018,6 @@ body.revolution {
   flex-direction: column;
   gap: 24px;
 }
-/* .revolution .more-info .text-bg {
-  overflow: hidden;
-  white-space: nowrap;
-} */
 .blue-text {
   color: rgb(29, 101, 222);
   transition: all .7s ease;
@@ -3047,15 +3039,9 @@ body.revolution {
 }
 
 @media screen and (max-width: 1919px) {
-  /* .revolution .server-block_wrapper {
-        gap: 34px;
-    } */
   .rating-top__block:not(:last-child) {
     margin-bottom: 22px;
   }
-  /* .rating-count {
-        font-size: 42px;
-    } */
   .rating-wrapper {
     gap: 70px;
   }
@@ -3065,12 +3051,6 @@ body.revolution {
 }
 
 @media screen and (max-width: 1440px) {
-  /* .revolution .main {
-    margin: 15px 0;
-  } */
-  /* .revolution .main:after {
-    bottom: 10px;
-  } */
   .revolution .h1-title {
     font-size: 44px;
   }
@@ -3094,16 +3074,10 @@ body.revolution {
     gap: 10px;
     padding: 40px;
   }
-  /* .revolution .main {
-    margin: 30px 0;
-  } */
   .revolution .server-online {
     max-width: 170px;
     padding: 7px 14px;
   }
-  /* .revolution .main:after {
-    bottom: 30px;
-  } */
   .revolution .main__footer {
     margin-top: 40px;
   }
@@ -3181,7 +3155,7 @@ body.revolution {
 @media screen and (max-width: 1024px) {
   .revolution .rating-info {
     padding: 0;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
   }
   .revolution .rating__body-wrap {
@@ -3225,8 +3199,6 @@ body.revolution {
     height: 55px;
   }
   .revolution .server-block {
-    /* зачем ставила ширину 60%? */
-    /* width: 60%; */
     width: auto;
     margin-left: 40px;
   }
@@ -3239,14 +3211,10 @@ body.revolution {
   .revolution .inner-wrap:not(:last-child) {
     margin-bottom: 10px;
   }
-  /* .revolution .rating-info {
-    flex-direction: column;
-  } */
   .revolution .table__item-part {
     max-width: 1000px;
   }
   .revolution .table__item-inner {
-    /* width: 600px; */
     width: 100%;
     margin: 0 auto;
   }
@@ -3272,9 +3240,6 @@ body.revolution {
     padding-top: 20px;
     margin-bottom: 0;
   }
-  /* .revolution .popup__content {
-    margin: 0;
-  } */
 }
 
 @media screen and (max-width: 992px) {
@@ -3344,7 +3309,6 @@ body.revolution {
     font-size: 12px;
   }
   /*  перемещение кнопки для мобилки*/
-
   .revolution .main__header .btn-wrapper {
     position: absolute;
     bottom: calc(env(safe-area-inset-bottom) + -40vh);
@@ -3373,9 +3337,6 @@ body.revolution {
   .rating-info {
     gap: 38px;
   }
-  /* .revolution .rating-info .container {
-    padding: 0 20px;
-  } */
   .revolution .rating__body-wrap {
     padding: 32px 30px;
   }
@@ -3440,7 +3401,6 @@ body.revolution {
     margin-top: 0;
   }
   .revolution .type-game {
-    /* margin-top: 200px; */
     background: url(../img/revolution/type-game.png) no-repeat center top;
   }
   .revolution .type-game:before {
@@ -3665,6 +3625,46 @@ body.revolution {
     margin: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .rating-info__desktop {
+    display: none !important;
+  }
+  .rating-info__mobile {
+    display: block;
+  }
+  .table__item-footer-body > .table__item-col:first-child {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .table__item-row__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 16px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+  .table__item-top {
+    display: flex; align-items: center;
+  }
+  .table__item-footer {
+    display: flex; align-items: center;
+  }
+  .table__item-footer-body {
+    margin-right: 30px;
+  }
+  .table__item-row__mobile .table__item-col {
+    font-size: 14px;
+  }
+  .table__item-row__mobile .table__item-count {
+    font-size: 18px;
+  }
+  .table__item-box {
+    gap: 8px;
+  }
+  .revolution .table__item-subtitle {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 520px) {
   .revolution .rating .more-info {
@@ -3727,13 +3727,6 @@ body.revolution {
   .revolution .subtitle_dark {
     text-align: center;
   }
-  .revolution .table__item-inner {
-    width: 600px;
-  }
-  .revolution .table__item-scroll {
-    padding: 0px 0 20px 20px;
-    margin: 0 20px 0 0px;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -3787,7 +3780,6 @@ body.revolution {
   .revolution .table__item-subtitle {
     font-size: 20px;
     line-height: 24px;
-    padding-left: 15px;
   }
   .revolution .table__item-inner_box {
     padding: 32px 20px;
@@ -3797,12 +3789,12 @@ body.revolution {
     font-size: 16px;
     margin-right: 16px;
   }
-  .revolution .table__item-col:nth-child(2),
+  /* .revolution .table__item-col:nth-child(2),
   .revolution .table__item-col:nth-child(3),
   .revolution .table__item-col:nth-child(4),
   .revolution .table__item-col:nth-child(5) {
     font-size: 14px;
-  }
+  } */
   .revolution .table__item-id {
     margin-right: 25px;
   }
@@ -3818,12 +3810,9 @@ body.revolution {
   .revolution .table__item-row__header .table__item-col:nth-child(5) {
     flex: 1 0 30%;
   }
-  .revolution .table__item-col {
-    font-size: 18px;
-  }
   .revolution .table__item-col .icon {
     width: 30px;
-    height: 30px;
+    height: 28px;
   }
   .revolution .subtitle .subtitle_dark {
     text-align: center;
@@ -3857,7 +3846,6 @@ body.revolution {
     font-size: 14px;
   }
   .revolution .btn .btn-bordered-box {
-    /* проблема обрезания "Й" */
     padding: 15px 48px;
   }
   .revolution .best-info {
@@ -3873,20 +3861,7 @@ body.revolution {
   .revolution .swiper .swiper-pagination {
     margin-top: 16px;
   }
-  .revolution .swiper-pagination-bullet-custom {
-    width: 100%;
-  }
-  .revolution .table__item-scroll {
-    /* overflow: scroll; */
-    /* overflow-y: hidden; */
-    padding: 0px 0px 20px 40px;
-    /* margin: 0px 0px 0 -20px; */
-    /* задала ширину скролла */
-    width: 400px
-  }
-
   .table__item.active {
-    /* благодаря этой ширине видно содержимое блока */
     width: 500px;
   }
   .revolution .table__item.active {
@@ -3945,44 +3920,12 @@ body.revolution {
   .revolution .website-title {
     font-size: 18px;
   }
-  /* код для Google, Firefox, Internet Explorer и Edge. */
-
-  .revolution .table__item-scroll {
-    /* -ms-overflow-style: none;
-    scrollbar-width: thin;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(255, 195, 66) rgb(164, 164, 164); */
-  }
-
-  /* .revolution .table__item-scroll::-webkit-scrollbar {
-    width: 300px;
-    height: 8px;
-  }
-
-  .revolution .table__item-scroll::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(118, 118, 118) 2.604%,
-      rgb(164, 164, 164) 57.292%,
-      rgb(89, 89, 89) 60.938%,
-      rgb(57, 57, 57) 100%
-    );
-  }
-
-  .revolution .table__item-scroll::-webkit-scrollbar-thumb {
-    background: radial-gradient(
-      128% 100% at 50% 0%,
-      rgb(255, 195, 66) 2.604%,
-      rgb(159, 110, 3) 57.292%,
-      rgb(159, 110, 3) 60.938%,
-      rgb(255, 135, 23) 100%
-    );
-    box-shadow: 0px 0px 24px 0px rgba(255, 192, 57, 0.24);
-    border-radius: 10px;
-  } */
 }
-
+@media screen and (max-width: 374px) {
+  .table__item-footer-body {
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 350px) {
   .revolution .banner__prizes-left-img {
     transform: scale(0.8);
@@ -3993,7 +3936,7 @@ body.revolution {
   }
   .revolution .banner__prizes {
     padding: 110px 0 100px 0;
-}
+  }
   .revolution .banner__prizes-bg-2 {
     right: 33px;
     bottom: 380px;
