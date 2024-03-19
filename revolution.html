@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   <link rel="shortcut icon" href="./assets/img/svg/logo-color.svg" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css?ver=1.5" />
+  <!-- <link rel="stylesheet" href="./assets/css/style.css?ver=1.5" /> -->
   <!-- <link rel="stylesheet" href="./assets/css/adaptive.css" /> -->
   <!-- <link rel="stylesheet" href="./assets/css/christmas.css?ver=2.4" /> -->
-  <!-- <link rel="stylesheet" href="./assets/css/style.min.css" /> -->
+  <link rel="stylesheet" href="./assets/css/style.min.css" />
   <link rel="stylesheet" href="./assets/css/adaptive.min.css" />
   <link rel="stylesheet" href="./assets/css/christmas.min.css" />
   <title>Scryde</title>
@@ -171,18 +171,10 @@
               </span>
             </a>
           </div>
-
-          <!-- <button class="burger" aria-label="open menu">
-            <span class="burger-line burger-line_top"></span>
-            <span class="burger-line burger-line_span"></span>
-            <span class="burger-line burger-line_bottom"></span>
-          </button> -->
-          <!--  -->
           <div class="menu">
             <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
             <label for="burger-checkbox" class="burger"></label>
         </div>
-        <!--  -->
         </div>
       </div>
     </div>
@@ -190,10 +182,10 @@
   <main class="main">
 
     <div class="video">
-      <video autoplay muted loop playsinline class="mobile-hidden">
+      <video autoplay muted loop playsinline preload="auto" class="mobile-hidden">
         <source src="./assets/main_animation_2.mp4" type="video/mp4">
       </video>
-      <video autoplay muted loop playsinline class="desktop-hidden">
+      <video autoplay muted loop playsinline preload="auto" class="desktop-hidden">
         <source src="./assets/main_animation_2_mobile.mp4" type="video/mp4">
       </video>
     </div>
@@ -1071,7 +1063,6 @@
                   <img src="./assets/img/svg/social/vk.svg" alt="vk" loading="lazy" />
                 </span>
               </a>
-              <!-- тикток или whatsapp? -->
               <a href="https://www.tiktok.com/@scrydenet" class="social-btn btn-bordered tt-btn">
                 <span class="btn-bordered-box">
                   <img src="./assets/img/svg/social/tt.svg" alt="tiktok" loading="lazy" />
