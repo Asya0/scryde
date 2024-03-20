@@ -3950,4 +3950,13 @@ body.revolution {
   .revolution .more-info .btn .btn-bordered-box {
     padding: 15px 30px;
   }
+  .table__item-row__mobile .table__item-col {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .table__item-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
